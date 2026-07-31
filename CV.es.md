@@ -214,7 +214,7 @@ Servidor MCP para datos de investigación en tiempo real. Proporciona acceso en 
 
 Servidor MCP que expone la API del OpenAIRE Graph (100M+ productos de investigación de acceso abierto) a asistentes de IA. Proporciona 14 herramientas para buscar publicaciones, datasets, software, organizaciones, proyectos y personas. Servidor Node.js dockerizado con caché en memoria, rate limiting y lógica de reintentos. Construido como complemento de MCP CRIS Live enfocado en infraestructura de ciencia abierta.
 
-### [OpenAIRE Research Assistant — Demo](https://openaire-demo.rijdho.org)
+### OpenAIRE Research Assistant — Demo
 *Active · 2026 · Cloudflare Workers AI, LLM, Agentic AI, OpenAIRE*
 
 Interfaz de chat donde Cloudflare Workers AI (Llama 3.1 8B) usa las herramientas MCP de OpenAIRE en un bucle agéntico para responder preguntas de investigación en lenguaje natural. El LLM decide qué herramientas llamar, ejecuta las búsquedas en OpenAIRE y sintetiza los resultados en una respuesta legible. Desplegado completamente en infraestructura gratuita de Cloudflare (Pages + Workers AI).
@@ -228,6 +228,16 @@ Proyecto de sonificación que explora patrones de desigualdad de datos a través
 *Active · 2025 · PIDs, Research Infrastructure, Python, API Integration*
 
 Desarrollo de flujos de trabajo reproducibles para rastrear productos de investigación a través de sistemas de identificadores persistentes (ORCID, ROR, Crossref, DataCite, OpenAlex). Construido para la gobernanza institucional de información de investigación.
+
+### [fair-repo-audit](https://rijdho.github.io/fair-repo-audit/)
+*Active · 2026 · FAIR, OAI-PMH, DataCite, Open source*
+
+Gemelo abierto y del lado del cliente de Repo MetAudits — evaluación FAIR de metadatos para repositorios DataCite y OAI-PMH, ejecutándose enteramente en el navegador. La contraparte publicada y de código abierto del evaluador alojado.
+
+### [bibliohelpc](https://rijdho.github.io/bibliohelpc/)
+*Active · 2026 · SvelteKit, Citation Verification, Open source*
+
+Complemento de código abierto de BiblioHelp — la app de verificación de referencias y el add-in de Word, como código y build estático. El gemelo publicado de la herramienta alojada.
 
 
 ## Participaciones

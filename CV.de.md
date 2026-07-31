@@ -214,7 +214,7 @@ MCP Server for real-time research data. Provides live access to authoritative ac
 
 MCP server exposing the OpenAIRE Graph API (100M+ open access research products) to AI assistants. Provides 14 tools for searching publications, datasets, software, organizations, projects, and persons. Dockerized Node.js server with in-memory cache, rate limiting, and retry logic. Built as a companion to MCP CRIS Live focused on open science infrastructure.
 
-### [OpenAIRE Research Assistant — Demo](https://openaire-demo.rijdho.org)
+### OpenAIRE Research Assistant — Demo
 *Active · 2026 · Cloudflare Workers AI, LLM, Agentic AI, OpenAIRE*
 
 Chat interface where Cloudflare Workers AI (Llama 3.1 8B) uses the OpenAIRE MCP tools in an agentic loop to answer research questions in natural language. The LLM decides which tools to call, executes the OpenAIRE searches, and synthesizes the results into a readable response. Deployed entirely on free Cloudflare infrastructure (Pages + Workers AI).
@@ -228,6 +228,16 @@ Sonification project exploring data inequality patterns through audio. Transform
 *Active · 2025 · PIDs, Research Infrastructure, Python, API Integration*
 
 Development of reproducible workflows for tracking research outputs across persistent identifier systems (ORCID, ROR, Crossref, DataCite, OpenAlex). Built for institutional research information governance.
+
+### [fair-repo-audit](https://rijdho.github.io/fair-repo-audit/)
+*Active · 2026 · FAIR, OAI-PMH, DataCite, Open source*
+
+Open, client-side twin of Repo MetAudits — FAIR metadata scoring for DataCite and OAI-PMH repositories, running entirely in the browser. The published, open-source counterpart of the hosted evaluator.
+
+### [bibliohelpc](https://rijdho.github.io/bibliohelpc/)
+*Active · 2026 · SvelteKit, Citation Verification, Open source*
+
+Open-source companion of BiblioHelp — the reference-verification app and Word add-in, as code and a static build. The published twin of the hosted tool.
 
 
 ## Engagements

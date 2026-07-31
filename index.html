@@ -329,6 +329,10 @@ function initBubbles(){
 /* ellipse radius in a given direction — for proper oval separation */
 function edir(b,dx,dy){const d=Math.hypot(dx,dy)||1,c=dx/d,s=dy/d;
   return (b.rx*b.ry)/Math.sqrt((b.ry*c)**2+(b.rx*s)**2);}
+/* two bubbles are related if either lists the other's id — related pairs touch instead of repelling */
+function related(a,b){return !!(a.a.related&&a.a.related.includes(b.a.id))||!!(b.a.related&&b.a.related.includes(a.a.id));}
+function partnersOf(bb){return (bb.a.related||[]).map(id=>bubbles.find(x=>x.a.id===id)).filter(Boolean)
+  .concat(bubbles.filter(x=>x.a.related&&x.a.related.includes(bb.a.id)));}
 function step(){
   for(const b of bubbles){
     if(b===dragging)continue;
@@ -338,9 +342,17 @@ function step(){
   }
   for(let i=0;i<bubbles.length;i++)for(let j=i+1;j<bubbles.length;j++){
     const a=bubbles[i],b=bubbles[j],dx=b.x-a.x,dy=b.y-a.y;let d=Math.hypot(dx,dy)||.01;
-    const min=edir(a,dx,dy)+edir(b,dx,dy)+8;
-    if(d<min){const p=(min-d)/d*0.5,ox=dx*p,oy=dy*p;
-      if(a!==dragging){a.x-=ox;a.y-=oy;} if(b!==dragging){b.x+=ox;b.y+=oy;}}
+    const ra=edir(a,dx,dy),rb=edir(b,dx,dy);
+    if(related(a,b)){
+      // stiff spring toward just-touching (small overlap) so a related pair reads as one unit
+      // without one bubble hiding behind the other; must beat the shared-topic anchor pull
+      const target=ra+rb-8, f=(d-target)/d*0.30, ox=dx*f, oy=dy*f;
+      if(a!==dragging){a.x+=ox;a.y+=oy;} if(b!==dragging){b.x-=ox;b.y-=oy;}
+    } else {
+      const min=ra+rb+8;
+      if(d<min){const p=(min-d)/d*0.5,ox=dx*p,oy=dy*p;
+        if(a!==dragging){a.x-=ox;a.y-=oy;} if(b!==dragging){b.x+=ox;b.y+=oy;}}
+    }
   }
   for(const b of bubbles){
     if(b===dragging)continue;
@@ -350,6 +362,11 @@ function step(){
 }
 function draw(){
   ctx.clearRect(0,0,W,H);
+  // connector(s) from the focused bubble to its related partner(s)
+  const focus=selected||hover;
+  if(focus){ctx.save();ctx.strokeStyle=cvar("--brand")+"99";ctx.lineWidth=2;ctx.setLineDash([]);
+    partnersOf(focus).forEach(pt=>{ctx.beginPath();ctx.moveTo(focus.x,focus.y);ctx.lineTo(pt.x,pt.y);ctx.stroke();});
+    ctx.restore();}
   for(const b of bubbles){
     const dim=activeTopic&&b.a.topic!==activeTopic;
     const col=cvar(TOPICS[b.a.topic].v);
@@ -357,7 +374,8 @@ function draw(){
     ctx.globalAlpha=dim?0.12:1;
     ctx.beginPath();ctx.ellipse(b.x,b.y,b.rx,b.ry,0,0,7);
     ctx.fillStyle=col+(isSel?"3a":isHov?"30":"22"); ctx.fill();
-    ctx.lineWidth=isSel?2.4:1.6; ctx.strokeStyle=col; ctx.stroke();
+    ctx.lineWidth=isSel?2.4:1.6; ctx.strokeStyle=col;
+    ctx.setLineDash(b.a.platform==="github"?[5,4]:[]); ctx.stroke(); ctx.setLineDash([]);
     if(isSel||isHov){ctx.beginPath();ctx.ellipse(b.x,b.y,b.rx+4,b.ry+4,0,0,7);
       ctx.strokeStyle=cvar("--brand")+"77";ctx.lineWidth=1.5;ctx.stroke();}
     if(!dim){

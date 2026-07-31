@@ -70,6 +70,11 @@ and must be one of `metadata`, `assessment`, `infra`, `story`.
 **A new talk:** add to `presentations` — `{ "type": "…", "title": "…", "event": "…", "date": "…" }`.
 **A new essay/column:** add to `portfolio` — same shape as a tool minus `status`/`tags`/`topic`.
 
+**Linking two related projects in the cloud:** give each an `"id"` and list the other in
+`"related": ["<id>"]` — the two bubbles then attract and touch. Add `"platform": "github"`
+to draw a bubble with a dashed border (a code repo rather than a hosted tool). This is how
+each hosted tool is paired with its open GitHub twin.
+
 Then: commit and push. The live site updates from the JSON immediately; the Action
 regenerates the Markdown CVs. To preview before pushing, run it locally (below).
 
