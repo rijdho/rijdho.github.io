@@ -1047,7 +1047,8 @@
         "en": "Open, client-side twin of Repo MetAudits — FAIR metadata scoring for DataCite and OAI-PMH repositories, running entirely in the browser. The published, open-source counterpart of the hosted evaluator.",
         "es": "Gemelo abierto y del lado del cliente de Repo MetAudits — evaluación FAIR de metadatos para repositorios DataCite y OAI-PMH, ejecutándose enteramente en el navegador. La contraparte publicada y de código abierto del evaluador alojado.",
         "de": ""
-      }
+      },
+      "doi": "10.5281/zenodo.21492530"
     },
     {
       "id": "bibliohelpc",
@@ -1068,6 +1069,45 @@
       "desc": {
         "en": "Open-source companion of BiblioHelp — the reference-verification app and Word add-in, as code and a static build. The published twin of the hosted tool.",
         "es": "Complemento de código abierto de BiblioHelp — la app de verificación de referencias y el add-in de Word, como código y build estático. El gemelo publicado de la herramienta alojada.",
+        "de": ""
+      }
+    },
+    {
+      "id": "coara",
+      "title": "coara-action-planner",
+      "year": "2026",
+      "status": "Active",
+      "url": "https://rijdho.github.io/coara-action-planner/",
+      "doi": "10.5281/zenodo.21492548",
+      "tags": [
+        "CoARA",
+        "Research Assessment",
+        "Open source"
+      ],
+      "topic": "assessment",
+      "platform": "github",
+      "desc": {
+        "en": "Self-assess your institution against the ten CoARA commitments and generate a prioritised, editable action plan — entirely in your browser. The open twin of the Reform Assessment toolkit.",
+        "es": "Autoevalúa tu institución frente a los diez compromisos CoARA y genera un plan de acción priorizado y editable — enteramente en el navegador. El gemelo abierto del toolkit Reform Assessment.",
+        "de": ""
+      }
+    },
+    {
+      "id": "criolab",
+      "title": "criolab",
+      "year": "2026",
+      "status": "Active",
+      "url": "https://rijdho.github.io/criolab/",
+      "tags": [
+        "Simulators",
+        "Interactive",
+        "Open source"
+      ],
+      "topic": "story",
+      "platform": "github",
+      "desc": {
+        "en": "Four interactive simulators that make the open methodological questions of four 2026 manuscripts manipulable — Wahlund effect, glycolytic potential, statistical power, and NPV sensitivity. No build, no dependencies.",
+        "es": "Cuatro simuladores interactivos que hacen manipulables las preguntas metodológicas abiertas de cuatro manuscritos 2026 — efecto Wahlund, potencial glicolítico, potencia estadística y sensibilidad del VAN. Sin build ni dependencias.",
         "de": ""
       }
     }

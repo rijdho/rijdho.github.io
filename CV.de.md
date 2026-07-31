@@ -239,6 +239,16 @@ Open, client-side twin of Repo MetAudits — FAIR metadata scoring for DataCite 
 
 Open-source companion of BiblioHelp — the reference-verification app and Word add-in, as code and a static build. The published twin of the hosted tool.
 
+### [coara-action-planner](https://rijdho.github.io/coara-action-planner/)
+*Active · 2026 · CoARA, Research Assessment, Open source*
+
+Self-assess your institution against the ten CoARA commitments and generate a prioritised, editable action plan — entirely in your browser. The open twin of the Reform Assessment toolkit.
+
+### [criolab](https://rijdho.github.io/criolab/)
+*Active · 2026 · Simulators, Interactive, Open source*
+
+Four interactive simulators that make the open methodological questions of four 2026 manuscripts manipulable — Wahlund effect, glycolytic potential, statistical power, and NPV sensitivity. No build, no dependencies.
+
 
 ## Engagements
 

@@ -115,7 +115,10 @@
   .panel .x{position:absolute;top:10px;right:11px;border:0;background:transparent;color:var(--muted);cursor:pointer;font-size:16px}
   .panel .pk{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;display:inline-flex;align-items:center;gap:6px}
   .panel .pk .sw{width:9px;height:9px;border-radius:50%}
-  .panel h3{font-size:1.02rem;margin:8px 0 6px;letter-spacing:-.01em;line-height:1.2;text-wrap:balance}
+  .panel h3{font-size:1.02rem;margin:8px 0 4px;letter-spacing:-.01em;line-height:1.2;text-wrap:balance}
+  .panel .pdoi{display:inline-block;font-family:var(--mono);font-size:.68rem;color:var(--brand);
+    text-decoration:none;margin:0 0 8px;border:1px solid var(--border);border-radius:6px;padding:2px 7px}
+  .panel .pdoi:hover{border-color:var(--brand)}
   .panel p{margin:0 0 10px;font-size:.85rem;color:var(--muted);line-height:1.5}
   .panel .tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}
   .panel .t{font-family:var(--mono);font-size:.62rem;color:var(--muted);background:var(--surface-alt);border:1px solid var(--hair);padding:2px 7px;border-radius:6px}
@@ -412,6 +415,7 @@ function select(b){selected=b;const t=UI[lang],tp=TOPICS[b.a.topic],col=cvar(tp.
   panel.innerHTML=`<button class="x" aria-label="Close">✕</button>
     <span class="pk" style="color:${col}"><span class="sw" style="background:${col}"></span>${esc(tp[lang])}</span>
     <h3>${esc(e.title)}</h3>
+    ${e.doi?`<a class="pdoi" href="https://doi.org/${esc(e.doi)}" target="_blank" rel="noopener">DOI ${esc(e.doi)}</a>`:""}
     <div class="pscroll"><p>${esc(blurb(e))}</p>
     <div class="tags">${(e.tags||[]).slice(0,6).map(x=>`<span class="t">${esc(x)}</span>`).join("")}</div></div>
     <div class="pf"><span class="src">${e.url?esc(srcLabel(e.url)):""} · ${esc(e.year||"")}</span>

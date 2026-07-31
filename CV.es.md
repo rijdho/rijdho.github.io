@@ -239,6 +239,16 @@ Gemelo abierto y del lado del cliente de Repo MetAudits — evaluación FAIR de 
 
 Complemento de código abierto de BiblioHelp — la app de verificación de referencias y el add-in de Word, como código y build estático. El gemelo publicado de la herramienta alojada.
 
+### [coara-action-planner](https://rijdho.github.io/coara-action-planner/)
+*Active · 2026 · CoARA, Research Assessment, Open source*
+
+Autoevalúa tu institución frente a los diez compromisos CoARA y genera un plan de acción priorizado y editable — enteramente en el navegador. El gemelo abierto del toolkit Reform Assessment.
+
+### [criolab](https://rijdho.github.io/criolab/)
+*Active · 2026 · Simulators, Interactive, Open source*
+
+Cuatro simuladores interactivos que hacen manipulables las preguntas metodológicas abiertas de cuatro manuscritos 2026 — efecto Wahlund, potencial glicolítico, potencia estadística y sensibilidad del VAN. Sin build ni dependencias.
+
 
 ## Participaciones
 

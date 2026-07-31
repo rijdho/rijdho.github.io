@@ -72,8 +72,12 @@ and must be one of `metadata`, `assessment`, `infra`, `story`.
 
 **Linking two related projects in the cloud:** give each an `"id"` and list the other in
 `"related": ["<id>"]` — the two bubbles then attract and touch. Add `"platform": "github"`
-to draw a bubble with a dashed border (a code repo rather than a hosted tool). This is how
-each hosted tool is paired with its open GitHub twin.
+to draw a dashed bubble (an open build published on GitHub Pages, vs. a solid bubble for a
+tool hosted on your own domain). This is how each hosted tool is paired with its open
+GitHub twin.
+
+**A DOI:** add `"doi": "10.5281/zenodo.…"` to any entry and its detail panel shows a DOI
+link under the title.
 
 Then: commit and push. The live site updates from the JSON immediately; the Action
 regenerates the Markdown CVs. To preview before pushing, run it locally (below).
