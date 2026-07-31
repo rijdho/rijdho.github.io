@@ -38,6 +38,41 @@ The two HTML pages `fetch('./data/cv.json')` at load and render from it, so a ch
 `cv.json` is live immediately. `CV.*.md` is a build artifact — the GitHub Action
 regenerates it on every push, and you can also run the build locally.
 
+## Updating — add or change anything in one place
+
+Everything lives in `data/cv.json`. To add something, drop a new object into the right
+array; the hub and CV pick it up on next load, and `build_cv.py` folds it into the Markdown
+CVs. Bilingual text fields are `{ "en": …, "es": …, "de": … }` — `de` is optional and falls
+back to English.
+
+**A new tool (a bubble in the cloud):** add to `experiments`. `topic` sets its colour/cluster
+and must be one of `metadata`, `assessment`, `infra`, `story`.
+
+```json
+{
+  "title": "My New Tool",
+  "year": "2026", "status": "Active",
+  "url": "https://example.rijdho.org/",
+  "tags": ["React", "FAIR"],
+  "topic": "metadata",
+  "desc": { "en": "What it does.", "es": "Qué hace.", "de": "" }
+}
+```
+
+**A new publication:** add to the right group under `publications`
+(`peerReviewed`, `policyPapers`, `guides`, `datasets`, `workingPapers`):
+
+```json
+{ "authors": "Hartley Belmar, R.", "year": "2026", "title": "Paper title",
+  "venue": "Journal", "url": "https://doi.org/…" }
+```
+
+**A new talk:** add to `presentations` — `{ "type": "…", "title": "…", "event": "…", "date": "…" }`.
+**A new essay/column:** add to `portfolio` — same shape as a tool minus `status`/`tags`/`topic`.
+
+Then: commit and push. The live site updates from the JSON immediately; the Action
+regenerates the Markdown CVs. To preview before pushing, run it locally (below).
+
 ## Run locally
 
 ```bash
