@@ -1,0 +1,209 @@
+<title>Ricardo Hartley Belmar — Curriculum Vitae</title>
+<style>
+@font-face{font-family:"Inter Variable";font-style:normal;font-display:swap;font-weight:100 900;
+  src:url(./fonts/inter-latin-wght-normal.woff2) format("woff2-variations");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter Variable";font-style:normal;font-display:swap;font-weight:100 900;
+  src:url(./fonts/inter-latin-ext-wght-normal.woff2) format("woff2-variations");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+
+  :root{
+    --brand:#6d4aff; --paper:#faf9fc; --surface:#fff; --ink:#1a1726; --soft:#4a4560; --muted:#6c6683;
+    --faint:#9a94ad; --border:#e6e2f1; --hair:#ece9f4;
+    --sans:"Inter Variable",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --brand:#8b7bff; --paper:#0e0d15; --surface:#16141f; --ink:#ece9f5; --soft:#c3bed3; --muted:#9a94ad; --faint:#6f6987;
+    --border:#2a2740; --hair:#221f33;
+  }}
+  :root[data-theme="light"]{--brand:#6d4aff;--paper:#faf9fc;--surface:#fff;--ink:#1a1726;--soft:#4a4560;--muted:#6c6683;--faint:#9a94ad;--border:#e6e2f1;--hair:#ece9f4}
+  :root[data-theme="dark"]{--brand:#8b7bff;--paper:#0e0d15;--surface:#16141f;--ink:#ece9f5;--soft:#c3bed3;--muted:#9a94ad;--faint:#6f6987;--border:#2a2740;--hair:#221f33}
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5;font-size:15px;-webkit-font-smoothing:antialiased}
+  a{color:var(--brand);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  .controls{position:sticky;top:0;z-index:10;backdrop-filter:blur(8px);
+    background:color-mix(in srgb,var(--paper) 84%,transparent);border-bottom:1px solid var(--hair)}
+  .controls .in{max-width:820px;margin:0 auto;padding:10px 40px;display:flex;align-items:center;gap:12px}
+  .back{font-family:var(--mono);font-size:.76rem}
+  .spacer{flex:1}
+  .seg{display:inline-flex;border:1px solid var(--border);border-radius:9px;overflow:hidden;background:var(--surface)}
+  .seg button{appearance:none;border:0;background:transparent;color:var(--muted);font-family:var(--mono);font-size:.72rem;padding:6px 10px;cursor:pointer}
+  .seg button[aria-pressed="true"]{background:var(--brand);color:#fff}
+  .btn{appearance:none;font-family:var(--mono);font-size:.72rem;border:1px solid var(--border);background:var(--surface);
+    color:var(--ink);padding:6px 12px;border-radius:9px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+  .btn:hover{border-color:var(--brand);color:var(--brand)}
+  button:focus-visible,a:focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:6px}
+
+  main{max-width:820px;margin:0 auto;padding:34px 40px 80px}
+  header.cv h1{font-size:2.1rem;margin:0;letter-spacing:-.02em;font-weight:700;text-wrap:balance}
+  .degrees{font-family:var(--mono);font-size:.8rem;color:var(--brand);letter-spacing:.06em;margin:5px 0 0}
+  .tagline{font-size:1.08rem;color:var(--soft);margin:10px 0 0;max-width:60ch;font-weight:500}
+  .contact{font-family:var(--mono);font-size:.78rem;color:var(--muted);margin:12px 0 0;display:flex;flex-wrap:wrap;gap:4px 14px}
+  .summary{margin:16px 0 0;color:var(--soft);max-width:66ch}
+
+  section{margin-top:30px}
+  h2{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);
+    font-weight:700;margin:0 0 12px;padding-bottom:6px;border-bottom:1.5px solid var(--border);display:flex;align-items:baseline;justify-content:space-between}
+  h2 .c{color:var(--faint);font-size:.86em;font-weight:400}
+  .entry{margin:0 0 15px;break-inside:avoid}
+  .entry .top{display:flex;justify-content:space-between;gap:14px;align-items:baseline}
+  .entry .ti{font-weight:640;font-size:.98rem;letter-spacing:-.01em}
+  .entry .org{color:var(--soft);font-weight:500}
+  .entry .when{font-family:var(--mono);font-size:.76rem;color:var(--muted);white-space:nowrap;flex:none;font-variant-numeric:tabular-nums}
+  .entry .loc{font-family:var(--mono);font-size:.74rem;color:var(--faint)}
+  .entry p{margin:5px 0 0;color:var(--soft);font-size:.9rem}
+  .edu{display:flex;justify-content:space-between;gap:14px;padding:6px 0;border-bottom:1px solid var(--hair)}
+  .edu:last-child{border-bottom:0}
+  .edu .d{font-weight:600}.edu .i{color:var(--soft)}
+  .skill{display:flex;gap:10px;padding:5px 0}
+  .skill .k{font-family:var(--mono);font-size:.74rem;color:var(--brand);min-width:210px;flex:none;text-transform:uppercase;letter-spacing:.04em}
+  .skill .v{color:var(--soft);font-size:.9rem}
+  .subh{font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);font-weight:700;margin:14px 0 6px}
+  ol.pubs{margin:0;padding-left:1.4em}
+  ol.pubs li{margin:0 0 7px;font-size:.88rem;color:var(--soft);break-inside:avoid}
+  ol.pubs li b{color:var(--ink);font-weight:600}
+  ul.plain{list-style:none;margin:0;padding:0}
+  ul.plain li{padding:7px 0;border-bottom:1px solid var(--hair);font-size:.89rem;color:var(--soft);break-inside:avoid}
+  ul.plain li:last-child{border-bottom:0}
+  ul.plain li b{color:var(--ink);font-weight:600}
+  .tag{font-family:var(--mono);font-size:.66rem;color:var(--muted)}
+
+  .note{font-family:var(--mono);font-size:.72rem;color:var(--faint);margin:6px 0 0;display:none}
+  .note.on{display:block}
+
+  @media (max-width:640px){.controls .in,main{padding-left:20px;padding-right:20px}.skill{flex-direction:column;gap:2px}.skill .k{min-width:0}}
+  @media print{
+    .controls{display:none}
+    body{background:#fff;color:#000;font-size:10.5pt}
+    :root{--paper:#fff;--surface:#fff;--ink:#000;--soft:#222;--muted:#444;--faint:#666;--brand:#3a2fbf;--border:#bbb;--hair:#ddd}
+    main{max-width:none;padding:0}
+    a{color:#000}
+    section{margin-top:16pt}
+    h1{font-size:20pt}
+  }
+</style>
+
+<div class="controls"><div class="in">
+  <a class="back" href="./" data-t="back"></a>
+  <span class="spacer"></span>
+  <button class="btn" id="print" data-t="print"></button>
+  <div class="seg" role="group" aria-label="Language">
+    <button data-lang="en" aria-pressed="true">EN</button>
+    <button data-lang="de" aria-pressed="false">DE</button>
+    <button data-lang="es" aria-pressed="false">ES</button>
+  </div>
+</div></div>
+
+<main>
+  <header class="cv">
+    <h1>Ricardo Hartley Belmar</h1>
+    <div class="degrees" id="degrees"></div>
+    <p class="tagline" id="tagline"></p>
+    <div class="contact" id="contact"></div>
+    <p class="summary" id="summary"></p>
+    <div class="note" id="delang"></div>
+  </header>
+  <div id="body"></div>
+</main>
+
+<script>
+let CV;
+const UI = {
+  en:{back:"← Interactive hub", print:"⤓ Print / PDF",
+    experience:"Experience", education:"Education", publications:"Publications",
+    presentations:"Talks & presentations", skills:"Skills", engagements:"Engagements",
+    training:"Training", portfolio:"Writing", experiments:"Tools & experiments"},
+  de:{back:"← Interaktiver Hub", print:"⤓ Drucken / PDF",
+    experience:"Berufserfahrung", education:"Ausbildung", publications:"Publikationen",
+    presentations:"Vorträge & Präsentationen", skills:"Kompetenzen", engagements:"Engagements",
+    training:"Weiterbildung", portfolio:"Publizistik", experiments:"Werkzeuge & Experimente"},
+  es:{back:"← Hub interactivo", print:"⤓ Imprimir / PDF",
+    experience:"Experiencia", education:"Formación", publications:"Publicaciones",
+    presentations:"Charlas y presentaciones", skills:"Competencias", engagements:"Participaciones",
+    training:"Formación continua", portfolio:"Escritos", experiments:"Herramientas y experimentos"},
+};
+const PUBGRP={peerReviewed:{en:"Peer-reviewed",de:"Begutachtet",es:"Revisadas por pares"},
+  policyPapers:{en:"Policy papers",de:"Policy Papers",es:"Documentos de política"},
+  guides:{en:"Guides",de:"Leitfäden",es:"Guías"},datasets:{en:"Datasets",de:"Datensätze",es:"Conjuntos de datos"},
+  workingPapers:{en:"Working papers",de:"Working Papers",es:"Documentos de trabajo"}};
+const DE_NOTE={en:"",de:"Beschreibungstexte greifen auf Englisch zurück — deutsche Inhaltsdaten stehen noch aus.",es:""};
+
+let lang="en";
+const esc=s=>(s||"").replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const t=o=>(o&&(o[lang]||o.en))||"";
+const yr=s=>{const m=(s||"").match(/\d{4}/);return m?m[0]:(s||"");};
+
+function render(){
+  const U=UI[lang]; const p=CV.personal;
+  document.documentElement.lang=lang;
+  document.querySelectorAll("[data-t]").forEach(el=>{const k=el.dataset.t;if(U[k])el.textContent=U[k];});
+  document.getElementById("degrees").textContent=(p.degrees||[]).join(" · ");
+  document.getElementById("tagline").textContent=t(p.tagline);
+  document.getElementById("summary").textContent=t(p.summary);
+  const c=[];
+  if(p.email)c.push(`<a href="mailto:${esc(p.email)}">${esc(p.email)}</a>`);
+  if(p.orcid)c.push(`<a href="https://orcid.org/${esc(p.orcid)}">ORCID ${esc(p.orcid)}</a>`);
+  if(p.substack)c.push(`<a href="${esc(p.substack)}">Substack</a>`);
+  document.getElementById("contact").innerHTML=c.join('<span style="color:var(--faint)">·</span>');
+  const dn=document.getElementById("delang");dn.textContent=DE_NOTE[lang];dn.classList.toggle("on",lang==="de");
+
+  const H=[];
+  const sec=(key,inner,count)=>H.push(`<section><h2>${esc(UI[lang][key])}${count?`<span class="c">${count}</span>`:""}</h2>${inner}</section>`);
+
+  // Experience
+  sec("experience", CV.experience.map(e=>`<div class="entry">
+    <div class="top"><span class="ti">${esc(e.title)} — <span class="org">${esc(e.org)}</span></span>
+      <span class="when">${esc(e.period)}</span></div>
+    ${e.loc?`<div class="loc">${esc(e.loc)}</div>`:""}
+    ${t(e.desc)?`<p>${esc(t(e.desc))}</p>`:""}</div>`).join(""));
+
+  // Education
+  sec("education", CV.education.map(e=>`<div class="edu">
+    <span><span class="d">${esc(e.degree)}</span> — <span class="i">${esc(e.inst)}</span></span>
+    <span class="when">${esc(e.year)}</span></div>`).join(""));
+
+  // Publications
+  const groups=["peerReviewed","policyPapers","guides","datasets","workingPapers"];
+  let pubHTML="", pubN=0;
+  groups.forEach(g=>{const items=CV.publications[g]||[];if(!items.length)return;pubN+=items.length;
+    pubHTML+=`<div class="subh">${esc(PUBGRP[g][lang])}</div><ol class="pubs">`+
+      items.map(it=>{const ti=it.url?`<a href="${esc(it.url)}">${esc(it.title)}</a>`:esc(it.title);
+        return `<li>${esc(it.authors)} (${esc(it.year)}). ${ti}.${it.venue?` <b>${esc(it.venue)}</b>.`:""}</li>`;}).join("")+`</ol>`;});
+  sec("publications", pubHTML, pubN);
+
+  // Presentations
+  sec("presentations", `<ul class="plain">`+CV.presentations.map(t2=>`
+    <li><b>${esc(t2.title)}</b> — ${esc(t2.event)}${t2.date?` <span class="tag">(${esc(t2.date)})</span>`:""}</li>`).join("")+`</ul>`, CV.presentations.length);
+
+  // Skills
+  sec("skills", CV.skills.map(s=>`<div class="skill"><span class="k">${esc(t(s.title))}</span>
+    <span class="v">${esc((s.items||[]).join(", "))}</span></div>`).join(""));
+
+  // Writing (portfolio)
+  sec("portfolio", `<ul class="plain">`+CV.portfolio.map(e=>{const ti=e.url?`<a href="${esc(e.url)}">${esc(e.title)}</a>`:esc(e.title);
+    return `<li><b>${ti}</b> <span class="tag">${esc(e.year)}${e.type?" · "+esc(e.type):""}</span><br>${esc(t(e.desc))}</li>`;}).join("")+`</ul>`, CV.portfolio.length);
+
+  // Tools (experiments)
+  sec("experiments", CV.experiments.map(e=>{const ti=e.url?`<a href="${esc(e.url)}">${esc(e.title)}</a>`:esc(e.title);
+    return `<div class="entry"><div class="top"><span class="ti">${ti}</span>
+      <span class="when">${esc(e.status)} · ${esc(e.year)}</span></div>
+      ${t(e.desc)?`<p>${esc(t(e.desc))}</p>`:""}
+      ${(e.tags||[]).length?`<div class="tag">${esc((e.tags||[]).slice(0,6).join(" · "))}</div>`:""}</div>`;}).join(""), CV.experiments.length);
+
+  // Engagements + Training
+  sec("engagements", `<ul class="plain">`+CV.engagements.map(e=>`
+    <li><b>${esc(e.role)}</b>, ${esc(e.org)} — ${esc(t(e.focus))}</li>`).join("")+`</ul>`);
+  sec("training", `<ul class="plain">`+CV.training.map(e=>`
+    <li><b>${esc(e.title)}</b> <span class="tag">${esc(e.year)}</span>${e.org?` · ${esc(e.org)}`:""}<br>${esc(t(e.desc))}</li>`).join("")+`</ul>`);
+
+  document.getElementById("body").innerHTML=H.join("");
+}
+document.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{lang=b.dataset.lang;
+  document.querySelectorAll(".seg button").forEach(x=>x.setAttribute("aria-pressed",x===b));render();});
+document.getElementById("print").onclick=()=>window.print();
+(async()=>{ CV=await (await fetch("./data/cv.json")).json(); render(); })();
+</script>

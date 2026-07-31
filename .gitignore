@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.DS_Store
+.wrangler/
+*.log
+
+# Claude Code session state — local-only, never committed
+.claude/
+
+# local dev helpers
+serve_utf8.py
+__pycache__/
