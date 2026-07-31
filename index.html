@@ -323,11 +323,12 @@ function layout(){
 }
 const LBLFONT=b=>"600 11px "+cvar("--mono").split(",")[0].replace(/["']/g,"").trim();
 function initBubbles(){
-  ctx.font="600 11px ui-monospace,monospace";
   bubbles=DATA.apps.map((a)=>{const an=anchors[a.topic]||[W/2,H/2];
-    const short=shortOf(a.title);
-    const rx=Math.max(46,ctx.measureText(short).width/2+18); const ry=25;
-    return {a,short,rx,ry,x:an[0]+(Math.random()-.5)*70,y:an[1]+(Math.random()-.5)*50,vx:0,vy:0};});
+    const short=shortOf(a.title); const doi=a.doi||"";
+    ctx.font="600 11px ui-monospace,monospace"; const wName=ctx.measureText(short).width;
+    ctx.font="600 9px ui-monospace,monospace"; const wDoi=doi?ctx.measureText(doi).width:0;
+    const rx=Math.max(46,Math.max(wName,wDoi)/2+16); const ry=doi?31:25;
+    return {a,short,doi,rx,ry,x:an[0]+(Math.random()-.5)*70,y:an[1]+(Math.random()-.5)*50,vx:0,vy:0};});
 }
 /* ellipse radius in a given direction — for proper oval separation */
 function edir(b,dx,dy){const d=Math.hypot(dx,dy)||1,c=dx/d,s=dy/d;
@@ -382,9 +383,14 @@ function draw(){
     if(isSel||isHov){ctx.beginPath();ctx.ellipse(b.x,b.y,b.rx+4,b.ry+4,0,0,7);
       ctx.strokeStyle=cvar("--brand")+"77";ctx.lineWidth=1.5;ctx.stroke();}
     if(!dim){
-      ctx.fillStyle=cvar("--ink");ctx.font=LBLFONT(b);
+      const fam=cvar("--mono").split(",")[0].replace(/["']/g,"").trim();
       ctx.textAlign="center";ctx.textBaseline="middle";
-      ctx.fillText(b.short,b.x,b.y);
+      if(b.doi){
+        ctx.fillStyle=cvar("--ink");ctx.font="600 11px "+fam;ctx.fillText(b.short,b.x,b.y-8);
+        ctx.fillStyle=cvar("--brand");ctx.font="600 9px "+fam;ctx.fillText(b.doi,b.x,b.y+8);
+      } else {
+        ctx.fillStyle=cvar("--ink");ctx.font="600 11px "+fam;ctx.fillText(b.short,b.x,b.y);
+      }
     }
     ctx.globalAlpha=1;
   }
