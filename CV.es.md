@@ -57,7 +57,7 @@ Coordiné esfuerzos de gestión de investigación, apoyé procesos de acreditaci
 
 ## Formación
 
-- **PhD in Applied Cellular and Molecular Biology**, Universidad de La Frontera, Chile (2017)
+- **Dr. in Applied Cellular and Molecular Biology**, Universidad de La Frontera, Chile (2017)
 - **Master in Biological Sciences**, Universidad de Tarapacá, Chile (2013)
 - **Master in Applied Cellular and Molecular Biology**, Universidad de La Frontera, Chile (2013)
 - **Diploma in Scientific Research and Open Knowledge Generation**, Universidad del Desarrollo, Chile (2022)
