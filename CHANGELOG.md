@@ -18,6 +18,11 @@ ships in numbered drops.
   year apart, and the entry carried the name of one with the year of the other. They are now
   two entries: *Licenciado en Tecnología Médica* (2006) and *Título Profesional de Tecnólogo
   Médico* (2007).
+- Both pages declare `<!doctype html>`. Without it they rendered in quirks mode, where the
+  browser emulates 1990s bugs — a latent trap for any future CSS change rather than a visible
+  fault. Measured before applying: the hub is pixel-identical, the CV page grows 11px over a
+  9,940px document (two list sections, 5px each), the printed PDF keeps its page count, and
+  the three README screenshots regenerate byte-identical.
 
 ## [1.1.0] — 2026-08-03
 
