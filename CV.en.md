@@ -59,10 +59,10 @@ Coordinated research management efforts, supported data-driven accreditation pro
 
 - **Dr. in Applied Cellular and Molecular Biology**, Universidad de La Frontera, Chile (2017)
 - **Master in Biological Sciences**, Universidad de Tarapacá, Chile (2013)
-- **Master in Applied Cellular and Molecular Biology**, Universidad de La Frontera, Chile (2013)
+- **Master in Sciences**, Universidad de La Frontera, Chile (2013)
 - **Diploma in Scientific Research and Open Knowledge Generation**, Universidad del Desarrollo, Chile (2022)
-- **Diploma in Data Science and Engineering**, Universidad de Chile (2018)
-- **Lic Medical Technologist**, Universidad de Chile (2007)
+- **Postgraduate Diploma in Data Science and Engineering**, Universidad de Chile (2018)
+- **Licentiate in Medical Technology**, Universidad de Chile (2007)
 
 ## Skills
 

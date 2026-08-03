@@ -133,7 +133,7 @@ const PUBGRP={peerReviewed:{en:"Peer-reviewed",de:"Begutachtet",es:"Revisadas po
 
 let lang="en";
 const esc=s=>(s||"").replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
-const t=o=>(o&&(o[lang]||o.en))||"";
+const t=o=>typeof o==="string"?o:((o&&(o[lang]||o.en))||"");
 const yr=s=>{const m=(s||"").match(/\d{4}/);return m?m[0]:(s||"");};
 
 function render(){
@@ -161,7 +161,7 @@ function render(){
 
   // Education
   sec("education", CV.education.map(e=>`<div class="edu">
-    <span><span class="d">${esc(e.degree)}</span> — <span class="i">${esc(e.inst)}</span></span>
+    <span><span class="d">${esc(t(e.degree))}</span> — <span class="i">${esc(e.inst)}</span></span>
     <span class="when">${esc(e.year)}</span></div>`).join(""));
 
   // Publications

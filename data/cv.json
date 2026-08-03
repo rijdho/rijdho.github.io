@@ -210,32 +210,56 @@
   ],
   "education": [
     {
-      "degree": "Dr. in Applied Cellular and Molecular Biology",
+      "degree": {
+        "en": "Dr. in Applied Cellular and Molecular Biology",
+        "es": "Doctorado en Biología Celular y Molecular Aplicada",
+        "de": "Dr. der angewandten Zell- und Molekularbiologie"
+      },
       "inst": "Universidad de La Frontera, Chile",
       "year": "2017"
     },
     {
-      "degree": "Master in Biological Sciences",
+      "degree": {
+        "en": "Master in Biological Sciences",
+        "es": "Magíster en Ciencias Biológicas",
+        "de": "Master in Biowissenschaften"
+      },
       "inst": "Universidad de Tarapacá, Chile",
       "year": "2013"
     },
     {
-      "degree": "Master in Applied Cellular and Molecular Biology",
+      "degree": {
+        "en": "Master in Sciences",
+        "es": "Magíster en Ciencias",
+        "de": "Master in Naturwissenschaften"
+      },
       "inst": "Universidad de La Frontera, Chile",
       "year": "2013"
     },
     {
-      "degree": "Diploma in Scientific Research and Open Knowledge Generation",
+      "degree": {
+        "en": "Diploma in Scientific Research and Open Knowledge Generation",
+        "es": "Diplomado en Investigación Científica y Generación de Conocimiento Abierto",
+        "de": "Diplom in wissenschaftlicher Forschung und Generierung offenen Wissens"
+      },
       "inst": "Universidad del Desarrollo, Chile",
       "year": "2022"
     },
     {
-      "degree": "Diploma in Data Science and Engineering",
+      "degree": {
+        "en": "Postgraduate Diploma in Data Science and Engineering",
+        "es": "Diploma de Postítulo en Ciencia e Ingeniería de Datos",
+        "de": "Postgraduales Diplom in Datenwissenschaft und Dateningenieurwesen"
+      },
       "inst": "Universidad de Chile",
       "year": "2018"
     },
     {
-      "degree": "Lic Medical Technologist",
+      "degree": {
+        "en": "Licentiate in Medical Technology",
+        "es": "Licenciado en Tecnología Médica",
+        "de": "Lizenziat in Medizinischer Technologie"
+      },
       "inst": "Universidad de Chile",
       "year": "2007"
     }

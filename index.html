@@ -456,7 +456,9 @@ function renderList(){const lw=document.getElementById("listwrap");
       <span class="ly">${esc(e.year||"")}</span></a>`;}).join("");}
 
 /* ---------- tabbed second section ---------- */
-const deLbl=o=>(o&&(o[lang]||o.en))||"";
+/* accepts either a {en,de,es} object or a bare string, so a field that has not been
+   translated yet renders its text instead of silently disappearing */
+const deLbl=o=>typeof o==="string"?o:((o&&(o[lang]||o.en))||"");
 function pcount(k){if(k==="writing")return DATA.writing.length;
   if(k==="publications")return Object.values(EXTRA.publications).reduce((s,a)=>s+a.length,0);
   return (EXTRA[k]||[]).length;}
@@ -493,7 +495,7 @@ function rowsExp(){return EXTRA.experience.map(e=>`
     <div class="pmeta"><b>${esc(e.period||"")}</b>${e.loc?' · '+esc(e.loc):''}<br>${esc(deLbl(e.desc))}</div></span></div>`).join("");}
 function rowsEdu(){return EXTRA.education.map(e=>`
   <div class="prow"><span class="pyear">${esc(e.year||"")}</span>
-    <span class="pmain"><div class="ptitle">${esc(e.degree)}</div>
+    <span class="pmain"><div class="ptitle">${esc(deLbl(e.degree))}</div>
     <div class="pmeta">${esc(e.inst)}</div></span></div>`).join("");}
 function rowsEng(){return EXTRA.engagements.map(e=>`
   <div class="prow"><span class="pyear">—</span>

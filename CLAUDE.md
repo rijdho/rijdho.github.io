@@ -27,7 +27,10 @@ items, and every long description in `experience`, `training`, `engagements`, `p
 and `experiments`. The German fallback note that used to sit under the cloud is gone; if you
 add an entry, fill all three keys rather than reintroducing it. `skills[].items` are `{en,
 de, es}` objects, not plain strings — that was the last place English leaked into the ES/DE
-views. Job titles, degree names, publication titles and talk titles stay in their original
+views. `education[].degree` is trilingual too, and its Spanish is the wording the author
+deposited in **ORCID** (`pub.orcid.org/v3.0/0000-0001-5058-9309/educations` and
+`/qualifications`), not a translation invented here — check that record before editing a
+degree name. Job titles, publication titles and talk titles do stay in their original
 language on purpose.
 
 ## Links in the CV lists: the title, and a chip that tells the truth

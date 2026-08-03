@@ -57,12 +57,12 @@ Koordination des Forschungsmanagements, Unterstützung datengestützter Akkredit
 
 ## Ausbildung
 
-- **Dr. in Applied Cellular and Molecular Biology**, Universidad de La Frontera, Chile (2017)
-- **Master in Biological Sciences**, Universidad de Tarapacá, Chile (2013)
-- **Master in Applied Cellular and Molecular Biology**, Universidad de La Frontera, Chile (2013)
-- **Diploma in Scientific Research and Open Knowledge Generation**, Universidad del Desarrollo, Chile (2022)
-- **Diploma in Data Science and Engineering**, Universidad de Chile (2018)
-- **Lic Medical Technologist**, Universidad de Chile (2007)
+- **Dr. der angewandten Zell- und Molekularbiologie**, Universidad de La Frontera, Chile (2017)
+- **Master in Biowissenschaften**, Universidad de Tarapacá, Chile (2013)
+- **Master in Naturwissenschaften**, Universidad de La Frontera, Chile (2013)
+- **Diplom in wissenschaftlicher Forschung und Generierung offenen Wissens**, Universidad del Desarrollo, Chile (2022)
+- **Postgraduales Diplom in Datenwissenschaft und Dateningenieurwesen**, Universidad de Chile (2018)
+- **Lizenziat in Medizinischer Technologie**, Universidad de Chile (2007)
 
 ## Kompetenzen
 

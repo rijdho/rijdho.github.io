@@ -52,7 +52,7 @@ def build(lang):
         w("")
     sec("education")
     for e in CV["education"]:
-        w(f"- **{e['degree']}**, {e['inst']}" + (f" ({e['year']})" if e.get('year') else ""))
+        w(f"- **{tr(e['degree'])}**, {e['inst']}" + (f" ({e['year']})" if e.get('year') else ""))
     sec("skills")
     for s in CV["skills"]:
         w(f"- **{tr(s['title'])}:** {', '.join(tr(i) for i in s['items'])}")
