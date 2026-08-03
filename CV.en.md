@@ -62,7 +62,8 @@ Coordinated research management efforts, supported data-driven accreditation pro
 - **Master in Sciences**, Universidad de La Frontera, Chile (2013)
 - **Diploma in Scientific Research and Open Knowledge Generation**, Universidad del Desarrollo, Chile (2022)
 - **Postgraduate Diploma in Data Science and Engineering**, Universidad de Chile (2018)
-- **Licentiate in Medical Technology**, Universidad de Chile (2007)
+- **Licentiate in Medical Technology**, Universidad de Chile (2006)
+- **Professional Title of Medical Technologist**, Universidad de Chile (2007)
 
 ## Skills
 

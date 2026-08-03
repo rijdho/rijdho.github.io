@@ -62,7 +62,8 @@ Coordiné esfuerzos de gestión de investigación, apoyé procesos de acreditaci
 - **Magíster en Ciencias**, Universidad de La Frontera, Chile (2013)
 - **Diplomado en Investigación Científica y Generación de Conocimiento Abierto**, Universidad del Desarrollo, Chile (2022)
 - **Diploma de Postítulo en Ciencia e Ingeniería de Datos**, Universidad de Chile (2018)
-- **Licenciado en Tecnología Médica**, Universidad de Chile (2007)
+- **Licenciado en Tecnología Médica**, Universidad de Chile (2006)
+- **Título Profesional de Tecnólogo Médico**, Universidad de Chile (2007)
 
 ## Competencias
 

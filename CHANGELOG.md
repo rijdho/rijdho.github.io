@@ -12,7 +12,12 @@ ships in numbered drops.
 
 ## [Unreleased]
 
-Nothing yet.
+### Fixed
+
+- The Licenciatura and the Título Profesional are two separate Chilean credentials awarded a
+  year apart, and the entry carried the name of one with the year of the other. They are now
+  two entries: *Licenciado en Tecnología Médica* (2006) and *Título Profesional de Tecnólogo
+  Médico* (2007).
 
 ## [1.1.0] — 2026-08-03
 

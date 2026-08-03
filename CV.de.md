@@ -62,7 +62,8 @@ Koordination des Forschungsmanagements, Unterstützung datengestützter Akkredit
 - **Master in Naturwissenschaften**, Universidad de La Frontera, Chile (2013)
 - **Diplom in wissenschaftlicher Forschung und Generierung offenen Wissens**, Universidad del Desarrollo, Chile (2022)
 - **Postgraduales Diplom in Datenwissenschaft und Dateningenieurwesen**, Universidad de Chile (2018)
-- **Lizenziat in Medizinischer Technologie**, Universidad de Chile (2007)
+- **Lizenziat in Medizinischer Technologie**, Universidad de Chile (2006)
+- **Berufstitel Medizinischer Technologe**, Universidad de Chile (2007)
 
 ## Kompetenzen
 
