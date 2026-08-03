@@ -66,6 +66,22 @@ folder uploads verbatim. The build step regenerates `CV.*.md` so the deployed co
 always current even if a commit forgot to. A single static `index.html` at the root needs
 no `404.html` SPA shell.
 
+## Versioning and screenshots
+
+`CHANGELOG.md` is Keep a Changelog + SemVer, with `v1.0.0` at the initial public site
+(2026-07-31) and a version cut whenever the content or the shape of `cv.json` changes enough
+to name. This site deploys continuously, so a version is a readable marker in the history,
+not something anyone installs — that reasoning is written into the changelog's preamble so
+the next person does not have to reconstruct it. Tag the commit (`git tag -a vX.Y.Z`) so the
+compare links at the bottom of the file resolve; there is no Zenodo integration here, so no
+GitHub Release is required and no `CITATION.cff` belongs in this repo.
+
+README images come from `docs/screenshots.mjs`, which drives the real pages — never a
+hand-cropped grab, which cannot be regenerated and ages into a lie. It seeds `Math.random`
+and emulates `prefers-reduced-motion` so the cloud's physics settle identically each run;
+without that, every regeneration reshuffles 17 ovals and the diff is noise. Puppeteer is a
+tooling-only dependency and the site keeps no `package.json`.
+
 ## Before going/staying public — the leak sweep
 
 This is a user-site: **public by nature**, no private phase. Run the sweep (working tree
