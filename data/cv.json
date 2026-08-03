@@ -1,13 +1,14 @@
 {
   "meta": {
-    "updated": "2026-07-31",
+    "updated": "2026-08-03",
     "source": "single canonical CV data — hub, CV page and CV.md all read this"
   },
   "personal": {
     "name": "Ricardo Hartley Belmar",
     "degrees": [
       "MSc",
-      "PhD"
+      "MSc",
+      "Dr."
     ],
     "tagline": {
       "en": "Open science & research information governance / PID traceability / Responsible research assessment",
@@ -21,43 +22,80 @@
     },
     "email": "ricdho@duck.com",
     "orcid": "0000-0001-5058-9309",
-    "substack": "https://rijdho.substack.com"
+    "substack": "https://rijdho.substack.com",
+    "emailIsAlias": true
   },
   "skills": [
     {
       "title": {
         "en": "Research Infrastructure & Metadata Systems",
         "es": "Infraestructura de Investigación y Sistemas de Metadatos",
-        "de": "Forschungsinfrastruktur"
+        "de": "Forschungsinfrastruktur & Metadatensysteme"
       },
       "items": [
-        "ORCID, ROR, Crossref, DataCite, OpenAlex",
-        "Metadata standards (Dublin Core, DataCite Metadata Schema, Schema.org)"
+        {
+          "en": "ORCID, ROR, Crossref, DataCite, OpenAlex",
+          "es": "ORCID, ROR, Crossref, DataCite, OpenAlex",
+          "de": "ORCID, ROR, Crossref, DataCite, OpenAlex"
+        },
+        {
+          "en": "Metadata standards (Dublin Core, DataCite Metadata Schema, Schema.org)",
+          "es": "Estándares de metadatos (Dublin Core, DataCite Metadata Schema, Schema.org)",
+          "de": "Metadatenstandards (Dublin Core, DataCite Metadata Schema, Schema.org)"
+        }
       ]
     },
     {
       "title": {
         "en": "Data Analysis & Visualization",
         "es": "Análisis de Datos y Visualización",
-        "de": "Datenanalyse"
+        "de": "Datenanalyse & Visualisierung"
       },
       "items": [
-        "R, Python, JavaScript",
-        "D3.js, Observable",
-        "API integration and data pipelines"
+        {
+          "en": "R, Python, JavaScript",
+          "es": "R, Python, JavaScript",
+          "de": "R, Python, JavaScript"
+        },
+        {
+          "en": "D3.js, Observable",
+          "es": "D3.js, Observable",
+          "de": "D3.js, Observable"
+        },
+        {
+          "en": "API integration and data pipelines",
+          "es": "Integración de APIs y pipelines de datos",
+          "de": "API-Integration und Datenpipelines"
+        }
       ]
     },
     {
       "title": {
         "en": "Data Management & FAIR Principles",
         "es": "Gestión de Datos y Principios FAIR",
-        "de": "Datenmanagement"
+        "de": "Datenmanagement & FAIR-Prinzipien"
       },
       "items": [
-        "Data Management Plans (DMPs)",
-        "FAIR data principles implementation",
-        "Repository management",
-        "Research data governance"
+        {
+          "en": "Data Management Plans (DMPs)",
+          "es": "Planes de Gestión de Datos (DMP)",
+          "de": "Datenmanagementpläne (DMPs)"
+        },
+        {
+          "en": "FAIR data principles implementation",
+          "es": "Implementación de principios FAIR",
+          "de": "Umsetzung der FAIR-Prinzipien"
+        },
+        {
+          "en": "Repository management",
+          "es": "Gestión de repositorios",
+          "de": "Repositorien-Management"
+        },
+        {
+          "en": "Research data governance",
+          "es": "Gobernanza de datos de investigación",
+          "de": "Governance von Forschungsdaten"
+        }
       ]
     },
     {
@@ -67,8 +105,16 @@
         "de": "Sprachen"
       },
       "items": [
-        "Spanish: Native",
-        "English: Fluent (Professional working proficiency)"
+        {
+          "en": "Spanish: Native",
+          "es": "Español: nativo",
+          "de": "Spanisch: Muttersprache"
+        },
+        {
+          "en": "English: Technical",
+          "es": "Inglés: técnico",
+          "de": "Englisch: Fachenglisch"
+        }
       ]
     }
   ],
@@ -80,7 +126,8 @@
       "period": "May 2026 – Present",
       "desc": {
         "en": "Design, implement, and maintain a university-wide Open Science concept aligned with institutional stakeholders and international standards and frameworks. Carry out hands-on technical work to develop, deploy, and operate Open Science tools and platforms, working closely with internal data owners, researchers, and lecturers to embed open practices, policies, and processes into workflows. Collaborate with external non-profit and corporate partners and represent IT:U in national and international Open Science initiatives, forums, and networks, while contributing to grant writing, ideation, and mentorship across academic projects.",
-        "es": "Diseño, implementación y mantenimiento de un concepto de Ciencia Abierta a nivel universitario, alineado con los actores institucionales y con estándares y marcos internacionales. Realizo trabajo técnico hands-on para desarrollar, desplegar y operar herramientas y plataformas de Ciencia Abierta, en estrecha colaboración con responsables de datos, investigadores y docentes para integrar prácticas, políticas y procesos abiertos en los flujos de trabajo. Coopero con socios externos sin fines de lucro y corporativos, y represento a IT:U en iniciativas, foros y redes de Ciencia Abierta nacionales e internacionales, contribuyendo además a la postulación a fondos, la generación de ideas y la mentoría en proyectos académicos."
+        "es": "Diseño, implementación y mantenimiento de un concepto de Ciencia Abierta a nivel universitario, alineado con los actores institucionales y con estándares y marcos internacionales. Realizo trabajo técnico hands-on para desarrollar, desplegar y operar herramientas y plataformas de Ciencia Abierta, en estrecha colaboración con responsables de datos, investigadores y docentes para integrar prácticas, políticas y procesos abiertos en los flujos de trabajo. Coopero con socios externos sin fines de lucro y corporativos, y represento a IT:U en iniciativas, foros y redes de Ciencia Abierta nacionales e internacionales, contribuyendo además a la postulación a fondos, la generación de ideas y la mentoría en proyectos académicos.",
+        "de": "Entwurf, Umsetzung und Pflege eines universitätsweiten Open-Science-Konzepts, abgestimmt auf institutionelle Stakeholder sowie internationale Standards und Rahmenwerke. Praktische technische Arbeit zur Entwicklung, Bereitstellung und zum Betrieb von Open-Science-Werkzeugen und -Plattformen, in enger Zusammenarbeit mit internen Datenverantwortlichen, Forschenden und Lehrenden, um offene Praktiken, Richtlinien und Prozesse in die Arbeitsabläufe einzubetten. Zusammenarbeit mit externen gemeinnützigen und privatwirtschaftlichen Partnern und Vertretung der IT:U in nationalen und internationalen Open-Science-Initiativen, Foren und Netzwerken, ergänzt durch Mitwirkung an Förderanträgen, Ideenentwicklung und Mentoring in akademischen Projekten."
       }
     },
     {
@@ -90,7 +137,8 @@
       "period": "August 4 – October 28, 2025",
       "desc": {
         "en": "Developed a comprehensive baseline of institutional identifiers, audited coverage of scholarly records across systems (ORCID, ROR, Crossref, DataCite, OpenAlex), and designed reproducible workflows for PID-based traceability of research outputs. Prepared integration guidelines to expand ORCID adoption among LBG researchers and compared information consistency between open infrastructures and institutional systems. The mission supported LBG's open science strategy and alignment with Austria's National Action Plan for the European Research Area (ERA-NAP) 2026–2028.\n\nStrengthened my fluency with Microsoft-based ecosystems - including SharePoint, Power BI, and Azure Active Directory - to interface PID data with internal reporting suites, and piloted automation orchestrations using n8n and complementary integration platforms to streamline identifier governance tasks across teams.",
-        "es": "Desarrollé una línea base integral de identificadores institucionales, audité la cobertura de registros académicos en múltiples sistemas (ORCID, ROR, Crossref, DataCite, OpenAlex) y diseñé flujos de trabajo reproducibles para la trazabilidad de productos de investigación basada en PIDs. Preparé directrices de integración para expandir la adopción de ORCID entre investigadores de LBG y comparé la consistencia de información entre infraestructuras abiertas y sistemas institucionales. La misión apoyó la estrategia de ciencia abierta de LBG y la alineación con el Plan de Acción Nacional para el Espacio Europeo de Investigación (ERA-NAP) 2026–2028 de Austria.\n\nFortalecí mi dominio de ecosistemas Microsoft —incluyendo SharePoint, Power BI y Azure Active Directory— para conectar datos de PIDs con suites de reportes internos, y piloté orquestaciones de automatización usando n8n y plataformas complementarias para agilizar tareas de gobernanza de identificadores entre equipos."
+        "es": "Desarrollé una línea base integral de identificadores institucionales, audité la cobertura de registros académicos en múltiples sistemas (ORCID, ROR, Crossref, DataCite, OpenAlex) y diseñé flujos de trabajo reproducibles para la trazabilidad de productos de investigación basada en PIDs. Preparé directrices de integración para expandir la adopción de ORCID entre investigadores de LBG y comparé la consistencia de información entre infraestructuras abiertas y sistemas institucionales. La misión apoyó la estrategia de ciencia abierta de LBG y la alineación con el Plan de Acción Nacional para el Espacio Europeo de Investigación (ERA-NAP) 2026–2028 de Austria.\n\nFortalecí mi dominio de ecosistemas Microsoft —incluyendo SharePoint, Power BI y Azure Active Directory— para conectar datos de PIDs con suites de reportes internos, y piloté orquestaciones de automatización usando n8n y plataformas complementarias para agilizar tareas de gobernanza de identificadores entre equipos.",
+        "de": "Aufbau einer umfassenden Basis institutioneller Identifikatoren, Prüfung der Abdeckung wissenschaftlicher Nachweise über mehrere Systeme hinweg (ORCID, ROR, Crossref, DataCite, OpenAlex) und Entwurf reproduzierbarer Workflows für die PID-gestützte Rückverfolgbarkeit von Forschungsergebnissen. Erstellung von Integrationsleitlinien zur Ausweitung der ORCID-Nutzung unter LBG-Forschenden sowie Vergleich der Informationskonsistenz zwischen offenen Infrastrukturen und institutionellen Systemen. Die Mission unterstützte die Open-Science-Strategie der LBG und die Abstimmung mit Österreichs Nationalem Aktionsplan für den Europäischen Forschungsraum (ERA-NAP) 2026–2028.\n\nVertiefung meiner Kenntnisse in Microsoft-Ökosystemen – darunter SharePoint, Power BI und Azure Active Directory –, um PID-Daten mit internen Reporting-Suiten zu verbinden, sowie Pilotierung von Automatisierungs-Orchestrierungen mit n8n und ergänzenden Integrationsplattformen zur Vereinfachung der Identifikator-Governance über Teams hinweg."
       }
     },
     {
@@ -100,7 +148,8 @@
       "period": "May – October 2025",
       "desc": {
         "en": "Conducting research and consultancy on research infrastructures, metadata systems, and responsible research assessment.",
-        "es": "Investigación y consultoría sobre infraestructuras de investigación, sistemas de metadatos y evaluación responsable de la investigación."
+        "es": "Investigación y consultoría sobre infraestructuras de investigación, sistemas de metadatos y evaluación responsable de la investigación.",
+        "de": "Forschung und Beratung zu Forschungsinfrastrukturen, Metadatensystemen und verantwortungsvoller Forschungsbewertung."
       }
     },
     {
@@ -110,7 +159,8 @@
       "period": "2016–2025",
       "desc": {
         "en": "Conducted research and institutional projects focused on research governance, scholarly communication, and Open Science policy development.",
-        "es": "Desarrollé investigación y proyectos institucionales enfocados en gobernanza de la investigación, comunicación académica y desarrollo de políticas de Ciencia Abierta."
+        "es": "Desarrollé investigación y proyectos institucionales enfocados en gobernanza de la investigación, comunicación académica y desarrollo de políticas de Ciencia Abierta.",
+        "de": "Durchführung von Forschung und institutionellen Projekten mit Schwerpunkt auf Forschungs-Governance, wissenschaftlicher Kommunikation und der Entwicklung von Open-Science-Richtlinien."
       }
     },
     {
@@ -120,7 +170,8 @@
       "period": "2022–2024",
       "desc": {
         "en": "Led institutional policy development in Open Science, designed data governance models, and implemented research output traceability systems. The project, funded by Chile's national agency ANID, received the highest score in its 2021 cohort and resulted in the university's first Open Science policy.",
-        "es": "Lideré el desarrollo de políticas institucionales en Ciencia Abierta, diseñé modelos de gobernanza de datos e implementé sistemas de trazabilidad de productos de investigación. El proyecto, financiado por ANID, recibió la puntuación más alta de su cohorte 2021 y resultó en la primera política de Ciencia Abierta de la universidad."
+        "es": "Lideré el desarrollo de políticas institucionales en Ciencia Abierta, diseñé modelos de gobernanza de datos e implementé sistemas de trazabilidad de productos de investigación. El proyecto, financiado por ANID, recibió la puntuación más alta de su cohorte 2021 y resultó en la primera política de Ciencia Abierta de la universidad.",
+        "de": "Leitung der Entwicklung institutioneller Open-Science-Richtlinien, Entwurf von Datengovernance-Modellen und Implementierung von Systemen zur Rückverfolgbarkeit von Forschungsergebnissen. Das von Chiles nationaler Agentur ANID geförderte Projekt erhielt die höchste Bewertung seiner Kohorte 2021 und führte zur ersten Open-Science-Richtlinie der Universität."
       }
     },
     {
@@ -130,7 +181,8 @@
       "period": "2024",
       "desc": {
         "en": "Contributed to national FAIR data strategies and supported institutional adoption of open science policies.",
-        "es": "Contribuí a estrategias nacionales de datos FAIR y apoyé la adopción institucional de políticas de ciencia abierta."
+        "es": "Contribuí a estrategias nacionales de datos FAIR y apoyé la adopción institucional de políticas de ciencia abierta.",
+        "de": "Mitwirkung an nationalen FAIR-Datenstrategien und Unterstützung der institutionellen Einführung von Open-Science-Richtlinien."
       }
     },
     {
@@ -140,7 +192,8 @@
       "period": "2021–2022",
       "desc": {
         "en": "Oversaw research development and postgraduate programs in the Faculty of Health Sciences, promoting open science and institutional research capacity-building.",
-        "es": "Supervisé el desarrollo de la investigación y programas de postgrado en la Facultad de Ciencias de la Salud, promoviendo la ciencia abierta y el fortalecimiento institucional de capacidades de investigación."
+        "es": "Supervisé el desarrollo de la investigación y programas de postgrado en la Facultad de Ciencias de la Salud, promoviendo la ciencia abierta y el fortalecimiento institucional de capacidades de investigación.",
+        "de": "Verantwortung für Forschungsentwicklung und Postgraduiertenprogramme der Fakultät für Gesundheitswissenschaften, mit Förderung von Open Science und institutionellem Kapazitätsaufbau in der Forschung."
       }
     },
     {
@@ -150,7 +203,8 @@
       "period": "2016–2021",
       "desc": {
         "en": "Coordinated research management efforts, supported data-driven accreditation processes, and promoted open infrastructure adoption.",
-        "es": "Coordiné esfuerzos de gestión de investigación, apoyé procesos de acreditación basados en datos y promoví la adopción de infraestructuras abiertas."
+        "es": "Coordiné esfuerzos de gestión de investigación, apoyé procesos de acreditación basados en datos y promoví la adopción de infraestructuras abiertas.",
+        "de": "Koordination des Forschungsmanagements, Unterstützung datengestützter Akkreditierungsprozesse und Förderung der Einführung offener Infrastrukturen."
       }
     }
   ],
@@ -192,8 +246,9 @@
       "year": "2025",
       "org": "",
       "desc": {
-        "en": "Currently enrolled in the Train of Trainers Learning Path: Open Science and Research Data Management in the Social Sciences and Humanities, part of the European Skills4EOSC program. Focus on FAIR-enabling services, interoperability infrastructures, and applied data governance for research institutions.",
-        "es": "Actualmente inscrito en el Learning Path Train of Trainers: Open Science and Research Data Management in the Social Sciences and Humanities, parte del programa europeo Skills4EOSC. Enfoque en servicios FAIR, infraestructuras de interoperabilidad y gobernanza aplicada de datos para instituciones de investigación."
+        "en": "Participant in the Train of Trainers Learning Path: Open Science and Research Data Management in the Social Sciences and Humanities, part of the European Skills4EOSC program. Focus on FAIR-enabling services, interoperability infrastructures, and applied data governance for research institutions.",
+        "es": "Participante en el Learning Path Train of Trainers: Open Science and Research Data Management in the Social Sciences and Humanities, parte del programa europeo Skills4EOSC. Enfoque en servicios FAIR, infraestructuras de interoperabilidad y gobernanza aplicada de datos para instituciones de investigación.",
+        "de": "Teilnahme am Learning Path Train of Trainers: Open Science and Research Data Management in the Social Sciences and Humanities im Rahmen des europäischen Programms Skills4EOSC. Schwerpunkte: FAIR-fähige Dienste, Interoperabilitätsinfrastrukturen und angewandte Datengovernance für Forschungseinrichtungen."
       }
     },
     {
@@ -202,7 +257,8 @@
       "org": "Research Data Netherlands",
       "desc": {
         "en": "Completed official RDNL training for research data support professionals. Focused on FAIR principles, metadata quality, data sharing, and the implementation of robust Data Management Plans (DMPs). Only active Latin American participant in the cohort.",
-        "es": "Completé la formación oficial de RDNL para profesionales de soporte de datos de investigación. Enfocado en principios FAIR, calidad de metadatos, intercambio de datos e implementación de Planes de Gestión de Datos (DMP) robustos. Único participante activo latinoamericano en la cohorte."
+        "es": "Completé la formación oficial de RDNL para profesionales de soporte de datos de investigación. Enfocado en principios FAIR, calidad de metadatos, intercambio de datos e implementación de Planes de Gestión de Datos (DMP) robustos. Único participante activo latinoamericano en la cohorte.",
+        "de": "Abschluss der offiziellen RDNL-Schulung für Fachkräfte im Bereich Forschungsdatenunterstützung. Schwerpunkte: FAIR-Prinzipien, Metadatenqualität, Datenaustausch und die Umsetzung belastbarer Datenmanagementpläne (DMPs). Einziger aktiver lateinamerikanischer Teilnehmer der Kohorte."
       }
     },
     {
@@ -211,7 +267,8 @@
       "org": "Leiden University",
       "desc": {
         "en": "Intensive 75-hour course on scientometrics, bibliometric indicators, knowledge flows, and research evaluation methodologies. Covered theory and practical application for policy and infrastructure development.",
-        "es": "Curso intensivo de 75 horas sobre cienciometría, indicadores bibliométricos, flujos de conocimiento y metodologías de evaluación de la investigación. Cubrió teoría y aplicación práctica para desarrollo de políticas e infraestructura."
+        "es": "Curso intensivo de 75 horas sobre cienciometría, indicadores bibliométricos, flujos de conocimiento y metodologías de evaluación de la investigación. Cubrió teoría y aplicación práctica para desarrollo de políticas e infraestructura.",
+        "de": "Intensivkurs mit 75 Stunden zu Szientometrie, bibliometrischen Indikatoren, Wissensflüssen und Methoden der Forschungsbewertung. Behandelte Theorie und praktische Anwendung für Politik- und Infrastrukturentwicklung."
       }
     },
     {
@@ -220,7 +277,8 @@
       "org": "",
       "desc": {
         "en": "Completed multiple tracks including: Governance for AI in Scientific Publications, Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Data visualization in R and D3.js, Using APIs (ORCID, Sherpa Romeo, Unpaywall) for institutional analysis",
-        "es": "Completé múltiples tracks incluyendo: Governance for AI in Scientific Publications (Gobernanza de IA en publicaciones científicas), Forensic Scientometrics (Cienciometría forense), FAIR Data in the Scholarly Communication Lifecycle (Datos FAIR en el ciclo de comunicación académica), Metadata Governance (Gobernanza de metadatos), Research Reproducibility (Reproducibilidad de la investigación), Open Science in the Global South (Ciencia abierta en el Sur Global), Visualización de datos en R y D3.js, Uso de APIs (ORCID, Sherpa Romeo, Unpaywall) para análisis institucional"
+        "es": "Completé múltiples tracks incluyendo: Governance for AI in Scientific Publications (Gobernanza de IA en publicaciones científicas), Forensic Scientometrics (Cienciometría forense), FAIR Data in the Scholarly Communication Lifecycle (Datos FAIR en el ciclo de comunicación académica), Metadata Governance (Gobernanza de metadatos), Research Reproducibility (Reproducibilidad de la investigación), Open Science in the Global South (Ciencia abierta en el Sur Global), Visualización de datos en R y D3.js, Uso de APIs (ORCID, Sherpa Romeo, Unpaywall) para análisis institucional",
+        "de": "Abschluss mehrerer Tracks, darunter: Governance for AI in Scientific Publications, Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Datenvisualisierung in R und D3.js, Nutzung von APIs (ORCID, Sherpa Romeo, Unpaywall) für institutionelle Analysen."
       }
     },
     {
@@ -229,7 +287,8 @@
       "org": "",
       "desc": {
         "en": "Certification focused on the use of persistent identifiers (PIDs), metadata best practices, and repository integration with DataCite infrastructure.",
-        "es": "Certificación enfocada en el uso de identificadores persistentes (PIDs), buenas prácticas de metadatos e integración de repositorios con la infraestructura de DataCite."
+        "es": "Certificación enfocada en el uso de identificadores persistentes (PIDs), buenas prácticas de metadatos e integración de repositorios con la infraestructura de DataCite.",
+        "de": "Zertifizierung mit Schwerpunkt auf der Nutzung persistenter Identifikatoren (PIDs), Best Practices für Metadaten und der Anbindung von Repositorien an die DataCite-Infrastruktur."
       }
     }
   ],
@@ -239,7 +298,8 @@
       "org": "Open Science Monitoring Initiative (OSMI), WG1 & WG4",
       "focus": {
         "en": "WG1: Defining open science monitoring needs and WG4: Building shared infrastructures and tools",
-        "es": "WG1: Definición de necesidades de monitoreo de ciencia abierta y WG4: Construcción de infraestructuras y herramientas compartidas"
+        "es": "WG1: Definición de necesidades de monitoreo de ciencia abierta y WG4: Construcción de infraestructuras y herramientas compartidas",
+        "de": "WG1: Definition des Bedarfs für Open-Science-Monitoring und WG4: Aufbau gemeinsamer Infrastrukturen und Werkzeuge"
       }
     },
     {
@@ -247,7 +307,8 @@
       "org": "Barcelona Declaration on Open Research Information, WG7",
       "focus": {
         "en": "Promoting interoperability, openness, and inclusivity in research information ecosystems",
-        "es": "Promoción de la interoperabilidad, apertura e inclusividad en ecosistemas de información de investigación"
+        "es": "Promoción de la interoperabilidad, apertura e inclusividad en ecosistemas de información de investigación",
+        "de": "Förderung von Interoperabilität, Offenheit und Inklusivität in Ökosystemen für Forschungsinformationen"
       }
     },
     {
@@ -255,7 +316,8 @@
       "org": "Cross-Domain Interoperability Framework (CDIF) - CODATA",
       "focus": {
         "en": "Supporting interdisciplinary metadata interoperability frameworks",
-        "es": "Apoyo a marcos de interoperabilidad de metadatos interdisciplinarios"
+        "es": "Apoyo a marcos de interoperabilidad de metadatos interdisciplinarios",
+        "de": "Unterstützung interdisziplinärer Rahmenwerke für Metadaten-Interoperabilität"
       }
     }
   ],
@@ -676,7 +738,8 @@
       "url": "https://observablehq.com/d/cecaefb7d49c7727/",
       "desc": {
         "en": "Interactive data essay exploring how retracted research continues to circulate and influence scientific discourse.",
-        "es": "Ensayo interactivo de datos que explora cómo la investigación retractada continúa circulando e influyendo en el discurso científico."
+        "es": "Ensayo interactivo de datos que explora cómo la investigación retractada continúa circulando e influyendo en el discurso científico.",
+        "de": "Interaktiver Daten-Essay darüber, wie zurückgezogene Forschung weiter zirkuliert und den wissenschaftlichen Diskurs beeinflusst."
       }
     },
     {
@@ -686,7 +749,8 @@
       "url": "https://fosci.substack.com/p/the-domino-effect-of-faulty-metadata",
       "desc": {
         "en": "Opinion column focused on the importance of metadata quality in open research infrastructures.",
-        "es": "Columna de opinión enfocada en la importancia de la calidad de metadatos en infraestructuras abiertas de investigación."
+        "es": "Columna de opinión enfocada en la importancia de la calidad de metadatos en infraestructuras abiertas de investigación.",
+        "de": "Meinungsbeitrag über die Bedeutung der Metadatenqualität in offenen Forschungsinfrastrukturen."
       }
     },
     {
@@ -696,7 +760,8 @@
       "url": "https://www.americaeconomia.com/analisis-y-opinion/ciencia-no-es-suficiente-solo-con-datos-abiertos",
       "desc": {
         "en": "Opinion column analyzing the gap between open data availability and practical reuse.",
-        "es": "Columna de opinión que analiza la brecha entre la disponibilidad de datos abiertos y su reutilización práctica."
+        "es": "Columna de opinión que analiza la brecha entre la disponibilidad de datos abiertos y su reutilización práctica.",
+        "de": "Meinungsbeitrag über die Lücke zwischen der Verfügbarkeit offener Daten und ihrer praktischen Nachnutzung."
       }
     },
     {
@@ -706,7 +771,8 @@
       "url": "https://www.linkedin.com/pulse/experimentos-sobre-el-costo-de-la-calidad-ricardo-hartley-8tuff/?trackingId=6uCbjEhOR%2BKsHlxFAA%2F4ng%3D%3D",
       "desc": {
         "en": "Reflection on the challenges and costs of 'quality' publication.",
-        "es": "Reflexión sobre los desafíos y costos de la publicación de 'calidad'."
+        "es": "Reflexión sobre los desafíos y costos de la publicación de 'calidad'.",
+        "de": "Überlegungen zu den Herausforderungen und Kosten des „qualitätsvollen“ Publizierens."
       }
     },
     {
@@ -716,7 +782,8 @@
       "url": "https://www.elmostrador.cl/noticias/opinion/2022/11/05/que-significa-conocimiento-abierto-en-chile-hoy/",
       "desc": {
         "en": "Opinion piece reflecting on the cultural and structural barriers to open knowledge practices in Chile.",
-        "es": "Artículo de opinión que reflexiona sobre las barreras culturales y estructurales para las prácticas de conocimiento abierto en Chile."
+        "es": "Artículo de opinión que reflexiona sobre las barreras culturales y estructurales para las prácticas de conocimiento abierto en Chile.",
+        "de": "Meinungsbeitrag über die kulturellen und strukturellen Barrieren für Praktiken offenen Wissens in Chile."
       }
     },
     {
@@ -726,7 +793,8 @@
       "url": "https://sparcopen.org/",
       "desc": {
         "en": "Blog post reflecting on the importance of community-building in open science movements.",
-        "es": "Post de blog reflexionando sobre la importancia de la construcción de comunidad en movimientos de ciencia abierta."
+        "es": "Post de blog reflexionando sobre la importancia de la construcción de comunidad en movimientos de ciencia abierta.",
+        "de": "Blogbeitrag über die Bedeutung des Gemeinschaftsaufbaus in Open-Science-Bewegungen."
       }
     },
     {
@@ -736,7 +804,8 @@
       "url": "https://education.okfn.org/opencon-santiago-2017-no-more-streaks-in-the-water/index.html",
       "desc": {
         "en": "Blog post documenting the first OpenCon Santiago experience and reflections on open science advocacy in Latin America.",
-        "es": "Post de blog documentando la primera experiencia OpenCon Santiago y reflexiones sobre la promoción de la ciencia abierta en América Latina."
+        "es": "Post de blog documentando la primera experiencia OpenCon Santiago y reflexiones sobre la promoción de la ciencia abierta en América Latina.",
+        "de": "Blogbeitrag über die erste OpenCon Santiago und Überlegungen zum Einsatz für Open Science in Lateinamerika."
       }
     }
   ],
@@ -759,7 +828,8 @@
       "topic": "metadata",
       "desc": {
         "en": "Web-based tool that verifies academic bibliographies against six scholarly APIs (Crossref, OpenAlex, Open Library, OpenAIRE, Internet Archive, ISBNdb). Parses references in APA, MLA, Chicago, and Vancouver formats, classifies them as verified, partial, not found, or likely fabricated, detects duplicates, and generates downloadable reports. Includes a Microsoft Word add-in for in-document verification and an OAI-PMH endpoint for library harvesting. Built with SvelteKit, Hono, and MeiliSearch, deployed via Docker and Cloudflare.",
-        "es": "Herramienta web que verifica bibliografías académicas contra seis APIs académicas (Crossref, OpenAlex, Open Library, OpenAIRE, Internet Archive, ISBNdb). Parsea referencias en formatos APA, MLA, Chicago y Vancouver, las clasifica como verificadas, parciales, no encontradas o probablemente fabricadas, detecta duplicados y genera reportes descargables. Incluye un complemento para Microsoft Word para verificación dentro del documento y un endpoint OAI-PMH para cosecha por bibliotecas. Construido con SvelteKit, Hono y MeiliSearch, desplegado vía Docker y Cloudflare."
+        "es": "Herramienta web que verifica bibliografías académicas contra seis APIs académicas (Crossref, OpenAlex, Open Library, OpenAIRE, Internet Archive, ISBNdb). Parsea referencias en formatos APA, MLA, Chicago y Vancouver, las clasifica como verificadas, parciales, no encontradas o probablemente fabricadas, detecta duplicados y genera reportes descargables. Incluye un complemento para Microsoft Word para verificación dentro del documento y un endpoint OAI-PMH para cosecha por bibliotecas. Construido con SvelteKit, Hono y MeiliSearch, desplegado vía Docker y Cloudflare.",
+        "de": "Webbasiertes Werkzeug, das akademische Literaturverzeichnisse gegen sechs wissenschaftliche APIs prüft (Crossref, OpenAlex, Open Library, OpenAIRE, Internet Archive, ISBNdb). Es analysiert Referenzen in den Formaten APA, MLA, Chicago und Vancouver, klassifiziert sie als verifiziert, teilweise verifiziert, nicht gefunden oder wahrscheinlich erfunden, erkennt Duplikate und erstellt herunterladbare Berichte. Enthält ein Microsoft-Word-Add-in für die Prüfung im Dokument sowie einen OAI-PMH-Endpunkt für die Nutzung durch Bibliotheken. Gebaut mit SvelteKit, Hono und MeiliSearch, bereitgestellt über Docker und Cloudflare."
       },
       "id": "bibliohelp",
       "related": [
@@ -782,7 +852,8 @@
       "topic": "metadata",
       "desc": {
         "en": "Dashboard that audits how complete Crossref metadata deposits are for SciELO Chile journals. Evaluates 37 fields per article across 4 FAIR-inspired categories, with interactive visualizations including rain cloud plots, radar charts, heatmaps, and year-based filtering. Built as a hub to add more publisher/registry audits.",
-        "es": "Dashboard que audita cuán completos son los depósitos de metadatos Crossref para revistas de SciELO Chile. Evalúa 37 campos por artículo en 4 categorías inspiradas en FAIR, con visualizaciones interactivas incluyendo rain cloud plots, gráficos de radar, mapas de calor y filtrado por año. Construido como hub para agregar más auditorías de editores/registros."
+        "es": "Dashboard que audita cuán completos son los depósitos de metadatos Crossref para revistas de SciELO Chile. Evalúa 37 campos por artículo en 4 categorías inspiradas en FAIR, con visualizaciones interactivas incluyendo rain cloud plots, gráficos de radar, mapas de calor y filtrado por año. Construido como hub para agregar más auditorías de editores/registros.",
+        "de": "Dashboard, das die Vollständigkeit der Crossref-Metadaten von SciELO-Chile-Zeitschriften prüft. Es bewertet 37 Felder pro Artikel in vier FAIR-inspirierten Kategorien, mit interaktiven Visualisierungen wie Raincloud-Plots, Netzdiagrammen, Heatmaps und Filterung nach Jahr. Als Hub angelegt, um weitere Verlags- und Registry-Audits aufzunehmen."
       },
       "id": "scielochile"
     },
@@ -803,8 +874,9 @@
       ],
       "topic": "metadata",
       "desc": {
-        "en": "Evaluates metadata quality of digital repositories against the FAIR Principles. Connects to OAI-PMH endpoints, DataCite records, or any custom REST API (CSW, STAC, CKAN, and more), harvests metadata, and runs a structured assessment across 14 sub-principles. Classifies persistent identifiers, detects license types, validates controlled vocabularies (DCMI, ISO 639), and checks community standards compliance. Includes prioritized recommendations, exportable reports (CSV, JSON, TXT), and interactive repository structure visualizations. FAIR assessment engine runs server-side on Cloudflare Workers for IP protection.",
-        "es": "Evalúa la calidad de metadatos de repositorios digitales frente a los Principios FAIR. Se conecta a endpoints OAI-PMH, registros DataCite o cualquier API REST personalizada (CSW, STAC, CKAN y más), cosecha metadatos y ejecuta una evaluación estructurada a través de 14 sub-principios. Clasifica identificadores persistentes, detecta tipos de licencia, valida vocabularios controlados (DCMI, ISO 639) y verifica cumplimiento de estándares comunitarios. Incluye recomendaciones priorizadas, reportes exportables (CSV, JSON, TXT) y visualizaciones interactivas de estructura de repositorio. El motor de evaluación FAIR se ejecuta del lado del servidor en Cloudflare Workers para protección de IP."
+        "en": "Evaluates metadata quality of digital repositories against the FAIR Principles. Connects to OAI-PMH endpoints, DataCite records, or any custom REST API (CSW, STAC, CKAN, and more), harvests metadata, and runs a structured assessment across 14 sub-principles. Classifies persistent identifiers, detects license types, validates controlled vocabularies (DCMI, ISO 639), and checks community standards compliance. Includes prioritized recommendations, exportable reports (CSV, JSON, TXT), and interactive repository structure visualizations. The FAIR assessment engine runs server-side on Cloudflare Workers.",
+        "es": "Evalúa la calidad de metadatos de repositorios digitales frente a los Principios FAIR. Se conecta a endpoints OAI-PMH, registros DataCite o cualquier API REST personalizada (CSW, STAC, CKAN y más), cosecha metadatos y ejecuta una evaluación estructurada a través de 14 sub-principios. Clasifica identificadores persistentes, detecta tipos de licencia, valida vocabularios controlados (DCMI, ISO 639) y verifica cumplimiento de estándares comunitarios. Incluye recomendaciones priorizadas, reportes exportables (CSV, JSON, TXT) y visualizaciones interactivas de estructura de repositorio. El motor de evaluación FAIR se ejecuta del lado del servidor en Cloudflare Workers.",
+        "de": "Bewertet die Metadatenqualität digitaler Repositorien anhand der FAIR-Prinzipien. Das Werkzeug verbindet sich mit OAI-PMH-Endpunkten, DataCite-Datensätzen oder beliebigen REST-APIs (CSW, STAC, CKAN und weitere), erntet Metadaten und führt eine strukturierte Bewertung über 14 Unterprinzipien durch. Es klassifiziert persistente Identifikatoren, erkennt Lizenztypen, validiert kontrollierte Vokabulare (DCMI, ISO 639) und prüft die Einhaltung von Community-Standards. Enthält priorisierte Empfehlungen, exportierbare Berichte (CSV, JSON, TXT) und interaktive Visualisierungen der Repositoriumsstruktur. Die FAIR-Bewertungslogik läuft serverseitig auf Cloudflare Workers."
       },
       "id": "repo-metaudits",
       "related": [
@@ -828,7 +900,8 @@
       "topic": "metadata",
       "desc": {
         "en": "Scans DataCite for DOIs pointing to problematic files — OS artifacts (.DS_Store, Thumbs.db), security risks (.env, credentials), and dev debris (node_modules, __pycache__) in research repositories. Enriched with geographic data from ROR and cross-referenced against re3data repository metadata. Interactive dashboard with Mapbox world map, category breakdowns, and repository drill-downs.",
-        "es": "Escanea DataCite en busca de DOIs apuntando a archivos problemáticos — artefactos del SO (.DS_Store, Thumbs.db), riesgos de seguridad (.env, credentials) y residuos de desarrollo (node_modules, __pycache__) en repositorios de investigación. Enriquecido con datos geográficos de ROR y cruzado contra metadatos de repositorios re3data. Dashboard interactivo con mapa mundial Mapbox, desgloses por categoría y drill-downs por repositorio."
+        "es": "Escanea DataCite en busca de DOIs apuntando a archivos problemáticos — artefactos del SO (.DS_Store, Thumbs.db), riesgos de seguridad (.env, credentials) y residuos de desarrollo (node_modules, __pycache__) en repositorios de investigación. Enriquecido con datos geográficos de ROR y cruzado contra metadatos de repositorios re3data. Dashboard interactivo con mapa mundial Mapbox, desgloses por categoría y drill-downs por repositorio.",
+        "de": "Durchsucht DataCite nach DOIs, die auf problematische Dateien verweisen – Betriebssystem-Artefakte (.DS_Store, Thumbs.db), Sicherheitsrisiken (.env, Zugangsdaten) und Entwicklungsreste (node_modules, __pycache__) in Forschungsrepositorien. Angereichert mit geografischen Daten aus ROR und abgeglichen mit re3data-Repositoriumsmetadaten. Interaktives Dashboard mit Mapbox-Weltkarte, Aufschlüsselung nach Kategorien und Detailansichten je Repositorium."
       },
       "id": "dirty-repos"
     },
@@ -850,7 +923,8 @@
       "topic": "metadata",
       "desc": {
         "en": "Do publishers care about metadata? Timeline evidence comparing Crossref deposits vs OpenAlex enrichment across 15 major publishers (2015–2025). Evaluates 47 metadata fields in 5 categories (FAIR + Evaluation/CoARA), with gap analysis radar charts, enrichment matrices, and per-publisher drill-downs showing mandate compliance trends.",
-        "es": "¿Les importa a los editores los metadatos? Evidencia temporal comparando depósitos de Crossref vs enriquecimiento de OpenAlex a través de 15 editores principales (2015–2025). Evalúa 47 campos de metadatos en 5 categorías (FAIR + Evaluación/CoARA), con gráficos de radar de análisis de brechas, matrices de enriquecimiento y drill-downs por editor mostrando tendencias de cumplimiento de mandatos."
+        "es": "¿Les importa a los editores los metadatos? Evidencia temporal comparando depósitos de Crossref vs enriquecimiento de OpenAlex a través de 15 editores principales (2015–2025). Evalúa 47 campos de metadatos en 5 categorías (FAIR + Evaluación/CoARA), con gráficos de radar de análisis de brechas, matrices de enriquecimiento y drill-downs por editor mostrando tendencias de cumplimiento de mandatos.",
+        "de": "Kümmern sich Verlage um Metadaten? Zeitreihen-Evidenz im Vergleich von Crossref-Ablieferungen und OpenAlex-Anreicherung bei 15 großen Verlagen (2015–2025). Bewertet 47 Metadatenfelder in fünf Kategorien (FAIR + Bewertung/CoARA), mit Netzdiagrammen zur Lückenanalyse, Anreicherungsmatrizen und Detailansichten je Verlag, die Trends bei der Erfüllung von Vorgaben zeigen."
       },
       "id": "publisher-gap"
     },
@@ -872,7 +946,8 @@
       "topic": "story",
       "desc": {
         "en": "Interactive dashboard analyzing citation persistence of 60,921 retracted articles. Reveals that 56% of citations occur post-retraction with no decay over 15 years, geographic disparities in detection speed, and flat supporting/contradicting ratios over time. Built with data from Retraction Watch, OpenAlex, and Scite.ai. Also in https://observablehq.com/d/cecaefb7d49c7727",
-        "es": "Dashboard interactivo que analiza la persistencia de citas de 60.921 artículos retractados. Revela que el 56% de las citas ocurren post-retractación sin decaimiento en 15 años, disparidades geográficas en velocidad de detección y ratios planos de apoyo/contradicción en el tiempo. Construido con datos de Retraction Watch, OpenAlex y Scite.ai. También en https://observablehq.com/d/cecaefb7d49c7727"
+        "es": "Dashboard interactivo que analiza la persistencia de citas de 60.921 artículos retractados. Revela que el 56% de las citas ocurren post-retractación sin decaimiento en 15 años, disparidades geográficas en velocidad de detección y ratios planos de apoyo/contradicción en el tiempo. Construido con datos de Retraction Watch, OpenAlex y Scite.ai. También en https://observablehq.com/d/cecaefb7d49c7727",
+        "de": "Interaktives Dashboard zur Zitationspersistenz von 60.921 zurückgezogenen Artikeln. Es zeigt, dass 56 % der Zitationen nach der Rücknahme erfolgen, ohne Rückgang über 15 Jahre, dazu geografische Unterschiede in der Erkennungsgeschwindigkeit und über die Zeit konstante Verhältnisse zwischen stützenden und widersprechenden Zitationen. Daten von Retraction Watch, OpenAlex und Scite.ai. Auch unter https://observablehq.com/d/cecaefb7d49c7727"
       },
       "id": "retractions"
     },
@@ -893,7 +968,8 @@
       "topic": "assessment",
       "desc": {
         "en": "Analyzes the gap between Horizon Europe data management plans (DMPs) and the RDA maDMP standard. Evaluates 6,119 DMPs against 48 RDA properties, measuring what proportion is mentioned in text (77.5%) versus machine-actionable (22.7%). Includes comparison with Chile's ANID template (1/48 fields machine-actionable). Evidence that mandates generate narrative documents, not connected entities.",
-        "es": "Analiza la brecha entre los planes de gestión de datos (DMP) de Horizon Europe y el estándar RDA maDMP. Evalúa 6.119 DMPs contra 48 propiedades RDA, midiendo qué proporción es mencionada en texto (77,5%) versus procesable por máquinas (22,7%). Incluye comparación con la plantilla ANID de Chile (1/48 campos procesable). Evidencia que los mandatos generan documentos narrativos, no entidades conectadas."
+        "es": "Analiza la brecha entre los planes de gestión de datos (DMP) de Horizon Europe y el estándar RDA maDMP. Evalúa 6.119 DMPs contra 48 propiedades RDA, midiendo qué proporción es mencionada en texto (77,5%) versus procesable por máquinas (22,7%). Incluye comparación con la plantilla ANID de Chile (1/48 campos procesable). Evidencia que los mandatos generan documentos narrativos, no entidades conectadas.",
+        "de": "Analysiert die Lücke zwischen Datenmanagementplänen (DMPs) aus Horizon Europe und dem RDA-maDMP-Standard. Bewertet 6.119 DMPs anhand von 48 RDA-Eigenschaften und misst, welcher Anteil im Text erwähnt (77,5 %) und welcher maschinell verarbeitbar ist (22,7 %). Enthält einen Vergleich mit der ANID-Vorlage Chiles (1 von 48 Feldern maschinell verarbeitbar). Ein Beleg dafür, dass Vorgaben narrative Dokumente hervorbringen, keine verknüpften Entitäten."
       },
       "id": "madmp"
     },
@@ -913,7 +989,8 @@
       "topic": "assessment",
       "desc": {
         "en": "Do ORCID consortia drive meaningful adoption, or just empty accounts? Compares profile completeness across 88 institutions and 200,595 profiles from 6 continents. Key finding: consortium institutions average 41.2% completeness with 49% empty profiles, versus 40.4% and 51% for non-consortium — a gap of just +0.7pp. Pre-2018 profiles reach ~50% (intrinsic motivation); post-2022 drop below 30% (mandate-driven bulk creation).",
-        "es": "¿Los consorcios ORCID impulsan una adopción significativa, o solo cuentas vacías? Compara la completitud de perfiles en 88 instituciones y 200.595 perfiles de 6 continentes. Hallazgo clave: las instituciones en consorcio promedian 41,2% de completitud con 49% de perfiles vacíos, versus 40,4% y 51% en no consorcio — una diferencia de apenas +0,7pp. Los perfiles pre-2018 alcanzan ~50% (motivación intrínseca); los post-2022 caen bajo 30% (creación masiva por mandato)."
+        "es": "¿Los consorcios ORCID impulsan una adopción significativa, o solo cuentas vacías? Compara la completitud de perfiles en 88 instituciones y 200.595 perfiles de 6 continentes. Hallazgo clave: las instituciones en consorcio promedian 41,2% de completitud con 49% de perfiles vacíos, versus 40,4% y 51% en no consorcio — una diferencia de apenas +0,7pp. Los perfiles pre-2018 alcanzan ~50% (motivación intrínseca); los post-2022 caen bajo 30% (creación masiva por mandato).",
+        "de": "Führen ORCID-Konsortien zu substanzieller Nutzung oder nur zu leeren Konten? Vergleich der Profilvollständigkeit über 88 Einrichtungen und 200.595 Profile aus sechs Kontinenten. Zentrales Ergebnis: Einrichtungen in Konsortien erreichen im Mittel 41,2 % Vollständigkeit bei 49 % leeren Profilen, gegenüber 40,4 % und 51 % außerhalb von Konsortien – ein Unterschied von nur +0,7 Prozentpunkten. Profile von vor 2018 erreichen rund 50 % (intrinsische Motivation); Profile nach 2022 fallen unter 30 % (durch Vorgaben erzeugte Masseneinrichtung)."
       },
       "id": "orcid-adoption"
     },
@@ -934,7 +1011,8 @@
       "topic": "infra",
       "desc": {
         "en": "MCP Server for real-time research data. Provides live access to authoritative academic sources (ORCID, OpenAlex, Crossref, DataCite, ROR, and PubMed) via a Dockerized Node.js server compatible with Claude Desktop.",
-        "es": "Servidor MCP para datos de investigación en tiempo real. Proporciona acceso en vivo a fuentes académicas autorizadas (ORCID, OpenAlex, Crossref, DataCite, ROR y PubMed) mediante un servidor Node.js dockerizado compatible con Claude Desktop."
+        "es": "Servidor MCP para datos de investigación en tiempo real. Proporciona acceso en vivo a fuentes académicas autorizadas (ORCID, OpenAlex, Crossref, DataCite, ROR y PubMed) mediante un servidor Node.js dockerizado compatible con Claude Desktop.",
+        "de": "MCP-Server für Forschungsdaten in Echtzeit. Bietet Live-Zugriff auf maßgebliche wissenschaftliche Quellen (ORCID, OpenAlex, Crossref, DataCite, ROR und PubMed) über einen dockerisierten Node.js-Server, kompatibel mit Claude Desktop."
       },
       "id": "mcp-cris",
       "related": [
@@ -958,7 +1036,8 @@
       "topic": "infra",
       "desc": {
         "en": "MCP server exposing the OpenAIRE Graph API (100M+ open access research products) to AI assistants. Provides 14 tools for searching publications, datasets, software, organizations, projects, and persons. Dockerized Node.js server with in-memory cache, rate limiting, and retry logic. Built as a companion to MCP CRIS Live focused on open science infrastructure.",
-        "es": "Servidor MCP que expone la API del OpenAIRE Graph (100M+ productos de investigación de acceso abierto) a asistentes de IA. Proporciona 14 herramientas para buscar publicaciones, datasets, software, organizaciones, proyectos y personas. Servidor Node.js dockerizado con caché en memoria, rate limiting y lógica de reintentos. Construido como complemento de MCP CRIS Live enfocado en infraestructura de ciencia abierta."
+        "es": "Servidor MCP que expone la API del OpenAIRE Graph (100M+ productos de investigación de acceso abierto) a asistentes de IA. Proporciona 14 herramientas para buscar publicaciones, datasets, software, organizaciones, proyectos y personas. Servidor Node.js dockerizado con caché en memoria, rate limiting y lógica de reintentos. Construido como complemento de MCP CRIS Live enfocado en infraestructura de ciencia abierta.",
+        "de": "MCP-Server, der die OpenAIRE-Graph-API (über 100 Mio. offen zugängliche Forschungsergebnisse) für KI-Assistenten bereitstellt. Bietet 14 Werkzeuge zur Suche nach Publikationen, Datensätzen, Software, Organisationen, Projekten und Personen. Dockerisierter Node.js-Server mit In-Memory-Cache, Rate-Limiting und Wiederholungslogik. Als Ergänzung zu MCP CRIS Live mit Fokus auf Open-Science-Infrastruktur entwickelt."
       },
       "id": "mcp-openaire",
       "related": [
@@ -983,7 +1062,8 @@
       "topic": "infra",
       "desc": {
         "en": "Chat interface where Cloudflare Workers AI (Llama 3.1 8B) uses the OpenAIRE MCP tools in an agentic loop to answer research questions in natural language. The LLM decides which tools to call, executes the OpenAIRE searches, and synthesizes the results into a readable response. Deployed entirely on free Cloudflare infrastructure (Pages + Workers AI).",
-        "es": "Interfaz de chat donde Cloudflare Workers AI (Llama 3.1 8B) usa las herramientas MCP de OpenAIRE en un bucle agéntico para responder preguntas de investigación en lenguaje natural. El LLM decide qué herramientas llamar, ejecuta las búsquedas en OpenAIRE y sintetiza los resultados en una respuesta legible. Desplegado completamente en infraestructura gratuita de Cloudflare (Pages + Workers AI)."
+        "es": "Interfaz de chat donde Cloudflare Workers AI (Llama 3.1 8B) usa las herramientas MCP de OpenAIRE en un bucle agéntico para responder preguntas de investigación en lenguaje natural. El LLM decide qué herramientas llamar, ejecuta las búsquedas en OpenAIRE y sintetiza los resultados en una respuesta legible. Desplegado completamente en infraestructura gratuita de Cloudflare (Pages + Workers AI).",
+        "de": "Chat-Oberfläche, in der Cloudflare Workers AI (Llama 3.1 8B) die OpenAIRE-MCP-Werkzeuge in einer agentischen Schleife nutzt, um Forschungsfragen in natürlicher Sprache zu beantworten. Das Sprachmodell entscheidet, welche Werkzeuge aufgerufen werden, führt die OpenAIRE-Suchen aus und fasst die Ergebnisse lesbar zusammen. Vollständig auf kostenloser Cloudflare-Infrastruktur betrieben (Pages + Workers AI)."
       },
       "id": "openaire-demo",
       "related": [
@@ -1004,7 +1084,8 @@
       "topic": "story",
       "desc": {
         "en": "Sonification project exploring data inequality patterns through audio. Transforms statistical disparities into sound compositions to make data accessible through auditory perception.",
-        "es": "Proyecto de sonificación que explora patrones de desigualdad de datos a través de audio. Transforma disparidades estadísticas en composiciones sonoras para hacer los datos accesibles mediante percepción auditiva."
+        "es": "Proyecto de sonificación que explora patrones de desigualdad de datos a través de audio. Transforma disparidades estadísticas en composiciones sonoras para hacer los datos accesibles mediante percepción auditiva.",
+        "de": "Sonifikationsprojekt, das Muster von Datenungleichheit hörbar macht. Es überführt statistische Disparitäten in Klangkompositionen, um Daten über die auditive Wahrnehmung zugänglich zu machen."
       },
       "id": "sound-inequality"
     },
@@ -1022,7 +1103,8 @@
       "topic": "infra",
       "desc": {
         "en": "Development of reproducible workflows for tracking research outputs across persistent identifier systems (ORCID, ROR, Crossref, DataCite, OpenAlex). Built for institutional research information governance.",
-        "es": "Desarrollo de flujos de trabajo reproducibles para rastrear productos de investigación a través de sistemas de identificadores persistentes (ORCID, ROR, Crossref, DataCite, OpenAlex). Construido para la gobernanza institucional de información de investigación."
+        "es": "Desarrollo de flujos de trabajo reproducibles para rastrear productos de investigación a través de sistemas de identificadores persistentes (ORCID, ROR, Crossref, DataCite, OpenAlex). Construido para la gobernanza institucional de información de investigación.",
+        "de": "Entwicklung reproduzierbarer Workflows zur Nachverfolgung von Forschungsergebnissen über Systeme persistenter Identifikatoren hinweg (ORCID, ROR, Crossref, DataCite, OpenAlex). Für die institutionelle Governance von Forschungsinformationen gebaut."
       },
       "id": "pid-workflows"
     },
@@ -1046,7 +1128,7 @@
       "desc": {
         "en": "Open, client-side twin of Repo MetAudits — FAIR metadata scoring for DataCite and OAI-PMH repositories, running entirely in the browser. The published, open-source counterpart of the hosted evaluator.",
         "es": "Gemelo abierto y del lado del cliente de Repo MetAudits — evaluación FAIR de metadatos para repositorios DataCite y OAI-PMH, ejecutándose enteramente en el navegador. La contraparte publicada y de código abierto del evaluador alojado.",
-        "de": ""
+        "de": "Offener, clientseitiger Zwilling von Repo MetAudits – FAIR-Metadatenbewertung für DataCite- und OAI-PMH-Repositorien, vollständig im Browser. Das veröffentlichte Open-Source-Gegenstück zum gehosteten Evaluator."
       },
       "doi": "10.5281/zenodo.21492530"
     },
@@ -1069,7 +1151,7 @@
       "desc": {
         "en": "Open-source companion of BiblioHelp — the reference-verification app and Word add-in, as code and a static build. The published twin of the hosted tool.",
         "es": "Complemento de código abierto de BiblioHelp — la app de verificación de referencias y el add-in de Word, como código y build estático. El gemelo publicado de la herramienta alojada.",
-        "de": ""
+        "de": "Open-Source-Begleiter von BiblioHelp – die App zur Referenzprüfung und das Word-Add-in als Quellcode und statischer Build. Der veröffentlichte Zwilling des gehosteten Werkzeugs."
       }
     },
     {
@@ -1089,7 +1171,11 @@
       "desc": {
         "en": "Self-assess your institution against the ten CoARA commitments and generate a prioritised, editable action plan — entirely in your browser. The open twin of the Reform Assessment toolkit.",
         "es": "Autoevalúa tu institución frente a los diez compromisos CoARA y genera un plan de acción priorizado y editable — enteramente en el navegador. El gemelo abierto del toolkit Reform Assessment.",
-        "de": ""
+        "de": "Bewerten Sie Ihre Einrichtung selbst anhand der zehn CoARA-Verpflichtungen und erzeugen Sie einen priorisierten, bearbeitbaren Aktionsplan – vollständig im Browser. Der offene Zwilling des Reform-Assessment-Toolkits."
+      },
+      "twin": {
+        "title": "Reform Assessment",
+        "url": "https://metaudits.rijdho.org/reform-assessment/"
       }
     },
     {
@@ -1108,7 +1194,7 @@
       "desc": {
         "en": "Four interactive simulators that make the open methodological questions of four 2026 manuscripts manipulable — Wahlund effect, glycolytic potential, statistical power, and NPV sensitivity. No build, no dependencies.",
         "es": "Cuatro simuladores interactivos que hacen manipulables las preguntas metodológicas abiertas de cuatro manuscritos 2026 — efecto Wahlund, potencial glicolítico, potencia estadística y sensibilidad del VAN. Sin build ni dependencias.",
-        "de": ""
+        "de": "Vier interaktive Simulatoren, die die offenen methodischen Fragen von vier Manuskripten aus 2026 manipulierbar machen – Wahlund-Effekt, glykolytisches Potenzial, statistische Power und Kapitalwert-Sensitivität. Ohne Build, ohne Abhängigkeiten."
       }
     }
   ]

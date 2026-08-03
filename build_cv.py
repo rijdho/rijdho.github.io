@@ -37,7 +37,7 @@ def build(lang):
     w(""); w(f"**{tr(p['tagline'])}**"); w("")
     for para in tr(p["summary"]).split("\n\n"): w(para); w("")
     c=[]
-    if p.get("email"): c.append(f"✉ {p['email']}")
+    if p.get("email"): c.append(f"✉ {p['email']}" + (" (alias)" if p.get("emailIsAlias") else ""))
     if p.get("orcid"): c.append(f"[ORCID {p['orcid']}](https://orcid.org/{p['orcid']})")
     if p.get("substack"): c.append(f"[Substack]({p['substack']})")
     if c: w(" · ".join(c)); w("")
@@ -55,7 +55,7 @@ def build(lang):
         w(f"- **{e['degree']}**, {e['inst']}" + (f" ({e['year']})" if e.get('year') else ""))
     sec("skills")
     for s in CV["skills"]:
-        w(f"- **{tr(s['title'])}:** {', '.join(s['items'])}")
+        w(f"- **{tr(s['title'])}:** {', '.join(tr(i) for i in s['items'])}")
     sec("publications")
     for g,lab in PUBGRP.items():
         items=CV["publications"].get(g) or []
@@ -81,6 +81,8 @@ def build(lang):
         meta=" · ".join(x for x in [e.get('status'), e.get('year'), ', '.join(e.get('tags',[])[:4])] if x)
         if meta: w(f"*{meta}*")
         if tr(e.get('desc')): w(""); w(tr(e['desc']))
+        tw=e.get('twin')
+        if tw and tw.get('url'): w(""); w(f"↔ [{tw.get('title') or tw['url']}]({tw['url']})")
         w("")
     sec("engagements")
     for e in CV["engagements"]:

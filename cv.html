@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>Ricardo Hartley Belmar — Curriculum Vitae</title>
 <style>
 @font-face{font-family:"Inter Variable";font-style:normal;font-display:swap;font-weight:100 900;
@@ -72,8 +73,8 @@
   ul.plain li b{color:var(--ink);font-weight:600}
   .tag{font-family:var(--mono);font-size:.66rem;color:var(--muted)}
 
-  .note{font-family:var(--mono);font-size:.72rem;color:var(--faint);margin:6px 0 0;display:none}
-  .note.on{display:block}
+  .alias{color:var(--faint)}
+  .twin{font-family:var(--mono);font-size:.76rem}
 
   @media (max-width:640px){.controls .in,main{padding-left:20px;padding-right:20px}.skill{flex-direction:column;gap:2px}.skill .k{min-width:0}}
   @media print{
@@ -105,7 +106,6 @@
     <p class="tagline" id="tagline"></p>
     <div class="contact" id="contact"></div>
     <p class="summary" id="summary"></p>
-    <div class="note" id="delang"></div>
   </header>
   <div id="body"></div>
 </main>
@@ -130,7 +130,6 @@ const PUBGRP={peerReviewed:{en:"Peer-reviewed",de:"Begutachtet",es:"Revisadas po
   policyPapers:{en:"Policy papers",de:"Policy Papers",es:"Documentos de política"},
   guides:{en:"Guides",de:"Leitfäden",es:"Guías"},datasets:{en:"Datasets",de:"Datensätze",es:"Conjuntos de datos"},
   workingPapers:{en:"Working papers",de:"Working Papers",es:"Documentos de trabajo"}};
-const DE_NOTE={en:"",de:"Beschreibungstexte greifen auf Englisch zurück — deutsche Inhaltsdaten stehen noch aus.",es:""};
 
 let lang="en";
 const esc=s=>(s||"").replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
@@ -145,11 +144,10 @@ function render(){
   document.getElementById("tagline").textContent=t(p.tagline);
   document.getElementById("summary").textContent=t(p.summary);
   const c=[];
-  if(p.email)c.push(`<a href="mailto:${esc(p.email)}">${esc(p.email)}</a>`);
+  if(p.email)c.push(`<a href="mailto:${esc(p.email)}">${esc(p.email)}</a>${p.emailIsAlias?' <span class="alias">(alias)</span>':""}`);
   if(p.orcid)c.push(`<a href="https://orcid.org/${esc(p.orcid)}">ORCID ${esc(p.orcid)}</a>`);
   if(p.substack)c.push(`<a href="${esc(p.substack)}">Substack</a>`);
   document.getElementById("contact").innerHTML=c.join('<span style="color:var(--faint)">·</span>');
-  const dn=document.getElementById("delang");dn.textContent=DE_NOTE[lang];dn.classList.toggle("on",lang==="de");
 
   const H=[];
   const sec=(key,inner,count)=>H.push(`<section><h2>${esc(UI[lang][key])}${count?`<span class="c">${count}</span>`:""}</h2>${inner}</section>`);
@@ -181,7 +179,7 @@ function render(){
 
   // Skills
   sec("skills", CV.skills.map(s=>`<div class="skill"><span class="k">${esc(t(s.title))}</span>
-    <span class="v">${esc((s.items||[]).join(", "))}</span></div>`).join(""));
+    <span class="v">${esc((s.items||[]).map(t).join(", "))}</span></div>`).join(""));
 
   // Writing (portfolio)
   sec("portfolio", `<ul class="plain">`+CV.portfolio.map(e=>{const ti=e.url?`<a href="${esc(e.url)}">${esc(e.title)}</a>`:esc(e.title);
@@ -192,6 +190,7 @@ function render(){
     return `<div class="entry"><div class="top"><span class="ti">${ti}</span>
       <span class="when">${esc(e.status)} · ${esc(e.year)}</span></div>
       ${t(e.desc)?`<p>${esc(t(e.desc))}</p>`:""}
+      ${e.twin&&e.twin.url?`<div class="twin">↔ <a href="${esc(e.twin.url)}">${esc(e.twin.title||e.twin.url)}</a></div>`:""}
       ${(e.tags||[]).length?`<div class="tag">${esc((e.tags||[]).slice(0,6).join(" · "))}</div>`:""}</div>`;}).join(""), CV.experiments.length);
 
   // Engagements + Training

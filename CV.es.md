@@ -1,5 +1,5 @@
 # Ricardo Hartley Belmar
-*MSc, PhD*
+*MSc, MSc, Dr.*
 
 **Ciencia abierta y gobernanza de información de investigación / Trazabilidad de identificadores persistentes / Evaluación responsable de la investigación**
 
@@ -7,7 +7,7 @@ Open Science Expert en la Interdisciplinary Transformation University Austria (I
 
 Mi trabajo se centra en la gobernanza de la información de investigación, la calidad de metadatos y la evaluación responsable, conectando interfaces tecnológicas, prácticas y regulatorias para que las instituciones puedan poner en práctica sus compromisos ambiciosos de ciencia abierta.
 
-✉ ricdho@duck.com · [ORCID 0000-0001-5058-9309](https://orcid.org/0000-0001-5058-9309) · [Substack](https://rijdho.substack.com)
+✉ ricdho@duck.com (alias) · [ORCID 0000-0001-5058-9309](https://orcid.org/0000-0001-5058-9309) · [Substack](https://rijdho.substack.com)
 
 
 ## Experiencia
@@ -66,10 +66,10 @@ Coordiné esfuerzos de gestión de investigación, apoyé procesos de acreditaci
 
 ## Competencias
 
-- **Infraestructura de Investigación y Sistemas de Metadatos:** ORCID, ROR, Crossref, DataCite, OpenAlex, Metadata standards (Dublin Core, DataCite Metadata Schema, Schema.org)
-- **Análisis de Datos y Visualización:** R, Python, JavaScript, D3.js, Observable, API integration and data pipelines
-- **Gestión de Datos y Principios FAIR:** Data Management Plans (DMPs), FAIR data principles implementation, Repository management, Research data governance
-- **Idiomas:** Spanish: Native, English: Fluent (Professional working proficiency)
+- **Infraestructura de Investigación y Sistemas de Metadatos:** ORCID, ROR, Crossref, DataCite, OpenAlex, Estándares de metadatos (Dublin Core, DataCite Metadata Schema, Schema.org)
+- **Análisis de Datos y Visualización:** R, Python, JavaScript, D3.js, Observable, Integración de APIs y pipelines de datos
+- **Gestión de Datos y Principios FAIR:** Planes de Gestión de Datos (DMP), Implementación de principios FAIR, Gestión de repositorios, Gobernanza de datos de investigación
+- **Idiomas:** Español: nativo, Inglés: técnico
 
 ## Publicaciones
 
@@ -177,7 +177,7 @@ Dashboard que audita cuán completos son los depósitos de metadatos Crossref pa
 ### [Repo MetAudits — FAIR Metadata Quality Evaluator](https://metaudits.rijdho.org/repo-metaudits/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Custom API*
 
-Evalúa la calidad de metadatos de repositorios digitales frente a los Principios FAIR. Se conecta a endpoints OAI-PMH, registros DataCite o cualquier API REST personalizada (CSW, STAC, CKAN y más), cosecha metadatos y ejecuta una evaluación estructurada a través de 14 sub-principios. Clasifica identificadores persistentes, detecta tipos de licencia, valida vocabularios controlados (DCMI, ISO 639) y verifica cumplimiento de estándares comunitarios. Incluye recomendaciones priorizadas, reportes exportables (CSV, JSON, TXT) y visualizaciones interactivas de estructura de repositorio. El motor de evaluación FAIR se ejecuta del lado del servidor en Cloudflare Workers para protección de IP.
+Evalúa la calidad de metadatos de repositorios digitales frente a los Principios FAIR. Se conecta a endpoints OAI-PMH, registros DataCite o cualquier API REST personalizada (CSW, STAC, CKAN y más), cosecha metadatos y ejecuta una evaluación estructurada a través de 14 sub-principios. Clasifica identificadores persistentes, detecta tipos de licencia, valida vocabularios controlados (DCMI, ISO 639) y verifica cumplimiento de estándares comunitarios. Incluye recomendaciones priorizadas, reportes exportables (CSV, JSON, TXT) y visualizaciones interactivas de estructura de repositorio. El motor de evaluación FAIR se ejecuta del lado del servidor en Cloudflare Workers.
 
 ### [Dirty Repos — Problematic Files with DOIs in DataCite Repositories](https://metaudits.rijdho.org/dirty-repos/)
 *Active · 2026 · DataCite, Metadata Quality, React, Mapbox*
@@ -244,6 +244,8 @@ Complemento de código abierto de BiblioHelp — la app de verificación de refe
 
 Autoevalúa tu institución frente a los diez compromisos CoARA y genera un plan de acción priorizado y editable — enteramente en el navegador. El gemelo abierto del toolkit Reform Assessment.
 
+↔ [Reform Assessment](https://metaudits.rijdho.org/reform-assessment/)
+
 ### [criolab](https://rijdho.github.io/criolab/)
 *Active · 2026 · Simulators, Interactive, Open source*
 
@@ -258,11 +260,11 @@ Cuatro simuladores interactivos que hacen manipulables las preguntas metodológi
 
 ## Formación continua
 
-- **Skills4EOSC First Cohort Participant** (2025) — Actualmente inscrito en el Learning Path Train of Trainers: Open Science and Research Data Management in the Social Sciences and Humanities, parte del programa europeo Skills4EOSC. Enfoque en servicios FAIR, infraestructuras de interoperabilidad y gobernanza aplicada de datos para instituciones de investigación.
+- **Skills4EOSC First Cohort Participant** (2025) — Participante en el Learning Path Train of Trainers: Open Science and Research Data Management in the Social Sciences and Humanities, parte del programa europeo Skills4EOSC. Enfoque en servicios FAIR, infraestructuras de interoperabilidad y gobernanza aplicada de datos para instituciones de investigación.
 - **Essentials 4 Data Support** (2023) — Completé la formación oficial de RDNL para profesionales de soporte de datos de investigación. Enfocado en principios FAIR, calidad de metadatos, intercambio de datos e implementación de Planes de Gestión de Datos (DMP) robustos. Único participante activo latinoamericano en la cohorte.
 - **CWTS Scientometrics Summer School** (2020) — Curso intensivo de 75 horas sobre cienciometría, indicadores bibliométricos, flujos de conocimiento y metodologías de evaluación de la investigación. Cubrió teoría y aplicación práctica para desarrollo de políticas e infraestructura.
 - **FORCE11 Scholarly Communication Institute – FSCI** (2017–2025) — Completé múltiples tracks incluyendo: Governance for AI in Scientific Publications (Gobernanza de IA en publicaciones científicas), Forensic Scientometrics (Cienciometría forense), FAIR Data in the Scholarly Communication Lifecycle (Datos FAIR en el ciclo de comunicación académica), Metadata Governance (Gobernanza de metadatos), Research Reproducibility (Reproducibilidad de la investigación), Open Science in the Global South (Ciencia abierta en el Sur Global), Visualización de datos en R y D3.js, Uso de APIs (ORCID, Sherpa Romeo, Unpaywall) para análisis institucional
 - **DataCite Certified Core Training** (2024) — Certificación enfocada en el uso de identificadores persistentes (PIDs), buenas prácticas de metadatos e integración de repositorios con la infraestructura de DataCite.
 
 ---
-*Generado desde data/cv.json · 2026-07-31*
+*Generado desde data/cv.json · 2026-08-03*

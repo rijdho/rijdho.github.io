@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>rijdho — hub (nube)</title>
 <style>
 @font-face{font-family:"Inter Variable";font-style:normal;font-display:swap;font-weight:100 900;
@@ -119,6 +120,9 @@
   .panel .pdoi{display:inline-block;font-family:var(--mono);font-size:.68rem;color:var(--brand);
     text-decoration:none;margin:0 0 8px;border:1px solid var(--border);border-radius:6px;padding:2px 7px}
   .panel .pdoi:hover{border-color:var(--brand)}
+  .panel .ptwin{display:block;font-family:var(--mono);font-size:.68rem;color:var(--brand);
+    text-decoration:none;margin:0 0 8px}
+  .panel .ptwin:hover{text-decoration:underline}
   .panel p{margin:0 0 10px;font-size:.85rem;color:var(--muted);line-height:1.5}
   .panel .tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}
   .panel .t{font-family:var(--mono);font-size:.62rem;color:var(--muted);background:var(--surface-alt);border:1px solid var(--hair);padding:2px 7px;border-radius:6px}
@@ -225,7 +229,6 @@
       <aside class="panel" id="panel" aria-live="polite"></aside>
     </div>
     <div class="listwrap" id="listwrap"></div>
-    <div class="note" id="delang"></div>
   </section>
 
   <section>
@@ -292,7 +295,6 @@ const UI = {
     by:"Hecho por Ricardo Hartley Belmar", lic:"Licencia MIT, código abierto", src:"Código en GitHub",
     built:"Una vista curada de los mismos datos del CV", open:"Abrir", nolink:"Sin URL pública", list:"Lista", cloud:"Nube"},
 };
-const DE_NOTE={en:"",de:"Kartentexte greifen auf Englisch zurück — deutsche Inhaltsdaten stehen noch aus (cv.de.json). Die UI ist bereits dreisprachig.",es:""};
 
 let lang="en", activeTopic=null, selected=null, isList=false;
 const esc=s=>(s||"").replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
@@ -422,6 +424,7 @@ function select(b){selected=b;const t=UI[lang],tp=TOPICS[b.a.topic],col=cvar(tp.
     <span class="pk" style="color:${col}"><span class="sw" style="background:${col}"></span>${esc(tp[lang])}</span>
     <h3>${esc(e.title)}</h3>
     ${e.doi?`<a class="pdoi" href="https://doi.org/${esc(e.doi)}" target="_blank" rel="noopener">DOI ${esc(e.doi)}</a>`:""}
+    ${e.twin&&e.twin.url?`<a class="ptwin" href="${esc(e.twin.url)}" target="_blank" rel="noopener">↔ ${esc(e.twin.title||e.twin.url)}</a>`:""}
     <div class="pscroll"><p>${esc(blurb(e))}</p>
     <div class="tags">${(e.tags||[]).slice(0,6).map(x=>`<span class="t">${esc(x)}</span>`).join("")}</div></div>
     <div class="pf"><span class="src">${e.url?esc(srcLabel(e.url)):""} · ${esc(e.year||"")}</span>
@@ -503,7 +506,6 @@ function render(){const t=UI[lang];
   document.documentElement.lang=lang;
   document.getElementById("apps_c").textContent=DATA.apps.length;
   document.getElementById("more_h").textContent=MORE_H[lang];
-  const dn=document.getElementById("delang");dn.textContent=DE_NOTE[lang];dn.classList.toggle("on",lang==="de");
   renderLegend();renderList();
   if(selected)select(selected);
   renderTabbar();renderPanel();}

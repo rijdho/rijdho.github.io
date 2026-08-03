@@ -1,5 +1,5 @@
 # Ricardo Hartley Belmar
-*MSc, PhD*
+*MSc, MSc, Dr.*
 
 **Open Science & Governance von Forschungsinformationen / PID-Rückverfolgbarkeit / Verantwortungsvolle Forschungsbewertung**
 
@@ -7,7 +7,7 @@ Open-Science-Experte an der Interdisciplinary Transformation University Austria 
 
 Meine Arbeit konzentriert sich auf die Governance von Forschungsinformationen, Metadatenqualität und verantwortungsvolle Bewertung und verbindet technologische, praktische und regulatorische Schnittstellen, damit Institutionen ehrgeizige Open-Science-Verpflichtungen umsetzen können.
 
-✉ ricdho@duck.com · [ORCID 0000-0001-5058-9309](https://orcid.org/0000-0001-5058-9309) · [Substack](https://rijdho.substack.com)
+✉ ricdho@duck.com (alias) · [ORCID 0000-0001-5058-9309](https://orcid.org/0000-0001-5058-9309) · [Substack](https://rijdho.substack.com)
 
 
 ## Berufserfahrung
@@ -15,44 +15,44 @@ Meine Arbeit konzentriert sich auf die Governance von Forschungsinformationen, M
 ### Open Science Expert — Interdisciplinary Transformation University Austria (IT:U)
 *May 2026 – Present · Linz, Austria*
 
-Design, implement, and maintain a university-wide Open Science concept aligned with institutional stakeholders and international standards and frameworks. Carry out hands-on technical work to develop, deploy, and operate Open Science tools and platforms, working closely with internal data owners, researchers, and lecturers to embed open practices, policies, and processes into workflows. Collaborate with external non-profit and corporate partners and represent IT:U in national and international Open Science initiatives, forums, and networks, while contributing to grant writing, ideation, and mentorship across academic projects.
+Entwurf, Umsetzung und Pflege eines universitätsweiten Open-Science-Konzepts, abgestimmt auf institutionelle Stakeholder sowie internationale Standards und Rahmenwerke. Praktische technische Arbeit zur Entwicklung, Bereitstellung und zum Betrieb von Open-Science-Werkzeugen und -Plattformen, in enger Zusammenarbeit mit internen Datenverantwortlichen, Forschenden und Lehrenden, um offene Praktiken, Richtlinien und Prozesse in die Arbeitsabläufe einzubetten. Zusammenarbeit mit externen gemeinnützigen und privatwirtschaftlichen Partnern und Vertretung der IT:U in nationalen und internationalen Open-Science-Initiativen, Foren und Netzwerken, ergänzt durch Mitwirkung an Förderanträgen, Ideenentwicklung und Mentoring in akademischen Projekten.
 
 ### Short-Term Scientific Mission (STSM) Researcher — Open Innovation in Science Center, Ludwig Boltzmann Gesellschaft
 *August 4 – October 28, 2025 · Vienna, Austria*
 
-Developed a comprehensive baseline of institutional identifiers, audited coverage of scholarly records across systems (ORCID, ROR, Crossref, DataCite, OpenAlex), and designed reproducible workflows for PID-based traceability of research outputs. Prepared integration guidelines to expand ORCID adoption among LBG researchers and compared information consistency between open infrastructures and institutional systems. The mission supported LBG's open science strategy and alignment with Austria's National Action Plan for the European Research Area (ERA-NAP) 2026–2028.
+Aufbau einer umfassenden Basis institutioneller Identifikatoren, Prüfung der Abdeckung wissenschaftlicher Nachweise über mehrere Systeme hinweg (ORCID, ROR, Crossref, DataCite, OpenAlex) und Entwurf reproduzierbarer Workflows für die PID-gestützte Rückverfolgbarkeit von Forschungsergebnissen. Erstellung von Integrationsleitlinien zur Ausweitung der ORCID-Nutzung unter LBG-Forschenden sowie Vergleich der Informationskonsistenz zwischen offenen Infrastrukturen und institutionellen Systemen. Die Mission unterstützte die Open-Science-Strategie der LBG und die Abstimmung mit Österreichs Nationalem Aktionsplan für den Europäischen Forschungsraum (ERA-NAP) 2026–2028.
 
-Strengthened my fluency with Microsoft-based ecosystems - including SharePoint, Power BI, and Azure Active Directory - to interface PID data with internal reporting suites, and piloted automation orchestrations using n8n and complementary integration platforms to streamline identifier governance tasks across teams.
+Vertiefung meiner Kenntnisse in Microsoft-Ökosystemen – darunter SharePoint, Power BI und Azure Active Directory –, um PID-Daten mit internen Reporting-Suiten zu verbinden, sowie Pilotierung von Automatisierungs-Orchestrierungen mit n8n und ergänzenden Integrationsplattformen zur Vereinfachung der Identifikator-Governance über Teams hinweg.
 
 ### Independent Researcher — Remolino Consulting
 *May – October 2025*
 
-Conducting research and consultancy on research infrastructures, metadata systems, and responsible research assessment.
+Forschung und Beratung zu Forschungsinfrastrukturen, Metadatensystemen und verantwortungsvoller Forschungsbewertung.
 
 ### Researcher — Universidad Central de Chile
 *2016–2025*
 
-Conducted research and institutional projects focused on research governance, scholarly communication, and Open Science policy development.
+Durchführung von Forschung und institutionellen Projekten mit Schwerpunkt auf Forschungs-Governance, wissenschaftlicher Kommunikation und der Entwicklung von Open-Science-Richtlinien.
 
 ### Researcher and Director — InES Open Science Project, Universidad Central de Chile
 *2022–2024*
 
-Led institutional policy development in Open Science, designed data governance models, and implemented research output traceability systems. The project, funded by Chile's national agency ANID, received the highest score in its 2021 cohort and resulted in the university's first Open Science policy.
+Leitung der Entwicklung institutioneller Open-Science-Richtlinien, Entwurf von Datengovernance-Modellen und Implementierung von Systemen zur Rückverfolgbarkeit von Forschungsergebnissen. Das von Chiles nationaler Agentur ANID geförderte Projekt erhielt die höchste Bewertung seiner Kohorte 2021 und führte zur ersten Open-Science-Richtlinie der Universität.
 
 ### Associated Researcher — Fundación Data Observatory, Chile
 *2024*
 
-Contributed to national FAIR data strategies and supported institutional adoption of open science policies.
+Mitwirkung an nationalen FAIR-Datenstrategien und Unterstützung der institutionellen Einführung von Open-Science-Richtlinien.
 
 ### Director, Institute for Research and Postgraduate Studies — Universidad Central de Chile
 *2021–2022*
 
-Oversaw research development and postgraduate programs in the Faculty of Health Sciences, promoting open science and institutional research capacity-building.
+Verantwortung für Forschungsentwicklung und Postgraduiertenprogramme der Fakultät für Gesundheitswissenschaften, mit Förderung von Open Science und institutionellem Kapazitätsaufbau in der Forschung.
 
 ### Coordinator, Institute for Research and Postgraduate Studies — Universidad Central de Chile
 *2016–2021*
 
-Coordinated research management efforts, supported data-driven accreditation processes, and promoted open infrastructure adoption.
+Koordination des Forschungsmanagements, Unterstützung datengestützter Akkreditierungsprozesse und Förderung der Einführung offener Infrastrukturen.
 
 
 ## Ausbildung
@@ -66,10 +66,10 @@ Coordinated research management efforts, supported data-driven accreditation pro
 
 ## Kompetenzen
 
-- **Forschungsinfrastruktur:** ORCID, ROR, Crossref, DataCite, OpenAlex, Metadata standards (Dublin Core, DataCite Metadata Schema, Schema.org)
-- **Datenanalyse:** R, Python, JavaScript, D3.js, Observable, API integration and data pipelines
-- **Datenmanagement:** Data Management Plans (DMPs), FAIR data principles implementation, Repository management, Research data governance
-- **Sprachen:** Spanish: Native, English: Fluent (Professional working proficiency)
+- **Forschungsinfrastruktur & Metadatensysteme:** ORCID, ROR, Crossref, DataCite, OpenAlex, Metadatenstandards (Dublin Core, DataCite Metadata Schema, Schema.org)
+- **Datenanalyse & Visualisierung:** R, Python, JavaScript, D3.js, Observable, API-Integration und Datenpipelines
+- **Datenmanagement & FAIR-Prinzipien:** Datenmanagementpläne (DMPs), Umsetzung der FAIR-Prinzipien, Repositorien-Management, Governance von Forschungsdaten
+- **Sprachen:** Spanisch: Muttersprache, Englisch: Fachenglisch
 
 ## Publikationen
 
@@ -167,102 +167,104 @@ Coordinated research management efforts, supported data-driven accreditation pro
 ### [BiblioHelp — Academic Reference Verification](https://bibliohelp.rijdho.org/)
 *Active · 2026 · SvelteKit, Hono, MeiliSearch, Crossref*
 
-Web-based tool that verifies academic bibliographies against six scholarly APIs (Crossref, OpenAlex, Open Library, OpenAIRE, Internet Archive, ISBNdb). Parses references in APA, MLA, Chicago, and Vancouver formats, classifies them as verified, partial, not found, or likely fabricated, detects duplicates, and generates downloadable reports. Includes a Microsoft Word add-in for in-document verification and an OAI-PMH endpoint for library harvesting. Built with SvelteKit, Hono, and MeiliSearch, deployed via Docker and Cloudflare.
+Webbasiertes Werkzeug, das akademische Literaturverzeichnisse gegen sechs wissenschaftliche APIs prüft (Crossref, OpenAlex, Open Library, OpenAIRE, Internet Archive, ISBNdb). Es analysiert Referenzen in den Formaten APA, MLA, Chicago und Vancouver, klassifiziert sie als verifiziert, teilweise verifiziert, nicht gefunden oder wahrscheinlich erfunden, erkennt Duplikate und erstellt herunterladbare Berichte. Enthält ein Microsoft-Word-Add-in für die Prüfung im Dokument sowie einen OAI-PMH-Endpunkt für die Nutzung durch Bibliotheken. Gebaut mit SvelteKit, Hono und MeiliSearch, bereitgestellt über Docker und Cloudflare.
 
 ### [MetAudits — Scielo Chile Crossref Metadata Completeness](https://metaudits.rijdho.org/scielochile/)
 *Active · 2026 · Crossref, Metadata Quality, FAIR, React*
 
-Dashboard that audits how complete Crossref metadata deposits are for SciELO Chile journals. Evaluates 37 fields per article across 4 FAIR-inspired categories, with interactive visualizations including rain cloud plots, radar charts, heatmaps, and year-based filtering. Built as a hub to add more publisher/registry audits.
+Dashboard, das die Vollständigkeit der Crossref-Metadaten von SciELO-Chile-Zeitschriften prüft. Es bewertet 37 Felder pro Artikel in vier FAIR-inspirierten Kategorien, mit interaktiven Visualisierungen wie Raincloud-Plots, Netzdiagrammen, Heatmaps und Filterung nach Jahr. Als Hub angelegt, um weitere Verlags- und Registry-Audits aufzunehmen.
 
 ### [Repo MetAudits — FAIR Metadata Quality Evaluator](https://metaudits.rijdho.org/repo-metaudits/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Custom API*
 
-Evaluates metadata quality of digital repositories against the FAIR Principles. Connects to OAI-PMH endpoints, DataCite records, or any custom REST API (CSW, STAC, CKAN, and more), harvests metadata, and runs a structured assessment across 14 sub-principles. Classifies persistent identifiers, detects license types, validates controlled vocabularies (DCMI, ISO 639), and checks community standards compliance. Includes prioritized recommendations, exportable reports (CSV, JSON, TXT), and interactive repository structure visualizations. FAIR assessment engine runs server-side on Cloudflare Workers for IP protection.
+Bewertet die Metadatenqualität digitaler Repositorien anhand der FAIR-Prinzipien. Das Werkzeug verbindet sich mit OAI-PMH-Endpunkten, DataCite-Datensätzen oder beliebigen REST-APIs (CSW, STAC, CKAN und weitere), erntet Metadaten und führt eine strukturierte Bewertung über 14 Unterprinzipien durch. Es klassifiziert persistente Identifikatoren, erkennt Lizenztypen, validiert kontrollierte Vokabulare (DCMI, ISO 639) und prüft die Einhaltung von Community-Standards. Enthält priorisierte Empfehlungen, exportierbare Berichte (CSV, JSON, TXT) und interaktive Visualisierungen der Repositoriumsstruktur. Die FAIR-Bewertungslogik läuft serverseitig auf Cloudflare Workers.
 
 ### [Dirty Repos — Problematic Files with DOIs in DataCite Repositories](https://metaudits.rijdho.org/dirty-repos/)
 *Active · 2026 · DataCite, Metadata Quality, React, Mapbox*
 
-Scans DataCite for DOIs pointing to problematic files — OS artifacts (.DS_Store, Thumbs.db), security risks (.env, credentials), and dev debris (node_modules, __pycache__) in research repositories. Enriched with geographic data from ROR and cross-referenced against re3data repository metadata. Interactive dashboard with Mapbox world map, category breakdowns, and repository drill-downs.
+Durchsucht DataCite nach DOIs, die auf problematische Dateien verweisen – Betriebssystem-Artefakte (.DS_Store, Thumbs.db), Sicherheitsrisiken (.env, Zugangsdaten) und Entwicklungsreste (node_modules, __pycache__) in Forschungsrepositorien. Angereichert mit geografischen Daten aus ROR und abgeglichen mit re3data-Repositoriumsmetadaten. Interaktives Dashboard mit Mapbox-Weltkarte, Aufschlüsselung nach Kategorien und Detailansichten je Repositorium.
 
 ### [Publisher Gap — Crossref vs OpenAlex Metadata Completeness](https://metaudits.rijdho.org/publisher-gap/)
 *Active · 2026 · Crossref, OpenAlex, Metadata Quality, FAIR*
 
-Do publishers care about metadata? Timeline evidence comparing Crossref deposits vs OpenAlex enrichment across 15 major publishers (2015–2025). Evaluates 47 metadata fields in 5 categories (FAIR + Evaluation/CoARA), with gap analysis radar charts, enrichment matrices, and per-publisher drill-downs showing mandate compliance trends.
+Kümmern sich Verlage um Metadaten? Zeitreihen-Evidenz im Vergleich von Crossref-Ablieferungen und OpenAlex-Anreicherung bei 15 großen Verlagen (2015–2025). Bewertet 47 Metadatenfelder in fünf Kategorien (FAIR + Bewertung/CoARA), mit Netzdiagrammen zur Lückenanalyse, Anreicherungsmatrizen und Detailansichten je Verlag, die Trends bei der Erfüllung von Vorgaben zeigen.
 
 ### [Persistence of Retracted Knowledge in Scientific Literature](https://metaudits.rijdho.org/retractions/)
 *Active · 2025 · React, Recharts, Retraction Watch, OpenAlex*
 
-Interactive dashboard analyzing citation persistence of 60,921 retracted articles. Reveals that 56% of citations occur post-retraction with no decay over 15 years, geographic disparities in detection speed, and flat supporting/contradicting ratios over time. Built with data from Retraction Watch, OpenAlex, and Scite.ai. Also in https://observablehq.com/d/cecaefb7d49c7727
+Interaktives Dashboard zur Zitationspersistenz von 60.921 zurückgezogenen Artikeln. Es zeigt, dass 56 % der Zitationen nach der Rücknahme erfolgen, ohne Rückgang über 15 Jahre, dazu geografische Unterschiede in der Erkennungsgeschwindigkeit und über die Zeit konstante Verhältnisse zwischen stützenden und widersprechenden Zitationen. Daten von Retraction Watch, OpenAlex und Scite.ai. Auch unter https://observablehq.com/d/cecaefb7d49c7727
 
 ### [maDMP Gap — Data Management Plans vs RDA maDMP Standard](https://metaudits.rijdho.org/madmp/)
 *Active · 2026 · RDA maDMP, Horizon Europe, ANID, FAIR*
 
-Analyzes the gap between Horizon Europe data management plans (DMPs) and the RDA maDMP standard. Evaluates 6,119 DMPs against 48 RDA properties, measuring what proportion is mentioned in text (77.5%) versus machine-actionable (22.7%). Includes comparison with Chile's ANID template (1/48 fields machine-actionable). Evidence that mandates generate narrative documents, not connected entities.
+Analysiert die Lücke zwischen Datenmanagementplänen (DMPs) aus Horizon Europe und dem RDA-maDMP-Standard. Bewertet 6.119 DMPs anhand von 48 RDA-Eigenschaften und misst, welcher Anteil im Text erwähnt (77,5 %) und welcher maschinell verarbeitbar ist (22,7 %). Enthält einen Vergleich mit der ANID-Vorlage Chiles (1 von 48 Feldern maschinell verarbeitbar). Ein Beleg dafür, dass Vorgaben narrative Dokumente hervorbringen, keine verknüpften Entitäten.
 
 ### [ORCID Adoption — Consortium vs Non-Consortium](https://metaudits.rijdho.org/orcid-adoption/)
 *Active · 2026 · ORCID, PID Adoption, Metadata Quality, React*
 
-Do ORCID consortia drive meaningful adoption, or just empty accounts? Compares profile completeness across 88 institutions and 200,595 profiles from 6 continents. Key finding: consortium institutions average 41.2% completeness with 49% empty profiles, versus 40.4% and 51% for non-consortium — a gap of just +0.7pp. Pre-2018 profiles reach ~50% (intrinsic motivation); post-2022 drop below 30% (mandate-driven bulk creation).
+Führen ORCID-Konsortien zu substanzieller Nutzung oder nur zu leeren Konten? Vergleich der Profilvollständigkeit über 88 Einrichtungen und 200.595 Profile aus sechs Kontinenten. Zentrales Ergebnis: Einrichtungen in Konsortien erreichen im Mittel 41,2 % Vollständigkeit bei 49 % leeren Profilen, gegenüber 40,4 % und 51 % außerhalb von Konsortien – ein Unterschied von nur +0,7 Prozentpunkten. Profile von vor 2018 erreichen rund 50 % (intrinsische Motivation); Profile nach 2022 fallen unter 30 % (durch Vorgaben erzeugte Masseneinrichtung).
 
 ### [MCP CRIS Live](https://hub.docker.com/r/rijdho/mcp-cris-live)
 *Active · 2026 · MCP, Docker, Node.js, ORCID*
 
-MCP Server for real-time research data. Provides live access to authoritative academic sources (ORCID, OpenAlex, Crossref, DataCite, ROR, and PubMed) via a Dockerized Node.js server compatible with Claude Desktop.
+MCP-Server für Forschungsdaten in Echtzeit. Bietet Live-Zugriff auf maßgebliche wissenschaftliche Quellen (ORCID, OpenAlex, Crossref, DataCite, ROR und PubMed) über einen dockerisierten Node.js-Server, kompatibel mit Claude Desktop.
 
 ### [MCP CRIS Live — OpenAIRE](https://hub.docker.com/r/rijdho/mcp-cris-live-openaire)
 *Active · 2026 · MCP, Docker, Node.js, OpenAIRE*
 
-MCP server exposing the OpenAIRE Graph API (100M+ open access research products) to AI assistants. Provides 14 tools for searching publications, datasets, software, organizations, projects, and persons. Dockerized Node.js server with in-memory cache, rate limiting, and retry logic. Built as a companion to MCP CRIS Live focused on open science infrastructure.
+MCP-Server, der die OpenAIRE-Graph-API (über 100 Mio. offen zugängliche Forschungsergebnisse) für KI-Assistenten bereitstellt. Bietet 14 Werkzeuge zur Suche nach Publikationen, Datensätzen, Software, Organisationen, Projekten und Personen. Dockerisierter Node.js-Server mit In-Memory-Cache, Rate-Limiting und Wiederholungslogik. Als Ergänzung zu MCP CRIS Live mit Fokus auf Open-Science-Infrastruktur entwickelt.
 
 ### OpenAIRE Research Assistant — Demo
 *Active · 2026 · Cloudflare Workers AI, LLM, Agentic AI, OpenAIRE*
 
-Chat interface where Cloudflare Workers AI (Llama 3.1 8B) uses the OpenAIRE MCP tools in an agentic loop to answer research questions in natural language. The LLM decides which tools to call, executes the OpenAIRE searches, and synthesizes the results into a readable response. Deployed entirely on free Cloudflare infrastructure (Pages + Workers AI).
+Chat-Oberfläche, in der Cloudflare Workers AI (Llama 3.1 8B) die OpenAIRE-MCP-Werkzeuge in einer agentischen Schleife nutzt, um Forschungsfragen in natürlicher Sprache zu beantworten. Das Sprachmodell entscheidet, welche Werkzeuge aufgerufen werden, führt die OpenAIRE-Suchen aus und fasst die Ergebnisse lesbar zusammen. Vollständig auf kostenloser Cloudflare-Infrastruktur betrieben (Pages + Workers AI).
 
 ### [sound-inequality](https://sound-inequality.rijdho.org/)
 *Active · 2026 · Sonification, Data Viz, R, Accessibility*
 
-Sonification project exploring data inequality patterns through audio. Transforms statistical disparities into sound compositions to make data accessible through auditory perception.
+Sonifikationsprojekt, das Muster von Datenungleichheit hörbar macht. Es überführt statistische Disparitäten in Klangkompositionen, um Daten über die auditive Wahrnehmung zugänglich zu machen.
 
 ### PID Traceability Workflows
 *Active · 2025 · PIDs, Research Infrastructure, Python, API Integration*
 
-Development of reproducible workflows for tracking research outputs across persistent identifier systems (ORCID, ROR, Crossref, DataCite, OpenAlex). Built for institutional research information governance.
+Entwicklung reproduzierbarer Workflows zur Nachverfolgung von Forschungsergebnissen über Systeme persistenter Identifikatoren hinweg (ORCID, ROR, Crossref, DataCite, OpenAlex). Für die institutionelle Governance von Forschungsinformationen gebaut.
 
 ### [fair-repo-audit](https://rijdho.github.io/fair-repo-audit/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Open source*
 
-Open, client-side twin of Repo MetAudits — FAIR metadata scoring for DataCite and OAI-PMH repositories, running entirely in the browser. The published, open-source counterpart of the hosted evaluator.
+Offener, clientseitiger Zwilling von Repo MetAudits – FAIR-Metadatenbewertung für DataCite- und OAI-PMH-Repositorien, vollständig im Browser. Das veröffentlichte Open-Source-Gegenstück zum gehosteten Evaluator.
 
 ### [bibliohelpc](https://rijdho.github.io/bibliohelpc/)
 *Active · 2026 · SvelteKit, Citation Verification, Open source*
 
-Open-source companion of BiblioHelp — the reference-verification app and Word add-in, as code and a static build. The published twin of the hosted tool.
+Open-Source-Begleiter von BiblioHelp – die App zur Referenzprüfung und das Word-Add-in als Quellcode und statischer Build. Der veröffentlichte Zwilling des gehosteten Werkzeugs.
 
 ### [coara-action-planner](https://rijdho.github.io/coara-action-planner/)
 *Active · 2026 · CoARA, Research Assessment, Open source*
 
-Self-assess your institution against the ten CoARA commitments and generate a prioritised, editable action plan — entirely in your browser. The open twin of the Reform Assessment toolkit.
+Bewerten Sie Ihre Einrichtung selbst anhand der zehn CoARA-Verpflichtungen und erzeugen Sie einen priorisierten, bearbeitbaren Aktionsplan – vollständig im Browser. Der offene Zwilling des Reform-Assessment-Toolkits.
+
+↔ [Reform Assessment](https://metaudits.rijdho.org/reform-assessment/)
 
 ### [criolab](https://rijdho.github.io/criolab/)
 *Active · 2026 · Simulators, Interactive, Open source*
 
-Four interactive simulators that make the open methodological questions of four 2026 manuscripts manipulable — Wahlund effect, glycolytic potential, statistical power, and NPV sensitivity. No build, no dependencies.
+Vier interaktive Simulatoren, die die offenen methodischen Fragen von vier Manuskripten aus 2026 manipulierbar machen – Wahlund-Effekt, glykolytisches Potenzial, statistische Power und Kapitalwert-Sensitivität. Ohne Build, ohne Abhängigkeiten.
 
 
 ## Engagements
 
-- **Member**, Open Science Monitoring Initiative (OSMI), WG1 & WG4 — WG1: Defining open science monitoring needs and WG4: Building shared infrastructures and tools
-- **Member**, Barcelona Declaration on Open Research Information, WG7 — Promoting interoperability, openness, and inclusivity in research information ecosystems
-- **Advisory Board Member**, Cross-Domain Interoperability Framework (CDIF) - CODATA — Supporting interdisciplinary metadata interoperability frameworks
+- **Member**, Open Science Monitoring Initiative (OSMI), WG1 & WG4 — WG1: Definition des Bedarfs für Open-Science-Monitoring und WG4: Aufbau gemeinsamer Infrastrukturen und Werkzeuge
+- **Member**, Barcelona Declaration on Open Research Information, WG7 — Förderung von Interoperabilität, Offenheit und Inklusivität in Ökosystemen für Forschungsinformationen
+- **Advisory Board Member**, Cross-Domain Interoperability Framework (CDIF) - CODATA — Unterstützung interdisziplinärer Rahmenwerke für Metadaten-Interoperabilität
 
 ## Weiterbildung
 
-- **Skills4EOSC First Cohort Participant** (2025) — Currently enrolled in the Train of Trainers Learning Path: Open Science and Research Data Management in the Social Sciences and Humanities, part of the European Skills4EOSC program. Focus on FAIR-enabling services, interoperability infrastructures, and applied data governance for research institutions.
-- **Essentials 4 Data Support** (2023) — Completed official RDNL training for research data support professionals. Focused on FAIR principles, metadata quality, data sharing, and the implementation of robust Data Management Plans (DMPs). Only active Latin American participant in the cohort.
-- **CWTS Scientometrics Summer School** (2020) — Intensive 75-hour course on scientometrics, bibliometric indicators, knowledge flows, and research evaluation methodologies. Covered theory and practical application for policy and infrastructure development.
-- **FORCE11 Scholarly Communication Institute – FSCI** (2017–2025) — Completed multiple tracks including: Governance for AI in Scientific Publications, Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Data visualization in R and D3.js, Using APIs (ORCID, Sherpa Romeo, Unpaywall) for institutional analysis
-- **DataCite Certified Core Training** (2024) — Certification focused on the use of persistent identifiers (PIDs), metadata best practices, and repository integration with DataCite infrastructure.
+- **Skills4EOSC First Cohort Participant** (2025) — Teilnahme am Learning Path Train of Trainers: Open Science and Research Data Management in the Social Sciences and Humanities im Rahmen des europäischen Programms Skills4EOSC. Schwerpunkte: FAIR-fähige Dienste, Interoperabilitätsinfrastrukturen und angewandte Datengovernance für Forschungseinrichtungen.
+- **Essentials 4 Data Support** (2023) — Abschluss der offiziellen RDNL-Schulung für Fachkräfte im Bereich Forschungsdatenunterstützung. Schwerpunkte: FAIR-Prinzipien, Metadatenqualität, Datenaustausch und die Umsetzung belastbarer Datenmanagementpläne (DMPs). Einziger aktiver lateinamerikanischer Teilnehmer der Kohorte.
+- **CWTS Scientometrics Summer School** (2020) — Intensivkurs mit 75 Stunden zu Szientometrie, bibliometrischen Indikatoren, Wissensflüssen und Methoden der Forschungsbewertung. Behandelte Theorie und praktische Anwendung für Politik- und Infrastrukturentwicklung.
+- **FORCE11 Scholarly Communication Institute – FSCI** (2017–2025) — Abschluss mehrerer Tracks, darunter: Governance for AI in Scientific Publications, Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Datenvisualisierung in R und D3.js, Nutzung von APIs (ORCID, Sherpa Romeo, Unpaywall) für institutionelle Analysen.
+- **DataCite Certified Core Training** (2024) — Zertifizierung mit Schwerpunkt auf der Nutzung persistenter Identifikatoren (PIDs), Best Practices für Metadaten und der Anbindung von Repositorien an die DataCite-Infrastruktur.
 
 ---
-*Generiert aus data/cv.json · 2026-07-31*
+*Generiert aus data/cv.json · 2026-08-03*

@@ -10,13 +10,12 @@ from this origin.
 
 🔗 **Live:** https://rijdho.github.io/
 
-Available in **English, German and Spanish** (auto-detected, switchable). German content
-for the long descriptions is still being translated; those fields fall back to English
-with a visible note until `cv.json` carries them.
+Available in **English, German and Spanish** (auto-detected, switchable) — interface and
+content both, including every long description.
 
 ## The three views
 
-- **The hub** (`index.html`) — the 13 tools and experiments as a cloud of ovals grouped
+- **The hub** (`index.html`) — the 17 tools and experiments as a cloud of ovals grouped
   by topic (drag, filter, click to open the live app), plus a tabbed section for the rest
   of the CV: writing, publications, talks, experience, education, engagements, training.
 - **The academic CV** (`cv.html`) — the same data laid out as a formal, print-ready CV.
@@ -42,8 +41,9 @@ regenerates it on every push, and you can also run the build locally.
 
 Everything lives in `data/cv.json`. To add something, drop a new object into the right
 array; the hub and CV pick it up on next load, and `build_cv.py` folds it into the Markdown
-CVs. Bilingual text fields are `{ "en": …, "es": …, "de": … }` — `de` is optional and falls
-back to English.
+CVs. Translated text fields are `{ "en": …, "es": …, "de": … }` — a missing `de` falls back
+to English, but fill all three: EN/DE/ES is the floor, and every field currently carries them.
+That includes the individual `skills[].items`, which are objects, not plain strings.
 
 **A new tool (a bubble in the cloud):** add to `experiments`. `topic` sets its colour/cluster
 and must be one of `metadata`, `assessment`, `infra`, `story`.
@@ -79,6 +79,10 @@ GitHub twin.
 **A DOI:** add `"doi": "10.5281/zenodo.…"` to any entry and its detail panel shows a DOI
 link under the title.
 
+**Pointing at a sibling that is not itself a bubble:** add `"twin": { "title": …, "url": … }`.
+It renders as a `↔` link in the panel and on the CV, so a description that names another tool
+("the open twin of X") is actually reachable without adding X to the cloud.
+
 Then: commit and push. The live site updates from the JSON immediately; the Action
 regenerates the Markdown CVs. To preview before pushing, run it locally (below).
 
@@ -99,7 +103,10 @@ and regenerates the Markdown CVs. The user-site repo publishes at the domain roo
 
 - The site is a curated, self-reported view of one person's work; it is not a verified
   record. Publication and metric claims trace to the linked sources, not to this page.
-- German descriptions are partial (see the language note above).
+- Author names in the publication list follow how each publisher set them, so the same
+  person appears in several forms. That is the record, not a normalisation error.
+- A few older entries link to a publisher homepage rather than the item itself, where no
+  stable record URL exists.
 - Fonts are Inter (self-hosted woff2, see `fonts/`).
 
 ## License

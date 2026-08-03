@@ -1,5 +1,5 @@
 # Ricardo Hartley Belmar
-*MSc, PhD*
+*MSc, MSc, Dr.*
 
 **Open science & research information governance / PID traceability / Responsible research assessment**
 
@@ -7,7 +7,7 @@ Open Science Expert at the Interdisciplinary Transformation University Austria (
 
 My work centers on research information governance, metadata quality, and responsible assessment, bridging technological, practical, and regulatory interfaces so institutions can operationalize ambitious open science commitments.
 
-✉ ricdho@duck.com · [ORCID 0000-0001-5058-9309](https://orcid.org/0000-0001-5058-9309) · [Substack](https://rijdho.substack.com)
+✉ ricdho@duck.com (alias) · [ORCID 0000-0001-5058-9309](https://orcid.org/0000-0001-5058-9309) · [Substack](https://rijdho.substack.com)
 
 
 ## Experience
@@ -69,7 +69,7 @@ Coordinated research management efforts, supported data-driven accreditation pro
 - **Research Infrastructure & Metadata Systems:** ORCID, ROR, Crossref, DataCite, OpenAlex, Metadata standards (Dublin Core, DataCite Metadata Schema, Schema.org)
 - **Data Analysis & Visualization:** R, Python, JavaScript, D3.js, Observable, API integration and data pipelines
 - **Data Management & FAIR Principles:** Data Management Plans (DMPs), FAIR data principles implementation, Repository management, Research data governance
-- **Languages:** Spanish: Native, English: Fluent (Professional working proficiency)
+- **Languages:** Spanish: Native, English: Technical
 
 ## Publications
 
@@ -177,7 +177,7 @@ Dashboard that audits how complete Crossref metadata deposits are for SciELO Chi
 ### [Repo MetAudits — FAIR Metadata Quality Evaluator](https://metaudits.rijdho.org/repo-metaudits/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Custom API*
 
-Evaluates metadata quality of digital repositories against the FAIR Principles. Connects to OAI-PMH endpoints, DataCite records, or any custom REST API (CSW, STAC, CKAN, and more), harvests metadata, and runs a structured assessment across 14 sub-principles. Classifies persistent identifiers, detects license types, validates controlled vocabularies (DCMI, ISO 639), and checks community standards compliance. Includes prioritized recommendations, exportable reports (CSV, JSON, TXT), and interactive repository structure visualizations. FAIR assessment engine runs server-side on Cloudflare Workers for IP protection.
+Evaluates metadata quality of digital repositories against the FAIR Principles. Connects to OAI-PMH endpoints, DataCite records, or any custom REST API (CSW, STAC, CKAN, and more), harvests metadata, and runs a structured assessment across 14 sub-principles. Classifies persistent identifiers, detects license types, validates controlled vocabularies (DCMI, ISO 639), and checks community standards compliance. Includes prioritized recommendations, exportable reports (CSV, JSON, TXT), and interactive repository structure visualizations. The FAIR assessment engine runs server-side on Cloudflare Workers.
 
 ### [Dirty Repos — Problematic Files with DOIs in DataCite Repositories](https://metaudits.rijdho.org/dirty-repos/)
 *Active · 2026 · DataCite, Metadata Quality, React, Mapbox*
@@ -244,6 +244,8 @@ Open-source companion of BiblioHelp — the reference-verification app and Word 
 
 Self-assess your institution against the ten CoARA commitments and generate a prioritised, editable action plan — entirely in your browser. The open twin of the Reform Assessment toolkit.
 
+↔ [Reform Assessment](https://metaudits.rijdho.org/reform-assessment/)
+
 ### [criolab](https://rijdho.github.io/criolab/)
 *Active · 2026 · Simulators, Interactive, Open source*
 
@@ -258,11 +260,11 @@ Four interactive simulators that make the open methodological questions of four 
 
 ## Training
 
-- **Skills4EOSC First Cohort Participant** (2025) — Currently enrolled in the Train of Trainers Learning Path: Open Science and Research Data Management in the Social Sciences and Humanities, part of the European Skills4EOSC program. Focus on FAIR-enabling services, interoperability infrastructures, and applied data governance for research institutions.
+- **Skills4EOSC First Cohort Participant** (2025) — Participant in the Train of Trainers Learning Path: Open Science and Research Data Management in the Social Sciences and Humanities, part of the European Skills4EOSC program. Focus on FAIR-enabling services, interoperability infrastructures, and applied data governance for research institutions.
 - **Essentials 4 Data Support** (2023) — Completed official RDNL training for research data support professionals. Focused on FAIR principles, metadata quality, data sharing, and the implementation of robust Data Management Plans (DMPs). Only active Latin American participant in the cohort.
 - **CWTS Scientometrics Summer School** (2020) — Intensive 75-hour course on scientometrics, bibliometric indicators, knowledge flows, and research evaluation methodologies. Covered theory and practical application for policy and infrastructure development.
 - **FORCE11 Scholarly Communication Institute – FSCI** (2017–2025) — Completed multiple tracks including: Governance for AI in Scientific Publications, Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Data visualization in R and D3.js, Using APIs (ORCID, Sherpa Romeo, Unpaywall) for institutional analysis
 - **DataCite Certified Core Training** (2024) — Certification focused on the use of persistent identifiers (PIDs), metadata best practices, and repository integration with DataCite infrastructure.
 
 ---
-*Generated from data/cv.json · 2026-07-31*
+*Generated from data/cv.json · 2026-08-03*

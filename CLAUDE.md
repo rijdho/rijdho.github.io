@@ -21,10 +21,14 @@ it at load, so the change is live immediately. `CV.*.md` is a build artifact —
 `python3 build_cv.py` (the Action also does it on push). Never hand-edit the `.md` files or
 re-inline data into the HTML; that reintroduces the drift this structure exists to kill.
 
-Bilingual/trilingual text fields are `{en, de, es}` objects; consumers fall back `de → en`.
-German is present for the tagline, summary and skills titles; the long descriptions are
-still English-only and show a visible fallback note. Add German by filling the `de` keys in
-`cv.json` — no code change needed.
+Trilingual text fields are `{en, de, es}` objects; consumers fall back `de → en`. **All
+three languages are complete as of 2026-08-03** — tagline, summary, skills titles *and*
+items, and every long description in `experience`, `training`, `engagements`, `portfolio`
+and `experiments`. The German fallback note that used to sit under the cloud is gone; if you
+add an entry, fill all three keys rather than reintroducing it. `skills[].items` are `{en,
+de, es}` objects, not plain strings — that was the last place English leaked into the ES/DE
+views. Job titles, degree names, publication titles and talk titles stay in their original
+language on purpose.
 
 ## Fetch, not inline
 
