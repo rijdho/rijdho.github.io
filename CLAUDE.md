@@ -30,6 +30,19 @@ de, es}` objects, not plain strings — that was the last place English leaked i
 views. Job titles, degree names, publication titles and talk titles stay in their original
 language on purpose.
 
+## Links in the CV lists: the title, and a chip that tells the truth
+
+Every row across the tabbed section and the CV page follows one shape: **the title is the
+link, never the whole row.** Wrapping the row in an `<a>` underlines the year, the eyebrow
+and the blurb along with it — that was the Writing tab until 2026-08-03, and it was the only
+one of the seven tabs doing it.
+
+The right-hand chip (`linkChip()` in `index.html`) labels itself from the URL: `DOI` only
+when it actually matches `doi.org`, otherwise the host via the existing `srcLabel()`. Do not
+hard-code the label — it used to read `DOI →` for every entry that had any URL at all, so a
+publisher homepage was presented as a persistent identifier. An entry with no `url` gets no
+chip, which is the honest rendering and the visible prompt to go find the missing link.
+
 ## Fetch, not inline
 
 The pages read `cv.json` at runtime. Consequence: they only work over `http://`, not

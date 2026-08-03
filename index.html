@@ -157,6 +157,8 @@
   .pyear{font-family:var(--mono);font-size:.74rem;color:var(--faint);width:5ch;flex:none;font-variant-numeric:tabular-nums}
   .pmain{flex:1;min-width:0}
   .ptitle{font-weight:560;font-size:.9rem;letter-spacing:-.005em;margin:0 0 2px;line-height:1.35}
+  .ptitle a{color:inherit;text-decoration:none}
+  .ptitle a:hover{text-decoration:underline;text-decoration-color:var(--brand);text-underline-offset:2px}
   .pmeta{color:var(--muted);font-size:.82rem;line-height:1.45}
   .pmeta b{color:var(--ink);font-weight:600}
   .ptype{font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brand);font-weight:600}
@@ -458,19 +460,27 @@ const deLbl=o=>(o&&(o[lang]||o.en))||"";
 function pcount(k){if(k==="writing")return DATA.writing.length;
   if(k==="publications")return Object.values(EXTRA.publications).reduce((s,a)=>s+a.length,0);
   return (EXTRA[k]||[]).length;}
+/* The title carries the link — never the whole row, or the year and the blurb get
+   underlined too. The right-hand chip names what it actually resolves to: "DOI" only
+   for a real doi.org URL, otherwise the host, so a publisher homepage cannot pose as
+   a persistent identifier. */
+const titleLink=(title,u)=>u?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(title)}</a>`:esc(title);
+const isDOI=u=>/^https?:\/\/(dx\.)?doi\.org\//i.test(u||"");
+function linkChip(u){if(!u)return"";
+  return `<a class="plink" href="${esc(u)}" target="_blank" rel="noopener">${esc(isDOI(u)?"DOI":srcLabel(u))} →</a>`;}
 function rowsWriting(){return DATA.writing.map(e=>`
-  <a class="prow" href="${esc(e.url||'#')}" target="_blank" rel="noopener">
+  <div class="prow">
     <span class="pyear">${esc(e.year||"")}</span>
     <span class="pmain"><span class="ptype">${esc(e.type||"Writing")}</span>
-      <div class="ptitle">${esc(e.title)}</div><div class="pmeta">${esc(blurb(e))}</div></span>
-    <span class="plink">→</span></a>`).join("");}
+      <div class="ptitle">${titleLink(e.title,e.url)}</div><div class="pmeta">${esc(blurb(e))}</div></span>
+    ${linkChip(e.url)}</div>`).join("");}
 function rowsPubs(){return ["peerReviewed","policyPapers","guides","datasets","workingPapers"].map(g=>{
   const items=EXTRA.publications[g]||[];if(!items.length)return"";
   return `<div class="pgrp">${esc(PUBGRP[g][lang])} · ${items.length}</div>`+items.map(p=>`
     <div class="prow"><span class="pyear">${esc(p.year||"")}</span>
-      <span class="pmain"><div class="ptitle">${esc(p.title)}</div>
+      <span class="pmain"><div class="ptitle">${titleLink(p.title,p.url)}</div>
       <div class="pmeta">${esc(p.authors||"")}${p.venue?' · <b>'+esc(p.venue)+'</b>':''}</div></span>
-      ${p.url?`<a class="plink" href="${esc(p.url)}" target="_blank" rel="noopener">DOI →</a>`:''}</div>`).join("");
+      ${linkChip(p.url)}</div>`).join("");
   }).join("");}
 function rowsTalks(){return EXTRA.talks.map(t=>`
   <div class="prow"><span class="pyear">${esc((t.date||"").split(",").pop().trim())}</span>
