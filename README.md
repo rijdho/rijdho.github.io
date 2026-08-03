@@ -67,8 +67,24 @@ and must be one of `metadata`, `assessment`, `infra`, `story`.
   "venue": "Journal", "url": "https://doi.org/…" }
 ```
 
-**A new talk:** add to `presentations` — `{ "type": "…", "title": "…", "event": "…", "date": "…" }`.
-**A new essay/column:** add to `portfolio` — same shape as a tool minus `status`/`tags`/`topic`.
+**A new talk:** add to `presentations` —
+`{ "type": "…", "title": "…", "event": "…", "date": "…" }`.
+**A new essay/column:** add to `portfolio` — same shape as a tool minus
+`status`/`tags`/`topic`.
+
+**A new degree:** add to `education`. `degree` is a translated field, not a plain string, and
+its Spanish should be the wording registered in ORCID rather than a translation made up here:
+
+```json
+{ "degree": { "en": "Master in Sciences", "es": "Magíster en Ciencias",
+              "de": "Master in Naturwissenschaften" },
+  "inst": "Universidad de La Frontera, Chile", "year": "2013" }
+```
+
+**The header block** is `personal`. `degrees` is the short post-nominal list printed under the
+name (`["MSc", "MSc", "Dr."]` → *MSc · MSc · Dr.*) and is deliberately separate from the full
+names in `education`. `"emailIsAlias": true` appends *(alias)* next to the address on the CV
+page and in the Markdown, so the address is not mistaken for a primary institutional one.
 
 **Linking two related projects in the cloud:** give each an `"id"` and list the other in
 `"related": ["<id>"]` — the two bubbles then attract and touch. Add `"platform": "github"`
