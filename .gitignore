@@ -10,3 +10,6 @@ dist/
 # local dev helpers
 serve_utf8.py
 __pycache__/
+
+# Sensitive/local-only material — never committed (house rule, see github/CLAUDE.md)
+_ref/
