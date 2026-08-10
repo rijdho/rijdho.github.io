@@ -12,6 +12,13 @@ ships in numbered drops.
 
 ## [Unreleased]
 
+### Added
+
+- `/bibliohelp/` redirect alias → `/bibliohelpc/`. The tool is branded BiblioHelp but its
+  repo (and Pages path) carries the `c` of the Cloudflare edition; the guessed URL now
+  lands on the real landing instead of a 404. Marked `noindex` with a canonical link so
+  only the real path is indexed.
+
 ### Fixed
 
 - The Licenciatura and the Título Profesional are two separate Chilean credentials awarded a
