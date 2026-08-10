@@ -235,7 +235,7 @@ Development of reproducible workflows for tracking research outputs across persi
 
 Open, client-side twin of Repo MetAudits — FAIR metadata scoring for DataCite and OAI-PMH repositories, running entirely in the browser. The published, open-source counterpart of the hosted evaluator.
 
-### [bibliohelpc](https://rijdho.github.io/bibliohelpc/)
+### [bibliohelp](https://rijdho.github.io/bibliohelp/)
 *Active · 2026 · SvelteKit, Citation Verification, Open source*
 
 Open-source companion of BiblioHelp — the reference-verification app and Word add-in, as code and a static build. The published twin of the hosted tool.

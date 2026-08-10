@@ -235,7 +235,7 @@ Entwicklung reproduzierbarer Workflows zur Nachverfolgung von Forschungsergebnis
 
 Offener, clientseitiger Zwilling von Repo MetAudits – FAIR-Metadatenbewertung für DataCite- und OAI-PMH-Repositorien, vollständig im Browser. Das veröffentlichte Open-Source-Gegenstück zum gehosteten Evaluator.
 
-### [bibliohelpc](https://rijdho.github.io/bibliohelpc/)
+### [bibliohelp](https://rijdho.github.io/bibliohelp/)
 *Active · 2026 · SvelteKit, Citation Verification, Open source*
 
 Open-Source-Begleiter von BiblioHelp – die App zur Referenzprüfung und das Word-Add-in als Quellcode und statischer Build. Der veröffentlichte Zwilling des gehosteten Werkzeugs.

@@ -1167,10 +1167,10 @@
     },
     {
       "id": "bibliohelpc",
-      "title": "bibliohelpc",
+      "title": "bibliohelp",
       "year": "2026",
       "status": "Active",
-      "url": "https://rijdho.github.io/bibliohelpc/",
+      "url": "https://rijdho.github.io/bibliohelp/",
       "tags": [
         "SvelteKit",
         "Citation Verification",

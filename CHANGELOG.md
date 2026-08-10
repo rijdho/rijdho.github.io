@@ -14,10 +14,17 @@ ships in numbered drops.
 
 ### Added
 
-- `/bibliohelp/` redirect alias → `/bibliohelpc/`. The tool is branded BiblioHelp but its
-  repo (and Pages path) carries the `c` of the Cloudflare edition; the guessed URL now
-  lands on the real landing instead of a 404. Marked `noindex` with a canonical link so
-  only the real path is indexed.
+- `/bibliohelpc/` redirect alias → `/bibliohelp/`. The BiblioHelp repo dropped the `c` of
+  its Cloudflare edition on 2026-08-10 (renamed `bibliohelpc` → `bibliohelp`); GitHub
+  redirects the git repo but not project-Pages URLs, so old landing links get forwarded
+  here. Marked `noindex` with a canonical to the new path. (Earlier the same day the
+  alias existed in the opposite direction — `/bibliohelp/` → `/bibliohelpc/` — until the
+  rename made the guessed URL the real one.)
+
+### Changed
+
+- The `bibliohelpc` experiment card follows the repo rename: title and URL now read
+  `bibliohelp` / `rijdho.github.io/bibliohelp/`.
 
 ### Fixed
 

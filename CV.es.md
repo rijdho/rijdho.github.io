@@ -235,7 +235,7 @@ Desarrollo de flujos de trabajo reproducibles para rastrear productos de investi
 
 Gemelo abierto y del lado del cliente de Repo MetAudits — evaluación FAIR de metadatos para repositorios DataCite y OAI-PMH, ejecutándose enteramente en el navegador. La contraparte publicada y de código abierto del evaluador alojado.
 
-### [bibliohelpc](https://rijdho.github.io/bibliohelpc/)
+### [bibliohelp](https://rijdho.github.io/bibliohelp/)
 *Active · 2026 · SvelteKit, Citation Verification, Open source*
 
 Complemento de código abierto de BiblioHelp — la app de verificación de referencias y el add-in de Word, como código y build estático. El gemelo publicado de la herramienta alojada.
