@@ -851,18 +851,18 @@
       "tags": [
         "SvelteKit",
         "Hono",
-        "MeiliSearch",
+        "Cloudflare Workers",
+        "D1 + Vectorize",
         "Crossref",
         "OpenAlex",
         "OpenAIRE",
-        "Citation Verification",
-        "Docker"
+        "Citation Verification"
       ],
       "topic": "metadata",
       "desc": {
-        "en": "Web-based tool that verifies academic bibliographies against six scholarly APIs (Crossref, OpenAlex, Open Library, OpenAIRE, Internet Archive, ISBNdb). Parses references in APA, MLA, Chicago, and Vancouver formats, classifies them as verified, partial, not found, or likely fabricated, detects duplicates, and generates downloadable reports. Includes a Microsoft Word add-in for in-document verification and an OAI-PMH endpoint for library harvesting. Built with SvelteKit, Hono, and MeiliSearch, deployed via Docker and Cloudflare.",
-        "es": "Herramienta web que verifica bibliografías académicas contra seis APIs académicas (Crossref, OpenAlex, Open Library, OpenAIRE, Internet Archive, ISBNdb). Parsea referencias en formatos APA, MLA, Chicago y Vancouver, las clasifica como verificadas, parciales, no encontradas o probablemente fabricadas, detecta duplicados y genera reportes descargables. Incluye un complemento para Microsoft Word para verificación dentro del documento y un endpoint OAI-PMH para cosecha por bibliotecas. Construido con SvelteKit, Hono y MeiliSearch, desplegado vía Docker y Cloudflare.",
-        "de": "Webbasiertes Werkzeug, das akademische Literaturverzeichnisse gegen sechs wissenschaftliche APIs prüft (Crossref, OpenAlex, Open Library, OpenAIRE, Internet Archive, ISBNdb). Es analysiert Referenzen in den Formaten APA, MLA, Chicago und Vancouver, klassifiziert sie als verifiziert, teilweise verifiziert, nicht gefunden oder wahrscheinlich erfunden, erkennt Duplikate und erstellt herunterladbare Berichte. Enthält ein Microsoft-Word-Add-in für die Prüfung im Dokument sowie einen OAI-PMH-Endpunkt für die Nutzung durch Bibliotheken. Gebaut mit SvelteKit, Hono und MeiliSearch, bereitgestellt über Docker und Cloudflare."
+        "en": "Web-based tool that verifies academic bibliographies against six scholarly APIs (Crossref, OpenAlex, Open Library, OpenAIRE, Internet Archive, ISBNdb). Parses references in APA, MLA, Chicago, and Vancouver formats, classifies them as verified, partial, not found, or likely fabricated, detects duplicates, and generates downloadable reports. Includes a Microsoft Word add-in for in-document verification and an OAI-PMH endpoint for library harvesting. Built with SvelteKit and Hono, running entirely on Cloudflare (Workers, Pages, and D1 + Vectorize as a semantic cache). Available in English, Spanish and German.",
+        "es": "Herramienta web que verifica bibliografías académicas contra seis APIs académicas (Crossref, OpenAlex, Open Library, OpenAIRE, Internet Archive, ISBNdb). Parsea referencias en formatos APA, MLA, Chicago y Vancouver, las clasifica como verificadas, parciales, no encontradas o probablemente fabricadas, detecta duplicados y genera reportes descargables. Incluye un complemento para Microsoft Word para verificación dentro del documento y un endpoint OAI-PMH para cosecha por bibliotecas. Construido con SvelteKit y Hono, corriendo íntegramente sobre Cloudflare (Workers, Pages, y D1 + Vectorize como caché semántica). Disponible en español, inglés y alemán.",
+        "de": "Webbasiertes Werkzeug, das akademische Literaturverzeichnisse gegen sechs wissenschaftliche APIs prüft (Crossref, OpenAlex, Open Library, OpenAIRE, Internet Archive, ISBNdb). Es analysiert Referenzen in den Formaten APA, MLA, Chicago und Vancouver, klassifiziert sie als verifiziert, teilweise verifiziert, nicht gefunden oder wahrscheinlich erfunden, erkennt Duplikate und erstellt herunterladbare Berichte. Enthält ein Microsoft-Word-Add-in für die Prüfung im Dokument sowie einen OAI-PMH-Endpunkt für die Nutzung durch Bibliotheken. Gebaut mit SvelteKit und Hono, vollständig auf Cloudflare (Workers, Pages sowie D1 + Vectorize als semantischer Cache). Verfügbar auf Deutsch, Englisch und Spanisch."
       },
       "id": "bibliohelp",
       "related": [

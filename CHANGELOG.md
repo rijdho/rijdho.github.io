@@ -25,6 +25,10 @@ ships in numbered drops.
 
 - The `bibliohelpc` experiment card follows the repo rename: title and URL now read
   `bibliohelp` / `rijdho.github.io/bibliohelp/`.
+- The main BiblioHelp card no longer describes the decommissioned Docker/MeiliSearch
+  version: description (all three languages) and tags now state the live stack —
+  SvelteKit and Hono entirely on Cloudflare, with D1 + Vectorize as the semantic cache —
+  and the trilingual availability (EN/ES/DE) the app ships since 2026-08-10.
 
 ### Fixed
 

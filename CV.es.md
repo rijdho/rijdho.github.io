@@ -166,9 +166,9 @@ Coordiné esfuerzos de gestión de investigación, apoyé procesos de acreditaci
 ## Herramientas y experimentos
 
 ### [BiblioHelp — Academic Reference Verification](https://bibliohelp.rijdho.org/)
-*Active · 2026 · SvelteKit, Hono, MeiliSearch, Crossref*
+*Active · 2026 · SvelteKit, Hono, Cloudflare Workers, D1 + Vectorize*
 
-Herramienta web que verifica bibliografías académicas contra seis APIs académicas (Crossref, OpenAlex, Open Library, OpenAIRE, Internet Archive, ISBNdb). Parsea referencias en formatos APA, MLA, Chicago y Vancouver, las clasifica como verificadas, parciales, no encontradas o probablemente fabricadas, detecta duplicados y genera reportes descargables. Incluye un complemento para Microsoft Word para verificación dentro del documento y un endpoint OAI-PMH para cosecha por bibliotecas. Construido con SvelteKit, Hono y MeiliSearch, desplegado vía Docker y Cloudflare.
+Herramienta web que verifica bibliografías académicas contra seis APIs académicas (Crossref, OpenAlex, Open Library, OpenAIRE, Internet Archive, ISBNdb). Parsea referencias en formatos APA, MLA, Chicago y Vancouver, las clasifica como verificadas, parciales, no encontradas o probablemente fabricadas, detecta duplicados y genera reportes descargables. Incluye un complemento para Microsoft Word para verificación dentro del documento y un endpoint OAI-PMH para cosecha por bibliotecas. Construido con SvelteKit y Hono, corriendo íntegramente sobre Cloudflare (Workers, Pages, y D1 + Vectorize como caché semántica). Disponible en español, inglés y alemán.
 
 ### [MetAudits — Scielo Chile Crossref Metadata Completeness](https://metaudits.rijdho.org/scielochile/)
 *Active · 2026 · Crossref, Metadata Quality, FAIR, React*
