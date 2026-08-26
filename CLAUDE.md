@@ -78,6 +78,20 @@ Inter variable woff2 in `fonts/` (latin + latin-ext), declared `@font-face` agai
 origin, split by `unicode-range`. No Google Fonts link (GDPR + a strict CSP would block it
 silently). Verify in a browser that font requests hit only this origin.
 
+## Link previews
+
+`build_cv.py` also writes the `og:`/`description` block between the `<!-- social:start -->`
+and `<!-- social:end -->` markers in `index.html` and `cv.html`. Do not edit that block by
+hand; edit `data/cv.json` and rebuild. It exists because an unfurler (LinkedIn, Slack, a
+mail client) reads the raw HTML and never runs the fetch that builds the page, so without
+it a shared link showed the `<title>` and nothing else. Generating it keeps the card tied
+to `personal.name` and `personal.headline` instead of a hand-typed copy that would drift.
+
+Static HTML carries one language, so the card is English while the pages stay trilingual.
+The image is `docs/hub-cloud.png`, the screenshot that already regenerates itself, and its
+declared width and height are read from the PNG header so they cannot go stale. Running
+the build twice rewrites the same block; the guard fires only when the markers are gone.
+
 ## Deploy
 
 Actions workflow (`.github/workflows/deploy.yml`), not the legacy Jekyll builder, so the

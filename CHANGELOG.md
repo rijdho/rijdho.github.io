@@ -36,6 +36,13 @@ ships in numbered drops.
   30px and the taller canvas to 27px, with the overlapping pairs down from 32 to 17 and
   every label legible again.
 
+- Link-preview tags on both pages, written by `build_cv.py` from `data/cv.json` into a
+  marked block in the HTML. Sharing the site anywhere previously produced a card carrying
+  the `<title>`, "rijdho: hub (nube)", and nothing else: no name, no description, no image,
+  because an unfurler reads raw HTML and never runs the fetch that builds the page. The
+  card now carries the name, the headline and the cloud screenshot. Generated rather than
+  typed, so it cannot drift from the CV; English only, since static HTML has one language.
+
 - The summary says what the current role actually consists of: the shape of the Open
   Science strategy (three pillars and a transversal axis on the use of AI in research, three
   horizons on the SCOPE framework, indicators following DORA, the Leiden Manifesto and
