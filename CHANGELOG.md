@@ -10,10 +10,18 @@ install. A version is cut here whenever the content or the shape of `data/cv.jso
 enough to be worth naming, which keeps the history readable without pretending the site
 ships in numbered drops.
 
-## [Unreleased]
+## [1.2.0] - 2026-08-26
+
+The IT:U systems join the cloud, and the cloud is given the room to hold them.
 
 ### Added
 
+- Seven entries for the work built at IT:U since May 2026: the **CRIS** and the **RMS**,
+  the **OpenCalls** aggregator, the **Open Science Strategy**, the **maDMP Template**, the
+  **Renku 2.0 deployment** and the **DART documentation generators**. None of them has a
+  public URL yet, so each renders its oval without a link and its panel says so, which is
+  the honest rendering rather than a chip pointing nowhere. All three languages filled at
+  the same time, as the single-source rule requires.
 - `/bibliohelpc/` redirect alias → `/bibliohelp/`. The BiblioHelp repo dropped the `c` of
   its Cloudflare edition on 2026-08-10 (renamed `bibliohelpc` → `bibliohelp`); GitHub
   redirects the git repo but not project-Pages URLs, so old landing links get forwarded
@@ -29,9 +37,29 @@ ships in numbered drops.
   version: description (all three languages) and tags now state the live stack —
   SvelteKit and Hono entirely on Cloudflare, with D1 + Vectorize as the semantic cache —
   and the trilingual availability (EN/ES/DE) the app ships since 2026-08-10.
+- The Open Science Expert entry now describes the strategy it actually runs: three pillars
+  and a transversal axis on AI in research, three horizons on the SCOPE framework, and
+  seventeen indicators governed by DORA, the Leiden Manifesto and CoARA, followed by the
+  systems built underneath it.
+- The cloud canvas grows from 380px to 460px tall on desktop. At 380px the four clusters
+  had to hold 24 ovals instead of 17, and the widest new titles could not settle without
+  crossing each other: measured over a seeded layout, the deepest overlap between two
+  unrelated ovals fell from 11px to 8px and the number of overlapping pairs from 18 to 14,
+  with every label back inside its own oval. Related pairs still touch on purpose.
+- README: the cloud screenshot is regenerated and its alt text states the new counts
+  (24 ovals; 7 / 5 / 9 / 3), and the prose no longer says seventeen tools.
 
 ### Fixed
 
+- The curated short-label table matched `maDMP` anywhere in a title, so the new *maDMP
+  Template (IT:U)* was drawn as a second oval reading **maDMP Gap**: two identical labels
+  on two different tools. The pattern is now anchored to `maDMP Gap`, and the new entry
+  falls through to its own title. Verified across all 24 ovals: no duplicate labels.
+- The detail panel is hidden by translating it 360px past the right edge of the stage, and
+  nothing clipped it, so the document was 348px wider than the viewport and the whole page
+  could be dragged sideways on every screen above 620px. `.stage` now clips on the X axis,
+  with a 24px clip margin so the open panel keeps its shadow. Measured: the page no longer
+  scrolls horizontally, and the panel opens and renders exactly as before.
 - The Licenciatura and the Título Profesional are two separate Chilean credentials awarded a
   year apart, and the entry carried the name of one with the year of the other. They are now
   two entries: *Licenciado en Tecnología Médica* (2006) and *Título Profesional de Tecnólogo
@@ -42,7 +70,7 @@ ships in numbered drops.
   9,940px document (two list sections, 5px each), the printed PDF keeps its page count, and
   the three README screenshots regenerate byte-identical.
 
-## [1.1.0] — 2026-08-03
+## [1.1.0] - 2026-08-03
 
 A full review pass over `data/cv.json` and its three consumers.
 
@@ -117,6 +145,6 @@ Initial public site.
   folder uploads verbatim and the Markdown CVs are regenerated on every push.
 - Inter self-hosted as woff2, no font CDN.
 
-[Unreleased]: https://github.com/rijdho/rijdho.github.io/compare/v1.1.0...HEAD
+[1.2.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/rijdho/rijdho.github.io/releases/tag/v1.0.0
