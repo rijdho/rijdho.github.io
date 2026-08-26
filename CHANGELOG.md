@@ -36,6 +36,12 @@ ships in numbered drops.
   30px and the taller canvas to 27px, with the overlapping pairs down from 32 to 17 and
   every label legible again.
 
+- The tabbed section is reordered: publications, talks and writing first, then experience
+  and education, then engagements and training. Three readable blocks, what was produced,
+  the trajectory, and what is kept up, instead of an order with no pattern to predict. The
+  section now opens on Publications rather than Writing, which matters more than the order
+  itself: the first tab is the only one a visitor sees without clicking, and after the tool
+  cloud the 35 peer-reviewed entries answer the obvious next question fastest.
 - Link-preview tags on both pages, written by `build_cv.py` from `data/cv.json` into a
   marked block in the HTML. Sharing the site anywhere previously produced a card carrying
   the `<title>`, "rijdho: hub (nube)", and nothing else: no name, no description, no image,
@@ -122,6 +128,10 @@ The IT:U systems join the cloud, and the cloud is given the room to hold them.
 
 ### Fixed
 
+- `docs/screenshots.mjs` reached the publications tab by position, `button[1]`, so the
+  reorder would have silently pointed the README screenshot at Talks. It selects by
+  `data-tab` now. This is the index-alignment trap the house rules warn about, in a script
+  rather than in a locale file.
 - The CV page rendered the whole summary as a single text node, so the paragraph breaks it
   is authored with collapsed into spaces and the paragraphs ran together as one block. It
   now emits one `<p>` per paragraph, the same shape `build_cv.py` has always produced.

@@ -285,8 +285,10 @@ const PUBGRP={
   datasets:{en:"Datasets",de:"Datensätze",es:"Conjuntos de datos"},
   workingPapers:{en:"Working papers",de:"Working Papers",es:"Documentos de trabajo"},
 };
-const TABS=["writing","publications","talks","experience","education","engagements","training"];
-let activeTab="writing";
+/* Order: what he produced, then the trajectory, then what he keeps up. The first entry
+   is also the tab that opens, so it is the only one a visitor sees without clicking. */
+const TABS=["publications","talks","writing","experience","education","engagements","training"];
+let activeTab="publications";
 const TOPICS = {
   metadata:{v:"--t-metadata", en:"Metadata quality", de:"Metadatenqualität", es:"Calidad de metadatos"},
   assessment:{v:"--t-assessment", en:"Assessment & policy", de:"Bewertung & Politik", es:"Evaluación y política"},

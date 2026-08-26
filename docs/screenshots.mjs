@@ -61,8 +61,8 @@ await shoot(hub, '#stage', 'hub-cloud.png')
 
 // ---- the hub: the publications tab, where each chip names what it resolves to ----
 await hub.evaluate(() => {
-  // TABS = writing, publications, talks, experience, education, engagements, training
-  document.querySelectorAll('#tabbar button')[1].click()
+  // by name, not by position: the tab order is a design decision and has changed once
+  document.querySelector('#tabbar button[data-tab="publications"]').click()
 })
 await new Promise(r => setTimeout(r, 600))
 await shoot(hub, '#tabpanel', 'hub-publications.png')
