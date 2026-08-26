@@ -4,7 +4,7 @@ All notable changes to this site are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-Versioning a continuously-deployed personal site is a slightly odd fit — every push to
+Versioning a continuously-deployed personal site is a slightly odd fit: every push to
 `main` is live within a minute, so there is no separate "release" a user can choose to
 install. A version is cut here whenever the content or the shape of `data/cv.json` changes
 enough to be worth naming, which keeps the history readable without pretending the site
@@ -36,6 +36,18 @@ ships in numbered drops.
   30px and the taller canvas to 27px, with the overlapping pairs down from 32 to 17 and
   every label legible again.
 
+- Every em dash is gone, from `cv.json` and both pages down to the code comments, the
+  `.gitignore` and the licence note: 101 of them, replaced one at a time by a colon, a
+  comma, parentheses or a sentence break rather than swapped blindly. Two cases were
+  structural rather than punctuation. Nine tool titles used " - " as a name/subtitle
+  separator and now use a colon, which meant `shortOf()` had to split on `": "` with the
+  space, since `CRIS for IT:U` would otherwise be cut at `CRIS for IT`. The CV page and
+  `build_cv.py` used the dash to join a role to its organisation and a degree to its
+  institution; they now use the middle dot the hub and the training rows already used.
+- The engagements rows no longer print a dash in the year column. Engagements carry no
+  year, and every other row type renders an empty column when the year is missing, so the
+  dash was inventing a value the data does not have.
+
 ### Removed
 
 - The `criolab` card. The project is retired and its repository deleted, so a card linking
@@ -58,7 +70,7 @@ The IT:U systems join the cloud, and the cloud is given the room to hold them.
   its Cloudflare edition on 2026-08-10 (renamed `bibliohelpc` → `bibliohelp`); GitHub
   redirects the git repo but not project-Pages URLs, so old landing links get forwarded
   here. Marked `noindex` with a canonical to the new path. (Earlier the same day the
-  alias existed in the opposite direction — `/bibliohelp/` → `/bibliohelpc/` — until the
+  alias existed in the opposite direction (`/bibliohelp/` → `/bibliohelpc/`) until the
   rename made the guessed URL the real one.)
 
 ### Changed
@@ -66,9 +78,9 @@ The IT:U systems join the cloud, and the cloud is given the room to hold them.
 - The `bibliohelpc` experiment card follows the repo rename: title and URL now read
   `bibliohelp` / `rijdho.github.io/bibliohelp/`.
 - The main BiblioHelp card no longer describes the decommissioned Docker/MeiliSearch
-  version: description (all three languages) and tags now state the live stack —
-  SvelteKit and Hono entirely on Cloudflare, with D1 + Vectorize as the semantic cache —
-  and the trilingual availability (EN/ES/DE) the app ships since 2026-08-10.
+  version: description (all three languages) and tags now state the live stack, SvelteKit
+  and Hono entirely on Cloudflare with D1 + Vectorize as the semantic cache, and the
+  trilingual availability (EN/ES/DE) the app ships since 2026-08-10.
 - The Open Science Expert entry now describes the strategy it actually runs: three pillars
   and a transversal axis on AI in research, three horizons on the SCOPE framework, and
   seventeen indicators governed by DORA, the Leiden Manifesto and CoARA, followed by the
@@ -97,7 +109,7 @@ The IT:U systems join the cloud, and the cloud is given the room to hold them.
   two entries: *Licenciado en Tecnología Médica* (2006) and *Título Profesional de Tecnólogo
   Médico* (2007).
 - Both pages declare `<!doctype html>`. Without it they rendered in quirks mode, where the
-  browser emulates 1990s bugs — a latent trap for any future CSS change rather than a visible
+  browser emulates 1990s bugs: a latent trap for any future CSS change rather than a visible
   fault. Measured before applying: the hub is pixel-identical, the CV page grows 11px over a
   9,940px document (two list sections, 5px each), the printed PDF keeps its page count, and
   the three README screenshots regenerate byte-identical.
@@ -108,7 +120,7 @@ A full review pass over `data/cv.json` and its three consumers.
 
 ### Added
 
-- German content for every translated field — 40 descriptions across `experience`,
+- German content for every translated field: 40 descriptions across `experience`,
   `training`, `engagements`, `portfolio` and `experiments`, plus the skills. The site was
   already trilingual in its interface; now it is trilingual in its content too.
 - `twin` on an experiment: `{ "title": …, "url": … }` renders a `↔` link in the cloud panel,
@@ -123,12 +135,12 @@ A full review pass over `data/cv.json` and its three consumers.
 
 ### Changed
 
-- Post-nominals read `MSc · MSc · Dr.` — both master's degrees, and the doctorate as the
+- Post-nominals read `MSc · MSc · Dr.`: both master's degrees, and the doctorate as the
   Chilean *Doctor en …* it is rather than an Anglo-American PhD.
 - Degree names now carry the wording deposited in ORCID `0000-0001-5058-9309`. Comparing
   against that record corrected the 2013 Universidad de La Frontera master, which was
   listed under the doctorate's name, and the 2018 Universidad de Chile entry, which is a
-  *Diploma de Postítulo* — a postgraduate diploma — where the English said only "Diploma".
+  *Diploma de Postítulo* (a postgraduate diploma) where the English said only "Diploma".
   "Lic Medical Technologist" became "Licentiate in Medical Technology".
 - Languages are stated as Spanish native and technical English.
 - `skills[].items` are `{en, de, es}` objects. As plain strings they were the last place
@@ -141,7 +153,7 @@ A full review pass over `data/cv.json` and its three consumers.
 
 - **Both pages now declare `<meta charset="utf-8">`.** GitHub Pages sends `charset=utf-8` in
   the response header, so the live site always looked right, but the local workflow this
-  README documents — `python3 -m http.server`, which sends no charset — fell back to
+  README documents (`python3 -m http.server`, which sends no charset) fell back to
   windows-1252 and rendered every accent and umlaut as mojibake.
 - The publication chip no longer labels every link "DOI". It said so for any entry that had
   a URL at all, so a publisher homepage was presented as a persistent identifier.
@@ -151,7 +163,7 @@ A full review pass over `data/cv.json` and its three consumers.
 
 ### Removed
 
-- The German fallback banners on both pages, and with them a reference to `cv.de.json` —
+- The German fallback banners on both pages, and with them a reference to `cv.de.json`,
   a file that never existed.
 
 ### Security
@@ -160,7 +172,7 @@ A full review pass over `data/cv.json` and its three consumers.
   That is a statement about how a hosted sibling is defended, which does not belong in
   published material. Only the clause is gone; the architectural fact remains.
 
-## [1.0.0] — 2026-07-31
+## [1.0.0] - 2026-07-31
 
 Initial public site.
 

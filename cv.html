@@ -1,6 +1,6 @@
 <!doctype html>
 <meta charset="utf-8">
-<title>Ricardo Hartley Belmar — Curriculum Vitae</title>
+<title>Ricardo Hartley Belmar: Curriculum Vitae</title>
 <style>
 @font-face{font-family:"Inter Variable";font-style:normal;font-display:swap;font-weight:100 900;
   src:url(./fonts/inter-latin-wght-normal.woff2) format("woff2-variations");
@@ -155,14 +155,14 @@ function render(){
 
   // Experience
   sec("experience", CV.experience.map(e=>`<div class="entry">
-    <div class="top"><span class="ti">${esc(e.title)} — <span class="org">${esc(e.org)}</span></span>
+    <div class="top"><span class="ti">${esc(e.title)} · <span class="org">${esc(e.org)}</span></span>
       <span class="when">${esc(e.period)}</span></div>
     ${e.loc?`<div class="loc">${esc(e.loc)}</div>`:""}
     ${t(e.desc)?`<p>${esc(t(e.desc))}</p>`:""}</div>`).join(""));
 
   // Education
   sec("education", CV.education.map(e=>`<div class="edu">
-    <span><span class="d">${esc(t(e.degree))}</span> — <span class="i">${esc(e.inst)}</span></span>
+    <span><span class="d">${esc(t(e.degree))}</span> · <span class="i">${esc(e.inst)}</span></span>
     <span class="when">${esc(e.year)}</span></div>`).join(""));
 
   // Publications
@@ -176,7 +176,7 @@ function render(){
 
   // Presentations
   sec("presentations", `<ul class="plain">`+CV.presentations.map(t2=>`
-    <li><b>${esc(t2.title)}</b> — ${esc(t2.event)}${t2.date?` <span class="tag">(${esc(t2.date)})</span>`:""}</li>`).join("")+`</ul>`, CV.presentations.length);
+    <li><b>${esc(t2.title)}</b> · ${esc(t2.event)}${t2.date?` <span class="tag">(${esc(t2.date)})</span>`:""}</li>`).join("")+`</ul>`, CV.presentations.length);
 
   // Skills
   sec("skills", CV.skills.map(s=>`<div class="skill"><span class="k">${esc(t(s.title))}</span>
@@ -196,7 +196,7 @@ function render(){
 
   // Engagements + Training
   sec("engagements", `<ul class="plain">`+CV.engagements.map(e=>`
-    <li><b>${esc(e.role)}</b>, ${esc(e.org)} — ${esc(t(e.focus))}</li>`).join("")+`</ul>`);
+    <li><b>${esc(e.role)}</b>, ${esc(e.org)} · ${esc(t(e.focus))}</li>`).join("")+`</ul>`);
   sec("training", `<ul class="plain">`+CV.training.map(e=>`
     <li><b>${esc(e.title)}</b> <span class="tag">${esc(e.year)}</span>${e.org?` · ${esc(e.org)}`:""}<br>${esc(t(e.desc))}</li>`).join("")+`</ul>`);
 

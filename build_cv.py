@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate CV.<lang>.md from data/cv.json — the single source the hub and CV page also read.
+"""Generate CV.<lang>.md from data/cv.json, the single source the hub and CV page also read.
 Usage: python3 build_cv.py            # builds en, de, es
        python3 build_cv.py en         # one language
 Run it whenever data/cv.json changes (the GitHub Action does this on push)."""
@@ -45,7 +45,7 @@ def build(lang):
 
     sec("experience")
     for e in CV["experience"]:
-        w(f"### {e['title']} — {e['org']}")
+        w(f"### {e['title']} · {e['org']}")
         meta=" · ".join(x for x in [e.get('period'), e.get('loc')] if x)
         if meta: w(f"*{meta}*")
         if tr(e.get('desc')): w(""); w(tr(e['desc']))
@@ -69,11 +69,11 @@ def build(lang):
         w("")
     sec("presentations")
     for t in CV["presentations"]:
-        w(f"- **{t['title']}** — {t.get('event','')}" + (f" ({t['date']})" if t.get('date') else ""))
+        w(f"- **{t['title']}** · {t.get('event','')}" + (f" ({t['date']})" if t.get('date') else ""))
     sec("portfolio")
     for e in CV["portfolio"]:
         t=f"[{e['title']}]({e['url']})" if e.get('url') else e['title']
-        w(f"- {t}" + (f" ({e['year']})" if e.get('year') else "") + (f" — *{e['type']}*" if e.get('type') else ""))
+        w(f"- {t}" + (f" ({e['year']})" if e.get('year') else "") + (f", *{e['type']}*" if e.get('type') else ""))
     sec("experiments")
     for e in CV["experiments"]:
         t=f"[{e['title']}]({e['url']})" if e.get('url') else e['title']
@@ -86,10 +86,10 @@ def build(lang):
         w("")
     sec("engagements")
     for e in CV["engagements"]:
-        w(f"- **{e['role']}**, {e['org']} — {tr(e.get('focus'))}")
+        w(f"- **{e['role']}**, {e['org']} · {tr(e.get('focus'))}")
     sec("training")
     for e in CV["training"]:
-        w(f"- **{e['title']}**" + (f" ({e['year']})" if e.get('year') else "") + (f" — {tr(e['desc'])}" if tr(e.get('desc')) else ""))
+        w(f"- **{e['title']}**" + (f" ({e['year']})" if e.get('year') else "") + (f": {tr(e['desc'])}" if tr(e.get('desc')) else ""))
     w(""); w(f"---"); w(f"*{T['generated']} · {CV.get('meta',{}).get('updated','')}*")
     out="\n".join(L).rstrip()+"\n"
     open(os.path.join(HERE,f"CV.{lang}.md"),"w",encoding="utf-8").write(out)

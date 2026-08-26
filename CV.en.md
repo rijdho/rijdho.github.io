@@ -12,44 +12,44 @@ My work centers on research information governance, metadata quality, and respon
 
 ## Experience
 
-### Open Science Expert — Interdisciplinary Transformation University Austria (IT:U)
+### Open Science Expert · Interdisciplinary Transformation University Austria (IT:U)
 *May 2026 – Present · Linz, Austria*
 
 Design, implement and maintain a university-wide Open Science strategy: three pillars (concept and operation, engagement, training and support) plus a transversal axis on AI in research, run over three horizons on the SCOPE framework (INORMS Research Evaluation Group, 2021), with seventeen indicators carrying operational definitions, baselines, targets, deadlines and named owners in a single source table, governed by the responsible-use principles of DORA, the Leiden Manifesto and CoARA. Build and operate the systems underneath it: a current research information system whose provenance ordering is enforced at every write path rather than merely documented, a research management system covering the grant lifecycle from call to post-award budget, a daily aggregator of open and forthcoming funding calls, a Renku 2.0 deployment for reproducible environments, machine-actionable data management planning validated against the RDA DMP Common Standard, and bilingual documentation generators for the team's APIs and automation pipelines. Support researchers through workshops, data management plan clinics and a champions network. Represent IT:U in national and international Open Science initiatives, and contribute to grant writing, ideation and mentorship across academic projects.
 
-### Short-Term Scientific Mission (STSM) Researcher — Open Innovation in Science Center, Ludwig Boltzmann Gesellschaft
+### Short-Term Scientific Mission (STSM) Researcher · Open Innovation in Science Center, Ludwig Boltzmann Gesellschaft
 *August 4 – October 28, 2025 · Vienna, Austria*
 
 Developed a comprehensive baseline of institutional identifiers, audited coverage of scholarly records across systems (ORCID, ROR, Crossref, DataCite, OpenAlex), and designed reproducible workflows for PID-based traceability of research outputs. Prepared integration guidelines to expand ORCID adoption among LBG researchers and compared information consistency between open infrastructures and institutional systems. The mission supported LBG's open science strategy and alignment with Austria's National Action Plan for the European Research Area (ERA-NAP) 2026–2028.
 
 Strengthened my fluency with Microsoft-based ecosystems - including SharePoint, Power BI, and Azure Active Directory - to interface PID data with internal reporting suites, and piloted automation orchestrations using n8n and complementary integration platforms to streamline identifier governance tasks across teams.
 
-### Independent Researcher — Remolino Consulting
+### Independent Researcher · Remolino Consulting
 *May – October 2025*
 
 Conducting research and consultancy on research infrastructures, metadata systems, and responsible research assessment.
 
-### Researcher — Universidad Central de Chile
+### Researcher · Universidad Central de Chile
 *2016–2025*
 
 Conducted research and institutional projects focused on research governance, scholarly communication, and Open Science policy development.
 
-### Researcher and Director — InES Open Science Project, Universidad Central de Chile
+### Researcher and Director · InES Open Science Project, Universidad Central de Chile
 *2022–2024*
 
 Led institutional policy development in Open Science, designed data governance models, and implemented research output traceability systems. The project, funded by Chile's national agency ANID, received the highest score in its 2021 cohort and resulted in the university's first Open Science policy.
 
-### Associated Researcher — Fundación Data Observatory, Chile
+### Associated Researcher · Fundación Data Observatory, Chile
 *2024*
 
 Contributed to national FAIR data strategies and supported institutional adoption of open science policies.
 
-### Director, Institute for Research and Postgraduate Studies — Universidad Central de Chile
+### Director, Institute for Research and Postgraduate Studies · Universidad Central de Chile
 *2021–2022*
 
 Oversaw research development and postgraduate programs in the Faculty of Health Sciences, promoting open science and institutional research capacity-building.
 
-### Coordinator, Institute for Research and Postgraduate Studies — Universidad Central de Chile
+### Coordinator, Institute for Research and Postgraduate Studies · Universidad Central de Chile
 *2016–2021*
 
 Coordinated research management efforts, supported data-driven accreditation processes, and promoted open infrastructure adoption.
@@ -127,65 +127,65 @@ Coordinated research management efforts, supported data-driven accreditation pro
 
 ## Talks & presentations
 
-- **Entities and/or Content: Metadata Quality in Open Science Infrastructure** — First Digital Humanities Seminar - Chile 2026: Technologies, Memories and Possible Futures, Panel E: Open Science and Reproducibility, Pontificia Universidad Católica de Chile, Campus Lo Contador (April 9, 2026)
-- **Tracing Research Outputs: FAIRness, Responsibility, and Reuse Across Infrastructure Layers** — Open Science Festival, University of Vienna (September 8, 2025)
-- **Research Traceability for Responsible Assessment** — FoReA-Treffen Q3 2025 (September 17, 2025)
-- **Open Science on Closed Infrastructures? Traceability, Reuse, and Research Assessment** — IT:U Interdisciplinary Transformation University, Linz (October 15, 2025)
-- **Making Research Count: Challenges in the Evaluation and Valuation of Scientific Work** — Open Innovation in Science Center (OIS) (October 16, 2025)
-- **Las métricas de datos: Avanzando la gestión responsable de los datos abiertos** — Make Data Count & OpenLab Ecuador (March 13, 2025)
-- **Más allá de la indexación: ciencia abierta, fuentes abiertas y el valor de los metadatos en la visibilidad académica** — Semana Internacional de Acceso Abierto, Pontificia Universidad Católica Argentina (October 24, 2024)
-- **Ciencia abierta y el impacto de las publicaciones: Análisis comparativo del sentido y uso de citas en universidades chilenas acreditadas en investigación** — VII Seminario Internacional FLACSO Argentina (October 23-24, 2024)
-- **Evaluación del impacto de publicaciones científicas y el fomento de prácticas de Ciencia Abierta en universidades para la acreditación en investigación: un análisis más allá de la indexación** — Seminario Internacional CNA Chile (October 23-24, 2024)
-- **Empowering Global Knowledge through Open Access** — IUCN Open Access Week (October 22, 2024)
-- **How would having more access to scientific data and research affect scientific credibility and societal impact?** — International Conference on Societal Impact of Social Sciences, AESIS Network, Cape Town (October 16-18, 2024)
-- **Significando la Ciencia Abierta desde el reuso: ejemplos de desafíos en la calidad de metadatos en productos de investigación** — Foro Latinoamericano de Ciencia Abierta, Quito (September 13, 2024)
-- **El desafío de la trazabilidad de los productos de investigación: Una aproximación desde la experiencia del proyecto InES Ciencia Abierta de la Universidad Central de Chile** — Foro Latinoamericano de Ciencia Abierta, Quito (September 12, 2024)
-- **Laboratorio de Datos: Meta ciencia con datos abiertos** — Foro Latinoamericano de Ciencia Abierta, Quito (September 11-12, 2024)
-- **A Decade of Data Citations: From Principles to Action** — FORCE11 Annual Conference, UCLA, Los Angeles (August 1-3, 2024)
-- **Governance for AI in Scientific Publications** — FSCI Campus Course, UCLA, Los Angeles (July 29-31, 2024)
-- **Characterizing Research Outputs and Their Use with OpenAlex and Scite** — OpenAlex Virtual User Conference (May 30, 2024)
-- **Equity Challenges for National PID Strategies** — RDA 22nd Plenary Meeting (May 22, 2024)
-- **Characterizing the Use of Research Products from Chilean Universities** — 10th Congress of University and Specialized Libraries (April 10, 2024)
-- **FAIR Principles and their Implementation in Chile** — Data Observatory and UC Chile (January 23, 2024)
-- **Importance of Persistent Identifiers** — InES Open Science Workshop Series, Universidad Autónoma de Chile (January 12, 2024)
-- **Presentation of the Survey Results on Perception and Practices of Open Science in Ecuador** — Days Discovering Open Science, OpenLab Ecuador (September 29, 2023)
-- **The Value of Digital Repositories Beyond Theses** — Days Discovering Open Science, OpenLab Ecuador (August 31, 2023)
-- **It is not just counting and graphing: Enriching the Analysis Methodologies of Types of Article Licenses from Universities belonging to the CUP** — 1st Open Government Congress, Academic Network Open Government Chile (April 26-28, 2023)
-- **Proposal for an Institutional Structure for Open Science at Universidad Central de Chile** — 1st Open Government Congress, Academic Network Open Government Chile (April 26-28, 2023)
+- **Entities and/or Content: Metadata Quality in Open Science Infrastructure** · First Digital Humanities Seminar - Chile 2026: Technologies, Memories and Possible Futures, Panel E: Open Science and Reproducibility, Pontificia Universidad Católica de Chile, Campus Lo Contador (April 9, 2026)
+- **Tracing Research Outputs: FAIRness, Responsibility, and Reuse Across Infrastructure Layers** · Open Science Festival, University of Vienna (September 8, 2025)
+- **Research Traceability for Responsible Assessment** · FoReA-Treffen Q3 2025 (September 17, 2025)
+- **Open Science on Closed Infrastructures? Traceability, Reuse, and Research Assessment** · IT:U Interdisciplinary Transformation University, Linz (October 15, 2025)
+- **Making Research Count: Challenges in the Evaluation and Valuation of Scientific Work** · Open Innovation in Science Center (OIS) (October 16, 2025)
+- **Las métricas de datos: Avanzando la gestión responsable de los datos abiertos** · Make Data Count & OpenLab Ecuador (March 13, 2025)
+- **Más allá de la indexación: ciencia abierta, fuentes abiertas y el valor de los metadatos en la visibilidad académica** · Semana Internacional de Acceso Abierto, Pontificia Universidad Católica Argentina (October 24, 2024)
+- **Ciencia abierta y el impacto de las publicaciones: Análisis comparativo del sentido y uso de citas en universidades chilenas acreditadas en investigación** · VII Seminario Internacional FLACSO Argentina (October 23-24, 2024)
+- **Evaluación del impacto de publicaciones científicas y el fomento de prácticas de Ciencia Abierta en universidades para la acreditación en investigación: un análisis más allá de la indexación** · Seminario Internacional CNA Chile (October 23-24, 2024)
+- **Empowering Global Knowledge through Open Access** · IUCN Open Access Week (October 22, 2024)
+- **How would having more access to scientific data and research affect scientific credibility and societal impact?** · International Conference on Societal Impact of Social Sciences, AESIS Network, Cape Town (October 16-18, 2024)
+- **Significando la Ciencia Abierta desde el reuso: ejemplos de desafíos en la calidad de metadatos en productos de investigación** · Foro Latinoamericano de Ciencia Abierta, Quito (September 13, 2024)
+- **El desafío de la trazabilidad de los productos de investigación: Una aproximación desde la experiencia del proyecto InES Ciencia Abierta de la Universidad Central de Chile** · Foro Latinoamericano de Ciencia Abierta, Quito (September 12, 2024)
+- **Laboratorio de Datos: Meta ciencia con datos abiertos** · Foro Latinoamericano de Ciencia Abierta, Quito (September 11-12, 2024)
+- **A Decade of Data Citations: From Principles to Action** · FORCE11 Annual Conference, UCLA, Los Angeles (August 1-3, 2024)
+- **Governance for AI in Scientific Publications** · FSCI Campus Course, UCLA, Los Angeles (July 29-31, 2024)
+- **Characterizing Research Outputs and Their Use with OpenAlex and Scite** · OpenAlex Virtual User Conference (May 30, 2024)
+- **Equity Challenges for National PID Strategies** · RDA 22nd Plenary Meeting (May 22, 2024)
+- **Characterizing the Use of Research Products from Chilean Universities** · 10th Congress of University and Specialized Libraries (April 10, 2024)
+- **FAIR Principles and their Implementation in Chile** · Data Observatory and UC Chile (January 23, 2024)
+- **Importance of Persistent Identifiers** · InES Open Science Workshop Series, Universidad Autónoma de Chile (January 12, 2024)
+- **Presentation of the Survey Results on Perception and Practices of Open Science in Ecuador** · Days Discovering Open Science, OpenLab Ecuador (September 29, 2023)
+- **The Value of Digital Repositories Beyond Theses** · Days Discovering Open Science, OpenLab Ecuador (August 31, 2023)
+- **It is not just counting and graphing: Enriching the Analysis Methodologies of Types of Article Licenses from Universities belonging to the CUP** · 1st Open Government Congress, Academic Network Open Government Chile (April 26-28, 2023)
+- **Proposal for an Institutional Structure for Open Science at Universidad Central de Chile** · 1st Open Government Congress, Academic Network Open Government Chile (April 26-28, 2023)
 
 ## Writing
 
-- [The Persistence of Retracted Knowledge in Scientific Literature](https://observablehq.com/d/cecaefb7d49c7727/) (2025) — *Data Essay*
-- [The Domino Effect of Faulty Metadata: Why Open Source Analysis Demands Metadata Vigilance](https://fosci.substack.com/p/the-domino-effect-of-faulty-metadata) (2025) — *Blog Post*
-- [No es suficiente solo con datos abiertos](https://www.americaeconomia.com/analisis-y-opinion/ciencia-no-es-suficiente-solo-con-datos-abiertos) (2024) — *Opinion Column*
-- [Experimentos sobre el costo de la 'calidad'](https://www.linkedin.com/pulse/experimentos-sobre-el-costo-de-la-calidad-ricardo-hartley-8tuff/?trackingId=6uCbjEhOR%2BKsHlxFAA%2F4ng%3D%3D) (2024) — *Blog Post*
-- [¿Qué significa 'conocimiento abierto' en Chile hoy?](https://www.elmostrador.cl/noticias/opinion/2022/11/05/que-significa-conocimiento-abierto-en-chile-hoy/) (2022) — *Opinion Column*
-- [Feeling Part of Something](https://sparcopen.org/) (2018) — *Blog Post*
-- [OpenCon Santiago 2017: No more streaks in the water](https://education.okfn.org/opencon-santiago-2017-no-more-streaks-in-the-water/index.html) (2017) — *Blog Post*
+- [The Persistence of Retracted Knowledge in Scientific Literature](https://observablehq.com/d/cecaefb7d49c7727/) (2025), *Data Essay*
+- [The Domino Effect of Faulty Metadata: Why Open Source Analysis Demands Metadata Vigilance](https://fosci.substack.com/p/the-domino-effect-of-faulty-metadata) (2025), *Blog Post*
+- [No es suficiente solo con datos abiertos](https://www.americaeconomia.com/analisis-y-opinion/ciencia-no-es-suficiente-solo-con-datos-abiertos) (2024), *Opinion Column*
+- [Experimentos sobre el costo de la 'calidad'](https://www.linkedin.com/pulse/experimentos-sobre-el-costo-de-la-calidad-ricardo-hartley-8tuff/?trackingId=6uCbjEhOR%2BKsHlxFAA%2F4ng%3D%3D) (2024), *Blog Post*
+- [¿Qué significa 'conocimiento abierto' en Chile hoy?](https://www.elmostrador.cl/noticias/opinion/2022/11/05/que-significa-conocimiento-abierto-en-chile-hoy/) (2022), *Opinion Column*
+- [Feeling Part of Something](https://sparcopen.org/) (2018), *Blog Post*
+- [OpenCon Santiago 2017: No more streaks in the water](https://education.okfn.org/opencon-santiago-2017-no-more-streaks-in-the-water/index.html) (2017), *Blog Post*
 
 ## Tools & experiments
 
-### [BiblioHelp — Academic Reference Verification](https://bibliohelp.rijdho.org/)
+### [BiblioHelp: Academic Reference Verification](https://bibliohelp.rijdho.org/)
 *Active · 2026 · SvelteKit, Hono, Cloudflare Workers, D1 + Vectorize*
 
 Web-based tool that verifies academic bibliographies against six scholarly APIs (Crossref, OpenAlex, Open Library, OpenAIRE, Internet Archive, ISBNdb). Parses references in APA, MLA, Chicago, and Vancouver formats, classifies them as verified, partial, not found, or likely fabricated, detects duplicates, and generates downloadable reports. Includes a Microsoft Word add-in for in-document verification and an OAI-PMH endpoint for library harvesting. Built with SvelteKit and Hono, running entirely on Cloudflare (Workers, Pages, and D1 + Vectorize as a semantic cache). Available in English, Spanish and German.
 
-### [MetAudits — Scielo Chile Crossref Metadata Completeness](https://metaudits.rijdho.org/scielochile/)
+### [MetAudits: Scielo Chile Crossref Metadata Completeness](https://metaudits.rijdho.org/scielochile/)
 *Active · 2026 · Crossref, Metadata Quality, FAIR, React*
 
 Dashboard that audits how complete Crossref metadata deposits are for SciELO Chile journals. Evaluates 37 fields per article across 4 FAIR-inspired categories, with interactive visualizations including rain cloud plots, radar charts, heatmaps, and year-based filtering. Built as a hub to add more publisher/registry audits.
 
-### [Repo MetAudits — FAIR Metadata Quality Evaluator](https://metaudits.rijdho.org/repo-metaudits/)
+### [Repo MetAudits: FAIR Metadata Quality Evaluator](https://metaudits.rijdho.org/repo-metaudits/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Custom API*
 
 Evaluates metadata quality of digital repositories against the FAIR Principles. Connects to OAI-PMH endpoints, DataCite records, or any custom REST API (CSW, STAC, CKAN, and more), harvests metadata, and runs a structured assessment across 14 sub-principles. Classifies persistent identifiers, detects license types, validates controlled vocabularies (DCMI, ISO 639), and checks community standards compliance. Includes prioritized recommendations, exportable reports (CSV, JSON, TXT), and interactive repository structure visualizations. The FAIR assessment engine runs server-side on Cloudflare Workers.
 
-### [Dirty Repos — Problematic Files with DOIs in DataCite Repositories](https://metaudits.rijdho.org/dirty-repos/)
+### [Dirty Repos: Problematic Files with DOIs in DataCite Repositories](https://metaudits.rijdho.org/dirty-repos/)
 *Active · 2026 · DataCite, Metadata Quality, React, Mapbox*
 
-Scans DataCite for DOIs pointing to problematic files — OS artifacts (.DS_Store, Thumbs.db), security risks (.env, credentials), and dev debris (node_modules, __pycache__) in research repositories. Enriched with geographic data from ROR and cross-referenced against re3data repository metadata. Interactive dashboard with Mapbox world map, category breakdowns, and repository drill-downs.
+Scans DataCite for DOIs pointing to problematic files: OS artifacts (.DS_Store, Thumbs.db), security risks (.env, credentials), and dev debris (node_modules, __pycache__) in research repositories. Enriched with geographic data from ROR and cross-referenced against re3data repository metadata. Interactive dashboard with Mapbox world map, category breakdowns, and repository drill-downs.
 
-### [Publisher Gap — Crossref vs OpenAlex Metadata Completeness](https://metaudits.rijdho.org/publisher-gap/)
+### [Publisher Gap: Crossref vs OpenAlex Metadata Completeness](https://metaudits.rijdho.org/publisher-gap/)
 *Active · 2026 · Crossref, OpenAlex, Metadata Quality, FAIR*
 
 Do publishers care about metadata? Timeline evidence comparing Crossref deposits vs OpenAlex enrichment across 15 major publishers (2015–2025). Evaluates 47 metadata fields in 5 categories (FAIR + Evaluation/CoARA), with gap analysis radar charts, enrichment matrices, and per-publisher drill-downs showing mandate compliance trends.
@@ -195,27 +195,27 @@ Do publishers care about metadata? Timeline evidence comparing Crossref deposits
 
 Interactive dashboard analyzing citation persistence of 60,921 retracted articles. Reveals that 56% of citations occur post-retraction with no decay over 15 years, geographic disparities in detection speed, and flat supporting/contradicting ratios over time. Built with data from Retraction Watch, OpenAlex, and Scite.ai. Also in https://observablehq.com/d/cecaefb7d49c7727
 
-### [maDMP Gap — Data Management Plans vs RDA maDMP Standard](https://metaudits.rijdho.org/madmp/)
+### [maDMP Gap: Data Management Plans vs RDA maDMP Standard](https://metaudits.rijdho.org/madmp/)
 *Active · 2026 · RDA maDMP, Horizon Europe, ANID, FAIR*
 
 Analyzes the gap between Horizon Europe data management plans (DMPs) and the RDA maDMP standard. Evaluates 6,119 DMPs against 48 RDA properties, measuring what proportion is mentioned in text (77.5%) versus machine-actionable (22.7%). Includes comparison with Chile's ANID template (1/48 fields machine-actionable). Evidence that mandates generate narrative documents, not connected entities.
 
-### [ORCID Adoption — Consortium vs Non-Consortium](https://metaudits.rijdho.org/orcid-adoption/)
+### [ORCID Adoption: Consortium vs Non-Consortium](https://metaudits.rijdho.org/orcid-adoption/)
 *Active · 2026 · ORCID, PID Adoption, Metadata Quality, React*
 
-Do ORCID consortia drive meaningful adoption, or just empty accounts? Compares profile completeness across 88 institutions and 200,595 profiles from 6 continents. Key finding: consortium institutions average 41.2% completeness with 49% empty profiles, versus 40.4% and 51% for non-consortium — a gap of just +0.7pp. Pre-2018 profiles reach ~50% (intrinsic motivation); post-2022 drop below 30% (mandate-driven bulk creation).
+Do ORCID consortia drive meaningful adoption, or just empty accounts? Compares profile completeness across 88 institutions and 200,595 profiles from 6 continents. Key finding: consortium institutions average 41.2% completeness with 49% empty profiles, versus 40.4% and 51% for non-consortium, a gap of just +0.7pp. Pre-2018 profiles reach ~50% (intrinsic motivation); post-2022 drop below 30% (mandate-driven bulk creation).
 
 ### [MCP CRIS Live](https://hub.docker.com/r/rijdho/mcp-cris-live)
 *Active · 2026 · MCP, Docker, Node.js, ORCID*
 
 MCP Server for real-time research data. Provides live access to authoritative academic sources (ORCID, OpenAlex, Crossref, DataCite, ROR, and PubMed) via a Dockerized Node.js server compatible with Claude Desktop.
 
-### [MCP CRIS Live — OpenAIRE](https://hub.docker.com/r/rijdho/mcp-cris-live-openaire)
+### [MCP CRIS Live: OpenAIRE](https://hub.docker.com/r/rijdho/mcp-cris-live-openaire)
 *Active · 2026 · MCP, Docker, Node.js, OpenAIRE*
 
 MCP server exposing the OpenAIRE Graph API (100M+ open access research products) to AI assistants. Provides 14 tools for searching publications, datasets, software, organizations, projects, and persons. Dockerized Node.js server with in-memory cache, rate limiting, and retry logic. Built as a companion to MCP CRIS Live focused on open science infrastructure.
 
-### OpenAIRE Research Assistant — Demo
+### OpenAIRE Research Assistant: Demo
 *Active · 2026 · Cloudflare Workers AI, LLM, Agentic AI, OpenAIRE*
 
 Chat interface where Cloudflare Workers AI (Llama 3.1 8B) uses the OpenAIRE MCP tools in an agentic loop to answer research questions in natural language. The LLM decides which tools to call, executes the OpenAIRE searches, and synthesizes the results into a readable response. Deployed entirely on free Cloudflare infrastructure (Pages + Workers AI).
@@ -268,17 +268,17 @@ Two generators that turn one source folder per item into a single self-contained
 ### [fair-repo-audit](https://rijdho.github.io/fair-repo-audit/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Open source*
 
-Open, client-side twin of Repo MetAudits — FAIR metadata scoring for DataCite and OAI-PMH repositories, running entirely in the browser. The published, open-source counterpart of the hosted evaluator.
+Open, client-side twin of Repo MetAudits: FAIR metadata scoring for DataCite and OAI-PMH repositories, running entirely in the browser. The published, open-source counterpart of the hosted evaluator.
 
 ### [bibliohelp](https://rijdho.github.io/bibliohelp/)
 *Active · 2026 · SvelteKit, Citation Verification, Open source*
 
-Open-source companion of BiblioHelp — the reference-verification app and Word add-in, as code and a static build. The published twin of the hosted tool.
+Open-source companion of BiblioHelp: the reference-verification app and Word add-in, as code and a static build. The published twin of the hosted tool.
 
 ### [coara-action-planner](https://rijdho.github.io/coara-action-planner/)
 *Active · 2026 · CoARA, Research Assessment, Open source*
 
-Self-assess your institution against the ten CoARA commitments and generate a prioritised, editable action plan — entirely in your browser. The open twin of the Reform Assessment toolkit.
+Self-assess your institution against the ten CoARA commitments and generate a prioritised, editable action plan, entirely in your browser. The open twin of the Reform Assessment toolkit.
 
 ↔ [Reform Assessment](https://metaudits.rijdho.org/reform-assessment/)
 
@@ -290,17 +290,17 @@ Contribution to Task Force 2 of Working Group 7 of the Barcelona Declaration on 
 
 ## Engagements
 
-- **Member**, Open Science Monitoring Initiative (OSMI), WG1 & WG4 — WG1: Defining open science monitoring needs and WG4: Building shared infrastructures and tools
-- **Member**, Barcelona Declaration on Open Research Information, WG7 — Promoting interoperability, openness, and inclusivity in research information ecosystems
-- **Advisory Board Member**, Cross-Domain Interoperability Framework (CDIF) - CODATA — Supporting interdisciplinary metadata interoperability frameworks
+- **Member**, Open Science Monitoring Initiative (OSMI), WG1 & WG4 · WG1: Defining open science monitoring needs and WG4: Building shared infrastructures and tools
+- **Member**, Barcelona Declaration on Open Research Information, WG7 · Promoting interoperability, openness, and inclusivity in research information ecosystems
+- **Advisory Board Member**, Cross-Domain Interoperability Framework (CDIF) - CODATA · Supporting interdisciplinary metadata interoperability frameworks
 
 ## Training
 
-- **Skills4EOSC First Cohort Participant** (2025) — Participant in the Train of Trainers Learning Path: Open Science and Research Data Management in the Social Sciences and Humanities, part of the European Skills4EOSC program. Focus on FAIR-enabling services, interoperability infrastructures, and applied data governance for research institutions.
-- **Essentials 4 Data Support** (2023) — Completed official RDNL training for research data support professionals. Focused on FAIR principles, metadata quality, data sharing, and the implementation of robust Data Management Plans (DMPs). Only active Latin American participant in the cohort.
-- **CWTS Scientometrics Summer School** (2020) — Intensive 75-hour course on scientometrics, bibliometric indicators, knowledge flows, and research evaluation methodologies. Covered theory and practical application for policy and infrastructure development.
-- **FORCE11 Scholarly Communication Institute – FSCI** (2017–2025) — Completed multiple tracks including: Governance for AI in Scientific Publications, Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Data visualization in R and D3.js, Using APIs (ORCID, Sherpa Romeo, Unpaywall) for institutional analysis
-- **DataCite Certified Core Training** (2024) — Certification focused on the use of persistent identifiers (PIDs), metadata best practices, and repository integration with DataCite infrastructure.
+- **Skills4EOSC First Cohort Participant** (2025): Participant in the Train of Trainers Learning Path: Open Science and Research Data Management in the Social Sciences and Humanities, part of the European Skills4EOSC program. Focus on FAIR-enabling services, interoperability infrastructures, and applied data governance for research institutions.
+- **Essentials 4 Data Support** (2023): Completed official RDNL training for research data support professionals. Focused on FAIR principles, metadata quality, data sharing, and the implementation of robust Data Management Plans (DMPs). Only active Latin American participant in the cohort.
+- **CWTS Scientometrics Summer School** (2020): Intensive 75-hour course on scientometrics, bibliometric indicators, knowledge flows, and research evaluation methodologies. Covered theory and practical application for policy and infrastructure development.
+- **FORCE11 Scholarly Communication Institute – FSCI** (2017–2025): Completed multiple tracks including: Governance for AI in Scientific Publications, Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Data visualization in R and D3.js, Using APIs (ORCID, Sherpa Romeo, Unpaywall) for institutional analysis
+- **DataCite Certified Core Training** (2024): Certification focused on the use of persistent identifiers (PIDs), metadata best practices, and repository integration with DataCite infrastructure.
 
 ---
 *Generated from data/cv.json · 2026-08-24*

@@ -1,7 +1,7 @@
 {
   "meta": {
     "updated": "2026-08-24",
-    "source": "single canonical CV data — hub, CV page and CV.md all read this"
+    "source": "single canonical CV data: hub, CV page and CV.md all read this"
   },
   "personal": {
     "name": "Ricardo Hartley Belmar",
@@ -137,7 +137,7 @@
       "period": "August 4 – October 28, 2025",
       "desc": {
         "en": "Developed a comprehensive baseline of institutional identifiers, audited coverage of scholarly records across systems (ORCID, ROR, Crossref, DataCite, OpenAlex), and designed reproducible workflows for PID-based traceability of research outputs. Prepared integration guidelines to expand ORCID adoption among LBG researchers and compared information consistency between open infrastructures and institutional systems. The mission supported LBG's open science strategy and alignment with Austria's National Action Plan for the European Research Area (ERA-NAP) 2026–2028.\n\nStrengthened my fluency with Microsoft-based ecosystems - including SharePoint, Power BI, and Azure Active Directory - to interface PID data with internal reporting suites, and piloted automation orchestrations using n8n and complementary integration platforms to streamline identifier governance tasks across teams.",
-        "es": "Desarrollé una línea base integral de identificadores institucionales, audité la cobertura de registros académicos en múltiples sistemas (ORCID, ROR, Crossref, DataCite, OpenAlex) y diseñé flujos de trabajo reproducibles para la trazabilidad de productos de investigación basada en PIDs. Preparé directrices de integración para expandir la adopción de ORCID entre investigadores de LBG y comparé la consistencia de información entre infraestructuras abiertas y sistemas institucionales. La misión apoyó la estrategia de ciencia abierta de LBG y la alineación con el Plan de Acción Nacional para el Espacio Europeo de Investigación (ERA-NAP) 2026–2028 de Austria.\n\nFortalecí mi dominio de ecosistemas Microsoft —incluyendo SharePoint, Power BI y Azure Active Directory— para conectar datos de PIDs con suites de reportes internos, y piloté orquestaciones de automatización usando n8n y plataformas complementarias para agilizar tareas de gobernanza de identificadores entre equipos.",
+        "es": "Desarrollé una línea base integral de identificadores institucionales, audité la cobertura de registros académicos en múltiples sistemas (ORCID, ROR, Crossref, DataCite, OpenAlex) y diseñé flujos de trabajo reproducibles para la trazabilidad de productos de investigación basada en PIDs. Preparé directrices de integración para expandir la adopción de ORCID entre investigadores de LBG y comparé la consistencia de información entre infraestructuras abiertas y sistemas institucionales. La misión apoyó la estrategia de ciencia abierta de LBG y la alineación con el Plan de Acción Nacional para el Espacio Europeo de Investigación (ERA-NAP) 2026–2028 de Austria.\n\nFortalecí mi dominio de ecosistemas Microsoft (incluyendo SharePoint, Power BI y Azure Active Directory) para conectar datos de PIDs con suites de reportes internos, y piloté orquestaciones de automatización usando n8n y plataformas complementarias para agilizar tareas de gobernanza de identificadores entre equipos.",
         "de": "Aufbau einer umfassenden Basis institutioneller Identifikatoren, Prüfung der Abdeckung wissenschaftlicher Nachweise über mehrere Systeme hinweg (ORCID, ROR, Crossref, DataCite, OpenAlex) und Entwurf reproduzierbarer Workflows für die PID-gestützte Rückverfolgbarkeit von Forschungsergebnissen. Erstellung von Integrationsleitlinien zur Ausweitung der ORCID-Nutzung unter LBG-Forschenden sowie Vergleich der Informationskonsistenz zwischen offenen Infrastrukturen und institutionellen Systemen. Die Mission unterstützte die Open-Science-Strategie der LBG und die Abstimmung mit Österreichs Nationalem Aktionsplan für den Europäischen Forschungsraum (ERA-NAP) 2026–2028.\n\nVertiefung meiner Kenntnisse in Microsoft-Ökosystemen – darunter SharePoint, Power BI und Azure Active Directory –, um PID-Daten mit internen Reporting-Suiten zu verbinden, sowie Pilotierung von Automatisierungs-Orchestrierungen mit n8n und ergänzenden Integrationsplattformen zur Vereinfachung der Identifikator-Governance über Teams hinweg."
       }
     },
@@ -844,7 +844,7 @@
   ],
   "experiments": [
     {
-      "title": "BiblioHelp — Academic Reference Verification",
+      "title": "BiblioHelp: Academic Reference Verification",
       "year": "2026",
       "status": "Active",
       "url": "https://bibliohelp.rijdho.org/",
@@ -870,7 +870,7 @@
       ]
     },
     {
-      "title": "MetAudits — Scielo Chile Crossref Metadata Completeness",
+      "title": "MetAudits: Scielo Chile Crossref Metadata Completeness",
       "year": "2026",
       "status": "Active",
       "url": "https://metaudits.rijdho.org/scielochile/",
@@ -891,7 +891,7 @@
       "id": "scielochile"
     },
     {
-      "title": "Repo MetAudits — FAIR Metadata Quality Evaluator",
+      "title": "Repo MetAudits: FAIR Metadata Quality Evaluator",
       "year": "2026",
       "status": "Active",
       "url": "https://metaudits.rijdho.org/repo-metaudits/",
@@ -917,7 +917,7 @@
       ]
     },
     {
-      "title": "Dirty Repos — Problematic Files with DOIs in DataCite Repositories",
+      "title": "Dirty Repos: Problematic Files with DOIs in DataCite Repositories",
       "year": "2026",
       "status": "Active",
       "url": "https://metaudits.rijdho.org/dirty-repos/",
@@ -932,14 +932,14 @@
       ],
       "topic": "metadata",
       "desc": {
-        "en": "Scans DataCite for DOIs pointing to problematic files — OS artifacts (.DS_Store, Thumbs.db), security risks (.env, credentials), and dev debris (node_modules, __pycache__) in research repositories. Enriched with geographic data from ROR and cross-referenced against re3data repository metadata. Interactive dashboard with Mapbox world map, category breakdowns, and repository drill-downs.",
-        "es": "Escanea DataCite en busca de DOIs apuntando a archivos problemáticos — artefactos del SO (.DS_Store, Thumbs.db), riesgos de seguridad (.env, credentials) y residuos de desarrollo (node_modules, __pycache__) en repositorios de investigación. Enriquecido con datos geográficos de ROR y cruzado contra metadatos de repositorios re3data. Dashboard interactivo con mapa mundial Mapbox, desgloses por categoría y drill-downs por repositorio.",
+        "en": "Scans DataCite for DOIs pointing to problematic files: OS artifacts (.DS_Store, Thumbs.db), security risks (.env, credentials), and dev debris (node_modules, __pycache__) in research repositories. Enriched with geographic data from ROR and cross-referenced against re3data repository metadata. Interactive dashboard with Mapbox world map, category breakdowns, and repository drill-downs.",
+        "es": "Escanea DataCite en busca de DOIs apuntando a archivos problemáticos: artefactos del SO (.DS_Store, Thumbs.db), riesgos de seguridad (.env, credentials) y residuos de desarrollo (node_modules, __pycache__) en repositorios de investigación. Enriquecido con datos geográficos de ROR y cruzado contra metadatos de repositorios re3data. Dashboard interactivo con mapa mundial Mapbox, desgloses por categoría y drill-downs por repositorio.",
         "de": "Durchsucht DataCite nach DOIs, die auf problematische Dateien verweisen – Betriebssystem-Artefakte (.DS_Store, Thumbs.db), Sicherheitsrisiken (.env, Zugangsdaten) und Entwicklungsreste (node_modules, __pycache__) in Forschungsrepositorien. Angereichert mit geografischen Daten aus ROR und abgeglichen mit re3data-Repositoriumsmetadaten. Interaktives Dashboard mit Mapbox-Weltkarte, Aufschlüsselung nach Kategorien und Detailansichten je Repositorium."
       },
       "id": "dirty-repos"
     },
     {
-      "title": "Publisher Gap — Crossref vs OpenAlex Metadata Completeness",
+      "title": "Publisher Gap: Crossref vs OpenAlex Metadata Completeness",
       "year": "2026",
       "status": "Active",
       "url": "https://metaudits.rijdho.org/publisher-gap/",
@@ -985,7 +985,7 @@
       "id": "retractions"
     },
     {
-      "title": "maDMP Gap — Data Management Plans vs RDA maDMP Standard",
+      "title": "maDMP Gap: Data Management Plans vs RDA maDMP Standard",
       "year": "2026",
       "status": "Active",
       "url": "https://metaudits.rijdho.org/madmp/",
@@ -1007,7 +1007,7 @@
       "id": "madmp"
     },
     {
-      "title": "ORCID Adoption — Consortium vs Non-Consortium",
+      "title": "ORCID Adoption: Consortium vs Non-Consortium",
       "year": "2026",
       "status": "Active",
       "url": "https://metaudits.rijdho.org/orcid-adoption/",
@@ -1021,8 +1021,8 @@
       ],
       "topic": "assessment",
       "desc": {
-        "en": "Do ORCID consortia drive meaningful adoption, or just empty accounts? Compares profile completeness across 88 institutions and 200,595 profiles from 6 continents. Key finding: consortium institutions average 41.2% completeness with 49% empty profiles, versus 40.4% and 51% for non-consortium — a gap of just +0.7pp. Pre-2018 profiles reach ~50% (intrinsic motivation); post-2022 drop below 30% (mandate-driven bulk creation).",
-        "es": "¿Los consorcios ORCID impulsan una adopción significativa, o solo cuentas vacías? Compara la completitud de perfiles en 88 instituciones y 200.595 perfiles de 6 continentes. Hallazgo clave: las instituciones en consorcio promedian 41,2% de completitud con 49% de perfiles vacíos, versus 40,4% y 51% en no consorcio — una diferencia de apenas +0,7pp. Los perfiles pre-2018 alcanzan ~50% (motivación intrínseca); los post-2022 caen bajo 30% (creación masiva por mandato).",
+        "en": "Do ORCID consortia drive meaningful adoption, or just empty accounts? Compares profile completeness across 88 institutions and 200,595 profiles from 6 continents. Key finding: consortium institutions average 41.2% completeness with 49% empty profiles, versus 40.4% and 51% for non-consortium, a gap of just +0.7pp. Pre-2018 profiles reach ~50% (intrinsic motivation); post-2022 drop below 30% (mandate-driven bulk creation).",
+        "es": "¿Los consorcios ORCID impulsan una adopción significativa, o solo cuentas vacías? Compara la completitud de perfiles en 88 instituciones y 200.595 perfiles de 6 continentes. Hallazgo clave: las instituciones en consorcio promedian 41,2% de completitud con 49% de perfiles vacíos, versus 40,4% y 51% en no consorcio, una diferencia de apenas +0,7pp. Los perfiles pre-2018 alcanzan ~50% (motivación intrínseca); los post-2022 caen bajo 30% (creación masiva por mandato).",
         "de": "Führen ORCID-Konsortien zu substanzieller Nutzung oder nur zu leeren Konten? Vergleich der Profilvollständigkeit über 88 Einrichtungen und 200.595 Profile aus sechs Kontinenten. Zentrales Ergebnis: Einrichtungen in Konsortien erreichen im Mittel 41,2 % Vollständigkeit bei 49 % leeren Profilen, gegenüber 40,4 % und 51 % außerhalb von Konsortien – ein Unterschied von nur +0,7 Prozentpunkten. Profile von vor 2018 erreichen rund 50 % (intrinsische Motivation); Profile nach 2022 fallen unter 30 % (durch Vorgaben erzeugte Masseneinrichtung)."
       },
       "id": "orcid-adoption"
@@ -1053,7 +1053,7 @@
       ]
     },
     {
-      "title": "MCP CRIS Live — OpenAIRE",
+      "title": "MCP CRIS Live: OpenAIRE",
       "year": "2026",
       "status": "Active",
       "url": "https://hub.docker.com/r/rijdho/mcp-cris-live-openaire",
@@ -1079,7 +1079,7 @@
       ]
     },
     {
-      "title": "OpenAIRE Research Assistant — Demo",
+      "title": "OpenAIRE Research Assistant: Demo",
       "year": "2026",
       "status": "Active",
       "url": "",
@@ -1308,8 +1308,8 @@
         "repo-metaudits"
       ],
       "desc": {
-        "en": "Open, client-side twin of Repo MetAudits — FAIR metadata scoring for DataCite and OAI-PMH repositories, running entirely in the browser. The published, open-source counterpart of the hosted evaluator.",
-        "es": "Gemelo abierto y del lado del cliente de Repo MetAudits — evaluación FAIR de metadatos para repositorios DataCite y OAI-PMH, ejecutándose enteramente en el navegador. La contraparte publicada y de código abierto del evaluador alojado.",
+        "en": "Open, client-side twin of Repo MetAudits: FAIR metadata scoring for DataCite and OAI-PMH repositories, running entirely in the browser. The published, open-source counterpart of the hosted evaluator.",
+        "es": "Gemelo abierto y del lado del cliente de Repo MetAudits: evaluación FAIR de metadatos para repositorios DataCite y OAI-PMH, ejecutándose enteramente en el navegador. La contraparte publicada y de código abierto del evaluador alojado.",
         "de": "Offener, clientseitiger Zwilling von Repo MetAudits – FAIR-Metadatenbewertung für DataCite- und OAI-PMH-Repositorien, vollständig im Browser. Das veröffentlichte Open-Source-Gegenstück zum gehosteten Evaluator."
       },
       "doi": "10.5281/zenodo.21492530"
@@ -1331,8 +1331,8 @@
         "bibliohelp"
       ],
       "desc": {
-        "en": "Open-source companion of BiblioHelp — the reference-verification app and Word add-in, as code and a static build. The published twin of the hosted tool.",
-        "es": "Complemento de código abierto de BiblioHelp — la app de verificación de referencias y el add-in de Word, como código y build estático. El gemelo publicado de la herramienta alojada.",
+        "en": "Open-source companion of BiblioHelp: the reference-verification app and Word add-in, as code and a static build. The published twin of the hosted tool.",
+        "es": "Complemento de código abierto de BiblioHelp: la app de verificación de referencias y el add-in de Word, como código y build estático. El gemelo publicado de la herramienta alojada.",
         "de": "Open-Source-Begleiter von BiblioHelp – die App zur Referenzprüfung und das Word-Add-in als Quellcode und statischer Build. Der veröffentlichte Zwilling des gehosteten Werkzeugs."
       }
     },
@@ -1351,8 +1351,8 @@
       "topic": "assessment",
       "platform": "github",
       "desc": {
-        "en": "Self-assess your institution against the ten CoARA commitments and generate a prioritised, editable action plan — entirely in your browser. The open twin of the Reform Assessment toolkit.",
-        "es": "Autoevalúa tu institución frente a los diez compromisos CoARA y genera un plan de acción priorizado y editable — enteramente en el navegador. El gemelo abierto del toolkit Reform Assessment.",
+        "en": "Self-assess your institution against the ten CoARA commitments and generate a prioritised, editable action plan, entirely in your browser. The open twin of the Reform Assessment toolkit.",
+        "es": "Autoevalúa tu institución frente a los diez compromisos CoARA y genera un plan de acción priorizado y editable, enteramente en el navegador. El gemelo abierto del toolkit Reform Assessment.",
         "de": "Bewerten Sie Ihre Einrichtung selbst anhand der zehn CoARA-Verpflichtungen und erzeugen Sie einen priorisierten, bearbeitbaren Aktionsplan – vollständig im Browser. Der offene Zwilling des Reform-Assessment-Toolkits."
       },
       "twin": {

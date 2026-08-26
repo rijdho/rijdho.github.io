@@ -1,5 +1,5 @@
 // Regenerates the README screenshots in this folder. Puppeteer is a tooling-only
-// dependency — the site itself stays dependency-free and this is never shipped.
+// dependency: the site itself stays dependency-free and this is never shipped.
 //
 //   python3 -m http.server 8000 &          # from the repo root
 //   npm i puppeteer                        # or point CHROME_PATH at an existing Chrome
@@ -10,7 +10,7 @@
 // The cloud is a physics simulation seeded with Math.random, which would make every
 // regeneration produce a differently-arranged image and every diff meaningless. So
 // Math.random is replaced with a fixed-seed PRNG before any page script runs, and
-// prefers-reduced-motion is emulated — the hub then settles the layout in one
+// prefers-reduced-motion is emulated, so the hub settles the layout in one
 // synchronous pass instead of animating. Same input, same picture.
 
 import puppeteer from 'puppeteer'
@@ -22,7 +22,7 @@ mkdirSync(OUT, { recursive: true })
 
 const SEED = 0x9e3779b9
 const seedRandom = seed => {
-  // mulberry32 — small, fast, and good enough to lay out 17 ovals reproducibly
+  // mulberry32: small, fast, and good enough to lay the ovals out reproducibly
   Math.random = () => {
     seed |= 0
     seed = (seed + 0x6d2b79f5) | 0
@@ -48,7 +48,7 @@ const newPage = async url => {
 
 const shoot = async (page, selector, file) => {
   const el = await page.$(selector)
-  if (!el) { console.log(`SKIP ${file} — no element matching ${selector}`); return }
+  if (!el) { console.log(`SKIP ${file}: no element matching ${selector}`); return }
   await el.screenshot({ path: `${OUT}/${file}` })
   console.log(`OK   ${file}`)
 }

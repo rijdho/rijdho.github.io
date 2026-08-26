@@ -1,6 +1,6 @@
 <!doctype html>
 <meta charset="utf-8">
-<title>rijdho — hub (nube)</title>
+<title>rijdho: hub (nube)</title>
 <style>
 @font-face{font-family:"Inter Variable";font-style:normal;font-display:swap;font-weight:100 900;
   src:url(./fonts/inter-latin-wght-normal.woff2) format("woff2-variations");
@@ -85,7 +85,7 @@
   .subrow .viewseg{flex:none;margin-right:30px}  /* aligns its left edge with the EN/DE/ES switcher above (which is offset from the edge by the theme button) */
   .viewseg button{min-width:58px;justify-content:center}
 
-  /* legend / filter — floats top-center inside the stage */
+  /* legend / filter: floats top-center inside the stage */
   .legend{position:absolute;top:11px;left:50%;transform:translateX(-50%);z-index:8;
     display:flex;flex-wrap:wrap;gap:7px;justify-content:center;width:max-content;max-width:calc(100% - 24px)}
   .lg{font-family:var(--mono);font-size:.72rem;border:1px solid var(--border);background:var(--surface);
@@ -278,21 +278,21 @@ const TOPICS = {
 const UI = {
   en:{kicker:"Open science · research information governance",
     tag:"Open science & research information governance. PID traceability. Responsible research assessment.",
-    sum:"Open Science Expert at the Interdisciplinary Transformation University Austria (IT:U), Linz — designing a university-wide open-science strategy and building the tools that run it.",
+    sum:"Open Science Expert at the Interdisciplinary Transformation University Austria (IT:U), Linz: designing a university-wide open-science strategy and building the tools that run it.",
     cv:"Full CV →", apps_h:"Tools & experiments", apps_lead:"A cloud of live tools, grouped by topic. Drag them around; click one to open it.",
     hint:"drag · click a bubble", writ_h:"Writing", writ_lead:"Columns, essays and posts on open knowledge.",
     by:"Built by Ricardo Hartley Belmar", lic:"MIT-licensed, open source", src:"Source on GitHub",
     built:"A curated view of the same data behind the CV", open:"Open", nolink:"No public URL", list:"List", cloud:"Cloud"},
   de:{kicker:"Open Science · Governance von Forschungsinformationen",
     tag:"Open Science & Governance von Forschungsinformationen. PID-Rückverfolgbarkeit. Verantwortungsvolle Forschungsbewertung.",
-    sum:"Open-Science-Experte an der Interdisciplinary Transformation University Austria (IT:U), Linz — Entwurf einer universitätsweiten Open-Science-Strategie und Aufbau der Werkzeuge dahinter.",
+    sum:"Open-Science-Experte an der Interdisciplinary Transformation University Austria (IT:U), Linz: Entwurf einer universitätsweiten Open-Science-Strategie und Aufbau der Werkzeuge dahinter.",
     cv:"Vollständiger Lebenslauf →", apps_h:"Werkzeuge & Experimente", apps_lead:"Eine Wolke aktiver Werkzeuge, nach Thema gruppiert. Ziehen; zum Öffnen klicken.",
     hint:"ziehen · Blase anklicken", writ_h:"Publizistik", writ_lead:"Kolumnen, Essays und Beiträge zu offenem Wissen.",
     by:"Erstellt von Ricardo Hartley Belmar", lic:"MIT-Lizenz, quelloffen", src:"Quellcode auf GitHub",
     built:"Eine kuratierte Ansicht derselben CV-Daten", open:"Öffnen", nolink:"Keine öffentliche URL", list:"Liste", cloud:"Wolke"},
   es:{kicker:"Ciencia abierta · gobernanza de información de investigación",
     tag:"Ciencia abierta y gobernanza de información de investigación. Trazabilidad de PIDs. Evaluación responsable.",
-    sum:"Open Science Expert en la Interdisciplinary Transformation University Austria (IT:U), Linz — diseño una estrategia de ciencia abierta y construyo las herramientas que la sostienen.",
+    sum:"Open Science Expert en la Interdisciplinary Transformation University Austria (IT:U), Linz: diseño una estrategia de ciencia abierta y construyo las herramientas que la sostienen.",
     cv:"CV completo →", apps_h:"Herramientas y experimentos", apps_lead:"Una nube de herramientas vivas, agrupadas por tópico. Arrástralas; haz clic para abrir.",
     hint:"arrastra · haz clic en una burbuja", writ_h:"Escritos", writ_lead:"Columnas, ensayos y publicaciones sobre conocimiento abierto.",
     by:"Hecho por Ricardo Hartley Belmar", lic:"Licencia MIT, código abierto", src:"Código en GitHub",
@@ -309,12 +309,14 @@ function srcLabel(u){if(!u)return"";try{const h=new URL(u).hostname.replace(/^ww
 /* curated short labels shown inside the ovals (order matters: OpenAIRE variant before the plain MCP) */
 const SHORT=[[/BiblioHelp/,"BiblioHelp"],[/Scielo/i,"SciELO Chile"],[/Repo MetAudits/,"Repo MetAudits"],
   [/Dirty Repos/,"Dirty Repos"],[/Publisher Gap/,"Publisher Gap"],[/Retracted/,"Retractions"],
-  [/maDMP Gap/,"maDMP Gap"],[/ORCID Adoption/,"ORCID Adoption"],[/MCP CRIS Live — OpenAIRE/,"MCP OpenAIRE"],
+  [/maDMP Gap/,"maDMP Gap"],[/ORCID Adoption/,"ORCID Adoption"],[/MCP CRIS Live: OpenAIRE/,"MCP OpenAIRE"],
   [/MCP CRIS Live/,"MCP CRIS"],[/OpenAIRE Research/,"OpenAIRE AI"],[/sound-inequality/,"sound-inequality"],
   [/PID Traceability/,"PID Workflows"],[/Value of Open Research Information/,"ORI Benefits"],
   [/DART Documentation Generators/,"DART Docs"],[/Renku 2\.0 Deployment/,"Renku 2.0 (IT:U)"],
   [/Open Science Strategy/,"OS Strategy (IT:U)"],[/maDMP Template/,"maDMP Template"]];
-function shortOf(t){for(const[re,s]of SHORT)if(re.test(t))return s;return t.split("—")[0].trim();}
+/* Fallback for a title with no curated label: keep the name, drop the subtitle. The
+   separator is ": " with the space, so "CRIS for IT:U" is never cut at "IT". */
+function shortOf(t){for(const[re,s]of SHORT)if(re.test(t))return s;return t.split(": ")[0].trim();}
 
 /* ---------- cloud physics ---------- */
 const cv=document.getElementById("cloud"), ctx=cv.getContext("2d");
@@ -337,10 +339,10 @@ function initBubbles(){
     const rx=Math.max(46,Math.max(wName,wDoi)/2+16); const ry=doi?31:25;
     return {a,short,doi,rx,ry,x:an[0]+(Math.random()-.5)*70,y:an[1]+(Math.random()-.5)*50,vx:0,vy:0};});
 }
-/* ellipse radius in a given direction — for proper oval separation */
+/* ellipse radius in a given direction, for proper oval separation */
 function edir(b,dx,dy){const d=Math.hypot(dx,dy)||1,c=dx/d,s=dy/d;
   return (b.rx*b.ry)/Math.sqrt((b.ry*c)**2+(b.rx*s)**2);}
-/* two bubbles are related if either lists the other's id — related pairs touch instead of repelling */
+/* two bubbles are related if either lists the other's id; related pairs touch instead of repelling */
 function related(a,b){return !!(a.a.related&&a.a.related.includes(b.a.id))||!!(b.a.related&&b.a.related.includes(a.a.id));}
 function partnersOf(bb){return (bb.a.related||[]).map(id=>bubbles.find(x=>x.a.id===id)).filter(Boolean)
   .concat(bubbles.filter(x=>x.a.related&&x.a.related.includes(bb.a.id)));}
@@ -465,7 +467,7 @@ const deLbl=o=>typeof o==="string"?o:((o&&(o[lang]||o.en))||"");
 function pcount(k){if(k==="writing")return DATA.writing.length;
   if(k==="publications")return Object.values(EXTRA.publications).reduce((s,a)=>s+a.length,0);
   return (EXTRA[k]||[]).length;}
-/* The title carries the link — never the whole row, or the year and the blurb get
+/* The title carries the link, never the whole row, or the year and the blurb get
    underlined too. The right-hand chip names what it actually resolves to: "DOI" only
    for a real doi.org URL, otherwise the host, so a publisher homepage cannot pose as
    a persistent identifier. */
@@ -501,7 +503,7 @@ function rowsEdu(){return EXTRA.education.map(e=>`
     <span class="pmain"><div class="ptitle">${esc(deLbl(e.degree))}</div>
     <div class="pmeta">${esc(e.inst)}</div></span></div>`).join("");}
 function rowsEng(){return EXTRA.engagements.map(e=>`
-  <div class="prow"><span class="pyear">—</span>
+  <div class="prow"><span class="pyear"></span>
     <span class="pmain"><div class="ptitle">${esc(e.role)} · <span style="font-weight:400;color:var(--muted)">${esc(e.org)}</span></div>
     <div class="pmeta">${esc(deLbl(e.focus))}</div></span></div>`).join("");}
 function rowsTrain(){return EXTRA.training.map(e=>`

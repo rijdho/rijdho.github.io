@@ -4,12 +4,12 @@ dist/
 .wrangler/
 *.log
 
-# Claude Code session state — local-only, never committed
+# Claude Code session state: local-only, never committed
 .claude/
 
 # local dev helpers
 serve_utf8.py
 __pycache__/
 
-# Sensitive/local-only material — never committed (house rule, see github/CLAUDE.md)
+# Sensitive/local-only material, never committed (house rule, see github/CLAUDE.md)
 _ref/
