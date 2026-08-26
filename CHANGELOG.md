@@ -10,7 +10,10 @@ install. A version is cut here whenever the content or the shape of `data/cv.jso
 enough to be worth naming, which keeps the history readable without pretending the site
 ships in numbered drops.
 
-## [Unreleased]
+## [1.3.0] - 2026-08-26
+
+The hub stops keeping a private copy of anything it shows, and a shared link finally has
+something to show.
 
 ### Added
 
@@ -87,6 +90,16 @@ ships in numbered drops.
   to it would point at a 404. Nothing cited it: no DOI, no release, no fork. A verified
   full-history bundle is kept outside every repository.
 
+### Fixed
+
+- `docs/screenshots.mjs` reached the publications tab by position, `button[1]`, so the
+  reorder would have silently pointed the README screenshot at Talks. It selects by
+  `data-tab` now. This is the index-alignment trap the house rules warn about, in a script
+  rather than in a locale file.
+- The CV page rendered the whole summary as a single text node, so the paragraph breaks it
+  is authored with collapsed into spaces and the paragraphs ran together as one block. It
+  now emits one `<p>` per paragraph, the same shape `build_cv.py` has always produced.
+
 ## [1.2.0] - 2026-08-26
 
 The IT:U systems join the cloud, and the cloud is given the room to hold them.
@@ -128,13 +141,6 @@ The IT:U systems join the cloud, and the cloud is given the room to hold them.
 
 ### Fixed
 
-- `docs/screenshots.mjs` reached the publications tab by position, `button[1]`, so the
-  reorder would have silently pointed the README screenshot at Talks. It selects by
-  `data-tab` now. This is the index-alignment trap the house rules warn about, in a script
-  rather than in a locale file.
-- The CV page rendered the whole summary as a single text node, so the paragraph breaks it
-  is authored with collapsed into spaces and the paragraphs ran together as one block. It
-  now emits one `<p>` per paragraph, the same shape `build_cv.py` has always produced.
 - The curated short-label table matched `maDMP` anywhere in a title, so the new *maDMP
   Template (IT:U)* was drawn as a second oval reading **maDMP Gap**: two identical labels
   on two different tools. The pattern is now anchored to `maDMP Gap`, and the new entry
@@ -229,7 +235,7 @@ Initial public site.
   folder uploads verbatim and the Markdown CVs are regenerated on every push.
 - Inter self-hosted as woff2, no font CDN.
 
-[Unreleased]: https://github.com/rijdho/rijdho.github.io/compare/v1.2.0...HEAD
+[1.3.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/rijdho/rijdho.github.io/releases/tag/v1.0.0
