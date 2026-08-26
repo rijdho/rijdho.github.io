@@ -36,6 +36,16 @@ ships in numbered drops.
   30px and the taller canvas to 27px, with the overlapping pairs down from 32 to 17 and
   every label legible again.
 
+- The hub's hero reads its content from `cv.json` instead of carrying its own copy. The
+  eyebrow, the tagline, the one-line headline and the name were literals inside the `UI`
+  object in three languages, while the CV page and `build_cv.py` read `personal` from the
+  single source: two of three consumers went to the data and the third did not, and the
+  tagline had already drifted into two versions, slash-separated in `cv.json` and
+  full-stop-separated in the hub. `personal` gains `kicker` and `headline`, the hero fills
+  from `data-p` attributes, and `UI` keeps interface language only. The hub's tagline line
+  therefore now reads with the slashes the other two surfaces already used. The name and
+  the ORCID chip keep a literal in the HTML as well, overwritten on load, because they are
+  the page's identity and there are no `og:` tags to carry it otherwise.
 - Every em dash is gone, from `cv.json` and both pages down to the code comments, the
   `.gitignore` and the licence note: 101 of them, replaced one at a time by a colon, a
   comma, parentheses or a sentence break rather than swapped blindly. Two cases were

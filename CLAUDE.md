@@ -16,6 +16,25 @@ vanilla JS. Part of the violet-family design system (see `../CLAUDE.md`).
 - `cv.html`: the academic CV. Same fetch, formal layout, `Print / PDF` via `window.print()`.
 - `build_cv.py`: emits `CV.en.md` / `CV.de.md` / `CV.es.md`.
 
+### What lives where: content in `cv.json`, interface in `UI`
+
+The hub keeps a `UI` object with one entry per language. It holds **interface language
+only**: button labels, section headings, the cloud hint, "No public URL". Anything the CV
+*says* lives in `cv.json` and reaches the page through `data-p="<key>"`, read from
+`personal` by `render()` with the same `de → en` fallback as everything else. `data-t` is
+the interface half, `data-p` the content half, and the two never overlap.
+
+Until 2026-08-26 the hero broke this: the eyebrow, the tagline, the one-line headline and
+the name were literals inside `UI`, in three languages, while `cv.html` and `build_cv.py`
+read `personal.tagline` and `personal.summary` from `cv.json`. Two of three consumers went
+to the source and the third carried its own copy, which had already drifted: the tagline
+existed as a slash-separated list in `cv.json` and a full-stop-separated one in `UI`.
+
+Two literals are kept on purpose, and both are overwritten by `render()` on load: the name
+in the `<h1>` and the ORCID chip. They are the page's identity, neither ever changes, and
+the site has no `og:` tags, so raw HTML is all a link unfurler gets. Prose is never
+duplicated this way, because prose is what actually changes.
+
 **To update anything on the site, edit `data/cv.json` and nothing else.** The pages fetch
 it at load, so the change is live immediately. `CV.*.md` is a build artifact, so run
 `python3 build_cv.py` (the Action also does it on push). Never hand-edit the `.md` files or

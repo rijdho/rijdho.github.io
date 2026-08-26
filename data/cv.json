@@ -10,10 +10,20 @@
       "MSc",
       "Dr."
     ],
+    "kicker": {
+      "en": "Open science · research information governance",
+      "de": "Open Science · Governance von Forschungsinformationen",
+      "es": "Ciencia abierta · gobernanza de información de investigación"
+    },
     "tagline": {
       "en": "Open science & research information governance / PID traceability / Responsible research assessment",
       "es": "Ciencia abierta y gobernanza de información de investigación / Trazabilidad de identificadores persistentes / Evaluación responsable de la investigación",
       "de": "Open Science & Governance von Forschungsinformationen / PID-Rückverfolgbarkeit / Verantwortungsvolle Forschungsbewertung"
+    },
+    "headline": {
+      "en": "Open Science Expert at the Interdisciplinary Transformation University Austria (IT:U), Linz: designing a university-wide open-science strategy and building the tools that run it.",
+      "de": "Open-Science-Experte an der Interdisciplinary Transformation University Austria (IT:U), Linz: Entwurf einer universitätsweiten Open-Science-Strategie und Aufbau der Werkzeuge dahinter.",
+      "es": "Open Science Expert en la Interdisciplinary Transformation University Austria (IT:U), Linz: diseño una estrategia de ciencia abierta y construyo las herramientas que la sostienen."
     },
     "summary": {
       "en": "Open Science Expert at the Interdisciplinary Transformation University Austria (IT:U) in Linz, where I design and implement a university-wide Open Science strategy, build the tools and platforms that support it. Previously I completed a Short-Term Scientific Mission at the Open Innovation in Science Center, Ludwig Boltzmann Gesellschaft (Vienna), building a baseline of institutional identifiers and reproducible PID-based traceability workflows aligned with Austria's ERA-NAP 2026–2028 priorities.\n\nMy work centers on research information governance, metadata quality, and responsible assessment, bridging technological, practical, and regulatory interfaces so institutions can operationalize ambitious open science commitments.",

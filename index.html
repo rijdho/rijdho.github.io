@@ -202,14 +202,18 @@
 
 <main><div class="wrap">
   <section class="hero">
-    <div class="eyebrow" data-t="kicker"></div>
-    <h1>Ricardo Hartley Belmar</h1>
-    <p class="tag" data-t="tag"></p>
-    <p class="sum" data-t="sum"></p>
+    <div class="eyebrow" data-p="kicker"></div>
+    <!-- the name stays literal as well as data-p: it is the one line worth having in the
+         raw HTML for anything that does not run the fetch. render() overwrites it. -->
+    <h1 data-p="name">Ricardo Hartley Belmar</h1>
+    <p class="tag" data-p="tagline"></p>
+    <p class="sum" data-p="headline"></p>
     <div class="hlinks">
       <a class="chip primary" href="./cv.html" data-t="cv"></a>
-      <a class="chip" href="https://orcid.org/0000-0001-5058-9309">ORCID 0000-0001-5058-9309</a>
-      <a class="chip" href="https://rijdho.substack.com">Substack</a>
+      <!-- href and id are filled from cv.json by render(); the literals are the fallback
+           for anything that reads the HTML without running the fetch. -->
+      <a class="chip" id="orcid_chip" href="https://orcid.org/0000-0001-5058-9309">ORCID 0000-0001-5058-9309</a>
+      <a class="chip" id="substack_chip" href="https://rijdho.substack.com">Substack</a>
     </div>
   </section>
 
@@ -242,14 +246,14 @@
 </div></main>
 
 <footer><div class="wrap">
-  <span data-t="by"></span><span class="sep">·</span>
+  <span data-t="by"></span> <span data-p="name"></span><span class="sep">·</span>
   <span data-t="lic"></span><span class="sep">·</span>
   <a href="https://github.com/rijdho/rijdho.github.io" data-t="src"></a><span class="sep">·</span>
   <span style="font-family:var(--mono);font-size:.76rem;color:var(--faint)" data-t="built"></span>
 </div></footer>
 
 <script>
-let DATA, EXTRA;
+let DATA, EXTRA, PERSONAL;
 const MORE_H={en:"The rest of the story", de:"Der Rest der Geschichte", es:"El resto de la historia"};
 const TABMETA={
   writing:{en:"Writing",de:"Publizistik",es:"Escritos"},
@@ -276,26 +280,17 @@ const TOPICS = {
   story:{v:"--t-story", en:"Data storytelling", de:"Daten-Storytelling", es:"Narrativa de datos"},
 };
 const UI = {
-  en:{kicker:"Open science · research information governance",
-    tag:"Open science & research information governance. PID traceability. Responsible research assessment.",
-    sum:"Open Science Expert at the Interdisciplinary Transformation University Austria (IT:U), Linz: designing a university-wide open-science strategy and building the tools that run it.",
-    cv:"Full CV →", apps_h:"Tools & experiments", apps_lead:"A cloud of live tools, grouped by topic. Drag them around; click one to open it.",
+  en:{cv:"Full CV →", apps_h:"Tools & experiments", apps_lead:"A cloud of live tools, grouped by topic. Drag them around; click one to open it.",
     hint:"drag · click a bubble", writ_h:"Writing", writ_lead:"Columns, essays and posts on open knowledge.",
-    by:"Built by Ricardo Hartley Belmar", lic:"MIT-licensed, open source", src:"Source on GitHub",
+    by:"Built by", lic:"MIT-licensed, open source", src:"Source on GitHub",
     built:"A curated view of the same data behind the CV", open:"Open", nolink:"No public URL", list:"List", cloud:"Cloud"},
-  de:{kicker:"Open Science · Governance von Forschungsinformationen",
-    tag:"Open Science & Governance von Forschungsinformationen. PID-Rückverfolgbarkeit. Verantwortungsvolle Forschungsbewertung.",
-    sum:"Open-Science-Experte an der Interdisciplinary Transformation University Austria (IT:U), Linz: Entwurf einer universitätsweiten Open-Science-Strategie und Aufbau der Werkzeuge dahinter.",
-    cv:"Vollständiger Lebenslauf →", apps_h:"Werkzeuge & Experimente", apps_lead:"Eine Wolke aktiver Werkzeuge, nach Thema gruppiert. Ziehen; zum Öffnen klicken.",
+  de:{cv:"Vollständiger Lebenslauf →", apps_h:"Werkzeuge & Experimente", apps_lead:"Eine Wolke aktiver Werkzeuge, nach Thema gruppiert. Ziehen; zum Öffnen klicken.",
     hint:"ziehen · Blase anklicken", writ_h:"Publizistik", writ_lead:"Kolumnen, Essays und Beiträge zu offenem Wissen.",
-    by:"Erstellt von Ricardo Hartley Belmar", lic:"MIT-Lizenz, quelloffen", src:"Quellcode auf GitHub",
+    by:"Erstellt von", lic:"MIT-Lizenz, quelloffen", src:"Quellcode auf GitHub",
     built:"Eine kuratierte Ansicht derselben CV-Daten", open:"Öffnen", nolink:"Keine öffentliche URL", list:"Liste", cloud:"Wolke"},
-  es:{kicker:"Ciencia abierta · gobernanza de información de investigación",
-    tag:"Ciencia abierta y gobernanza de información de investigación. Trazabilidad de PIDs. Evaluación responsable.",
-    sum:"Open Science Expert en la Interdisciplinary Transformation University Austria (IT:U), Linz: diseño una estrategia de ciencia abierta y construyo las herramientas que la sostienen.",
-    cv:"CV completo →", apps_h:"Herramientas y experimentos", apps_lead:"Una nube de herramientas vivas, agrupadas por tópico. Arrástralas; haz clic para abrir.",
+  es:{cv:"CV completo →", apps_h:"Herramientas y experimentos", apps_lead:"Una nube de herramientas vivas, agrupadas por tópico. Arrástralas; haz clic para abrir.",
     hint:"arrastra · haz clic en una burbuja", writ_h:"Escritos", writ_lead:"Columnas, ensayos y publicaciones sobre conocimiento abierto.",
-    by:"Hecho por Ricardo Hartley Belmar", lic:"Licencia MIT, código abierto", src:"Código en GitHub",
+    by:"Hecho por", lic:"Licencia MIT, código abierto", src:"Código en GitHub",
     built:"Una vista curada de los mismos datos del CV", open:"Abrir", nolink:"Sin URL pública", list:"Lista", cloud:"Nube"},
 };
 
@@ -519,7 +514,13 @@ function renderPanel(){document.getElementById("tabpanel").innerHTML=(PANEL[acti
 
 /* ---------- render all ---------- */
 function render(){const t=UI[lang];
+  /* data-t is interface language and lives in UI; data-p is CV content and lives in cv.json. */
   document.querySelectorAll("[data-t]").forEach(el=>{const k=el.getAttribute("data-t");if(t[k]!=null)el.textContent=t[k];});
+  document.querySelectorAll("[data-p]").forEach(el=>{const v=PERSONAL&&PERSONAL[el.getAttribute("data-p")];
+    if(v!=null)el.textContent=deLbl(v);});
+  if(PERSONAL){const oc=document.getElementById("orcid_chip"), sc=document.getElementById("substack_chip");
+    if(PERSONAL.orcid){oc.href="https://orcid.org/"+PERSONAL.orcid; oc.textContent="ORCID "+PERSONAL.orcid;}
+    if(PERSONAL.substack)sc.href=PERSONAL.substack;}
   document.documentElement.lang=lang;
   document.getElementById("apps_c").textContent=DATA.apps.length;
   document.getElementById("more_h").textContent=MORE_H[lang];
@@ -543,6 +544,7 @@ addEventListener("resize",()=>{if(!isList){layout();initBubbles();start();}});
 
 (async()=>{
   const CV=await (await fetch("./data/cv.json")).json();
+  PERSONAL=CV.personal;
   const wb=e=>({...e,blurb_en:e.desc.en,blurb_es:e.desc.es,blurb_de:e.desc.de||""});
   DATA={apps:CV.experiments.map(wb),writing:CV.portfolio.map(wb)};
   EXTRA={publications:CV.publications,talks:CV.presentations,experience:CV.experience,
