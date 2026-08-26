@@ -95,8 +95,8 @@
   .lg .n{font-variant-numeric:tabular-nums;color:var(--faint)}
 
   /* cloud */
-  .stage{position:relative;border-radius:16px}
-  #cloud{display:block;width:100%;height:380px;touch-action:none;cursor:grab}
+  .stage{position:relative;border-radius:16px;overflow-x:clip;overflow-clip-margin:24px}
+  #cloud{display:block;width:100%;height:460px;touch-action:none;cursor:grab}
   @media (max-width:560px){#cloud{height:440px}}
   #cloud.grabbing{cursor:grabbing}
   .hint{position:absolute;left:14px;bottom:12px;font-family:var(--mono);font-size:.68rem;color:var(--faint);pointer-events:none}
@@ -309,7 +309,7 @@ function srcLabel(u){if(!u)return"";try{const h=new URL(u).hostname.replace(/^ww
 /* curated short labels shown inside the ovals (order matters: OpenAIRE variant before the plain MCP) */
 const SHORT=[[/BiblioHelp/,"BiblioHelp"],[/Scielo/i,"SciELO Chile"],[/Repo MetAudits/,"Repo MetAudits"],
   [/Dirty Repos/,"Dirty Repos"],[/Publisher Gap/,"Publisher Gap"],[/Retracted/,"Retractions"],
-  [/maDMP/,"maDMP Gap"],[/ORCID Adoption/,"ORCID Adoption"],[/MCP CRIS Live — OpenAIRE/,"MCP OpenAIRE"],
+  [/maDMP Gap/,"maDMP Gap"],[/ORCID Adoption/,"ORCID Adoption"],[/MCP CRIS Live — OpenAIRE/,"MCP OpenAIRE"],
   [/MCP CRIS Live/,"MCP CRIS"],[/OpenAIRE Research/,"OpenAIRE AI"],[/sound-inequality/,"sound-inequality"],
   [/PID Traceability/,"PID Workflows"]];
 function shortOf(t){for(const[re,s]of SHORT)if(re.test(t))return s;return t.split("—")[0].trim();}
