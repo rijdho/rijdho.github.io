@@ -97,7 +97,7 @@
   /* cloud */
   .stage{position:relative;border-radius:16px;overflow-x:clip;overflow-clip-margin:24px}
   #cloud{display:block;width:100%;height:460px;touch-action:none;cursor:grab}
-  @media (max-width:560px){#cloud{height:440px}}
+  @media (max-width:560px){#cloud{height:600px}}
   #cloud.grabbing{cursor:grabbing}
   .hint{position:absolute;left:14px;bottom:12px;font-family:var(--mono);font-size:.68rem;color:var(--faint);pointer-events:none}
   .tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--paper);font-family:var(--mono);
@@ -311,7 +311,9 @@ const SHORT=[[/BiblioHelp/,"BiblioHelp"],[/Scielo/i,"SciELO Chile"],[/Repo MetAu
   [/Dirty Repos/,"Dirty Repos"],[/Publisher Gap/,"Publisher Gap"],[/Retracted/,"Retractions"],
   [/maDMP Gap/,"maDMP Gap"],[/ORCID Adoption/,"ORCID Adoption"],[/MCP CRIS Live — OpenAIRE/,"MCP OpenAIRE"],
   [/MCP CRIS Live/,"MCP CRIS"],[/OpenAIRE Research/,"OpenAIRE AI"],[/sound-inequality/,"sound-inequality"],
-  [/PID Traceability/,"PID Workflows"],[/Value of Open Research Information/,"ORI Benefits"]];
+  [/PID Traceability/,"PID Workflows"],[/Value of Open Research Information/,"ORI Benefits"],
+  [/DART Documentation Generators/,"DART Docs"],[/Renku 2\.0 Deployment/,"Renku 2.0 (IT:U)"],
+  [/Open Science Strategy/,"OS Strategy (IT:U)"],[/maDMP Template/,"maDMP Template"]];
 function shortOf(t){for(const[re,s]of SHORT)if(re.test(t))return s;return t.split("—")[0].trim();}
 
 /* ---------- cloud physics ---------- */

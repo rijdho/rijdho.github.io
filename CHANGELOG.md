@@ -22,6 +22,20 @@ ships in numbered drops.
   The oval carries the curated short label `ORI Benefits`, since the full title would draw
   an oval half a cluster wide.
 
+### Changed
+
+- The four longest IT:U titles get curated short labels in the cloud, the mechanism the
+  table already existed for: `DART Docs`, `Renku 2.0 (IT:U)`, `OS Strategy (IT:U)` and
+  `maDMP Template`. The full title still shows on hover and in the panel. The widest oval
+  drops from 200px to 164px, which is what actually governs how many ovals a cluster can
+  hold. On a seeded desktop layout the deepest overlap between two unrelated ovals falls
+  from 8px to 6px.
+- The cloud is 600px tall below 560px wide, up from 440px. Narrow screens were the case
+  the shorter labels alone could not fix: 24 ovals in a 386px-wide canvas overlapped by up
+  to 89px and stacked their labels into an unreadable pile. Shorter labels took that to
+  30px and the taller canvas to 27px, with the overlapping pairs down from 32 to 17 and
+  every label legible again.
+
 ### Removed
 
 - The `criolab` card. The project is retired and its repository deleted, so a card linking
