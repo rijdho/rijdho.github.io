@@ -36,6 +36,16 @@ ships in numbered drops.
   30px and the taller canvas to 27px, with the overlapping pairs down from 32 to 17 and
   every label legible again.
 
+- The summary says what the current role actually consists of: the shape of the Open
+  Science strategy (three pillars and a transversal axis on the use of AI in research, three
+  horizons on the SCOPE framework, indicators following DORA, the Leiden Manifesto and
+  CoARA) and the systems built underneath it. It stays at the level of design decisions and
+  public frameworks, with no institutional figures, targets or deadlines, since none of that
+  is published. Three paragraphs now: the current role, the Ludwig Boltzmann mission, and
+  the closing statement of focus, which were previously two.
+- The indicator count is given as more than fifteen rather than an exact figure. The exact
+  figure was also wrong: the entries said seventeen while the framework carries nineteen.
+
 - The hub's hero reads its content from `cv.json` instead of carrying its own copy. The
   eyebrow, the tagline, the one-line headline and the name were literals inside the `UI`
   object in three languages, while the CV page and `build_cv.py` read `personal` from the
@@ -105,6 +115,9 @@ The IT:U systems join the cloud, and the cloud is given the room to hold them.
 
 ### Fixed
 
+- The CV page rendered the whole summary as a single text node, so the paragraph breaks it
+  is authored with collapsed into spaces and the paragraphs ran together as one block. It
+  now emits one `<p>` per paragraph, the same shape `build_cv.py` has always produced.
 - The curated short-label table matched `maDMP` anywhere in a title, so the new *maDMP
   Template (IT:U)* was drawn as a second oval reading **maDMP Gap**: two identical labels
   on two different tools. The pattern is now anchored to `maDMP Gap`, and the new entry

@@ -46,6 +46,8 @@
   .tagline{font-size:1.08rem;color:var(--soft);margin:10px 0 0;max-width:60ch;font-weight:500}
   .contact{font-family:var(--mono);font-size:.78rem;color:var(--muted);margin:12px 0 0;display:flex;flex-wrap:wrap;gap:4px 14px}
   .summary{margin:16px 0 0;color:var(--soft);max-width:66ch}
+  .summary p{margin:0 0 9px}
+  .summary p:last-child{margin-bottom:0}
 
   section{margin-top:30px}
   h2{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);
@@ -106,7 +108,7 @@
     <div class="degrees" id="degrees"></div>
     <p class="tagline" id="tagline"></p>
     <div class="contact" id="contact"></div>
-    <p class="summary" id="summary"></p>
+    <div class="summary" id="summary"></div>
   </header>
   <div id="body"></div>
 </main>
@@ -143,7 +145,10 @@ function render(){
   document.querySelectorAll("[data-t]").forEach(el=>{const k=el.dataset.t;if(U[k])el.textContent=U[k];});
   document.getElementById("degrees").textContent=(p.degrees||[]).join(" · ");
   document.getElementById("tagline").textContent=t(p.tagline);
-  document.getElementById("summary").textContent=t(p.summary);
+  /* the summary is authored as paragraphs separated by a blank line, the same shape
+     build_cv.py emits; rendering it as one text node ran them all together. */
+  document.getElementById("summary").innerHTML=
+    t(p.summary).split("\n\n").map(x=>`<p>${esc(x)}</p>`).join("");
   const c=[];
   if(p.email)c.push(`<a href="mailto:${esc(p.email)}">${esc(p.email)}</a>${p.emailIsAlias?' <span class="alias">(alias)</span>':""}`);
   if(p.orcid)c.push(`<a href="https://orcid.org/${esc(p.orcid)}">ORCID ${esc(p.orcid)}</a>`);
