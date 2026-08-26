@@ -14,7 +14,7 @@ Available in **English, German and Spanish** (auto-detected, switchable) — int
 content both, including every long description.
 
 ![The tool cloud: 24 ovals grouped into four colour-coded topics, Metadata quality 7,
-Assessment & policy 5, Infrastructure & AI 9, Data storytelling 3. Related projects touch
+Assessment & policy 6, Infrastructure & AI 9, Data storytelling 2. Related projects touch
 rather than repel, so BiblioHelp sits against bibliohelp and Repo MetAudits against
 fair-repo-audit. A dashed outline marks an open GitHub twin; fair-repo-audit and
 coara-action-planner carry their Zenodo DOIs inside the oval.](docs/hub-cloud.png)

@@ -10,6 +10,24 @@ install. A version is cut here whenever the content or the shape of `data/cv.jso
 enough to be worth naming, which keeps the history readable without pretending the site
 ships in numbered drops.
 
+## [Unreleased]
+
+### Added
+
+- The Barcelona Declaration WG7-TF2 contribution: eight benefits of open research
+  information in three axes, published as an interactive explorer rather than a PDF, with
+  one machine-readable taxonomy behind the explorer, the brief and the flow map. Recorded
+  as `Draft`, not `Active`, because the brief sits at v0.1 and the task force has not
+  reviewed it: the field exists to say that out loud rather than to flatter the entry.
+  The oval carries the curated short label `ORI Benefits`, since the full title would draw
+  an oval half a cluster wide.
+
+### Removed
+
+- The `criolab` card. The project is retired and its repository deleted, so a card linking
+  to it would point at a 404. Nothing cited it: no DOI, no release, no fork. A verified
+  full-history bundle is kept outside every repository.
+
 ## [1.2.0] - 2026-08-26
 
 The IT:U systems join the cloud, and the cloud is given the room to hold them.
@@ -145,6 +163,7 @@ Initial public site.
   folder uploads verbatim and the Markdown CVs are regenerated on every push.
 - Inter self-hosted as woff2, no font CDN.
 
+[Unreleased]: https://github.com/rijdho/rijdho.github.io/compare/v1.2.0...HEAD
 [1.2.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/rijdho/rijdho.github.io/releases/tag/v1.0.0

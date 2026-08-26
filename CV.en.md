@@ -282,10 +282,10 @@ Self-assess your institution against the ten CoARA commitments and generate a pr
 
 ↔ [Reform Assessment](https://metaudits.rijdho.org/reform-assessment/)
 
-### [criolab](https://rijdho.github.io/criolab/)
-*Active · 2026 · Simulators, Interactive, Open source*
+### [The Value of Open Research Information (Barcelona WG7-TF2)](https://rijdho.github.io/barcelona-wg7-tf2/)
+*Draft · 2026 · Barcelona Declaration, Open Research Information, Taxonomy, Research policy*
 
-Four interactive simulators that make the open methodological questions of four 2026 manuscripts manipulable — Wahlund effect, glycolytic potential, statistical power, and NPV sensitivity. No build, no dependencies.
+Contribution to Task Force 2 of Working Group 7 of the Barcelona Declaration on Open Research Information: eight benefits of opening information about research, arranged in three axes (quality and trust, collaboration and innovation, impact and relevance) and published as an interactive explorer rather than a PDF. One machine-readable taxonomy is the single source for the explorer, the written brief and the flow map, so the three cannot drift apart. Readers propose changes and examples through a pre-filled issue form that lands in a versioned register. Draft at v0.1, not yet reviewed by the task force.
 
 
 ## Engagements
