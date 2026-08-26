@@ -15,7 +15,7 @@ Meine Arbeit konzentriert sich auf die Governance von Forschungsinformationen, M
 ### Open Science Expert — Interdisciplinary Transformation University Austria (IT:U)
 *May 2026 – Present · Linz, Austria*
 
-Entwurf, Umsetzung und Pflege eines universitätsweiten Open-Science-Konzepts, abgestimmt auf institutionelle Stakeholder sowie internationale Standards und Rahmenwerke. Praktische technische Arbeit zur Entwicklung, Bereitstellung und zum Betrieb von Open-Science-Werkzeugen und -Plattformen, in enger Zusammenarbeit mit internen Datenverantwortlichen, Forschenden und Lehrenden, um offene Praktiken, Richtlinien und Prozesse in die Arbeitsabläufe einzubetten. Zusammenarbeit mit externen gemeinnützigen und privatwirtschaftlichen Partnern und Vertretung der IT:U in nationalen und internationalen Open-Science-Initiativen, Foren und Netzwerken, ergänzt durch Mitwirkung an Förderanträgen, Ideenentwicklung und Mentoring in akademischen Projekten.
+Entwurf, Umsetzung und Pflege einer universitätsweiten Open-Science-Strategie: drei Säulen (Konzept und Betrieb, Engagement, Ausbildung und Unterstützung) sowie eine Querschnittsachse zu KI in der Forschung, geführt über drei Horizonte nach dem SCOPE-Rahmen (INORMS Research Evaluation Group, 2021), mit siebzehn Indikatoren, die operative Definitionen, Ausgangswerte, Zielwerte, Fristen und benannte Verantwortliche in einer einzigen Quelltabelle tragen und den Grundsätzen verantwortungsvoller Metriknutzung aus DORA, dem Leidener Manifest und CoARA folgen. Aufbau und Betrieb der darunter liegenden Systeme: ein Forschungsinformationssystem, dessen Provenienzordnung bei jedem Schreibvorgang erzwungen und nicht nur dokumentiert wird, ein Forschungsmanagementsystem für den gesamten Förderzyklus von der Ausschreibung bis zur Budgetverfolgung nach der Bewilligung, ein täglicher Aggregator offener und kommender Ausschreibungen, eine Renku-2.0-Installation für reproduzierbare Umgebungen, maschinenlesbare Datenmanagementplanung, validiert gegen den RDA DMP Common Standard, sowie zweisprachige Dokumentationsgeneratoren für die APIs und Automatisierungs-Pipelines des Teams. Unterstützung der Forschenden durch Workshops, DMP-Sprechstunden und ein Champions-Netzwerk. Vertretung der IT:U in nationalen und internationalen Open-Science-Initiativen sowie Mitwirkung an Antragstellung, Ideenentwicklung und Mentoring in akademischen Projekten.
 
 ### Short-Term Scientific Mission (STSM) Researcher — Open Innovation in Science Center, Ludwig Boltzmann Gesellschaft
 *August 4 – October 28, 2025 · Vienna, Austria*
@@ -230,6 +230,41 @@ Sonifikationsprojekt, das Muster von Datenungleichheit hörbar macht. Es überf�
 
 Entwicklung reproduzierbarer Workflows zur Nachverfolgung von Forschungsergebnissen über Systeme persistenter Identifikatoren hinweg (ORCID, ROR, Crossref, DataCite, OpenAlex). Für die institutionelle Governance von Forschungsinformationen gebaut.
 
+### CRIS for IT:U
+*Active · 2026 · SvelteKit, PostgreSQL, pgvector, Crossref*
+
+Institutionelles Forschungsinformationssystem, für die IT:U gebaut und allein anhand einer ROR-Kennung von jeder Einrichtung einsetzbar. Jedes Feld wird aus der Quelle angereichert, die dem Primärnachweis am nächsten steht: die DOI-Registrierungsagentur ist maßgeblich, Aggregatoren dürfen nur ergänzen, was sie nicht führt, und diese Reihenfolge wird bei jedem Schreibvorgang erzwungen statt nur dokumentiert; jeder Output zeigt die Kette, aus der er entstanden ist. Eine entdeckte und eine kuratierte Ebene bestehen nebeneinander, ohne einander zu überschreiben. Liefert OAI-PMH, nimmt COAR Notify entgegen, berichtet nach DORA und läuft auf Englisch, Deutsch und Spanisch.
+
+### RMS for IT:U
+*Active · 2026 · Hono, SvelteKit, PostgreSQL, Grant lifecycle*
+
+Forschungsmanagementsystem als Gegenstück zum CRIS: Während das CRIS festhält, was und von wem publiziert wurde, hält dieses fest, wie Forschung finanziert und verwaltet wird. Sein Rückgrat ist ein Förderpfad mit zwei benannten Toren, institutionelle Förderfähigkeit und Entscheidung des Fördergebers, sodass ein intern abgelehnter Antrag nie mit einem vom Fördergeber abgelehnten vermengt wird. Der Zugriff beantwortet zwei getrennte Fragen, was eine Rolle darf und welche Projekte sie sieht, an einer einzigen Stelle aufgelöst. Das Budget ist ein Hauptbuch, in dem geplante und gebundene Zeilen nach Periode und Kategorie abgeglichen werden.
+
+### OpenCalls (IT:U)
+*Active · 2026 · GitHub Actions, Node.js, EU Funding & Tenders, FFG*
+
+Offene und kommende Forschungsausschreibungen aus fünf Portalen, täglich einmal erhoben, auf ein Schema normalisiert und als eine filterbare Seite für das Grant Office veröffentlicht. Das Register vergangener Ausschreibungen ist eine versionierte Datei, sodass die Historie jeder je gelisteten Ausschreibung die Git-Historie ist; eine Ausschreibung, die ihr Portal verlässt, wird erst nach Ablauf ihrer Frist archiviert, und eine wiederkehrende behält ihr ursprüngliches Erstsichtungsdatum. Eine zweite Ansicht vergleicht den Reichtum des Erhobenen mit dem RIS-Synergy-Förderschema.
+
+### Open Science Strategy (IT:U)
+*Active · 2026 · Open Science policy, SCOPE, INORMS, DORA*
+
+Universitätsweite Open-Science-Strategie: drei Säulen, Konzept und Betrieb, Engagement sowie Ausbildung und Unterstützung, dazu eine Querschnittsachse zu KI in der Forschung, geführt über drei Horizonte nach dem SCOPE-Rahmen (INORMS Research Evaluation Group, 2021). Siebzehn Indikatoren tragen operative Definition, Ausgangswert, Zielwert, Frist, Datenquelle und benannte Verantwortliche in einer Quelltabelle, auf die jedes weitere Dokument verweist, statt die Zahlen zu wiederholen. Die Indikatoren sind transparent, kontextualisiert, werden gemeinsam mit ihrem Kontext gelesen und jährlich überprüft.
+
+### maDMP Template (IT:U)
+*Active · 2026 · RDA DMP Common Standard, maDMP, Horizon Europe, FAIR*
+
+Maschinenlesbare Datenmanagementplan-Vorlage mit gestuften Feldern und Horizon-Europe-Struktur: eine strukturierte Quelle und ein Renderer statt eines Fließtextformulars, das zur Nachnutzung erst gelesen werden müsste. Das erzeugte Grundgerüst validiert gegen das Schema des RDA DMP Common Standard v1.2, und zwei ausgearbeitete Beispiele sind damit validiert. Es ist das Instrument hinter dem Indikator für maschinenlesbare Datenmanagementpläne.
+
+### Renku 2.0 Deployment (IT:U)
+*Active · 2026 · Renku, Kubernetes, k3s, Podman*
+
+Installation von Renku 2.0 für reproduzierbare Rechenumgebungen, auf zwei Wegen statt einem: k3s mit gebündeltem containerd, wo die institutionelle VM es zulässt, und ein kind-Cluster mit Podman-Containern als Knoten, wo nicht. Renku wird als Helm-Chart ausgeliefert und nicht als Image, daher ist die Wahl dessen, was den Single-Node-Cluster bereitstellt, die Entscheidung, die vor der Bereitstellung der Maschine fallen muss, und sie ist neben den Bootstrap-Skripten entsprechend dokumentiert.
+
+### DART Documentation Generators
+*Active · 2026 · Static site generator, Python, OpenAPI, n8n*
+
+Zwei Generatoren, die je einen Quellordner pro Eintrag in eine einzige, in sich geschlossene zweisprachige Referenzseite überführen: einer für die API-Integrationen des Teams, gebaut aus bereinigten OpenAPI-Spezifikationen mit einem interaktiven Try-it-Panel je Endpunkt, und einer für die Automatisierungs-Pipelines, bei dem jede Pipeline ihre Workflow-Dateien, ihr eigenes Changelog und ihren Katalogeintrag im selben Ordner hält, damit beide nicht auseinanderlaufen. Neue Einträge kommen als ausgefüllte Vorlage über ein Issue-Formular, das automatisch geprüft wird und einen Pull Request eröffnet.
+
 ### [fair-repo-audit](https://rijdho.github.io/fair-repo-audit/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Open source*
 
@@ -268,4 +303,4 @@ Vier interaktive Simulatoren, die die offenen methodischen Fragen von vier Manus
 - **DataCite Certified Core Training** (2024) — Zertifizierung mit Schwerpunkt auf der Nutzung persistenter Identifikatoren (PIDs), Best Practices für Metadaten und der Anbindung von Repositorien an die DataCite-Infrastruktur.
 
 ---
-*Generiert aus data/cv.json · 2026-08-03*
+*Generiert aus data/cv.json · 2026-08-24*

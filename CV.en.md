@@ -15,7 +15,7 @@ My work centers on research information governance, metadata quality, and respon
 ### Open Science Expert — Interdisciplinary Transformation University Austria (IT:U)
 *May 2026 – Present · Linz, Austria*
 
-Design, implement, and maintain a university-wide Open Science concept aligned with institutional stakeholders and international standards and frameworks. Carry out hands-on technical work to develop, deploy, and operate Open Science tools and platforms, working closely with internal data owners, researchers, and lecturers to embed open practices, policies, and processes into workflows. Collaborate with external non-profit and corporate partners and represent IT:U in national and international Open Science initiatives, forums, and networks, while contributing to grant writing, ideation, and mentorship across academic projects.
+Design, implement and maintain a university-wide Open Science strategy: three pillars (concept and operation, engagement, training and support) plus a transversal axis on AI in research, run over three horizons on the SCOPE framework (INORMS Research Evaluation Group, 2021), with seventeen indicators carrying operational definitions, baselines, targets, deadlines and named owners in a single source table, governed by the responsible-use principles of DORA, the Leiden Manifesto and CoARA. Build and operate the systems underneath it: a current research information system whose provenance ordering is enforced at every write path rather than merely documented, a research management system covering the grant lifecycle from call to post-award budget, a daily aggregator of open and forthcoming funding calls, a Renku 2.0 deployment for reproducible environments, machine-actionable data management planning validated against the RDA DMP Common Standard, and bilingual documentation generators for the team's APIs and automation pipelines. Support researchers through workshops, data management plan clinics and a champions network. Represent IT:U in national and international Open Science initiatives, and contribute to grant writing, ideation and mentorship across academic projects.
 
 ### Short-Term Scientific Mission (STSM) Researcher — Open Innovation in Science Center, Ludwig Boltzmann Gesellschaft
 *August 4 – October 28, 2025 · Vienna, Austria*
@@ -230,6 +230,41 @@ Sonification project exploring data inequality patterns through audio. Transform
 
 Development of reproducible workflows for tracking research outputs across persistent identifier systems (ORCID, ROR, Crossref, DataCite, OpenAlex). Built for institutional research information governance.
 
+### CRIS for IT:U
+*Active · 2026 · SvelteKit, PostgreSQL, pgvector, Crossref*
+
+Institutional current research information system, built for IT:U and deployable by any institution from a ROR identifier alone. Every field is enriched from the source closest to the primary deposit: the DOI registration agency is authoritative, aggregators may only add what it does not carry, and that ordering is enforced at every write path rather than merely documented, with each output displaying the chain it was built from. A discovered layer and a curated layer coexist without overwriting each other. Publishes OAI-PMH, accepts COAR Notify, reports under DORA, and runs in English, German and Spanish.
+
+### RMS for IT:U
+*Active · 2026 · Hono, SvelteKit, PostgreSQL, Grant lifecycle*
+
+Research management system companion to the CRIS: where the CRIS records what was published and by whom, this records how research is funded and administered. Its spine is one grant path with two named gates, institutional eligibility and the funder's decision, so an application rejected in-house is never collapsed with one the funder turned down. Access answers two separate questions, what a role may do and which projects it may see, resolved in one place. The budget is a ledger where planned and committed lines are reconciled by period and category.
+
+### OpenCalls (IT:U)
+*Active · 2026 · GitHub Actions, Node.js, EU Funding & Tenders, FFG*
+
+Open and forthcoming research funding calls from five portals, collected once a day, normalised to one schema and published as a single filterable page for the Grant Office. The past-calls registry is a committed file, so the history of every call the page has listed is the git history; a call that leaves its portal is archived only once its deadline has passed, and one that reappears keeps its original first-seen date. A second view compares the richness of what is collected against the RIS Synergy funding schema.
+
+### Open Science Strategy (IT:U)
+*Active · 2026 · Open Science policy, SCOPE, INORMS, DORA*
+
+University-wide Open Science strategy: three pillars, concept and operation, engagement, and training and support, plus a transversal axis on AI in research, run over three horizons on the SCOPE framework (INORMS Research Evaluation Group, 2021). Seventeen indicators carry an operational definition, a baseline, a target, a deadline, a data source and a named owner in one source table that every other document links back to instead of restating. Indicators are transparent, contextualised, read alongside their context and reviewed yearly.
+
+### maDMP Template (IT:U)
+*Active · 2026 · RDA DMP Common Standard, maDMP, Horizon Europe, FAIR*
+
+Machine-actionable data management plan template with tiered fields and a Horizon Europe structure: one structured source and a renderer, rather than a prose form that has to be re-read to be reused. The generated skeleton validates against the RDA DMP Common Standard v1.2 schema, and two worked examples are validated with it. It is the instrument behind the strategy's machine-actionable DMP indicator.
+
+### Renku 2.0 Deployment (IT:U)
+*Active · 2026 · Renku, Kubernetes, k3s, Podman*
+
+Deployment of Renku 2.0 for reproducible computational environments, in two routes rather than one: k3s with its bundled containerd where the institutional VM permits it, and a kind cluster whose nodes are Podman containers where it does not. Renku ships as a Helm chart and not as an image, so the choice of what provides the single-node cluster is the decision that has to be taken before the machine is provisioned, and it is documented as such alongside the bootstrap scripts.
+
+### DART Documentation Generators
+*Active · 2026 · Static site generator, Python, OpenAPI, n8n*
+
+Two generators that turn one source folder per item into a single self-contained bilingual reference page: one for the team's API integrations, built from sanitised OpenAPI specs with an interactive try-it panel per endpoint, and one for its automation pipelines, where each pipeline keeps its workflow files, its own changelog and its catalogue entry in the same folder so the two cannot drift apart. New entries arrive as a filled-in template through an issue form, which is screened automatically and opens a pull request.
+
 ### [fair-repo-audit](https://rijdho.github.io/fair-repo-audit/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Open source*
 
@@ -268,4 +303,4 @@ Four interactive simulators that make the open methodological questions of four 
 - **DataCite Certified Core Training** (2024) — Certification focused on the use of persistent identifiers (PIDs), metadata best practices, and repository integration with DataCite infrastructure.
 
 ---
-*Generated from data/cv.json · 2026-08-03*
+*Generated from data/cv.json · 2026-08-24*

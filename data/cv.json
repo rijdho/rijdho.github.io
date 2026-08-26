@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-08-03",
+    "updated": "2026-08-24",
     "source": "single canonical CV data — hub, CV page and CV.md all read this"
   },
   "personal": {
@@ -125,9 +125,9 @@
       "loc": "Linz, Austria",
       "period": "May 2026 – Present",
       "desc": {
-        "en": "Design, implement, and maintain a university-wide Open Science concept aligned with institutional stakeholders and international standards and frameworks. Carry out hands-on technical work to develop, deploy, and operate Open Science tools and platforms, working closely with internal data owners, researchers, and lecturers to embed open practices, policies, and processes into workflows. Collaborate with external non-profit and corporate partners and represent IT:U in national and international Open Science initiatives, forums, and networks, while contributing to grant writing, ideation, and mentorship across academic projects.",
-        "es": "Diseño, implementación y mantenimiento de un concepto de Ciencia Abierta a nivel universitario, alineado con los actores institucionales y con estándares y marcos internacionales. Realizo trabajo técnico hands-on para desarrollar, desplegar y operar herramientas y plataformas de Ciencia Abierta, en estrecha colaboración con responsables de datos, investigadores y docentes para integrar prácticas, políticas y procesos abiertos en los flujos de trabajo. Coopero con socios externos sin fines de lucro y corporativos, y represento a IT:U en iniciativas, foros y redes de Ciencia Abierta nacionales e internacionales, contribuyendo además a la postulación a fondos, la generación de ideas y la mentoría en proyectos académicos.",
-        "de": "Entwurf, Umsetzung und Pflege eines universitätsweiten Open-Science-Konzepts, abgestimmt auf institutionelle Stakeholder sowie internationale Standards und Rahmenwerke. Praktische technische Arbeit zur Entwicklung, Bereitstellung und zum Betrieb von Open-Science-Werkzeugen und -Plattformen, in enger Zusammenarbeit mit internen Datenverantwortlichen, Forschenden und Lehrenden, um offene Praktiken, Richtlinien und Prozesse in die Arbeitsabläufe einzubetten. Zusammenarbeit mit externen gemeinnützigen und privatwirtschaftlichen Partnern und Vertretung der IT:U in nationalen und internationalen Open-Science-Initiativen, Foren und Netzwerken, ergänzt durch Mitwirkung an Förderanträgen, Ideenentwicklung und Mentoring in akademischen Projekten."
+        "en": "Design, implement and maintain a university-wide Open Science strategy: three pillars (concept and operation, engagement, training and support) plus a transversal axis on AI in research, run over three horizons on the SCOPE framework (INORMS Research Evaluation Group, 2021), with seventeen indicators carrying operational definitions, baselines, targets, deadlines and named owners in a single source table, governed by the responsible-use principles of DORA, the Leiden Manifesto and CoARA. Build and operate the systems underneath it: a current research information system whose provenance ordering is enforced at every write path rather than merely documented, a research management system covering the grant lifecycle from call to post-award budget, a daily aggregator of open and forthcoming funding calls, a Renku 2.0 deployment for reproducible environments, machine-actionable data management planning validated against the RDA DMP Common Standard, and bilingual documentation generators for the team's APIs and automation pipelines. Support researchers through workshops, data management plan clinics and a champions network. Represent IT:U in national and international Open Science initiatives, and contribute to grant writing, ideation and mentorship across academic projects.",
+        "de": "Entwurf, Umsetzung und Pflege einer universitätsweiten Open-Science-Strategie: drei Säulen (Konzept und Betrieb, Engagement, Ausbildung und Unterstützung) sowie eine Querschnittsachse zu KI in der Forschung, geführt über drei Horizonte nach dem SCOPE-Rahmen (INORMS Research Evaluation Group, 2021), mit siebzehn Indikatoren, die operative Definitionen, Ausgangswerte, Zielwerte, Fristen und benannte Verantwortliche in einer einzigen Quelltabelle tragen und den Grundsätzen verantwortungsvoller Metriknutzung aus DORA, dem Leidener Manifest und CoARA folgen. Aufbau und Betrieb der darunter liegenden Systeme: ein Forschungsinformationssystem, dessen Provenienzordnung bei jedem Schreibvorgang erzwungen und nicht nur dokumentiert wird, ein Forschungsmanagementsystem für den gesamten Förderzyklus von der Ausschreibung bis zur Budgetverfolgung nach der Bewilligung, ein täglicher Aggregator offener und kommender Ausschreibungen, eine Renku-2.0-Installation für reproduzierbare Umgebungen, maschinenlesbare Datenmanagementplanung, validiert gegen den RDA DMP Common Standard, sowie zweisprachige Dokumentationsgeneratoren für die APIs und Automatisierungs-Pipelines des Teams. Unterstützung der Forschenden durch Workshops, DMP-Sprechstunden und ein Champions-Netzwerk. Vertretung der IT:U in nationalen und internationalen Open-Science-Initiativen sowie Mitwirkung an Antragstellung, Ideenentwicklung und Mentoring in akademischen Projekten.",
+        "es": "Diseño, implementación y mantenimiento de una estrategia de Ciencia Abierta para toda la universidad: tres pilares (concepto y operación, participación, formación y apoyo) más un eje transversal sobre IA en investigación, gestionados en tres horizontes con el marco SCOPE (INORMS Research Evaluation Group, 2021), con diecisiete indicadores que llevan definición operativa, línea base, meta, plazo y responsable en una única tabla fuente, gobernados por los principios de uso responsable de DORA, el Manifiesto de Leiden y CoARA. Construcción y operación de los sistemas que la sostienen: un sistema de información de investigación cuya jerarquía de procedencia se aplica en cada escritura y no solo se documenta, un sistema de gestión de la investigación que cubre el ciclo de vida del financiamiento desde la convocatoria hasta el seguimiento presupuestario posterior a la adjudicación, un agregador diario de convocatorias abiertas y próximas, un despliegue de Renku 2.0 para entornos reproducibles, planificación de gestión de datos accionable por máquina validada contra el RDA DMP Common Standard, y generadores bilingües de documentación para las APIs y pipelines de automatización del equipo. Apoyo a investigadores mediante talleres, clínicas de planes de gestión de datos y una red de champions. Representación de IT:U en iniciativas nacionales e internacionales de Ciencia Abierta, y contribución a la redacción de propuestas, ideación y mentoría en proyectos académicos."
       }
     },
     {
@@ -1140,6 +1140,155 @@
         "de": "Entwicklung reproduzierbarer Workflows zur Nachverfolgung von Forschungsergebnissen über Systeme persistenter Identifikatoren hinweg (ORCID, ROR, Crossref, DataCite, OpenAlex). Für die institutionelle Governance von Forschungsinformationen gebaut."
       },
       "id": "pid-workflows"
+    },
+    {
+      "title": "CRIS for IT:U",
+      "year": "2026",
+      "status": "Active",
+      "url": "",
+      "tags": [
+        "SvelteKit",
+        "PostgreSQL",
+        "pgvector",
+        "Crossref",
+        "DataCite",
+        "ORCID",
+        "ROR",
+        "OAI-PMH"
+      ],
+      "topic": "infra",
+      "desc": {
+        "en": "Institutional current research information system, built for IT:U and deployable by any institution from a ROR identifier alone. Every field is enriched from the source closest to the primary deposit: the DOI registration agency is authoritative, aggregators may only add what it does not carry, and that ordering is enforced at every write path rather than merely documented, with each output displaying the chain it was built from. A discovered layer and a curated layer coexist without overwriting each other. Publishes OAI-PMH, accepts COAR Notify, reports under DORA, and runs in English, German and Spanish.",
+        "de": "Institutionelles Forschungsinformationssystem, für die IT:U gebaut und allein anhand einer ROR-Kennung von jeder Einrichtung einsetzbar. Jedes Feld wird aus der Quelle angereichert, die dem Primärnachweis am nächsten steht: die DOI-Registrierungsagentur ist maßgeblich, Aggregatoren dürfen nur ergänzen, was sie nicht führt, und diese Reihenfolge wird bei jedem Schreibvorgang erzwungen statt nur dokumentiert; jeder Output zeigt die Kette, aus der er entstanden ist. Eine entdeckte und eine kuratierte Ebene bestehen nebeneinander, ohne einander zu überschreiben. Liefert OAI-PMH, nimmt COAR Notify entgegen, berichtet nach DORA und läuft auf Englisch, Deutsch und Spanisch.",
+        "es": "Sistema institucional de información de investigación, construido para IT:U y desplegable por cualquier institución a partir de un identificador ROR. Cada campo se enriquece desde la fuente más cercana al depósito primario: la agencia de registro del DOI es la autoridad, los agregadores solo pueden añadir lo que ella no lleva, y ese orden se aplica en cada escritura y no solo se documenta; cada producto muestra la cadena de la que salió. Una capa descubierta y una capa curada conviven sin sobrescribirse. Publica OAI-PMH, acepta COAR Notify, reporta bajo DORA y funciona en inglés, alemán y español."
+      },
+      "id": "cris-itu"
+    },
+    {
+      "title": "RMS for IT:U",
+      "year": "2026",
+      "status": "Active",
+      "url": "",
+      "tags": [
+        "Hono",
+        "SvelteKit",
+        "PostgreSQL",
+        "Grant lifecycle",
+        "RBAC",
+        "Research administration"
+      ],
+      "topic": "infra",
+      "desc": {
+        "en": "Research management system companion to the CRIS: where the CRIS records what was published and by whom, this records how research is funded and administered. Its spine is one grant path with two named gates, institutional eligibility and the funder's decision, so an application rejected in-house is never collapsed with one the funder turned down. Access answers two separate questions, what a role may do and which projects it may see, resolved in one place. The budget is a ledger where planned and committed lines are reconciled by period and category.",
+        "de": "Forschungsmanagementsystem als Gegenstück zum CRIS: Während das CRIS festhält, was und von wem publiziert wurde, hält dieses fest, wie Forschung finanziert und verwaltet wird. Sein Rückgrat ist ein Förderpfad mit zwei benannten Toren, institutionelle Förderfähigkeit und Entscheidung des Fördergebers, sodass ein intern abgelehnter Antrag nie mit einem vom Fördergeber abgelehnten vermengt wird. Der Zugriff beantwortet zwei getrennte Fragen, was eine Rolle darf und welche Projekte sie sieht, an einer einzigen Stelle aufgelöst. Das Budget ist ein Hauptbuch, in dem geplante und gebundene Zeilen nach Periode und Kategorie abgeglichen werden.",
+        "es": "Sistema de gestión de la investigación, complemento del CRIS: si el CRIS registra qué se publicó y quién lo publicó, este registra cómo se financia y administra la investigación. Su columna es una ruta de financiamiento con dos compuertas nombradas, elegibilidad institucional y decisión del financiador, de modo que una postulación rechazada en casa nunca se confunde con una rechazada por el financiador. El acceso responde dos preguntas separadas, qué puede hacer un rol y qué proyectos puede ver, resueltas en un único lugar. El presupuesto es un libro mayor donde las líneas planificadas y las comprometidas se concilian por período y categoría."
+      },
+      "id": "rms-itu"
+    },
+    {
+      "title": "OpenCalls (IT:U)",
+      "year": "2026",
+      "status": "Active",
+      "url": "",
+      "tags": [
+        "GitHub Actions",
+        "Node.js",
+        "EU Funding & Tenders",
+        "FFG",
+        "WWTF",
+        "RIS Synergy"
+      ],
+      "topic": "infra",
+      "desc": {
+        "en": "Open and forthcoming research funding calls from five portals, collected once a day, normalised to one schema and published as a single filterable page for the Grant Office. The past-calls registry is a committed file, so the history of every call the page has listed is the git history; a call that leaves its portal is archived only once its deadline has passed, and one that reappears keeps its original first-seen date. A second view compares the richness of what is collected against the RIS Synergy funding schema.",
+        "de": "Offene und kommende Forschungsausschreibungen aus fünf Portalen, täglich einmal erhoben, auf ein Schema normalisiert und als eine filterbare Seite für das Grant Office veröffentlicht. Das Register vergangener Ausschreibungen ist eine versionierte Datei, sodass die Historie jeder je gelisteten Ausschreibung die Git-Historie ist; eine Ausschreibung, die ihr Portal verlässt, wird erst nach Ablauf ihrer Frist archiviert, und eine wiederkehrende behält ihr ursprüngliches Erstsichtungsdatum. Eine zweite Ansicht vergleicht den Reichtum des Erhobenen mit dem RIS-Synergy-Förderschema.",
+        "es": "Convocatorias de financiamiento abiertas y próximas de cinco portales, recolectadas una vez al día, normalizadas a un solo esquema y publicadas como una página filtrable para la Oficina de Proyectos. El registro de convocatorias pasadas es un archivo versionado, de modo que la historia de cada convocatoria listada es la historia de git; una convocatoria que desaparece de su portal se archiva solo una vez vencido su plazo, y una que reaparece conserva su fecha original de primera aparición. Una segunda vista compara la riqueza de lo recolectado con el esquema de financiamiento RIS Synergy."
+      },
+      "id": "opencalls-itu"
+    },
+    {
+      "title": "Open Science Strategy (IT:U)",
+      "year": "2026",
+      "status": "Active",
+      "url": "",
+      "tags": [
+        "Open Science policy",
+        "SCOPE",
+        "INORMS",
+        "DORA",
+        "CoARA",
+        "Barcelona Declaration",
+        "Responsible metrics"
+      ],
+      "topic": "assessment",
+      "desc": {
+        "en": "University-wide Open Science strategy: three pillars, concept and operation, engagement, and training and support, plus a transversal axis on AI in research, run over three horizons on the SCOPE framework (INORMS Research Evaluation Group, 2021). Seventeen indicators carry an operational definition, a baseline, a target, a deadline, a data source and a named owner in one source table that every other document links back to instead of restating. Indicators are transparent, contextualised, read alongside their context and reviewed yearly.",
+        "de": "Universitätsweite Open-Science-Strategie: drei Säulen, Konzept und Betrieb, Engagement sowie Ausbildung und Unterstützung, dazu eine Querschnittsachse zu KI in der Forschung, geführt über drei Horizonte nach dem SCOPE-Rahmen (INORMS Research Evaluation Group, 2021). Siebzehn Indikatoren tragen operative Definition, Ausgangswert, Zielwert, Frist, Datenquelle und benannte Verantwortliche in einer Quelltabelle, auf die jedes weitere Dokument verweist, statt die Zahlen zu wiederholen. Die Indikatoren sind transparent, kontextualisiert, werden gemeinsam mit ihrem Kontext gelesen und jährlich überprüft.",
+        "es": "Estrategia de Ciencia Abierta para toda la universidad: tres pilares, concepto y operación, participación, y formación y apoyo, más un eje transversal sobre IA en investigación, gestionados en tres horizontes con el marco SCOPE (INORMS Research Evaluation Group, 2021). Diecisiete indicadores llevan definición operativa, línea base, meta, plazo, fuente de datos y responsable nombrado en una tabla fuente única a la que el resto de los documentos enlaza en vez de repetir las cifras. Los indicadores son transparentes, contextualizados, se leen junto a su contexto y se revisan cada año."
+      },
+      "id": "os-strategy-itu"
+    },
+    {
+      "title": "maDMP Template (IT:U)",
+      "year": "2026",
+      "status": "Active",
+      "url": "",
+      "tags": [
+        "RDA DMP Common Standard",
+        "maDMP",
+        "Horizon Europe",
+        "FAIR",
+        "Data Management Plans"
+      ],
+      "topic": "assessment",
+      "desc": {
+        "en": "Machine-actionable data management plan template with tiered fields and a Horizon Europe structure: one structured source and a renderer, rather than a prose form that has to be re-read to be reused. The generated skeleton validates against the RDA DMP Common Standard v1.2 schema, and two worked examples are validated with it. It is the instrument behind the strategy's machine-actionable DMP indicator.",
+        "de": "Maschinenlesbare Datenmanagementplan-Vorlage mit gestuften Feldern und Horizon-Europe-Struktur: eine strukturierte Quelle und ein Renderer statt eines Fließtextformulars, das zur Nachnutzung erst gelesen werden müsste. Das erzeugte Grundgerüst validiert gegen das Schema des RDA DMP Common Standard v1.2, und zwei ausgearbeitete Beispiele sind damit validiert. Es ist das Instrument hinter dem Indikator für maschinenlesbare Datenmanagementpläne.",
+        "es": "Plantilla de plan de gestión de datos accionable por máquina, con campos escalonados y estructura de Horizon Europe: una fuente estructurada y un renderizador, en lugar de un formulario en prosa que hay que releer para reutilizarlo. El esqueleto generado valida contra el esquema del RDA DMP Common Standard v1.2, y dos ejemplos trabajados están validados con él. Es el instrumento detrás del indicador de planes de gestión de datos accionables por máquina."
+      },
+      "id": "madmp-itu"
+    },
+    {
+      "title": "Renku 2.0 Deployment (IT:U)",
+      "year": "2026",
+      "status": "Active",
+      "url": "",
+      "tags": [
+        "Renku",
+        "Kubernetes",
+        "k3s",
+        "Podman",
+        "Reproducibility",
+        "Debian VM"
+      ],
+      "topic": "infra",
+      "desc": {
+        "en": "Deployment of Renku 2.0 for reproducible computational environments, in two routes rather than one: k3s with its bundled containerd where the institutional VM permits it, and a kind cluster whose nodes are Podman containers where it does not. Renku ships as a Helm chart and not as an image, so the choice of what provides the single-node cluster is the decision that has to be taken before the machine is provisioned, and it is documented as such alongside the bootstrap scripts.",
+        "de": "Installation von Renku 2.0 für reproduzierbare Rechenumgebungen, auf zwei Wegen statt einem: k3s mit gebündeltem containerd, wo die institutionelle VM es zulässt, und ein kind-Cluster mit Podman-Containern als Knoten, wo nicht. Renku wird als Helm-Chart ausgeliefert und nicht als Image, daher ist die Wahl dessen, was den Single-Node-Cluster bereitstellt, die Entscheidung, die vor der Bereitstellung der Maschine fallen muss, und sie ist neben den Bootstrap-Skripten entsprechend dokumentiert.",
+        "es": "Despliegue de Renku 2.0 para entornos computacionales reproducibles, por dos rutas y no una: k3s con su containerd incluido donde la VM institucional lo permite, y un clúster kind cuyos nodos son contenedores Podman donde no. Renku se distribuye como chart de Helm y no como imagen, así que la elección de qué provee el clúster de un solo nodo es la decisión que hay que tomar antes de aprovisionar la máquina, y está documentada como tal junto a los scripts de arranque."
+      },
+      "id": "renku-itu"
+    },
+    {
+      "title": "DART Documentation Generators",
+      "year": "2026",
+      "status": "Active",
+      "url": "",
+      "tags": [
+        "Static site generator",
+        "Python",
+        "OpenAPI",
+        "n8n",
+        "GitHub Actions",
+        "Bilingual docs"
+      ],
+      "topic": "infra",
+      "desc": {
+        "en": "Two generators that turn one source folder per item into a single self-contained bilingual reference page: one for the team's API integrations, built from sanitised OpenAPI specs with an interactive try-it panel per endpoint, and one for its automation pipelines, where each pipeline keeps its workflow files, its own changelog and its catalogue entry in the same folder so the two cannot drift apart. New entries arrive as a filled-in template through an issue form, which is screened automatically and opens a pull request.",
+        "de": "Zwei Generatoren, die je einen Quellordner pro Eintrag in eine einzige, in sich geschlossene zweisprachige Referenzseite überführen: einer für die API-Integrationen des Teams, gebaut aus bereinigten OpenAPI-Spezifikationen mit einem interaktiven Try-it-Panel je Endpunkt, und einer für die Automatisierungs-Pipelines, bei dem jede Pipeline ihre Workflow-Dateien, ihr eigenes Changelog und ihren Katalogeintrag im selben Ordner hält, damit beide nicht auseinanderlaufen. Neue Einträge kommen als ausgefüllte Vorlage über ein Issue-Formular, das automatisch geprüft wird und einen Pull Request eröffnet.",
+        "es": "Dos generadores que convierten una carpeta fuente por elemento en una única página de referencia bilingüe y autocontenida: uno para las integraciones de API del equipo, construido desde especificaciones OpenAPI saneadas y con un panel interactivo de prueba por endpoint, y otro para los pipelines de automatización, donde cada pipeline guarda sus archivos de flujo, su propio changelog y su entrada de catálogo en la misma carpeta para que ambos no se separen. Las entradas nuevas llegan como plantilla completada por un formulario de issue, que se revisa automáticamente y abre un pull request."
+      },
+      "id": "dart-docs"
     },
     {
       "id": "fair-repo-audit",

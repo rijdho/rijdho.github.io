@@ -15,7 +15,7 @@ Mi trabajo se centra en la gobernanza de la información de investigación, la c
 ### Open Science Expert — Interdisciplinary Transformation University Austria (IT:U)
 *May 2026 – Present · Linz, Austria*
 
-Diseño, implementación y mantenimiento de un concepto de Ciencia Abierta a nivel universitario, alineado con los actores institucionales y con estándares y marcos internacionales. Realizo trabajo técnico hands-on para desarrollar, desplegar y operar herramientas y plataformas de Ciencia Abierta, en estrecha colaboración con responsables de datos, investigadores y docentes para integrar prácticas, políticas y procesos abiertos en los flujos de trabajo. Coopero con socios externos sin fines de lucro y corporativos, y represento a IT:U en iniciativas, foros y redes de Ciencia Abierta nacionales e internacionales, contribuyendo además a la postulación a fondos, la generación de ideas y la mentoría en proyectos académicos.
+Diseño, implementación y mantenimiento de una estrategia de Ciencia Abierta para toda la universidad: tres pilares (concepto y operación, participación, formación y apoyo) más un eje transversal sobre IA en investigación, gestionados en tres horizontes con el marco SCOPE (INORMS Research Evaluation Group, 2021), con diecisiete indicadores que llevan definición operativa, línea base, meta, plazo y responsable en una única tabla fuente, gobernados por los principios de uso responsable de DORA, el Manifiesto de Leiden y CoARA. Construcción y operación de los sistemas que la sostienen: un sistema de información de investigación cuya jerarquía de procedencia se aplica en cada escritura y no solo se documenta, un sistema de gestión de la investigación que cubre el ciclo de vida del financiamiento desde la convocatoria hasta el seguimiento presupuestario posterior a la adjudicación, un agregador diario de convocatorias abiertas y próximas, un despliegue de Renku 2.0 para entornos reproducibles, planificación de gestión de datos accionable por máquina validada contra el RDA DMP Common Standard, y generadores bilingües de documentación para las APIs y pipelines de automatización del equipo. Apoyo a investigadores mediante talleres, clínicas de planes de gestión de datos y una red de champions. Representación de IT:U en iniciativas nacionales e internacionales de Ciencia Abierta, y contribución a la redacción de propuestas, ideación y mentoría en proyectos académicos.
 
 ### Short-Term Scientific Mission (STSM) Researcher — Open Innovation in Science Center, Ludwig Boltzmann Gesellschaft
 *August 4 – October 28, 2025 · Vienna, Austria*
@@ -230,6 +230,41 @@ Proyecto de sonificación que explora patrones de desigualdad de datos a través
 
 Desarrollo de flujos de trabajo reproducibles para rastrear productos de investigación a través de sistemas de identificadores persistentes (ORCID, ROR, Crossref, DataCite, OpenAlex). Construido para la gobernanza institucional de información de investigación.
 
+### CRIS for IT:U
+*Active · 2026 · SvelteKit, PostgreSQL, pgvector, Crossref*
+
+Sistema institucional de información de investigación, construido para IT:U y desplegable por cualquier institución a partir de un identificador ROR. Cada campo se enriquece desde la fuente más cercana al depósito primario: la agencia de registro del DOI es la autoridad, los agregadores solo pueden añadir lo que ella no lleva, y ese orden se aplica en cada escritura y no solo se documenta; cada producto muestra la cadena de la que salió. Una capa descubierta y una capa curada conviven sin sobrescribirse. Publica OAI-PMH, acepta COAR Notify, reporta bajo DORA y funciona en inglés, alemán y español.
+
+### RMS for IT:U
+*Active · 2026 · Hono, SvelteKit, PostgreSQL, Grant lifecycle*
+
+Sistema de gestión de la investigación, complemento del CRIS: si el CRIS registra qué se publicó y quién lo publicó, este registra cómo se financia y administra la investigación. Su columna es una ruta de financiamiento con dos compuertas nombradas, elegibilidad institucional y decisión del financiador, de modo que una postulación rechazada en casa nunca se confunde con una rechazada por el financiador. El acceso responde dos preguntas separadas, qué puede hacer un rol y qué proyectos puede ver, resueltas en un único lugar. El presupuesto es un libro mayor donde las líneas planificadas y las comprometidas se concilian por período y categoría.
+
+### OpenCalls (IT:U)
+*Active · 2026 · GitHub Actions, Node.js, EU Funding & Tenders, FFG*
+
+Convocatorias de financiamiento abiertas y próximas de cinco portales, recolectadas una vez al día, normalizadas a un solo esquema y publicadas como una página filtrable para la Oficina de Proyectos. El registro de convocatorias pasadas es un archivo versionado, de modo que la historia de cada convocatoria listada es la historia de git; una convocatoria que desaparece de su portal se archiva solo una vez vencido su plazo, y una que reaparece conserva su fecha original de primera aparición. Una segunda vista compara la riqueza de lo recolectado con el esquema de financiamiento RIS Synergy.
+
+### Open Science Strategy (IT:U)
+*Active · 2026 · Open Science policy, SCOPE, INORMS, DORA*
+
+Estrategia de Ciencia Abierta para toda la universidad: tres pilares, concepto y operación, participación, y formación y apoyo, más un eje transversal sobre IA en investigación, gestionados en tres horizontes con el marco SCOPE (INORMS Research Evaluation Group, 2021). Diecisiete indicadores llevan definición operativa, línea base, meta, plazo, fuente de datos y responsable nombrado en una tabla fuente única a la que el resto de los documentos enlaza en vez de repetir las cifras. Los indicadores son transparentes, contextualizados, se leen junto a su contexto y se revisan cada año.
+
+### maDMP Template (IT:U)
+*Active · 2026 · RDA DMP Common Standard, maDMP, Horizon Europe, FAIR*
+
+Plantilla de plan de gestión de datos accionable por máquina, con campos escalonados y estructura de Horizon Europe: una fuente estructurada y un renderizador, en lugar de un formulario en prosa que hay que releer para reutilizarlo. El esqueleto generado valida contra el esquema del RDA DMP Common Standard v1.2, y dos ejemplos trabajados están validados con él. Es el instrumento detrás del indicador de planes de gestión de datos accionables por máquina.
+
+### Renku 2.0 Deployment (IT:U)
+*Active · 2026 · Renku, Kubernetes, k3s, Podman*
+
+Despliegue de Renku 2.0 para entornos computacionales reproducibles, por dos rutas y no una: k3s con su containerd incluido donde la VM institucional lo permite, y un clúster kind cuyos nodos son contenedores Podman donde no. Renku se distribuye como chart de Helm y no como imagen, así que la elección de qué provee el clúster de un solo nodo es la decisión que hay que tomar antes de aprovisionar la máquina, y está documentada como tal junto a los scripts de arranque.
+
+### DART Documentation Generators
+*Active · 2026 · Static site generator, Python, OpenAPI, n8n*
+
+Dos generadores que convierten una carpeta fuente por elemento en una única página de referencia bilingüe y autocontenida: uno para las integraciones de API del equipo, construido desde especificaciones OpenAPI saneadas y con un panel interactivo de prueba por endpoint, y otro para los pipelines de automatización, donde cada pipeline guarda sus archivos de flujo, su propio changelog y su entrada de catálogo en la misma carpeta para que ambos no se separen. Las entradas nuevas llegan como plantilla completada por un formulario de issue, que se revisa automáticamente y abre un pull request.
+
 ### [fair-repo-audit](https://rijdho.github.io/fair-repo-audit/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Open source*
 
@@ -268,4 +303,4 @@ Cuatro simuladores interactivos que hacen manipulables las preguntas metodológi
 - **DataCite Certified Core Training** (2024) — Certificación enfocada en el uso de identificadores persistentes (PIDs), buenas prácticas de metadatos e integración de repositorios con la infraestructura de DataCite.
 
 ---
-*Generado desde data/cv.json · 2026-08-03*
+*Generado desde data/cv.json · 2026-08-24*
