@@ -12,6 +12,19 @@ ships in numbered drops.
 
 ## [1.4.0] - 2026-09-01
 
+### Changed
+
+- **The palette and the type stack align with the tool family.** The hub links to six tools
+  that share one design language, and it was the page out of step with them: `--ink` was
+  `#1a1726` rather than `#17151f`, the neutrals and the dark values sat a shade off, and
+  `--sans` dropped the `"Inter"` fallback and led with `-apple-system`. Headings now use a
+  `--disp` token like every sibling instead of inheriting the body stack. The token names
+  stay as they were (`--border`, `--hair`, `--muted`, `--surface-alt`, `--sans`), because
+  renaming a variable in a working page is churn no visitor can see; only the values moved.
+  The topic colours are this page's own data palette and are untouched. Verified by reading
+  the computed values in light and dark on both pages, not by eye: the differences were
+  small enough to be invisible and wrong enough to be worth fixing.
+
 ### Added
 
 - **orcid-finder** in the experiments: finds the ORCID accounts that declare an

@@ -24,18 +24,20 @@
   unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 
   :root{
-    --brand:#6d4aff; --paper:#faf9fc; --surface:#fff; --ink:#1a1726; --soft:#4a4560; --muted:#6c6683;
-    --faint:#9a94ad; --border:#e6e2f1; --hair:#ece9f4;
-    --sans:"Inter Variable",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --brand:#6d4aff; --paper:#f7f6fb; --surface:#fff; --ink:#17151f; --soft:#4a4560; --muted:#52505e;
+    --faint:#9a94ad; --border:#e5e3ef; --hair:#edecf5;
+    --sans:"Inter Variable","Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --disp:"Inter Variable","Inter","Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;
     --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
   }
   @media (prefers-color-scheme:dark){:root{
-    --brand:#8b7bff; --paper:#0e0d15; --surface:#16141f; --ink:#ece9f5; --soft:#c3bed3; --muted:#9a94ad; --faint:#6f6987;
-    --border:#2a2740; --hair:#221f33;
+    --brand:#8b7bff; --paper:#121118; --surface:#1b1a22; --ink:#eceaf3; --soft:#c3bed3; --muted:#a9a7b5; --faint:#6f6987;
+    --border:#2c2a38; --hair:#262432;
   }}
-  :root[data-theme="light"]{--brand:#6d4aff;--paper:#faf9fc;--surface:#fff;--ink:#1a1726;--soft:#4a4560;--muted:#6c6683;--faint:#9a94ad;--border:#e6e2f1;--hair:#ece9f4}
-  :root[data-theme="dark"]{--brand:#8b7bff;--paper:#0e0d15;--surface:#16141f;--ink:#ece9f5;--soft:#c3bed3;--muted:#9a94ad;--faint:#6f6987;--border:#2a2740;--hair:#221f33}
+  :root[data-theme="light"]{--brand:#6d4aff;--paper:#f7f6fb;--surface:#fff;--ink:#17151f;--soft:#4a4560;--muted:#52505e;--faint:#9a94ad;--border:#e5e3ef;--hair:#edecf5}
+  :root[data-theme="dark"]{--brand:#8b7bff;--paper:#121118;--surface:#1b1a22;--ink:#eceaf3;--soft:#c3bed3;--muted:#a9a7b5;--faint:#6f6987;--border:#2c2a38;--hair:#262432}
   *{box-sizing:border-box}
+  h1,h2,h3{font-family:var(--disp)}
   html{-webkit-text-size-adjust:100%}
   body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5;font-size:15px;-webkit-font-smoothing:antialiased}
   a{color:var(--brand);text-decoration:none}
