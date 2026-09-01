@@ -10,6 +10,21 @@ install. A version is cut here whenever the content or the shape of `data/cv.jso
 enough to be worth naming, which keeps the history readable without pretending the site
 ships in numbered drops.
 
+## [1.4.0] - 2026-09-01
+
+### Added
+
+- **orcid-finder** in the experiments: finds the ORCID accounts that declare an
+  institution by ROR, GRID and Ringgold identifier or by name, narrows them by keyword,
+  current or past affiliation, role, department, country, dates and whether an
+  organisation asserted the employment, and exports to CSV or JSON with the query that
+  produced it. Live at `rijdho.github.io/orcid-finder/`, concept DOI
+  [10.5281/zenodo.22227424](https://doi.org/10.5281/zenodo.22227424), AGPL-3.0-or-later.
+  Filed under metadata quality rather than assessment: it answers who declares an
+  affiliation and how well that declaration is backed, which is a question about records.
+  It carries no `twin` key, because unlike coara-action-planner and fair-repo-audit it has
+  no hosted sibling; it was built open from the first commit.
+
 ## [1.3.0] - 2026-08-26
 
 The hub stops keeping a private copy of anything it shows, and a shared link finally has
