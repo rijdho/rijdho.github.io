@@ -289,6 +289,11 @@ Bewerten Sie Ihre Einrichtung selbst anhand der zehn CoARA-Verpflichtungen und e
 
 Beitrag zur Task Force 2 der Arbeitsgruppe 7 der Barcelona-Erklärung zu offener Forschungsinformation: acht Nutzen der Öffnung von Information über Forschung, geordnet in drei Achsen (Qualität und Vertrauen, Zusammenarbeit und Innovation, Wirkung und Relevanz) und als interaktiver Explorer statt als PDF veröffentlicht. Eine maschinenlesbare Taxonomie ist die einzige Quelle für Explorer, schriftliches Papier und Flusskarte, sodass die drei nicht auseinanderlaufen können. Leserinnen und Leser schlagen Änderungen und Beispiele über ein vorausgefülltes Issue-Formular vor, das in einem versionierten Register landet. Entwurf in v0.1, von der Task Force noch nicht geprüft.
 
+### [orcid-finder](https://rijdho.github.io/orcid-finder/)
+*Active · 2026 · ORCID, ROR, Researcher Discovery, Persistent Identifiers*
+
+Findet die ORCID-Konten, die eine Einrichtung angeben, gesucht nach ROR-, GRID- und Ringgold-Kennung oder nach Namen, und grenzt sie ein nach Schlagwort, laufender oder früherer Zugehörigkeit, Funktion, Abteilung, Land, Daten und danach, ob eine Organisation die Anstellung eingetragen hat statt der Person selbst. Meldet, welcher Filter wen aussortiert hat, und exportiert als CSV oder JSON samt der Abfrage, die das Ergebnis erzeugt hat. Vollständig im Browser, gegen die öffentlichen APIs von ORCID und ROR.
+
 
 ## Engagements
 

@@ -12,6 +12,19 @@ ships in numbered drops.
 
 ## [1.4.0] - 2026-09-01
 
+### Added
+
+- **A test suite, and a deploy that waits for it.** `data/cv.json` is edited by hand and
+  three consumers index into it: the hub, the CV page and `build_cv.py`. Malformed JSON was
+  already caught, because the builder parses the file and a failing step blocks the deploy.
+  Nothing caught the worse case, valid JSON that is wrong, which fails in the visitor's
+  browser instead: a missing `desc.es` renders the word "undefined" to a Spanish reader, a
+  missing `desc` throws where the hub normalises it and the page comes up blank, a typo'd
+  `topic` draws a bubble in an undefined colour, and a DOI stored as a URL builds a
+  double-prefixed link that 404s. Nine tests on Node's built-in runner, no dependencies,
+  each confirmed to fail when the defect it covers is introduced. The topics are read out of
+  `index.html` rather than restated, so adding one to the interface does not fail the suite.
+
 ### Changed
 
 - **The palette and the type stack align with the tool family.** The hub links to six tools

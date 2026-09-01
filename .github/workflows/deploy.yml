@@ -22,6 +22,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      # data/cv.json is edited by hand and three consumers index into it. A
+      # malformed file was already caught, because build_cv.py parses it and a
+      # failing step blocks the deploy; these catch the worse case, valid JSON
+      # that is wrong, which otherwise fails in the visitor's browser in silence.
+      # No package.json: Node's built-in runner, dependency-free, as in the
+      # sibling repos.
+      - run: node --test tests/*.test.mjs
       - name: Regenerate CV.md from data/cv.json
         run: python3 build_cv.py
       - uses: actions/configure-pages@v5

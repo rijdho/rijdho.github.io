@@ -289,6 +289,11 @@ Autoevalúa tu institución frente a los diez compromisos CoARA y genera un plan
 
 Contribución al Task Force 2 del Grupo de Trabajo 7 de la Declaración de Barcelona sobre Información Abierta de Investigación: ocho beneficios de abrir la información sobre la investigación, ordenados en tres ejes (calidad y confianza, colaboración e innovación, impacto y relevancia) y publicados como explorador interactivo en vez de PDF. Una taxonomía legible por máquina es la fuente única del explorador, el documento escrito y el mapa de flujo, de modo que los tres no pueden separarse. Quien lee propone cambios y ejemplos mediante un formulario de issue precargado que aterriza en un registro versionado. Borrador en v0.1, aún no revisado por el task force.
 
+### [orcid-finder](https://rijdho.github.io/orcid-finder/)
+*Active · 2026 · ORCID, ROR, Researcher Discovery, Persistent Identifiers*
+
+Encuentra las cuentas ORCID que declaran una institución, buscando por identificador ROR, GRID y Ringgold o por nombre, y las acota por palabra clave, afiliación vigente o pasada, cargo, departamento, país, fechas y si el empleo lo declaró una organización en lugar de la propia persona. Informa de qué filtro descartó a cada candidato y exporta a CSV o JSON junto con la consulta que lo produjo. Enteramente en el navegador, contra las API públicas de ORCID y ROR.
+
 
 ## Participaciones
 
