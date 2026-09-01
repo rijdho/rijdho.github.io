@@ -14,6 +14,30 @@ ships in numbered drops.
 
 ### Added
 
+- **The cloud says what its dashed outline means.** A dashed oval marks an open-source
+  twin on GitHub, and nothing on the page said so. That was survivable everywhere except
+  the one place it mattered: the hosted BiblioHelp and its open twin sat touching each
+  other as "BiblioHelp" and "bibliohelp", two ovals a reader could tell apart only by a
+  capital letter, with the outline carrying the whole distinction unexplained. A faint
+  marker in the corner now draws the dashed oval and names it, in all three languages.
+
+- **The Barcelona WG7-TF2 explorer carries its Zenodo concept DOI**,
+  `10.5281/zenodo.22231440`, minted when v0.2.0 was released and archived on the same day.
+  Four of the twenty-five ovals now show a DOI under the name. All four are concept DOIs,
+  checked against the Zenodo API rather than assumed: a concept DOI resolves to the latest
+  version, where a version DOI would pin a snapshot and quietly go stale at the next
+  release.
+
+- **Four tests on the hub interface itself**, where the suite previously covered only the
+  data behind it. Both failures they catch leave nothing to see. A locale missing a key
+  renders an empty element, because the translation loop skips a key it cannot find rather
+  than falling back, so the page looks correct in whichever language you happen to be
+  testing in. And a tool whose title matches no curated label falls through to a slug
+  fallback, which is how five ovals came to be labelled with repository slugs in the first
+  place. The tests read the label table and the `UI` object out of `index.html` rather than
+  restating them, so they cannot drift from the page. Proven by injection, four defects.
+
+
 - **A test suite, and a deploy that waits for it.** `data/cv.json` is edited by hand and
   three consumers index into it: the hub, the CV page and `build_cv.py`. Malformed JSON was
   already caught, because the builder parses the file and a failing step blocks the deploy.
@@ -25,7 +49,33 @@ ships in numbered drops.
   each confirmed to fail when the defect it covers is introduced. The topics are read out of
   `index.html` rather than restated, so adding one to the interface does not fail the suite.
 
+- **orcid-finder** in the experiments: finds the ORCID accounts that declare an
+  institution by ROR, GRID and Ringgold identifier or by name, narrows them by keyword,
+  current or past affiliation, role, department, country, dates and whether an
+  organisation asserted the employment, and exports to CSV or JSON with the query that
+  produced it. Live at `rijdho.github.io/orcid-finder/`, concept DOI
+  [10.5281/zenodo.22227424](https://doi.org/10.5281/zenodo.22227424), AGPL-3.0-or-later.
+  Filed under metadata quality rather than assessment: it answers who declares an
+  affiliation and how well that declaration is backed, which is a question about records.
+  It carries no `twin` key, because unlike coara-action-planner and fair-repo-audit it has
+  no hosted sibling; it was built open from the first commit.
+
 ### Changed
+
+- **Five ovals were labelled with a repository slug.** `fair-repo-audit`,
+  `coara-action-planner`, `orcid-finder`, `bibliohelp` and `sound-inequality` fell through
+  the curated label table to a fallback that keeps the title as it stands, so they read as
+  slugs beside twenty readable names. A slug is the right name in a citation, since it is
+  what the repository, the Zenodo record and the `CITATION.cff` all agree on, and the wrong
+  one inside a 46px oval. The oval now carries the readable form (FAIR Repo Audit, CoARA
+  Planner, ORCID Finder, BiblioHelp (open), Sound Inequality) and the published name stays
+  one hover away in the tooltip and one click away in the panel.
+
+- **The Barcelona entry described a framework that no longer existed.** It said eight
+  benefits and "Draft at v0.1, not yet reviewed by the task force", in all three languages,
+  while the brief had been at v0.2 with nine benefits since 2026-08-26. The description now
+  matches, names the ninth benefit and where it came from, and says what the Zenodo record
+  archives: a working document put to the task force, not a framework it has agreed.
 
 - **The palette and the type stack align with the tool family.** The hub links to six tools
   that share one design language, and it was the page out of step with them: `--ink` was
@@ -38,18 +88,15 @@ ships in numbered drops.
   the computed values in light and dark on both pages, not by eye: the differences were
   small enough to be invisible and wrong enough to be worth fixing.
 
-### Added
 
-- **orcid-finder** in the experiments: finds the ORCID accounts that declare an
-  institution by ROR, GRID and Ringgold identifier or by name, narrows them by keyword,
-  current or past affiliation, role, department, country, dates and whether an
-  organisation asserted the employment, and exports to CSV or JSON with the query that
-  produced it. Live at `rijdho.github.io/orcid-finder/`, concept DOI
-  [10.5281/zenodo.22227424](https://doi.org/10.5281/zenodo.22227424), AGPL-3.0-or-later.
-  Filed under metadata quality rather than assessment: it answers who declares an
-  affiliation and how well that declaration is backed, which is a question about records.
-  It carries no `twin` key, because unlike coara-action-planner and fair-repo-audit it has
-  no hosted sibling; it was built open from the first commit.
+### Fixed
+
+- **The README described a cloud of 24 ovals with 7 under metadata quality.** Adding
+  orcid-finder in this same version made both numbers wrong, and neither the prose nor the
+  screenshot alt text moved with it; the committed screenshot still showed the old legend,
+  which no text search over the repository could have caught. Regenerated from the real
+  page, and the alt text now states the numbers on screen, the four DOIs and what the
+  dashed outline means. `CLAUDE.md` carried the same 24.
 
 ## [1.3.0] - 2026-08-26
 
@@ -276,6 +323,7 @@ Initial public site.
   folder uploads verbatim and the Markdown CVs are regenerated on every push.
 - Inter self-hosted as woff2, no font CDN.
 
+[1.4.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.0.0...v1.1.0

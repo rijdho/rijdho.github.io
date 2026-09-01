@@ -116,6 +116,13 @@
   @media (max-width:560px){#cloud{height:600px}}
   #cloud.grabbing{cursor:grabbing}
   .hint{position:absolute;left:14px;bottom:12px;font-family:var(--mono);font-size:.68rem;color:var(--faint);pointer-events:none}
+  /* What the dashed outline on a bubble means. Without it the two BiblioHelp ovals,
+     the hosted tool and its open twin, differ only by a capital letter. */
+  .omark{position:absolute;right:14px;bottom:12px;font-family:var(--mono);font-size:.68rem;
+    color:var(--faint);pointer-events:none;display:flex;align-items:center;gap:6px}
+  .omark::before{content:"";width:18px;height:11px;border:1.5px dashed var(--faint);border-radius:50%;flex:none}
+  /* On a narrow stage the two markers would collide, so this one stacks above the hint. */
+  @media (max-width:560px){.omark{right:auto;left:14px;bottom:28px}}
   .tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--paper);font-family:var(--mono);
     font-size:.7rem;padding:4px 8px;border-radius:7px;transform:translate(-50%,-140%);white-space:nowrap;opacity:0;transition:opacity .1s;z-index:12}
 
@@ -248,6 +255,7 @@
       <canvas id="cloud" aria-label="Interactive cloud of tools grouped by topic"></canvas>
       <div class="legend" id="legend"></div>
       <div class="hint" data-t="hint"></div>
+      <div class="omark" data-t="openmark"></div>
       <div class="tip" id="tip"></div>
       <aside class="panel" id="panel" aria-live="polite"></aside>
     </div>
@@ -299,15 +307,15 @@ const TOPICS = {
 };
 const UI = {
   en:{cv:"Full CV →", apps_h:"Tools & experiments", apps_lead:"A cloud of live tools, grouped by topic. Drag them around; click one to open it.",
-    hint:"drag · click a bubble", writ_h:"Writing", writ_lead:"Columns, essays and posts on open knowledge.",
+    hint:"drag · click a bubble", openmark:"dashed = open source", writ_h:"Writing", writ_lead:"Columns, essays and posts on open knowledge.",
     by:"Built by", lic:"MIT-licensed, open source", src:"Source on GitHub",
     built:"A curated view of the same data behind the CV", open:"Open", nolink:"No public URL", list:"List", cloud:"Cloud"},
   de:{cv:"Vollständiger Lebenslauf →", apps_h:"Werkzeuge & Experimente", apps_lead:"Eine Wolke aktiver Werkzeuge, nach Thema gruppiert. Ziehen; zum Öffnen klicken.",
-    hint:"ziehen · Blase anklicken", writ_h:"Publizistik", writ_lead:"Kolumnen, Essays und Beiträge zu offenem Wissen.",
+    hint:"ziehen · Blase anklicken", openmark:"gestrichelt = quelloffen", writ_h:"Publizistik", writ_lead:"Kolumnen, Essays und Beiträge zu offenem Wissen.",
     by:"Erstellt von", lic:"MIT-Lizenz, quelloffen", src:"Quellcode auf GitHub",
     built:"Eine kuratierte Ansicht derselben CV-Daten", open:"Öffnen", nolink:"Keine öffentliche URL", list:"Liste", cloud:"Wolke"},
   es:{cv:"CV completo →", apps_h:"Herramientas y experimentos", apps_lead:"Una nube de herramientas vivas, agrupadas por tópico. Arrástralas; haz clic para abrir.",
-    hint:"arrastra · haz clic en una burbuja", writ_h:"Escritos", writ_lead:"Columnas, ensayos y publicaciones sobre conocimiento abierto.",
+    hint:"arrastra · haz clic en una burbuja", openmark:"discontinuo = código abierto", writ_h:"Escritos", writ_lead:"Columnas, ensayos y publicaciones sobre conocimiento abierto.",
     by:"Hecho por", lic:"Licencia MIT, código abierto", src:"Código en GitHub",
     built:"Una vista curada de los mismos datos del CV", open:"Abrir", nolink:"Sin URL pública", list:"Lista", cloud:"Nube"},
 };
@@ -320,10 +328,20 @@ function srcLabel(u){if(!u)return"";try{const h=new URL(u).hostname.replace(/^ww
   if(h.includes("docker.com"))return"Docker Hub";if(h.includes("observablehq"))return"Observable";
   return h;}catch(e){return""}}
 /* curated short labels shown inside the ovals (order matters: OpenAIRE variant before the plain MCP) */
-const SHORT=[[/BiblioHelp/,"BiblioHelp"],[/Scielo/i,"SciELO Chile"],[/Repo MetAudits/,"Repo MetAudits"],
+const SHORT=[
+  /* The open-source twins are titled with their repository slug, which is the name they
+     are published and cited under. A slug is the right name in a citation and the wrong
+     one inside a 46px oval, so the oval gets the readable form and the real name stays a
+     hover away in the tooltip and a click away in the panel. "bibliohelp" is anchored and
+     comes first because its hosted sibling is "BiblioHelp: ...": the two differ only in
+     case, and the only other thing telling them apart is the dashed outline. */
+  [/^bibliohelp$/,"BiblioHelp (open)"],[/^fair-repo-audit$/,"FAIR Repo Audit"],
+  [/^coara-action-planner$/,"CoARA Planner"],[/^orcid-finder$/,"ORCID Finder"],
+  [/^sound-inequality$/,"Sound Inequality"],
+  [/BiblioHelp/,"BiblioHelp"],[/Scielo/i,"SciELO Chile"],[/Repo MetAudits/,"Repo MetAudits"],
   [/Dirty Repos/,"Dirty Repos"],[/Publisher Gap/,"Publisher Gap"],[/Retracted/,"Retractions"],
   [/maDMP Gap/,"maDMP Gap"],[/ORCID Adoption/,"ORCID Adoption"],[/MCP CRIS Live: OpenAIRE/,"MCP OpenAIRE"],
-  [/MCP CRIS Live/,"MCP CRIS"],[/OpenAIRE Research/,"OpenAIRE AI"],[/sound-inequality/,"sound-inequality"],
+  [/MCP CRIS Live/,"MCP CRIS"],[/OpenAIRE Research/,"OpenAIRE AI"],
   [/PID Traceability/,"PID Workflows"],[/Value of Open Research Information/,"ORI Benefits"],
   [/DART Documentation Generators/,"DART Docs"],[/Renku 2\.0 Deployment/,"Renku 2.0 (IT:U)"],
   [/Open Science Strategy/,"OS Strategy (IT:U)"],[/maDMP Template/,"maDMP Template"]];

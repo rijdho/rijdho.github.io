@@ -12,7 +12,13 @@ vanilla JS. Part of the violet-family design system (see `../CLAUDE.md`).
   writing = `portfolio`) and `EXTRA` (the tab categories), then renders the cloud + tabs.
   Topic assignment for the cloud is the `topic` field on each experiment, and **it is data**,
   edit it there, not in code. Topic *labels/colours* are config (the `TOPICS` object in
-  `index.html`).
+  `index.html`). The text inside an oval is config too: the `SHORT` table maps a title to a
+  short label, and anything unmatched falls back to the title itself. **A new tool needs a
+  `SHORT` entry**, or its oval shows whatever the title is, which for the open twins is the
+  repository slug. That is the right name in a citation and the wrong one in a 46px oval,
+  and the real name is still one hover away in the tooltip. `tests/hub-ui.test.mjs` fails on
+  a label that is slug-shaped, longer than 20 characters, or a case-only duplicate of
+  another (which "BiblioHelp" and "bibliohelp" were).
 - `cv.html`: the academic CV. Same fetch, formal layout, `Print / PDF` via `window.print()`.
 - `build_cv.py`: emits `CV.en.md` / `CV.de.md` / `CV.es.md`.
 
@@ -112,7 +118,7 @@ GitHub Release is required and no `CITATION.cff` belongs in this repo.
 README images come from `docs/screenshots.mjs`, which drives the real pages, never a
 hand-cropped grab, which cannot be regenerated and ages into a lie. It seeds `Math.random`
 and emulates `prefers-reduced-motion` so the cloud's physics settle identically each run;
-without that, every regeneration reshuffles the ovals (24 of them) and the diff is noise. Puppeteer is a
+without that, every regeneration reshuffles the ovals (25 of them) and the diff is noise. Puppeteer is a
 tooling-only dependency and the site keeps no `package.json`.
 
 ## Before going/staying public: the leak sweep
