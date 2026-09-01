@@ -104,27 +104,38 @@ Koordination des Forschungsmanagements, Unterstützung datengestützter Akkredit
 
 ### Policy Papers
 
-- Hartley Belmar, R., & Abedrapo Rosen, I. (2025). [Scientific Data Repository-related Policies: Chile](https://doi.org/10.5281/zenodo.15650922). *World Data System Policy Paper Series*.
+- Hartley Belmar, R., & Abedrapo Rosen, I. (2025). [Scientific Data Repository-related Policies: Chile](https://doi.org/10.5281/zenodo.15650921). *World Data System Policy Paper Series*.
 - Abedrapo Rosen, I., Carrasco, R., Catalán Zavala, A., Díaz Cornejo, I., Escapil-Inchauspé, P., Hartley Belmar, R., Keim, A., Kölbl, M., Paredes Lizama, Á., Quiroz-Valenzuela, S., Rivera-Cornejo, M., & Roa, R. (2025). [Estrategia para la Implementación de una Política de Datos FAIR en Chile](https://doi.org/10.71481/7XPJ-CV52). *Data Observatory Foundation*.
+- Hartley Belmar, R., & Abedrapo Rosen, I. (2025). [Políticas Relacionadas con Repositorios de Datos Científicos: Chile](https://doi.org/10.5281/zenodo.15648532). *World Data System Policy Paper Series*.
+- Roa, R., Hartley, R., Meyers, N., Toledo, D., & Escapil-Inchauspé, P. (2024). [Desarrollo de una Estrategia Nacional y de una Hoja de Ruta FAIR en Chile](https://doi.org/10.17605/osf.io/wj95b). *OSF*.
 
 ### Leitfäden
 
-- Hartley Belmar, R., Abedrapo Rosen, I., Ojha, P., & Martinez-Ortiz, C. (2025). [FAIR: Guía de Referencia General](https://doi.org/10.5281/zenodo.15856492). *Zenodo*.
+- Hartley Belmar, R., Abedrapo Rosen, I., Ojha, P., & Martinez-Ortiz, C. (2025). [FAIR: Guía de Referencia General](https://doi.org/10.5281/zenodo.15856491). *Zenodo*.
 - Meyers, N., Escapil-Inchauspé, P., Egaña Aranguren, M., & Hartley Belmar, Ricardo (2024). [FAIR Principles (two-page workshop material)](https://doi.org/10.6075/J0TM7BG5). *San Diego Supercomputer Center (SDSC) Research Data Services Materials Collection, UC San Diego Library Digital Collections*.
 - Kirkpatrick, C. R., Cragin, M. H., & Meyers, N. (2024). [Guide Document for FAIR Data Management Plans in Organizations and Institutions](https://doi.org/10.6075/J0ZC836W). *San Diego Supercomputer Center (SDSC) Research Data Services Materials Collection, UC San Diego Library Digital Collections*.
 - Translation team: Ivonne Lujano, Guillermina Actis, Ricardo Hartley (2024). [Think Check Submit Checklist (Spanish Version)](https://thinkchecksubmit.org/journals-spanish/).
+- Zaslavsky, I., Paredes, A., Roa, R., Uribe, P., Rivera Cornejo, M., Diaz, P., Hartley, R., Diaz, I., Meyers, N., Keim, A. L., Maturana Miranda, M. P., Kirkpatrick, C., Toledo, D., Carrasco, R. A., Arriagada Bruneau, G. C., Guitart Franetovic, S. F., Didier Carrasco, E., & Escapil-Inchauspé, P. (2024). [Principios FAIR y su implementación (taller, 23 de enero de 2024)](https://doi.org/10.17605/osf.io/tec2k). *OSF*.
+- Quiroz-Valenzuela, S., Castillo, J. C., Enkhbayar, A., Aldunate, T. A., Hartley Belmar, R., Pérez Comisso, M. A., Mercado Lara, E., Rivera-López, B., Vasen, F., & Rebolledo Carreño, A. E. (2023). [Open Science Course – Chile 2023](https://doi.org/10.17605/osf.io/cfjw8). *OSF*.
+- Hartley, R. (2018). [Inmunohistoquímica rápida v1](https://doi.org/10.17504/protocols.io.r7sd9ne). *protocols.io*.
+- Hartley, R. (2017). [Primer webinar COS en español: OCS, OSF y OSM](https://doi.org/10.6084/m9.figshare.5648113). *figshare*.
 
 ### Datensätze
 
+- Hartley Belmar, R. (2026). [Publisher Gap dataset: metadata completeness rates for 48 fields across 14 scholarly publishers in Crossref and OpenAlex (2015–2025)](https://doi.org/10.5281/zenodo.19363053). *Zenodo*.
 - Paredes, Álvaro; Uribe, Paula; Hartley, Ricardo (2025). [Acuerdo de Transferencia de Datos (DTA)](https://doi.org/10.71481/cta5-q522). *Data Observatory Foundation*.
-- Hartley, R., & Abedrapo Rosen, I. (2024). [Chilean Repositories and Universities 2023 (v02.2023) [Dataset]](https://doi.org/10.5281/zenodo.10557407). *Zenodo*.
-- Hartley, R., & Abedrapo Rosen, I. (2023). [Template of the Data Management Plan of the Universidad Central de Chile (v01.2023)](https://doi.org/10.5281/zenodo.10067320). *Zenodo*.
+- Abedrapo Rosen, I., Martínez Concha, K. Y., & Hartley Belmar, R. (2025). [Repositorios InES Chile 2021–2022 [Dataset]](https://doi.org/10.5281/zenodo.15122025). *Zenodo*.
+- Hartley, R., & Abedrapo Rosen, I. (2024). [Chilean Repositories and Universities 2023 [Dataset]](https://doi.org/10.5281/zenodo.10557244). *Zenodo*.
+- Hartley, R., & Abedrapo Rosen, I. (2024). [Template of the Research Data Management Plan of the Universidad Central de Chile](https://doi.org/10.5281/zenodo.10067319). *Zenodo*.
 
 ### Working Papers
 
-- Hartley Belmar, R., & Atenas, J. (2024). [Estructuras a considerar y coordinar para una gobernanza ética de datos de investigación](https://doi.org/10.5281/zenodo.13838832). *Zenodo*.
-- Atenas, J., Hartley, R., & Quiroz, S. (2023). [Ethics as a research method](https://doi.org/10.5281/zenodo.8006752). *Zenodo*.
-- Hartley, R., & Abedrapo Rosen, I. (2023). [Centralizing the ways in which science is classified](https://doi.org/10.5281/zenodo.8092608). *Zenodo*.
+- Hartley Belmar, R., & Atenas, J. (2024). [Estructuras a considerar y coordinar para una gobernanza ética de datos de investigación](https://doi.org/10.5281/zenodo.13754250). *Zenodo*.
+- Atenas, J., Hartley, R., & Quiroz, S. (2023). [Ethics as a research method](https://doi.org/10.5281/zenodo.8006751). *Zenodo*.
+- Hartley, R., & Abedrapo Rosen, I. (2023). [Centralizing the ways in which science is classified](https://doi.org/10.5281/zenodo.8092607). *Zenodo*.
+- Hartley, R. (2022). [Encuesta InES Ciencia Abierta UCen](https://doi.org/10.53962/g169-xhey). *ResearchEquals*.
+- Hartley, R., Priego, E., Tobar, D., Pérez Comisso, M., & Gainza, C. (2017). [¿Abrir o no abrir? Nuevos pasos del Movimiento Open en Chile](https://doi.org/10.22541/au.151379546.63292744). *Authorea (preprint)*.
+- Priego, E., Posada, A., Hartley, R., Rodríguez Ortega, N., Fiormonte, D., Gil, A., Logan, C., Alperin, J. P., Mounce, R., Eglen, S. J., Miranda Trigueros, E., Lawson, S., Gatto, L., Ramos, A., & Pérez, N. (2017). [Scholarly Publishing, Freedom of Information and Academic Self-Determination: The UNAM-Elsevier Case](https://doi.org/10.22541/au.151160332.22737207). *Authorea (preprint)*.
 
 
 ## Vorträge & Präsentationen

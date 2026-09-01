@@ -10,6 +10,45 @@ install. A version is cut here whenever the content or the shape of `data/cv.jso
 enough to be worth naming, which keeps the history readable without pretending the site
 ships in numbered drops.
 
+## [1.5.0] - 2026-09-01
+
+Eleven outputs that existed in ORCID and not in the CV, and every Zenodo citation in the
+file pointing at the wrong kind of DOI.
+
+### Added
+
+- **Eleven publications recovered from the ORCID record.** ORCID held 49 works against the
+  CV's 35. Most of the gap was noise (software already listed as experiments, concept and
+  version pairs of the same deposit counted twice, a preprint of a paper already cited),
+  but eleven were real: the Publisher Gap dataset and the InES Chile repositories dataset;
+  the Spanish counterpart of the WDS policy paper and the FAIR national strategy roadmap;
+  the InES open science survey and the two 2017 Authorea preprints, on the Chilean open
+  movement and the UNAM-Elsevier case; and, under guides, the FAIR principles workshop, the
+  2023 Open Science Course, a protocols.io protocol and the first Spanish-language COS
+  webinar. Teaching and outreach went into `guides` rather than a new section, so the shape
+  of the CV is unchanged.
+
+### Fixed
+
+- **Every Zenodo DOI in the CV was a version DOI.** All seven of them. A version DOI pins
+  one snapshot, so it keeps resolving after a new version is deposited and quietly shows the
+  older thing; the concept DOI is the one that follows the work. This had already gone wrong
+  in public: the data management plan template was cited at v01.2023 while v02.2024 was
+  current, and the entry's own title carried the stale version number. Each concept DOI was
+  read back from the Zenodo API rather than derived by subtracting one, and all eighteen
+  DOIs in the change were confirmed through DOI content negotiation, which answers from the
+  registry instead of the publisher's site and so is not defeated by the bot blocks that
+  make `curl` report 403 on Authorea and protocols.io.
+
+- Two entries pinned a version in their title (`(v01.2023)`, `(v02.2023)`) while citing a
+  concept DOI that no longer resolves to it. Both titles drop the pin.
+
+### Note
+
+- `ORCID` records the protocols.io protocol under the given name "Antonio", attached to the
+  right ORCID. The deposit is the author's; the given name in it is not. Worth correcting at
+  protocols.io, since a citation built from that DOI carries the wrong name.
+
 ## [1.4.0] - 2026-09-01
 
 ### Added
@@ -323,6 +362,7 @@ Initial public site.
   folder uploads verbatim and the Markdown CVs are regenerated on every push.
 - Inter self-hosted as woff2, no font CDN.
 
+[1.5.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.1.0...v1.2.0
