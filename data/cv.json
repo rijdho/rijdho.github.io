@@ -1391,6 +1391,29 @@
         "de": "Beitrag zur Task Force 2 der Arbeitsgruppe 7 der Barcelona-Erklärung zu offener Forschungsinformation: acht Nutzen der Öffnung von Information über Forschung, geordnet in drei Achsen (Qualität und Vertrauen, Zusammenarbeit und Innovation, Wirkung und Relevanz) und als interaktiver Explorer statt als PDF veröffentlicht. Eine maschinenlesbare Taxonomie ist die einzige Quelle für Explorer, schriftliches Papier und Flusskarte, sodass die drei nicht auseinanderlaufen können. Leserinnen und Leser schlagen Änderungen und Beispiele über ein vorausgefülltes Issue-Formular vor, das in einem versionierten Register landet. Entwurf in v0.1, von der Task Force noch nicht geprüft.",
         "es": "Contribución al Task Force 2 del Grupo de Trabajo 7 de la Declaración de Barcelona sobre Información Abierta de Investigación: ocho beneficios de abrir la información sobre la investigación, ordenados en tres ejes (calidad y confianza, colaboración e innovación, impacto y relevancia) y publicados como explorador interactivo en vez de PDF. Una taxonomía legible por máquina es la fuente única del explorador, el documento escrito y el mapa de flujo, de modo que los tres no pueden separarse. Quien lee propone cambios y ejemplos mediante un formulario de issue precargado que aterriza en un registro versionado. Borrador en v0.1, aún no revisado por el task force."
       }
+    },
+    {
+      "id": "orcid-finder",
+      "title": "orcid-finder",
+      "year": "2026",
+      "status": "Active",
+      "url": "https://rijdho.github.io/orcid-finder/",
+      "doi": "10.5281/zenodo.22227424",
+      "tags": [
+        "ORCID",
+        "ROR",
+        "Researcher Discovery",
+        "Persistent Identifiers",
+        "Vanilla JS",
+        "Open source"
+      ],
+      "topic": "metadata",
+      "platform": "github",
+      "desc": {
+        "en": "Finds the ORCID accounts that declare an institution, searching by ROR, GRID and Ringgold identifier or by name, and narrows them by keyword, current or past affiliation, role, department, country, dates, and whether an organisation asserted the employment rather than the researcher. Reports which filter dropped each candidate and exports to CSV or JSON with the query that produced it. Entirely in the browser, against the public ORCID and ROR APIs.",
+        "es": "Encuentra las cuentas ORCID que declaran una institución, buscando por identificador ROR, GRID y Ringgold o por nombre, y las acota por palabra clave, afiliación vigente o pasada, cargo, departamento, país, fechas y si el empleo lo declaró una organización en lugar de la propia persona. Informa de qué filtro descartó a cada candidato y exporta a CSV o JSON junto con la consulta que lo produjo. Enteramente en el navegador, contra las API públicas de ORCID y ROR.",
+        "de": "Findet die ORCID-Konten, die eine Einrichtung angeben, gesucht nach ROR-, GRID- und Ringgold-Kennung oder nach Namen, und grenzt sie ein nach Schlagwort, laufender oder früherer Zugehörigkeit, Funktion, Abteilung, Land, Daten und danach, ob eine Organisation die Anstellung eingetragen hat statt der Person selbst. Meldet, welcher Filter wen aussortiert hat, und exportiert als CSV oder JSON samt der Abfrage, die das Ergebnis erzeugt hat. Vollständig im Browser, gegen die öffentlichen APIs von ORCID und ROR."
+      }
     }
   ]
 }
