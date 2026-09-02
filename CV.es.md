@@ -56,6 +56,11 @@ Supervisé el desarrollo de la investigación y programas de postgrado en la Fac
 
 Coordiné esfuerzos de gestión de investigación, apoyé procesos de acreditación basados en datos y promoví la adopción de infraestructuras abiertas.
 
+### Accreditation Support Professional, Vicerrectoría Académica · Universidad de Antofagasta
+*March – September 2016*
+
+Profesional de apoyo para la acreditación de programas de postgrado, en la Vicerrectoría Académica.
+
 
 ## Formación
 

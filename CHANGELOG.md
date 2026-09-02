@@ -10,6 +10,25 @@ install. A version is cut here whenever the content or the shape of `data/cv.jso
 enough to be worth naming, which keeps the history readable without pretending the site
 ships in numbered drops.
 
+## [1.5.1] - 2026-09-02
+
+### Added
+
+- **One employment recovered from the ORCID record**: Accreditation Support Professional at
+  the Vicerrectoría Académica of the Universidad de Antofagasta, March to September 2016.
+  It surfaced in the same reconciliation as 1.5.0 and was held back because the ORCID record
+  alone could not say whether it belonged in the CV; the author confirmed it does. The
+  description states the role and nothing more, since ORCID carries only a title, a
+  department and two dates, and inventing accomplishments to fill a paragraph is how a CV
+  stops being checkable.
+
+  `loc` is left empty, as it is on every other Chile-based role; the two Austrian entries
+  are the only ones that set it.
+
+  The reconciliation's other open item stays open in the opposite direction: Remolino
+  Consulting (May to October 2025) is in the CV and not in ORCID. That is a fix for the
+  ORCID record, which this repository cannot make.
+
 ## [1.5.0] - 2026-09-01
 
 Eleven outputs that existed in ORCID and not in the CV, and every Zenodo citation in the
@@ -362,6 +381,7 @@ Initial public site.
   folder uploads verbatim and the Markdown CVs are regenerated on every push.
 - Inter self-hosted as woff2, no font CDN.
 
+[1.5.1]: https://github.com/rijdho/rijdho.github.io/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.2.0...v1.3.0

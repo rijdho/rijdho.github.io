@@ -56,6 +56,11 @@ Oversaw research development and postgraduate programs in the Faculty of Health 
 
 Coordinated research management efforts, supported data-driven accreditation processes, and promoted open infrastructure adoption.
 
+### Accreditation Support Professional, Vicerrectoría Académica · Universidad de Antofagasta
+*March – September 2016*
+
+Support professional for the accreditation of postgraduate programmes, working with the Vice-Rectorate for Academic Affairs.
+
 
 ## Education
 

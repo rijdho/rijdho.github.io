@@ -56,6 +56,11 @@ Verantwortung für Forschungsentwicklung und Postgraduiertenprogramme der Fakult
 
 Koordination des Forschungsmanagements, Unterstützung datengestützter Akkreditierungsprozesse und Förderung der Einführung offener Infrastrukturen.
 
+### Accreditation Support Professional, Vicerrectoría Académica · Universidad de Antofagasta
+*March – September 2016*
+
+Fachkraft zur Unterstützung der Akkreditierung von Postgraduiertenprogrammen im Akademischen Vizerektorat.
+
 
 ## Ausbildung
 
