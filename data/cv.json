@@ -1202,7 +1202,7 @@
       ]
     },
     {
-      "title": "sound-inequality",
+      "title": "Sound Inequality: Data Disparities as Audio",
       "year": "2026",
       "status": "Active",
       "url": "https://sound-inequality.rijdho.org/",
@@ -1390,7 +1390,7 @@
     },
     {
       "id": "fair-repo-audit",
-      "title": "fair-repo-audit",
+      "title": "FAIR Repo Audit: In-Browser Metadata Scoring",
       "year": "2026",
       "status": "Active",
       "url": "https://rijdho.github.io/fair-repo-audit/",
@@ -1414,7 +1414,7 @@
     },
     {
       "id": "bibliohelpc",
-      "title": "bibliohelp",
+      "title": "BiblioHelp Open: Client-Side Reference Checker",
       "year": "2026",
       "status": "Active",
       "url": "https://rijdho.github.io/bibliohelp/",
@@ -1436,7 +1436,7 @@
     },
     {
       "id": "coara",
-      "title": "coara-action-planner",
+      "title": "CoARA Action Planner: Self-Assessment and Plan",
       "year": "2026",
       "status": "Active",
       "url": "https://rijdho.github.io/coara-action-planner/",
@@ -1483,7 +1483,7 @@
     },
     {
       "id": "orcid-finder",
-      "title": "orcid-finder",
+      "title": "ORCID Finder: Institutional Researcher Discovery",
       "year": "2026",
       "status": "Active",
       "url": "https://rijdho.github.io/orcid-finder/",
@@ -1506,7 +1506,7 @@
     },
     {
       "id": "pollen",
-      "title": "pollen",
+      "title": "pollen: Live Audience Questions",
       "year": "2026",
       "status": "Active",
       "url": "https://pollen.rijdho.org",

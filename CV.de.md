@@ -238,7 +238,7 @@ MCP-Server, der die OpenAIRE-Graph-API (über 100 Mio. offen zugängliche Forsch
 
 Chat-Oberfläche, in der Cloudflare Workers AI (Llama 3.1 8B) die OpenAIRE-MCP-Werkzeuge in einer agentischen Schleife nutzt, um Forschungsfragen in natürlicher Sprache zu beantworten. Das Sprachmodell entscheidet, welche Werkzeuge aufgerufen werden, führt die OpenAIRE-Suchen aus und fasst die Ergebnisse lesbar zusammen. Vollständig auf kostenloser Cloudflare-Infrastruktur betrieben (Pages + Workers AI).
 
-### [sound-inequality](https://sound-inequality.rijdho.org/)
+### [Sound Inequality: Data Disparities as Audio](https://sound-inequality.rijdho.org/)
 *Active · 2026 · Sonification, Data Viz, R, Accessibility*
 
 Sonifikationsprojekt, das Muster von Datenungleichheit hörbar macht. Es überführt statistische Disparitäten in Klangkompositionen, um Daten über die auditive Wahrnehmung zugänglich zu machen.
@@ -283,17 +283,17 @@ Installation von Renku 2.0 für reproduzierbare Rechenumgebungen, auf zwei Wegen
 
 Zwei Generatoren, die je einen Quellordner pro Eintrag in eine einzige, in sich geschlossene zweisprachige Referenzseite überführen: einer für die API-Integrationen des Teams, gebaut aus bereinigten OpenAPI-Spezifikationen mit einem interaktiven Try-it-Panel je Endpunkt, und einer für die Automatisierungs-Pipelines, bei dem jede Pipeline ihre Workflow-Dateien, ihr eigenes Changelog und ihren Katalogeintrag im selben Ordner hält, damit beide nicht auseinanderlaufen. Neue Einträge kommen als ausgefüllte Vorlage über ein Issue-Formular, das automatisch geprüft wird und einen Pull Request eröffnet.
 
-### [fair-repo-audit](https://rijdho.github.io/fair-repo-audit/)
+### [FAIR Repo Audit: In-Browser Metadata Scoring](https://rijdho.github.io/fair-repo-audit/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Open source*
 
 Offener, clientseitiger Zwilling von Repo MetAudits – FAIR-Metadatenbewertung für DataCite- und OAI-PMH-Repositorien, vollständig im Browser. Das veröffentlichte Open-Source-Gegenstück zum gehosteten Evaluator.
 
-### [bibliohelp](https://rijdho.github.io/bibliohelp/)
+### [BiblioHelp Open: Client-Side Reference Checker](https://rijdho.github.io/bibliohelp/)
 *Active · 2026 · SvelteKit, Citation Verification, Open source*
 
 Open-Source-Begleiter von BiblioHelp – die App zur Referenzprüfung und das Word-Add-in als Quellcode und statischer Build. Der veröffentlichte Zwilling des gehosteten Werkzeugs.
 
-### [coara-action-planner](https://rijdho.github.io/coara-action-planner/)
+### [CoARA Action Planner: Self-Assessment and Plan](https://rijdho.github.io/coara-action-planner/)
 *Active · 2026 · CoARA, Research Assessment, Open source*
 
 Bewerten Sie Ihre Einrichtung selbst anhand der zehn CoARA-Verpflichtungen und erzeugen Sie einen priorisierten, bearbeitbaren Aktionsplan – vollständig im Browser. Der offene Zwilling des Reform-Assessment-Toolkits.
@@ -305,12 +305,12 @@ Bewerten Sie Ihre Einrichtung selbst anhand der zehn CoARA-Verpflichtungen und e
 
 Beitrag zur Task Force 2 der Arbeitsgruppe 7 der Barcelona-Erklärung zu offener Forschungsinformation: neun Nutzen der Öffnung von Information über Forschung, geordnet in drei Achsen (Qualität und Vertrauen, Zusammenarbeit und Innovation, Wirkung und Relevanz) und als interaktiver Explorer statt als PDF veröffentlicht. Eine maschinenlesbare Taxonomie ist die einzige Quelle für Explorer, schriftliches Papier und Flusskarte, sodass die drei nicht auseinanderlaufen können. Leserinnen und Leser schlagen Änderungen und Beispiele über ein vorausgefülltes Issue-Formular vor, das in einem versionierten Register landet. Der neunte Nutzen, strategische Steuerung und institutionelle Autonomie, entstand daraus, reale Fallstudien an das Rahmenwerk zu halten, nicht aus erneutem Lesen der Definitionen. Arbeitsdokument in v0.2, auf Zenodo archiviert als Vorschlag an die Task Force, nicht als von ihr beschlossenes Rahmenwerk.
 
-### [orcid-finder](https://rijdho.github.io/orcid-finder/)
+### [ORCID Finder: Institutional Researcher Discovery](https://rijdho.github.io/orcid-finder/)
 *Active · 2026 · ORCID, ROR, Researcher Discovery, Persistent Identifiers*
 
 Findet die ORCID-Konten, die eine Einrichtung angeben, gesucht nach ROR-, GRID- und Ringgold-Kennung oder nach Namen, und grenzt sie ein nach Schlagwort, laufender oder früherer Zugehörigkeit, Funktion, Abteilung, Land, Daten und danach, ob eine Organisation die Anstellung eingetragen hat statt der Person selbst. Meldet, welcher Filter wen aussortiert hat, und exportiert als CSV oder JSON samt der Abfrage, die das Ergebnis erzeugt hat. Vollständig im Browser, gegen die öffentlichen APIs von ORCID und ROR.
 
-### [pollen](https://pollen.rijdho.org)
+### [pollen: Live Audience Questions](https://pollen.rijdho.org)
 *Active · 2026 · Live polling, Audience response, Teaching, Cloudflare Workers*
 
 Live-Fragen während einer Lehrveranstaltung oder eines Workshops: Auswahlfragen, Bewertungsskalen, Reihenfolgen, Wortwolken und Fragen aus dem Raum, nach Unterstützung sortiert. Teilnehmende treten mit einem sechsstelligen Code oder einem QR-Code bei und antworten am Telefon, während die Ergebnisse auf der projizierten Ansicht entstehen. Jede Auswahlfrage kann eine richtige Antwort tragen, was einen Punktestand ergänzt. Keine Konten, keine Cookies und keine Anfrage an Dritte; ein Raum löscht sich zwölf Stunden nach dem Öffnen selbst. Ein einziger Cloudflare Worker mit einem Durable Object pro Raum, das zugleich der Speicher und der Punkt ist, durch den jede Stimme läuft, und derselbe Code läuft auch auf Node.
