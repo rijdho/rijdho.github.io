@@ -1503,6 +1503,30 @@
         "es": "Encuentra las cuentas ORCID que declaran una institución, buscando por identificador ROR, GRID y Ringgold o por nombre, y las acota por palabra clave, afiliación vigente o pasada, cargo, departamento, país, fechas y si el empleo lo declaró una organización en lugar de la propia persona. Informa de qué filtro descartó a cada candidato y exporta a CSV o JSON junto con la consulta que lo produjo. Enteramente en el navegador, contra las API públicas de ORCID y ROR.",
         "de": "Findet die ORCID-Konten, die eine Einrichtung angeben, gesucht nach ROR-, GRID- und Ringgold-Kennung oder nach Namen, und grenzt sie ein nach Schlagwort, laufender oder früherer Zugehörigkeit, Funktion, Abteilung, Land, Daten und danach, ob eine Organisation die Anstellung eingetragen hat statt der Person selbst. Meldet, welcher Filter wen aussortiert hat, und exportiert als CSV oder JSON samt der Abfrage, die das Ergebnis erzeugt hat. Vollständig im Browser, gegen die öffentlichen APIs von ORCID und ROR."
       }
+    },
+    {
+      "id": "pollen",
+      "title": "pollen",
+      "year": "2026",
+      "status": "Active",
+      "url": "https://pollen.rijdho.org",
+      "doi": "10.5281/zenodo.22685893",
+      "tags": [
+        "Live polling",
+        "Audience response",
+        "Teaching",
+        "Cloudflare Workers",
+        "Durable Objects",
+        "Vanilla JS",
+        "Open source"
+      ],
+      "topic": "infra",
+      "platform": "github",
+      "desc": {
+        "en": "Live questions during a lecture or a workshop: multiple choice, rating scales, rankings, word clouds, and questions from the room ordered by support. Participants join with a six-character code or a QR code and answer on their phones while the results build on the projected screen. Any choice question can carry a right answer, which adds a scoreboard. No accounts, no cookies and no third-party request of any kind; a room deletes itself twelve hours after it opens. One Cloudflare Worker with a Durable Object per room, which is both the storage and the point every vote passes through, and the same code also runs on Node.",
+        "es": "Preguntas en vivo durante una clase o un taller: opción múltiple, escalas de valoración, ordenaciones, nubes de palabras y preguntas de la sala ordenadas por apoyos. Quien participa entra con un código de seis caracteres o un QR y responde desde el móvil mientras los resultados se forman en la pantalla proyectada. Cualquier pregunta de opción puede llevar respuesta correcta, lo que añade un marcador. Sin cuentas, sin cookies y sin ninguna petición a terceros; una sala se borra sola doce horas después de abrirse. Un único Worker de Cloudflare con un Durable Object por sala, que es a la vez el almacenamiento y el punto por donde pasan todos los votos, y el mismo código corre también sobre Node.",
+        "de": "Live-Fragen während einer Lehrveranstaltung oder eines Workshops: Auswahlfragen, Bewertungsskalen, Reihenfolgen, Wortwolken und Fragen aus dem Raum, nach Unterstützung sortiert. Teilnehmende treten mit einem sechsstelligen Code oder einem QR-Code bei und antworten am Telefon, während die Ergebnisse auf der projizierten Ansicht entstehen. Jede Auswahlfrage kann eine richtige Antwort tragen, was einen Punktestand ergänzt. Keine Konten, keine Cookies und keine Anfrage an Dritte; ein Raum löscht sich zwölf Stunden nach dem Öffnen selbst. Ein einziger Cloudflare Worker mit einem Durable Object pro Raum, das zugleich der Speicher und der Punkt ist, durch den jede Stimme läuft, und derselbe Code läuft auch auf Node."
+      }
     }
   ]
 }

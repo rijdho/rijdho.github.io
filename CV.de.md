@@ -310,6 +310,11 @@ Beitrag zur Task Force 2 der Arbeitsgruppe 7 der Barcelona-Erklärung zu offener
 
 Findet die ORCID-Konten, die eine Einrichtung angeben, gesucht nach ROR-, GRID- und Ringgold-Kennung oder nach Namen, und grenzt sie ein nach Schlagwort, laufender oder früherer Zugehörigkeit, Funktion, Abteilung, Land, Daten und danach, ob eine Organisation die Anstellung eingetragen hat statt der Person selbst. Meldet, welcher Filter wen aussortiert hat, und exportiert als CSV oder JSON samt der Abfrage, die das Ergebnis erzeugt hat. Vollständig im Browser, gegen die öffentlichen APIs von ORCID und ROR.
 
+### [pollen](https://pollen.rijdho.org)
+*Active · 2026 · Live polling, Audience response, Teaching, Cloudflare Workers*
+
+Live-Fragen während einer Lehrveranstaltung oder eines Workshops: Auswahlfragen, Bewertungsskalen, Reihenfolgen, Wortwolken und Fragen aus dem Raum, nach Unterstützung sortiert. Teilnehmende treten mit einem sechsstelligen Code oder einem QR-Code bei und antworten am Telefon, während die Ergebnisse auf der projizierten Ansicht entstehen. Jede Auswahlfrage kann eine richtige Antwort tragen, was einen Punktestand ergänzt. Keine Konten, keine Cookies und keine Anfrage an Dritte; ein Raum löscht sich zwölf Stunden nach dem Öffnen selbst. Ein einziger Cloudflare Worker mit einem Durable Object pro Raum, das zugleich der Speicher und der Punkt ist, durch den jede Stimme läuft, und derselbe Code läuft auch auf Node.
+
 
 ## Engagements
 

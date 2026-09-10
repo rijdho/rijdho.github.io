@@ -310,6 +310,11 @@ Contribution to Task Force 2 of Working Group 7 of the Barcelona Declaration on 
 
 Finds the ORCID accounts that declare an institution, searching by ROR, GRID and Ringgold identifier or by name, and narrows them by keyword, current or past affiliation, role, department, country, dates, and whether an organisation asserted the employment rather than the researcher. Reports which filter dropped each candidate and exports to CSV or JSON with the query that produced it. Entirely in the browser, against the public ORCID and ROR APIs.
 
+### [pollen](https://pollen.rijdho.org)
+*Active · 2026 · Live polling, Audience response, Teaching, Cloudflare Workers*
+
+Live questions during a lecture or a workshop: multiple choice, rating scales, rankings, word clouds, and questions from the room ordered by support. Participants join with a six-character code or a QR code and answer on their phones while the results build on the projected screen. Any choice question can carry a right answer, which adds a scoreboard. No accounts, no cookies and no third-party request of any kind; a room deletes itself twelve hours after it opens. One Cloudflare Worker with a Durable Object per room, which is both the storage and the point every vote passes through, and the same code also runs on Node.
+
 
 ## Engagements
 

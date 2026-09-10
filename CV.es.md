@@ -310,6 +310,11 @@ Contribución al Task Force 2 del Grupo de Trabajo 7 de la Declaración de Barce
 
 Encuentra las cuentas ORCID que declaran una institución, buscando por identificador ROR, GRID y Ringgold o por nombre, y las acota por palabra clave, afiliación vigente o pasada, cargo, departamento, país, fechas y si el empleo lo declaró una organización en lugar de la propia persona. Informa de qué filtro descartó a cada candidato y exporta a CSV o JSON junto con la consulta que lo produjo. Enteramente en el navegador, contra las API públicas de ORCID y ROR.
 
+### [pollen](https://pollen.rijdho.org)
+*Active · 2026 · Live polling, Audience response, Teaching, Cloudflare Workers*
+
+Preguntas en vivo durante una clase o un taller: opción múltiple, escalas de valoración, ordenaciones, nubes de palabras y preguntas de la sala ordenadas por apoyos. Quien participa entra con un código de seis caracteres o un QR y responde desde el móvil mientras los resultados se forman en la pantalla proyectada. Cualquier pregunta de opción puede llevar respuesta correcta, lo que añade un marcador. Sin cuentas, sin cookies y sin ninguna petición a terceros; una sala se borra sola doce horas después de abrirse. Un único Worker de Cloudflare con un Durable Object por sala, que es a la vez el almacenamiento y el punto por donde pasan todos los votos, y el mismo código corre también sobre Node.
+
 
 ## Participaciones
 
