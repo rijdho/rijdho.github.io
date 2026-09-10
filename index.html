@@ -329,15 +329,15 @@ function srcLabel(u){if(!u)return"";try{const h=new URL(u).hostname.replace(/^ww
   return h;}catch(e){return""}}
 /* curated short labels shown inside the ovals (order matters: OpenAIRE variant before the plain MCP) */
 const SHORT=[
-  /* The open-source twins are titled with their repository slug, which is the name they
-     are published and cited under. A slug is the right name in a citation and the wrong
-     one inside a 46px oval, so the oval gets the readable form and the real name stays a
-     hover away in the tooltip and a click away in the panel. "bibliohelp" is anchored and
-     comes first because its hosted sibling is "BiblioHelp: ...": the two differ only in
-     case, and the only other thing telling them apart is the dashed outline. */
-  [/^bibliohelp$/,"BiblioHelp (open)"],[/^fair-repo-audit$/,"FAIR Repo Audit"],
-  [/^coara-action-planner$/,"CoARA Planner"],[/^orcid-finder$/,"ORCID Finder"],
-  [/^sound-inequality$/,"Sound Inequality"],
+  /* Curated because a full title does not fit a 46px oval and the fallback, the part
+     before the colon, is not always distinct enough. "BiblioHelp Open" is anchored and
+     comes first because the plain /BiblioHelp/ below would swallow it and leave the twin
+     and its hosted sibling wearing the same label, which is two ovals a reader cannot
+     tell apart. The full name stays a hover away in the tooltip and a click away in the
+     panel. */
+  [/^BiblioHelp Open/,"BiblioHelp (open)"],[/^FAIR Repo Audit/,"FAIR Repo Audit"],
+  [/^CoARA Action Planner/,"CoARA Planner"],[/^ORCID Finder/,"ORCID Finder"],
+  [/^Sound Inequality/,"Sound Inequality"],
   [/BiblioHelp/,"BiblioHelp"],[/Scielo/i,"SciELO Chile"],[/Repo MetAudits/,"Repo MetAudits"],
   [/Dirty Repos/,"Dirty Repos"],[/Publisher Gap/,"Publisher Gap"],[/Retracted/,"Retractions"],
   [/maDMP Gap/,"maDMP Gap"],[/ORCID Adoption/,"ORCID Adoption"],[/MCP CRIS Live: OpenAIRE/,"MCP OpenAIRE"],
