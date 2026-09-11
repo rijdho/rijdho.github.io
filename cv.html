@@ -89,6 +89,8 @@
   ul.plain{list-style:none;margin:0;padding:0}
   ul.plain li{padding:7px 0;border-bottom:1px solid var(--hair);font-size:.89rem;color:var(--soft);break-inside:avoid}
   ul.plain li:last-child{border-bottom:0}
+  .keep{break-inside:avoid}
+  .keep.cont .edu,.keep.cont ul.plain li{border-bottom:1px solid var(--hair)}
   ul.plain li b{color:var(--ink);font-weight:600}
   .tag{font-family:var(--mono);font-size:.66rem;color:var(--muted)}
 
@@ -96,6 +98,13 @@
   .twin{font-family:var(--mono);font-size:.76rem}
 
   @media (max-width:640px){.controls .in,main{padding-left:20px;padding-right:20px}.skill{flex-direction:column;gap:2px}.skill .k{min-width:0}}
+  /* The browser prints its own date, title, URL and "Page 1 of N" in the page margin.
+     Declaring the margin boxes, even empty, hands that space to the page, so Chrome and
+     Edge print none of it and the margins stay. Safari and Firefox ignore margin boxes
+     (they keep the 16mm): there it is the print dialog's "headers and footers" box. */
+  @page{margin:16mm;
+    @top-left{content:""}@top-center{content:""}@top-right{content:""}
+    @bottom-left{content:""}@bottom-center{content:""}@bottom-right{content:""}}
   @media print{
     .controls{display:none}
     body{background:#fff;color:#000;font-size:10.5pt}
@@ -103,7 +112,11 @@
     main{max-width:none;padding:0}
     a{color:#000}
     section{margin-top:16pt}
-    h1{font-size:20pt}
+    /* a bare h1 selector here lost to "header.cv h1" and the name printed at 25pt */
+    header.cv h1{font-size:17pt}
+    .degrees{display:none}
+    .summary{max-width:none}
+    .summary p,.entry p,ol.pubs li,ul.plain li,.skill .v{text-align:justify;-webkit-hyphens:auto;hyphens:auto}
   }
 </style>
 
@@ -172,40 +185,51 @@ function render(){
   document.getElementById("contact").innerHTML=c.join('<span style="color:var(--faint)">·</span>');
 
   const H=[];
-  const sec=(key,inner,count)=>H.push(`<section><h2>${esc(UI[lang][key])}${count?`<span class="c">${count}</span>`:""}</h2>${inner}</section>`);
+  /* Safari ignores break-after:avoid in every spelling, so on paper a heading can only be
+     kept off the foot of a page by sharing an unbreakable box with the first item under
+     it. keep() builds that box; a list is split after its first item, and an <ol> resumes
+     its numbering at 2. "cont" restores the rule under an item that is no longer last. */
+  const keep=(head,items,tag)=>{
+    const rest=items.slice(1), cont=rest.length?" cont":"";
+    if(!tag)return `<div class="keep${cont}">${head}${items[0]||""}</div>${rest.join("")}`;
+    const n=tag.split(" ")[0];
+    return `<div class="keep${cont}">${head}<${tag}>${items[0]||""}</${n}></div>`+
+      (rest.length?`<${tag}${n==="ol"?' start="2"':""}>${rest.join("")}</${n}>`:"");
+  };
+  const h2=(key,count)=>`<h2>${esc(UI[lang][key])}${count?`<span class="c">${count}</span>`:""}</h2>`;
+  const sec=(key,items,tag,count)=>H.push(`<section>${keep(h2(key,count),items,tag)}</section>`);
 
   // Experience
   sec("experience", CV.experience.map(e=>`<div class="entry">
     <div class="top"><span class="ti">${esc(e.title)} · <span class="org">${esc(e.org)}</span></span>
       <span class="when">${esc(e.period)}</span></div>
     ${e.loc?`<div class="loc">${esc(e.loc)}</div>`:""}
-    ${t(e.desc)?`<p>${esc(t(e.desc))}</p>`:""}</div>`).join(""));
+    ${t(e.desc)?`<p>${esc(t(e.desc))}</p>`:""}</div>`));
 
   // Education
   sec("education", CV.education.map(e=>`<div class="edu">
     <span><span class="d">${esc(t(e.degree))}</span> · <span class="i">${esc(e.inst)}</span></span>
-    <span class="when">${esc(e.year)}</span></div>`).join(""));
+    <span class="when">${esc(e.year)}</span></div>`));
 
-  // Publications
-  const groups=["peerReviewed","policyPapers","guides","datasets","workingPapers"];
-  let pubHTML="", pubN=0;
-  groups.forEach(g=>{const items=CV.publications[g]||[];if(!items.length)return;pubN+=items.length;
-    pubHTML+=`<div class="subh">${esc(PUBGRP[g][lang])}</div><ol class="pubs">`+
-      items.map(it=>{const ti=it.url?`<a href="${esc(it.url)}">${esc(it.title)}</a>`:esc(it.title);
-        return `<li>${esc(it.authors)} (${esc(it.year)}). ${ti}.${it.venue?` <b>${esc(it.venue)}</b>.`:""}</li>`;}).join("")+`</ol>`;});
-  sec("publications", pubHTML, pubN);
+  // Publications: each group's subheading is kept with its first entry too
+  const groups=["peerReviewed","policyPapers","guides","datasets","workingPapers"].filter(g=>(CV.publications[g]||[]).length);
+  const pubN=groups.reduce((n,g)=>n+CV.publications[g].length,0);
+  H.push(`<section>`+groups.map((g,i)=>keep((i?"":h2("publications",pubN))+`<div class="subh">${esc(PUBGRP[g][lang])}</div>`,
+    CV.publications[g].map(it=>{const ti=it.url?`<a href="${esc(it.url)}">${esc(it.title)}</a>`:esc(it.title);
+      return `<li>${esc(it.authors)} (${esc(it.year)}). ${ti}.${it.venue?` <b>${esc(it.venue)}</b>.`:""}</li>`;}),
+    'ol class="pubs"')).join("")+`</section>`);
 
   // Presentations
-  sec("presentations", `<ul class="plain">`+CV.presentations.map(t2=>`
-    <li><b>${esc(t2.title)}</b> · ${esc(t2.event)}${t2.date?` <span class="tag">(${esc(t2.date)})</span>`:""}</li>`).join("")+`</ul>`, CV.presentations.length);
+  sec("presentations", CV.presentations.map(t2=>`
+    <li><b>${esc(t2.title)}</b> · ${esc(t2.event)}${t2.date?` <span class="tag">(${esc(t2.date)})</span>`:""}</li>`), 'ul class="plain"', CV.presentations.length);
 
   // Skills
   sec("skills", CV.skills.map(s=>`<div class="skill"><span class="k">${esc(t(s.title))}</span>
-    <span class="v">${esc((s.items||[]).map(t).join(", "))}</span></div>`).join(""));
+    <span class="v">${esc((s.items||[]).map(t).join(", "))}</span></div>`));
 
   // Writing (portfolio)
-  sec("portfolio", `<ul class="plain">`+CV.portfolio.map(e=>{const ti=e.url?`<a href="${esc(e.url)}">${esc(e.title)}</a>`:esc(e.title);
-    return `<li><b>${ti}</b> <span class="tag">${esc(e.year)}${e.type?" · "+esc(e.type):""}</span><br>${esc(t(e.desc))}</li>`;}).join("")+`</ul>`, CV.portfolio.length);
+  sec("portfolio", CV.portfolio.map(e=>{const ti=e.url?`<a href="${esc(e.url)}">${esc(e.title)}</a>`:esc(e.title);
+    return `<li><b>${ti}</b> <span class="tag">${esc(e.year)}${e.type?" · "+esc(e.type):""}</span><br>${esc(t(e.desc))}</li>`;}), 'ul class="plain"', CV.portfolio.length);
 
   // Tools (experiments)
   sec("experiments", CV.experiments.map(e=>{const ti=e.url?`<a href="${esc(e.url)}">${esc(e.title)}</a>`:esc(e.title);
@@ -213,13 +237,13 @@ function render(){
       <span class="when">${esc(e.status)} · ${esc(e.year)}</span></div>
       ${t(e.desc)?`<p>${esc(t(e.desc))}</p>`:""}
       ${e.twin&&e.twin.url?`<div class="twin">↔ <a href="${esc(e.twin.url)}">${esc(e.twin.title||e.twin.url)}</a></div>`:""}
-      ${(e.tags||[]).length?`<div class="tag">${esc((e.tags||[]).slice(0,6).join(" · "))}</div>`:""}</div>`;}).join(""), CV.experiments.length);
+      ${(e.tags||[]).length?`<div class="tag">${esc((e.tags||[]).slice(0,6).join(" · "))}</div>`:""}</div>`;}), "", CV.experiments.length);
 
   // Engagements + Training
-  sec("engagements", `<ul class="plain">`+CV.engagements.map(e=>`
-    <li><b>${esc(e.role)}</b>, ${esc(e.org)} · ${esc(t(e.focus))}</li>`).join("")+`</ul>`);
-  sec("training", `<ul class="plain">`+CV.training.map(e=>`
-    <li><b>${esc(e.title)}</b> <span class="tag">${esc(e.year)}</span>${e.org?` · ${esc(e.org)}`:""}<br>${esc(t(e.desc))}</li>`).join("")+`</ul>`);
+  sec("engagements", CV.engagements.map(e=>`
+    <li><b>${esc(e.role)}</b>, ${esc(e.org)} · ${esc(t(e.focus))}</li>`), 'ul class="plain"');
+  sec("training", CV.training.map(e=>`
+    <li><b>${esc(e.title)}</b> <span class="tag">${esc(e.year)}</span>${e.org?` · ${esc(e.org)}`:""}<br>${esc(t(e.desc))}</li>`), 'ul class="plain"');
 
   document.getElementById("body").innerHTML=H.join("");
 }

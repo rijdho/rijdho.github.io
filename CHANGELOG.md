@@ -10,6 +10,32 @@ install. A version is cut here whenever the content or the shape of `data/cv.jso
 enough to be worth naming, which keeps the history readable without pretending the site
 ships in numbered drops.
 
+## [Unreleased]
+
+### Changed
+
+- **The printed CV reads as a formal document.** Body text (summary, entry descriptions,
+  publications, lists, skills) is justified and hyphenated in the language of the page. The
+  degree line is left off the printout, and the name prints at 17pt. It had been meant to
+  print at 20pt all along, but that rule used a bare `h1` selector and lost to
+  `header.cv h1` on specificity, so the name went out at 25pt against 10.5pt body text.
+- **The browser's own header and footer are gone from the printout in Chrome and Edge**
+  (date, page title, URL, "Page 1 of N"). The page now declares its `@page` margin boxes,
+  empty, which hands that space to the page while keeping 16mm margins. Safari and Firefox
+  do not support margin boxes; there it stays the print dialog's headers-and-footers box.
+- **No heading is left alone at the foot of a printed page, in any browser.** Safari left
+  "Experience" at the bottom of page 1 with the rest of the page blank, plus "Peer-reviewed"
+  (English) and "Publicaciones" (Spanish) further on; Chrome did the same with two headings
+  in English and one in Spanish. `break-after: avoid` fixes Chrome only, since WebKit
+  ignores it in every spelling (`page-break-after`, and `break-before` on the next element,
+  were tried too). So `render()` now puts each section heading, and each publication
+  subheading, in one unbreakable box with the first item under it. A list is split after
+  its first item to do that: an `<ol>` resumes at 2, and the divider under that item is
+  restored. On screen the page is pixel-identical to before in all three languages, both
+  themes, at 1100px and 400px wide, a comparison shown to catch a lost divider or a
+  numbering restart. The cost is in Safari: page 1 now ends after the summary, because
+  the first job does not fit under it.
+
 ## [1.5.1] - 2026-09-02
 
 ### Added
@@ -381,6 +407,7 @@ Initial public site.
   folder uploads verbatim and the Markdown CVs are regenerated on every push.
 - Inter self-hosted as woff2, no font CDN.
 
+[Unreleased]: https://github.com/rijdho/rijdho.github.io/compare/v1.5.1...HEAD
 [1.5.1]: https://github.com/rijdho/rijdho.github.io/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.3.0...v1.4.0
