@@ -86,7 +86,7 @@ Profesional de apoyo para la acreditación de programas de postgrado, en la Vice
 - Abedrapo Rosen, I., Ruz Fuenzalida, C., & Hartley Belmar, R. (2025). [Evaluación del impacto de publicaciones científicas y el fomento de prácticas de Ciencia Abierta en universidades para la acreditación en investigación: Un análisis más allá de la indexación](https://www.cnachile.cl/). *Comisión Nacional de Acreditación, Serie Estudios sobre Acreditación, Seminario Internacional Expresiones sobre la Cultura de la calidad en las instituciones de educación superior*.
 - Abedrapo Rosen, I., Ruz Fuenzalida, C., & Hartley Belmar, R. (2025). Análisis descriptivo de la orientación de la investigación en universidades chilenas frente a políticas de evaluación basadas en métricas de impacto (2009–2023). *Revista Calidad en la Educación*.
 - Hartley Belmar, R., Abedrapo Rosen, I., & Torres Díaz, L. (2025). [Abrir, transformar y gobernar: hacia una Ciencia Abierta situada y equitativa en Chile](https://doi.org/10.15443/rintca.2025.es001). *Revista Internacional de Ciencia Abierta*.
-- Abedrapo Rosen, I., Sánchez Núñez, P., & Hartley Belmar, R. (2025). [Open Science governance: the role of persistent identifiers and metadata standards](https://doi.org/10.31219/osf.io/9h564_v3). *MetaResearch Open Review – MetaROR*.
+- Abedrapo Rosen, I., & Hartley Belmar, R. (2025). [Open Science governance: the role of persistent identifiers and metadata standards](https://doi.org/10.31219/osf.io/9h564_v3). *MetaResearch Open Review – MetaROR*.
 - Belmar, Ricardo Hartley, & Atenas, Javiera (2024). [Desafíos en la especialización para gestión de datos de investigación en un contexto ético](https://doi.org/10.4067/S1726-569X2024000200319). *Acta Bioethica, 30(2), 319–322*.
 - Briones, C., Nuñez, J. J., Pérez, M., Garrido, O., Campos, B., Godoy, K., Hartley, R., Oyarzún, P. A., & Guiñez, R. (2024). [Linking Acrosome Size and Genetic Divergence in an Inter-Oceanic Mussel from the Pacific and Atlantic Coasts: A Case of Incipient Speciation?](https://doi.org/10.3390/ani14050674). *Animals, 14(5), 674*.
 - Carrasco, N., Garrido, M., Montenegro, I., Madrid, A., Hartley, R., González, I., Rubilar, M., Villena, J., & Valenzuela-Valderrama, M. (2023). [Antitumoral Activity of Leptocarpha rivularis Flower Extracts against Gastric Cancer Cells](https://doi.org/10.3390/ijms24021439). *International Journal of Molecular Sciences, 24(2), 1439*.
@@ -201,22 +201,17 @@ Escanea DataCite en busca de DOIs apuntando a archivos problemáticos: artefacto
 ### [Publisher Gap: Crossref vs OpenAlex Metadata Completeness](https://metaudits.rijdho.org/publisher-gap/)
 *Active · 2026 · Crossref, OpenAlex, Metadata Quality, FAIR*
 
-¿Les importa a los editores los metadatos? Evidencia temporal comparando depósitos de Crossref vs enriquecimiento de OpenAlex a través de 15 editores principales (2015–2025). Evalúa 47 campos de metadatos en 5 categorías (FAIR + Evaluación/CoARA), con gráficos de radar de análisis de brechas, matrices de enriquecimiento y drill-downs por editor mostrando tendencias de cumplimiento de mandatos.
+¿Les importa a los editores los metadatos? Evidencia temporal comparando depósitos de Crossref vs enriquecimiento de OpenAlex a través de 14 editores principales (2015–2025). Evalúa 48 campos de metadatos en 5 categorías (FAIR + Evaluación/CoARA), con gráficos de radar de análisis de brechas, matrices de enriquecimiento y drill-downs por editor mostrando tendencias de cumplimiento de mandatos.
 
 ### [Persistence of Retracted Knowledge in Scientific Literature](https://metaudits.rijdho.org/retractions/)
 *Active · 2025 · React, Recharts, Retraction Watch, OpenAlex*
 
-Dashboard interactivo que analiza la persistencia de citas de 60.921 artículos retractados. Revela que el 56% de las citas ocurren post-retractación sin decaimiento en 15 años, disparidades geográficas en velocidad de detección y ratios planos de apoyo/contradicción en el tiempo. Construido con datos de Retraction Watch, OpenAlex y Scite.ai. También en https://observablehq.com/d/cecaefb7d49c7727
-
-### [maDMP Gap: Data Management Plans vs RDA maDMP Standard](https://metaudits.rijdho.org/madmp/)
-*Active · 2026 · RDA maDMP, Horizon Europe, ANID, FAIR*
-
-Analiza la brecha entre los planes de gestión de datos (DMP) de Horizon Europe y el estándar RDA maDMP. Evalúa 6.119 DMPs contra 48 propiedades RDA, midiendo qué proporción es mencionada en texto (77,5%) versus procesable por máquinas (22,7%). Incluye comparación con la plantilla ANID de Chile (1/48 campos procesable). Evidencia que los mandatos generan documentos narrativos, no entidades conectadas.
+Dashboard interactivo que analiza la persistencia de citas de 60.921 artículos retractados. Revela que el 46,9% de las citas ocurren post-retractación sin decaimiento significativo en 10 años, disparidades geográficas en velocidad de detección y ratios planos de apoyo/contradicción en el tiempo. Construido con datos de Retraction Watch, OpenAlex y Scite.ai. También en https://observablehq.com/d/cecaefb7d49c7727
 
 ### [ORCID Adoption: Consortium vs Non-Consortium](https://metaudits.rijdho.org/orcid-adoption/)
 *Active · 2026 · ORCID, PID Adoption, Metadata Quality, React*
 
-¿Los consorcios ORCID impulsan una adopción significativa, o solo cuentas vacías? Compara la completitud de perfiles en 88 instituciones y 200.595 perfiles de 6 continentes. Hallazgo clave: las instituciones en consorcio promedian 41,2% de completitud con 49% de perfiles vacíos, versus 40,4% y 51% en no consorcio, una diferencia de apenas +0,7pp. Los perfiles pre-2018 alcanzan ~50% (motivación intrínseca); los post-2022 caen bajo 30% (creación masiva por mandato).
+¿Los consorcios ORCID impulsan una adopción significativa, o solo cuentas vacías? Compara la completitud de perfiles en 95 instituciones y 212.651 perfiles de 6 continentes. Hallazgo clave: las instituciones en consorcio promedian 41,3% de completitud con 48,3% de perfiles vacíos, versus 40,3% y 51,7% en no consorcio, una diferencia de apenas +1,0pp. Los perfiles creados antes de 2018 superan en promedio el 60% (motivación intrínseca); los creados desde 2025 caen bajo 30% (creación masiva por mandato).
 
 ### [MCP CRIS Live](https://hub.docker.com/r/rijdho/mcp-cris-live)
 *Active · 2026 · MCP, Docker, Node.js, ORCID*
@@ -314,10 +309,9 @@ Preguntas en vivo durante una clase o un taller: opción múltiple, escalas de v
 
 ## Formación continua
 
-- **Skills4EOSC First Cohort Participant** (2025): Participante en el Learning Path Train of Trainers: Open Science and Research Data Management in the Social Sciences and Humanities, parte del programa europeo Skills4EOSC. Enfoque en servicios FAIR, infraestructuras de interoperabilidad y gobernanza aplicada de datos para instituciones de investigación.
+- **FORCE11 Scholarly Communication Institute – FSCI** (2017–2025): Completé múltiples tracks incluyendo: Governance for AI in Scientific Publications (Gobernanza de IA en publicaciones científicas), Forensic Scientometrics (Cienciometría forense), FAIR Data in the Scholarly Communication Lifecycle (Datos FAIR en el ciclo de comunicación académica), Metadata Governance (Gobernanza de metadatos), Research Reproducibility (Reproducibilidad de la investigación), Open Science in the Global South (Ciencia abierta en el Sur Global), Visualización de datos en R y D3.js, Uso de APIs (ORCID, Sherpa Romeo, Unpaywall) para análisis institucional
 - **Essentials 4 Data Support** (2023): Completé la formación oficial de RDNL para profesionales de soporte de datos de investigación. Enfocado en principios FAIR, calidad de metadatos, intercambio de datos e implementación de Planes de Gestión de Datos (DMP) robustos. Único participante activo latinoamericano en la cohorte.
 - **CWTS Scientometrics Summer School** (2020): Curso intensivo de 75 horas sobre cienciometría, indicadores bibliométricos, flujos de conocimiento y metodologías de evaluación de la investigación. Cubrió teoría y aplicación práctica para desarrollo de políticas e infraestructura.
-- **FORCE11 Scholarly Communication Institute – FSCI** (2017–2025): Completé múltiples tracks incluyendo: Governance for AI in Scientific Publications (Gobernanza de IA en publicaciones científicas), Forensic Scientometrics (Cienciometría forense), FAIR Data in the Scholarly Communication Lifecycle (Datos FAIR en el ciclo de comunicación académica), Metadata Governance (Gobernanza de metadatos), Research Reproducibility (Reproducibilidad de la investigación), Open Science in the Global South (Ciencia abierta en el Sur Global), Visualización de datos en R y D3.js, Uso de APIs (ORCID, Sherpa Romeo, Unpaywall) para análisis institucional
 - **DataCite Certified Core Training** (2024): Certificación enfocada en el uso de identificadores persistentes (PIDs), buenas prácticas de metadatos e integración de repositorios con la infraestructura de DataCite.
 
 ---

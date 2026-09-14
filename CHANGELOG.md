@@ -14,6 +14,22 @@ ships in numbered drops.
 
 ### Changed
 
+- **Figures on the MetAudits tools match the live dashboards again** (checked 2026-09-14).
+  Persistence of Retracted Knowledge: 46.9% of citations after retraction, no significant decay
+  over 10 years (was 56% and 15 years). ORCID Adoption: 95 institutions and 212,651 profiles,
+  41.3% completeness with 48.3% empty profiles against 40.3% and 51.7%, a gap of +1.0 pp (was
+  88, 200,595, 41.2/49, 40.4/51 and +0.7 pp), and the creation-year sentence follows the
+  dashboard's data rather than its caption. Publisher Gap: 14 publishers and 48 fields (was 15
+  and 47).
+- **The MetaROR preprint on Open Science governance lists its two authors**, Abedrapo Rosen and
+  Hartley Belmar; a third co-author had asked to be removed.
+- **FSCI leads the training list; the Skills4EOSC entry is gone.**
+
+### Removed
+
+- **maDMP Gap**, from the tools and from the hub's label table. The dashboard was taken offline
+  while the article it belongs to is prepared.
+
 - **The printed CV reads as a formal document.** Body text (summary, entry descriptions,
   publications, lists, skills) is justified and hyphenated in the language of the page. The
   degree line is left off the printout, and the name prints at 17pt. It had been meant to

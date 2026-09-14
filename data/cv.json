@@ -296,13 +296,13 @@
   ],
   "training": [
     {
-      "title": "Skills4EOSC First Cohort Participant",
-      "year": "2025",
+      "title": "FORCE11 Scholarly Communication Institute – FSCI",
+      "year": "2017–2025",
       "org": "",
       "desc": {
-        "en": "Participant in the Train of Trainers Learning Path: Open Science and Research Data Management in the Social Sciences and Humanities, part of the European Skills4EOSC program. Focus on FAIR-enabling services, interoperability infrastructures, and applied data governance for research institutions.",
-        "es": "Participante en el Learning Path Train of Trainers: Open Science and Research Data Management in the Social Sciences and Humanities, parte del programa europeo Skills4EOSC. Enfoque en servicios FAIR, infraestructuras de interoperabilidad y gobernanza aplicada de datos para instituciones de investigación.",
-        "de": "Teilnahme am Learning Path Train of Trainers: Open Science and Research Data Management in the Social Sciences and Humanities im Rahmen des europäischen Programms Skills4EOSC. Schwerpunkte: FAIR-fähige Dienste, Interoperabilitätsinfrastrukturen und angewandte Datengovernance für Forschungseinrichtungen."
+        "en": "Completed multiple tracks including: Governance for AI in Scientific Publications, Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Data visualization in R and D3.js, Using APIs (ORCID, Sherpa Romeo, Unpaywall) for institutional analysis",
+        "es": "Completé múltiples tracks incluyendo: Governance for AI in Scientific Publications (Gobernanza de IA en publicaciones científicas), Forensic Scientometrics (Cienciometría forense), FAIR Data in the Scholarly Communication Lifecycle (Datos FAIR en el ciclo de comunicación académica), Metadata Governance (Gobernanza de metadatos), Research Reproducibility (Reproducibilidad de la investigación), Open Science in the Global South (Ciencia abierta en el Sur Global), Visualización de datos en R y D3.js, Uso de APIs (ORCID, Sherpa Romeo, Unpaywall) para análisis institucional",
+        "de": "Abschluss mehrerer Tracks, darunter: Governance for AI in Scientific Publications, Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Datenvisualisierung in R und D3.js, Nutzung von APIs (ORCID, Sherpa Romeo, Unpaywall) für institutionelle Analysen."
       }
     },
     {
@@ -323,16 +323,6 @@
         "en": "Intensive 75-hour course on scientometrics, bibliometric indicators, knowledge flows, and research evaluation methodologies. Covered theory and practical application for policy and infrastructure development.",
         "es": "Curso intensivo de 75 horas sobre cienciometría, indicadores bibliométricos, flujos de conocimiento y metodologías de evaluación de la investigación. Cubrió teoría y aplicación práctica para desarrollo de políticas e infraestructura.",
         "de": "Intensivkurs mit 75 Stunden zu Szientometrie, bibliometrischen Indikatoren, Wissensflüssen und Methoden der Forschungsbewertung. Behandelte Theorie und praktische Anwendung für Politik- und Infrastrukturentwicklung."
-      }
-    },
-    {
-      "title": "FORCE11 Scholarly Communication Institute – FSCI",
-      "year": "2017–2025",
-      "org": "",
-      "desc": {
-        "en": "Completed multiple tracks including: Governance for AI in Scientific Publications, Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Data visualization in R and D3.js, Using APIs (ORCID, Sherpa Romeo, Unpaywall) for institutional analysis",
-        "es": "Completé múltiples tracks incluyendo: Governance for AI in Scientific Publications (Gobernanza de IA en publicaciones científicas), Forensic Scientometrics (Cienciometría forense), FAIR Data in the Scholarly Communication Lifecycle (Datos FAIR en el ciclo de comunicación académica), Metadata Governance (Gobernanza de metadatos), Research Reproducibility (Reproducibilidad de la investigación), Open Science in the Global South (Ciencia abierta en el Sur Global), Visualización de datos en R y D3.js, Uso de APIs (ORCID, Sherpa Romeo, Unpaywall) para análisis institucional",
-        "de": "Abschluss mehrerer Tracks, darunter: Governance for AI in Scientific Publications, Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Datenvisualisierung in R und D3.js, Nutzung von APIs (ORCID, Sherpa Romeo, Unpaywall) für institutionelle Analysen."
       }
     },
     {
@@ -551,7 +541,7 @@
         "url": "https://doi.org/10.15443/rintca.2025.es001"
       },
       {
-        "authors": "Abedrapo Rosen, I., Sánchez Núñez, P., & Hartley Belmar, R.",
+        "authors": "Abedrapo Rosen, I., & Hartley Belmar, R.",
         "year": "2025",
         "title": "Open Science governance: the role of persistent identifiers and metadata standards",
         "venue": "MetaResearch Open Review – MetaROR",
@@ -1028,9 +1018,9 @@
       ],
       "topic": "metadata",
       "desc": {
-        "en": "Do publishers care about metadata? Timeline evidence comparing Crossref deposits vs OpenAlex enrichment across 15 major publishers (2015–2025). Evaluates 47 metadata fields in 5 categories (FAIR + Evaluation/CoARA), with gap analysis radar charts, enrichment matrices, and per-publisher drill-downs showing mandate compliance trends.",
-        "es": "¿Les importa a los editores los metadatos? Evidencia temporal comparando depósitos de Crossref vs enriquecimiento de OpenAlex a través de 15 editores principales (2015–2025). Evalúa 47 campos de metadatos en 5 categorías (FAIR + Evaluación/CoARA), con gráficos de radar de análisis de brechas, matrices de enriquecimiento y drill-downs por editor mostrando tendencias de cumplimiento de mandatos.",
-        "de": "Kümmern sich Verlage um Metadaten? Zeitreihen-Evidenz im Vergleich von Crossref-Ablieferungen und OpenAlex-Anreicherung bei 15 großen Verlagen (2015–2025). Bewertet 47 Metadatenfelder in fünf Kategorien (FAIR + Bewertung/CoARA), mit Netzdiagrammen zur Lückenanalyse, Anreicherungsmatrizen und Detailansichten je Verlag, die Trends bei der Erfüllung von Vorgaben zeigen."
+        "en": "Do publishers care about metadata? Timeline evidence comparing Crossref deposits vs OpenAlex enrichment across 14 major publishers (2015–2025). Evaluates 48 metadata fields in 5 categories (FAIR + Evaluation/CoARA), with gap analysis radar charts, enrichment matrices, and per-publisher drill-downs showing mandate compliance trends.",
+        "es": "¿Les importa a los editores los metadatos? Evidencia temporal comparando depósitos de Crossref vs enriquecimiento de OpenAlex a través de 14 editores principales (2015–2025). Evalúa 48 campos de metadatos en 5 categorías (FAIR + Evaluación/CoARA), con gráficos de radar de análisis de brechas, matrices de enriquecimiento y drill-downs por editor mostrando tendencias de cumplimiento de mandatos.",
+        "de": "Kümmern sich Verlage um Metadaten? Zeitreihen-Evidenz im Vergleich von Crossref-Ablieferungen und OpenAlex-Anreicherung bei 14 großen Verlagen (2015–2025). Bewertet 48 Metadatenfelder in fünf Kategorien (FAIR + Bewertung/CoARA), mit Netzdiagrammen zur Lückenanalyse, Anreicherungsmatrizen und Detailansichten je Verlag, die Trends bei der Erfüllung von Vorgaben zeigen."
       },
       "id": "publisher-gap"
     },
@@ -1051,33 +1041,11 @@
       ],
       "topic": "story",
       "desc": {
-        "en": "Interactive dashboard analyzing citation persistence of 60,921 retracted articles. Reveals that 56% of citations occur post-retraction with no decay over 15 years, geographic disparities in detection speed, and flat supporting/contradicting ratios over time. Built with data from Retraction Watch, OpenAlex, and Scite.ai. Also in https://observablehq.com/d/cecaefb7d49c7727",
-        "es": "Dashboard interactivo que analiza la persistencia de citas de 60.921 artículos retractados. Revela que el 56% de las citas ocurren post-retractación sin decaimiento en 15 años, disparidades geográficas en velocidad de detección y ratios planos de apoyo/contradicción en el tiempo. Construido con datos de Retraction Watch, OpenAlex y Scite.ai. También en https://observablehq.com/d/cecaefb7d49c7727",
-        "de": "Interaktives Dashboard zur Zitationspersistenz von 60.921 zurückgezogenen Artikeln. Es zeigt, dass 56 % der Zitationen nach der Rücknahme erfolgen, ohne Rückgang über 15 Jahre, dazu geografische Unterschiede in der Erkennungsgeschwindigkeit und über die Zeit konstante Verhältnisse zwischen stützenden und widersprechenden Zitationen. Daten von Retraction Watch, OpenAlex und Scite.ai. Auch unter https://observablehq.com/d/cecaefb7d49c7727"
+        "en": "Interactive dashboard analyzing citation persistence of 60,921 retracted articles. Reveals that 46.9% of citations occur post-retraction with no significant decay over 10 years, geographic disparities in detection speed, and flat supporting/contradicting ratios over time. Built with data from Retraction Watch, OpenAlex, and Scite.ai. Also in https://observablehq.com/d/cecaefb7d49c7727",
+        "es": "Dashboard interactivo que analiza la persistencia de citas de 60.921 artículos retractados. Revela que el 46,9% de las citas ocurren post-retractación sin decaimiento significativo en 10 años, disparidades geográficas en velocidad de detección y ratios planos de apoyo/contradicción en el tiempo. Construido con datos de Retraction Watch, OpenAlex y Scite.ai. También en https://observablehq.com/d/cecaefb7d49c7727",
+        "de": "Interaktives Dashboard zur Zitationspersistenz von 60.921 zurückgezogenen Artikeln. Es zeigt, dass 46,9 % der Zitationen nach der Rücknahme erfolgen, ohne signifikanten Rückgang über 10 Jahre, dazu geografische Unterschiede in der Erkennungsgeschwindigkeit und über die Zeit konstante Verhältnisse zwischen stützenden und widersprechenden Zitationen. Daten von Retraction Watch, OpenAlex und Scite.ai. Auch unter https://observablehq.com/d/cecaefb7d49c7727"
       },
       "id": "retractions"
-    },
-    {
-      "title": "maDMP Gap: Data Management Plans vs RDA maDMP Standard",
-      "year": "2026",
-      "status": "Active",
-      "url": "https://metaudits.rijdho.org/madmp/",
-      "tags": [
-        "RDA maDMP",
-        "Horizon Europe",
-        "ANID",
-        "FAIR",
-        "Data Management Plans",
-        "React",
-        "Metadata Quality"
-      ],
-      "topic": "assessment",
-      "desc": {
-        "en": "Analyzes the gap between Horizon Europe data management plans (DMPs) and the RDA maDMP standard. Evaluates 6,119 DMPs against 48 RDA properties, measuring what proportion is mentioned in text (77.5%) versus machine-actionable (22.7%). Includes comparison with Chile's ANID template (1/48 fields machine-actionable). Evidence that mandates generate narrative documents, not connected entities.",
-        "es": "Analiza la brecha entre los planes de gestión de datos (DMP) de Horizon Europe y el estándar RDA maDMP. Evalúa 6.119 DMPs contra 48 propiedades RDA, midiendo qué proporción es mencionada en texto (77,5%) versus procesable por máquinas (22,7%). Incluye comparación con la plantilla ANID de Chile (1/48 campos procesable). Evidencia que los mandatos generan documentos narrativos, no entidades conectadas.",
-        "de": "Analysiert die Lücke zwischen Datenmanagementplänen (DMPs) aus Horizon Europe und dem RDA-maDMP-Standard. Bewertet 6.119 DMPs anhand von 48 RDA-Eigenschaften und misst, welcher Anteil im Text erwähnt (77,5 %) und welcher maschinell verarbeitbar ist (22,7 %). Enthält einen Vergleich mit der ANID-Vorlage Chiles (1 von 48 Feldern maschinell verarbeitbar). Ein Beleg dafür, dass Vorgaben narrative Dokumente hervorbringen, keine verknüpften Entitäten."
-      },
-      "id": "madmp"
     },
     {
       "title": "ORCID Adoption: Consortium vs Non-Consortium",
@@ -1094,9 +1062,9 @@
       ],
       "topic": "assessment",
       "desc": {
-        "en": "Do ORCID consortia drive meaningful adoption, or just empty accounts? Compares profile completeness across 88 institutions and 200,595 profiles from 6 continents. Key finding: consortium institutions average 41.2% completeness with 49% empty profiles, versus 40.4% and 51% for non-consortium, a gap of just +0.7pp. Pre-2018 profiles reach ~50% (intrinsic motivation); post-2022 drop below 30% (mandate-driven bulk creation).",
-        "es": "¿Los consorcios ORCID impulsan una adopción significativa, o solo cuentas vacías? Compara la completitud de perfiles en 88 instituciones y 200.595 perfiles de 6 continentes. Hallazgo clave: las instituciones en consorcio promedian 41,2% de completitud con 49% de perfiles vacíos, versus 40,4% y 51% en no consorcio, una diferencia de apenas +0,7pp. Los perfiles pre-2018 alcanzan ~50% (motivación intrínseca); los post-2022 caen bajo 30% (creación masiva por mandato).",
-        "de": "Führen ORCID-Konsortien zu substanzieller Nutzung oder nur zu leeren Konten? Vergleich der Profilvollständigkeit über 88 Einrichtungen und 200.595 Profile aus sechs Kontinenten. Zentrales Ergebnis: Einrichtungen in Konsortien erreichen im Mittel 41,2 % Vollständigkeit bei 49 % leeren Profilen, gegenüber 40,4 % und 51 % außerhalb von Konsortien – ein Unterschied von nur +0,7 Prozentpunkten. Profile von vor 2018 erreichen rund 50 % (intrinsische Motivation); Profile nach 2022 fallen unter 30 % (durch Vorgaben erzeugte Masseneinrichtung)."
+        "en": "Do ORCID consortia drive meaningful adoption, or just empty accounts? Compares profile completeness across 95 institutions and 212,651 profiles from 6 continents. Key finding: consortium institutions average 41.3% completeness with 48.3% empty profiles, versus 40.3% and 51.7% for non-consortium, a gap of just +1.0pp. Profiles created before 2018 average above 60% (intrinsic motivation); those created since 2025 fall below 30% (mandate-driven bulk creation).",
+        "es": "¿Los consorcios ORCID impulsan una adopción significativa, o solo cuentas vacías? Compara la completitud de perfiles en 95 instituciones y 212.651 perfiles de 6 continentes. Hallazgo clave: las instituciones en consorcio promedian 41,3% de completitud con 48,3% de perfiles vacíos, versus 40,3% y 51,7% en no consorcio, una diferencia de apenas +1,0pp. Los perfiles creados antes de 2018 superan en promedio el 60% (motivación intrínseca); los creados desde 2025 caen bajo 30% (creación masiva por mandato).",
+        "de": "Führen ORCID-Konsortien zu substanzieller Nutzung oder nur zu leeren Konten? Vergleich der Profilvollständigkeit über 95 Einrichtungen und 212.651 Profile aus sechs Kontinenten. Zentrales Ergebnis: Einrichtungen in Konsortien erreichen im Mittel 41,3 % Vollständigkeit bei 48,3 % leeren Profilen, gegenüber 40,3 % und 51,7 % außerhalb von Konsortien – ein Unterschied von nur +1,0 Prozentpunkten. Vor 2018 angelegte Profile liegen im Mittel über 60 % (intrinsische Motivation); seit 2025 angelegte fallen unter 30 % (durch Vorgaben erzeugte Masseneinrichtung)."
       },
       "id": "orcid-adoption"
     },
