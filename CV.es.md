@@ -183,11 +183,6 @@ Profesional de apoyo para la acreditación de programas de postgrado, en la Vice
 
 ## Herramientas y experimentos
 
-### [BiblioHelp: Academic Reference Verification](https://rijdho.github.io/bibliohelp/)
-*Active · 2026 · SvelteKit, Hono, Cloudflare Workers, D1 + Vectorize*
-
-Herramienta web que verifica bibliografías académicas contra seis APIs académicas (Crossref, OpenAlex, Open Library, OpenAIRE, Internet Archive, ISBNdb). Parsea referencias en formatos APA, MLA, Chicago y Vancouver, las clasifica como verificadas, parciales, no encontradas o probablemente fabricadas, detecta duplicados y genera reportes descargables. Incluye un complemento para Microsoft Word para verificación dentro del documento y un endpoint OAI-PMH para cosecha por bibliotecas. Construido con SvelteKit y Hono, corriendo íntegramente sobre Cloudflare (Workers, Pages, y D1 + Vectorize como caché semántica). Disponible en español, inglés y alemán.
-
 ### [MetAudits: Scielo Chile Crossref Metadata Completeness](https://metaudits.rijdho.org/scielochile/)
 *Active · 2026 · Crossref, Metadata Quality, FAIR, React*
 
@@ -287,11 +282,6 @@ Dos generadores que convierten una carpeta fuente por elemento en una única pá
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Open source*
 
 Gemelo abierto y del lado del cliente de Repo MetAudits: evaluación FAIR de metadatos para repositorios DataCite y OAI-PMH, ejecutándose enteramente en el navegador. La contraparte publicada y de código abierto del evaluador alojado.
-
-### [BiblioHelp Open: Client-Side Reference Checker](https://rijdho.github.io/bibliohelp/)
-*Active · 2026 · SvelteKit, Citation Verification, Open source*
-
-Complemento de código abierto de BiblioHelp: la app de verificación de referencias y el add-in de Word, como código y build estático. El gemelo publicado de la herramienta alojada.
 
 ### [CoARA Action Planner: Self-Assessment and Plan](https://rijdho.github.io/coara-action-planner/)
 *Active · 2026 · CoARA, Research Assessment, Open source*
