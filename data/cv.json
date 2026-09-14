@@ -945,7 +945,7 @@
       "title": "BiblioHelp: Academic Reference Verification",
       "year": "2026",
       "status": "Active",
-      "url": "https://bibliohelp.rijdho.org/",
+      "url": "https://bibliohelpc.pages.dev/",
       "tags": [
         "SvelteKit",
         "Hono",

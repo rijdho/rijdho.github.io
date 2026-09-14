@@ -183,7 +183,7 @@ Profesional de apoyo para la acreditación de programas de postgrado, en la Vice
 
 ## Herramientas y experimentos
 
-### [BiblioHelp: Academic Reference Verification](https://bibliohelp.rijdho.org/)
+### [BiblioHelp: Academic Reference Verification](https://bibliohelpc.pages.dev/)
 *Active · 2026 · SvelteKit, Hono, Cloudflare Workers, D1 + Vectorize*
 
 Herramienta web que verifica bibliografías académicas contra seis APIs académicas (Crossref, OpenAlex, Open Library, OpenAIRE, Internet Archive, ISBNdb). Parsea referencias en formatos APA, MLA, Chicago y Vancouver, las clasifica como verificadas, parciales, no encontradas o probablemente fabricadas, detecta duplicados y genera reportes descargables. Incluye un complemento para Microsoft Word para verificación dentro del documento y un endpoint OAI-PMH para cosecha por bibliotecas. Construido con SvelteKit y Hono, corriendo íntegramente sobre Cloudflare (Workers, Pages, y D1 + Vectorize como caché semántica). Disponible en español, inglés y alemán.
