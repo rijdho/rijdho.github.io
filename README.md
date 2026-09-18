@@ -27,8 +27,9 @@ under the name: FAIR Repo Audit 10.5281/zenodo.21492530, ORCID Finder
   by topic (drag, filter, click to open the live app), below two tabbed blocks for the rest
   of the CV: education, experience, engagements and training first, then publications,
   writing and talks.
-![The peer-reviewed list, 23 entries. The link sits on the title, never on the whole row, so
-the year and the author line stay unstyled. The chip on the right names what the link
+![The peer-reviewed list, 23 entries, each row labelled "Peer-reviewed" above its title as
+the other list labels its own categories. The link sits on the title, never on the whole row,
+so the year and the author line stay unstyled. The chip on the right names what the link
 actually resolves to: "DOI" only for a real doi.org address, otherwise the bare host. The
 first row reads cnachile.cl, and the second, which has no URL yet, carries no chip at
 all.](docs/hub-publications.png)

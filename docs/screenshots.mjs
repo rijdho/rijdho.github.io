@@ -63,6 +63,9 @@ await shoot(hub, '#stage', 'hub-cloud.png')
 await hub.evaluate(() => {
   // by name, not by position: the tab order is a design decision and has changed once
   document.querySelector('#tabbar_out button[data-tab="publications"]').click()
+  // the site header is sticky, so once the panel sits below the fold the element shot
+  // scrolls to it and the header covers its first rows; unstick it for the shot
+  document.querySelector('header.top').style.position = 'static'
 })
 await new Promise(r => setTimeout(r, 600))
 await shoot(hub, '#tabpanel_out', 'hub-publications.png')

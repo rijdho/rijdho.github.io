@@ -310,6 +310,9 @@ const PUBTYPE={
   preprints:{en:"Preprint",de:"Preprint",es:"Preprint"},
   other:{en:"Other",de:"Sonstiges",es:"Otro"},
 };
+/* Peer-reviewed rows carry a label too, so both lists read alike. It names the review,
+   not a genre: the group holds journal articles, a seminar series and a reviewed preprint. */
+const PEERTYPE={en:"Peer-reviewed",de:"Begutachtet",es:"Revisado por pares"};
 /* Two tabbed blocks: the path, then what he has put out. The first tab of each
    is the one that opens, so it is the only one a visitor sees without clicking. */
 const TAB_GROUPS={
@@ -536,10 +539,10 @@ function rowsWriting(){return DATA.writing.map(e=>`
 function rowsPubs(){const P=EXTRA.publications;
   const rest=Object.keys(PUBTYPE).flatMap(k=>(P[k]||[]).map(p=>({...p,kind:k})))
     .sort((a,b)=>(+b.year||0)-(+a.year||0));
-  return [["peerReviewed",P.peerReviewed||[]],["notPeerReviewed",rest]].map(([g,items])=>{if(!items.length)return"";
+  return [["peerReviewed",(P.peerReviewed||[]).map(p=>({...p,kind:"peerReviewed"}))],["notPeerReviewed",rest]].map(([g,items])=>{if(!items.length)return"";
   return `<div class="pgrp">${esc(PUBGRP[g][lang])} · ${items.length}</div>`+items.map(p=>`
     <div class="prow"><span class="pyear">${esc(p.year||"")}</span>
-      <span class="pmain">${p.kind?`<span class="ptype">${esc(PUBTYPE[p.kind][lang])}</span>`:""}
+      <span class="pmain"><span class="ptype">${esc((PUBTYPE[p.kind]||PEERTYPE)[lang])}</span>
       <div class="ptitle">${titleLink(p.title,p.url)}</div>
       <div class="pmeta">${esc(p.authors||"")}${p.venue?' · <b>'+esc(p.venue)+'</b>':''}</div></span>
       ${linkChip(p.url)}</div>`).join("");

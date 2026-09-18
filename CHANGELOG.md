@@ -20,8 +20,9 @@ ships in numbered drops.
   experiments". README screenshots regenerated; the cloud image had still shown BiblioHelp
   and maDMP Gap, both removed earlier.
 - **Publications on the hub split in two: peer-reviewed and not.** The second list runs by
-  year and names each row's category (policy paper, guide, dataset, preprint, other). The CV
-  page keeps the finer categories.
+  year and names each row's category (policy paper, guide, dataset, preprint, other); rows
+  in the first carry a "Peer-reviewed" label so both lists read alike. The CV page keeps the
+  finer categories.
 - **"Working papers" is gone as a category.** Its six entries were checked against DataCite
   and Crossref and filed by what they are: the two Authorea records under a new `preprints`
   group, the InES survey under `datasets`, and the three Zenodo records (a diagram, an
