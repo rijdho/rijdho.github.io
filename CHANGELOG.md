@@ -12,6 +12,13 @@ ships in numbered drops.
 
 ## [Unreleased]
 
+## [1.6.0] - 2026-09-18
+
+### Added
+
+- **pollen**, live audience questions for a lecture or a workshop, with its concept DOI
+  10.5281/zenodo.22685893, under Infrastructure & AI.
+
 ### Changed
 
 - **The hub opens on the CV, with the tools below.** "The rest of the story" is split into
@@ -38,12 +45,10 @@ ships in numbered drops.
 - **The MetaROR preprint on Open Science governance lists its two authors**, Abedrapo Rosen and
   Hartley Belmar; a third co-author had asked to be removed.
 - **FSCI leads the training list; the Skills4EOSC entry is gone.**
-
-### Removed
-
-- **maDMP Gap**, from the tools and from the hub's label table. The dashboard was taken offline
-  while the article it belongs to is prepared.
-
+- **The six tools named only by their repository slug say what they are**:
+  "Name: what it does", like the other twenty. The slug stays at the front because the DOI,
+  the URL and any citation use it. The curated oval labels were re-anchored to the new
+  titles, so no two ovals share a label.
 - **The printed CV reads as a formal document.** Body text (summary, entry descriptions,
   publications, lists, skills) is justified and hyphenated in the language of the page. The
   degree line is left off the printout, and the name prints at 17pt. It had been meant to
@@ -65,6 +70,13 @@ ships in numbered drops.
   themes, at 1100px and 400px wide, a comparison shown to catch a lost divider or a
   numbering restart. The cost is in Safari: page 1 now ends after the summary, because
   the first job does not fit under it.
+
+### Removed
+
+- **maDMP Gap**, from the tools and from the hub's label table. The dashboard was taken offline
+  while the article it belongs to is prepared.
+- **BiblioHelp, both entries**, the hosted tool and its open twin: the backend they relied
+  on no longer exists. Two link corrections the same day preceded the removal.
 
 ## [1.5.1] - 2026-09-02
 
@@ -437,7 +449,8 @@ Initial public site.
   folder uploads verbatim and the Markdown CVs are regenerated on every push.
 - Inter self-hosted as woff2, no font CDN.
 
-[Unreleased]: https://github.com/rijdho/rijdho.github.io/compare/v1.5.1...HEAD
+[Unreleased]: https://github.com/rijdho/rijdho.github.io/compare/v1.6.0...HEAD
+[1.6.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.5.1...v1.6.0
 [1.5.1]: https://github.com/rijdho/rijdho.github.io/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.3.0...v1.4.0
