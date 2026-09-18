@@ -240,18 +240,18 @@
     </div>
   </section>
 
-  <!-- Two tabbed blocks from the same TAB_GROUPS table: what he has put out, then the
-       path behind it. They come before the tools, which are the part a visitor browses. -->
-  <section>
-    <div class="shead"><h2 data-t="grp_out_h"></h2></div>
-    <div class="tabs" id="tabbar_out" role="tablist"></div>
-    <div class="tabpanel" id="tabpanel_out" role="tabpanel" tabindex="0"></div>
-  </section>
-
+  <!-- Two tabbed blocks from the same TAB_GROUPS table: the path first, then what he has
+       put out. They come before the tools, which are the part a visitor browses. -->
   <section>
     <div class="shead"><h2 data-t="grp_path_h"></h2></div>
     <div class="tabs" id="tabbar_path" role="tablist"></div>
     <div class="tabpanel" id="tabpanel_path" role="tabpanel" tabindex="0"></div>
+  </section>
+
+  <section>
+    <div class="shead"><h2 data-t="grp_out_h"></h2></div>
+    <div class="tabs" id="tabbar_out" role="tablist"></div>
+    <div class="tabpanel" id="tabpanel_out" role="tabpanel" tabindex="0"></div>
   </section>
 
   <section>
@@ -310,11 +310,11 @@ const PUBTYPE={
   preprints:{en:"Preprint",de:"Preprint",es:"Preprint"},
   other:{en:"Other",de:"Sonstiges",es:"Otro"},
 };
-/* Two tabbed blocks: what he has put out, then the path behind it. The first tab of each
+/* Two tabbed blocks: the path, then what he has put out. The first tab of each
    is the one that opens, so it is the only one a visitor sees without clicking. */
 const TAB_GROUPS={
-  out:["publications","writing","talks"],
   path:["education","experience","engagements","training"],
+  out:["publications","writing","talks"],
 };
 const activeTab={out:"publications",path:"education"};
 const TOPICS = {

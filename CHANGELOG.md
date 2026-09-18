@@ -15,8 +15,8 @@ ships in numbered drops.
 ### Changed
 
 - **The hub opens on the CV, with the tools below.** "The rest of the story" is split into
-  two tabbed blocks, "Publications & talks" (publications, writing, talks) and "Background"
-  (education, experience, engagements, training), and both now come before "Tools &
+  two tabbed blocks, "Background" (education, experience, engagements, training) and then
+  "Publications & talks" (publications, writing, talks), and both now come before "Tools &
   experiments". README screenshots regenerated; the cloud image had still shown BiblioHelp
   and maDMP Gap, both removed earlier.
 - **Publications on the hub split in two: peer-reviewed and not.** The second list runs by
