@@ -9,7 +9,10 @@ vanilla JS. Part of the violet-family design system (see `../CLAUDE.md`).
 `data/cv.json` is the only place CV content lives. Three consumers read it:
 
 - `index.html`: the hub. `fetch('./data/cv.json')` → derives `DATA` (apps = `experiments`,
-  writing = `portfolio`) and `EXTRA` (the tab categories), then renders the cloud + tabs.
+  writing = `portfolio`) and `EXTRA` (the tab categories), then renders the tabs + cloud.
+  The seven tabs sit in two blocks, set by `TAB_GROUPS`: publications, writing, talks
+  ("Publications & talks"), then education, experience, engagements, training
+  ("Background"). Both come before the tool cloud, by the author's decision of 2026-09-18.
   Topic assignment for the cloud is the `topic` field on each experiment, and **it is data**,
   edit it there, not in code. Topic *labels/colours* are config (the `TOPICS` object in
   `index.html`). The text inside an oval is config too: the `SHORT` table maps a title to a
@@ -118,7 +121,7 @@ GitHub Release is required and no `CITATION.cff` belongs in this repo.
 README images come from `docs/screenshots.mjs`, which drives the real pages, never a
 hand-cropped grab, which cannot be regenerated and ages into a lie. It seeds `Math.random`
 and emulates `prefers-reduced-motion` so the cloud's physics settle identically each run;
-without that, every regeneration reshuffles the ovals (25 of them) and the diff is noise. Puppeteer is a
+without that, every regeneration reshuffles the ovals (23 of them) and the diff is noise. Puppeteer is a
 tooling-only dependency and the site keeps no `package.json`.
 
 ## Before going/staying public: the leak sweep

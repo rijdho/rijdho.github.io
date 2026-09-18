@@ -240,6 +240,20 @@
     </div>
   </section>
 
+  <!-- Two tabbed blocks from the same TAB_GROUPS table: what he has put out, then the
+       path behind it. They come before the tools, which are the part a visitor browses. -->
+  <section>
+    <div class="shead"><h2 data-t="grp_out_h"></h2></div>
+    <div class="tabs" id="tabbar_out" role="tablist"></div>
+    <div class="tabpanel" id="tabpanel_out" role="tabpanel" tabindex="0"></div>
+  </section>
+
+  <section>
+    <div class="shead"><h2 data-t="grp_path_h"></h2></div>
+    <div class="tabs" id="tabbar_path" role="tablist"></div>
+    <div class="tabpanel" id="tabpanel_path" role="tabpanel" tabindex="0"></div>
+  </section>
+
   <section>
     <div class="shead">
       <h2 data-t="apps_h"></h2><span class="count" id="apps_c"></span>
@@ -262,11 +276,6 @@
     <div class="listwrap" id="listwrap"></div>
   </section>
 
-  <section>
-    <div class="shead"><h2 id="more_h"></h2></div>
-    <div class="tabs" id="tabbar" role="tablist"></div>
-    <div class="tabpanel" id="tabpanel" role="tabpanel" tabindex="0"></div>
-  </section>
 </div></main>
 
 <footer><div class="wrap">
@@ -278,7 +287,6 @@
 
 <script>
 let DATA, EXTRA, PERSONAL;
-const MORE_H={en:"The rest of the story", de:"Der Rest der Geschichte", es:"El resto de la historia"};
 const TABMETA={
   writing:{en:"Writing",de:"Publizistik",es:"Escritos"},
   publications:{en:"Publications",de:"Publikationen",es:"Publicaciones"},
@@ -288,17 +296,27 @@ const TABMETA={
   engagements:{en:"Engagements",de:"Engagements",es:"Redes"},
   training:{en:"Training",de:"Weiterbildung",es:"Formación continua"},
 };
+/* The hub splits publications in two: peer-reviewed, and everything else in one list by
+   year, each row naming its own category (cv.json keeps the finer categories, and the
+   CV page shows them). */
 const PUBGRP={
   peerReviewed:{en:"Peer-reviewed",de:"Begutachtet",es:"Revisadas por pares"},
-  policyPapers:{en:"Policy papers",de:"Policy Papers",es:"Documentos de política"},
-  guides:{en:"Guides",de:"Leitfäden",es:"Guías"},
-  datasets:{en:"Datasets",de:"Datensätze",es:"Conjuntos de datos"},
-  workingPapers:{en:"Working papers",de:"Working Papers",es:"Documentos de trabajo"},
+  notPeerReviewed:{en:"Not peer-reviewed",de:"Nicht begutachtet",es:"Sin revisión por pares"},
 };
-/* Order: what he produced, then the trajectory, then what he keeps up. The first entry
-   is also the tab that opens, so it is the only one a visitor sees without clicking. */
-const TABS=["publications","talks","writing","experience","education","engagements","training"];
-let activeTab="publications";
+const PUBTYPE={
+  policyPapers:{en:"Policy paper",de:"Policy Paper",es:"Documento de política"},
+  guides:{en:"Guide",de:"Leitfaden",es:"Guía"},
+  datasets:{en:"Dataset",de:"Datensatz",es:"Conjunto de datos"},
+  preprints:{en:"Preprint",de:"Preprint",es:"Preprint"},
+  other:{en:"Other",de:"Sonstiges",es:"Otro"},
+};
+/* Two tabbed blocks: what he has put out, then the path behind it. The first tab of each
+   is the one that opens, so it is the only one a visitor sees without clicking. */
+const TAB_GROUPS={
+  out:["publications","writing","talks"],
+  path:["education","experience","engagements","training"],
+};
+const activeTab={out:"publications",path:"education"};
 const TOPICS = {
   metadata:{v:"--t-metadata", en:"Metadata quality", de:"Metadatenqualität", es:"Calidad de metadatos"},
   assessment:{v:"--t-assessment", en:"Assessment & policy", de:"Bewertung & Politik", es:"Evaluación y política"},
@@ -307,14 +325,17 @@ const TOPICS = {
 };
 const UI = {
   en:{cv:"Full CV →", apps_h:"Tools & experiments", apps_lead:"A cloud of live tools, grouped by topic. Drag them around; click one to open it.",
+    grp_out_h:"Publications & talks", grp_path_h:"Background",
     hint:"drag · click a bubble", openmark:"dashed = open source", writ_h:"Writing", writ_lead:"Columns, essays and posts on open knowledge.",
     by:"Built by", lic:"MIT-licensed, open source", src:"Source on GitHub",
     built:"A curated view of the same data behind the CV", open:"Open", nolink:"No public URL", list:"List", cloud:"Cloud"},
   de:{cv:"Vollständiger Lebenslauf →", apps_h:"Werkzeuge & Experimente", apps_lead:"Eine Wolke aktiver Werkzeuge, nach Thema gruppiert. Ziehen; zum Öffnen klicken.",
+    grp_out_h:"Publikationen & Vorträge", grp_path_h:"Werdegang",
     hint:"ziehen · Blase anklicken", openmark:"gestrichelt = quelloffen", writ_h:"Publizistik", writ_lead:"Kolumnen, Essays und Beiträge zu offenem Wissen.",
     by:"Erstellt von", lic:"MIT-Lizenz, quelloffen", src:"Quellcode auf GitHub",
     built:"Eine kuratierte Ansicht derselben CV-Daten", open:"Öffnen", nolink:"Keine öffentliche URL", list:"Liste", cloud:"Wolke"},
   es:{cv:"CV completo →", apps_h:"Herramientas y experimentos", apps_lead:"Una nube de herramientas vivas, agrupadas por tópico. Arrástralas; haz clic para abrir.",
+    grp_out_h:"Publicaciones y charlas", grp_path_h:"Trayectoria",
     hint:"arrastra · haz clic en una burbuja", openmark:"discontinuo = código abierto", writ_h:"Escritos", writ_lead:"Columnas, ensayos y publicaciones sobre conocimiento abierto.",
     by:"Hecho por", lic:"Licencia MIT, código abierto", src:"Código en GitHub",
     built:"Una vista curada de los mismos datos del CV", open:"Abrir", nolink:"Sin URL pública", list:"Lista", cloud:"Nube"},
@@ -512,11 +533,14 @@ function rowsWriting(){return DATA.writing.map(e=>`
     <span class="pmain"><span class="ptype">${esc(e.type||"Writing")}</span>
       <div class="ptitle">${titleLink(e.title,e.url)}</div><div class="pmeta">${esc(blurb(e))}</div></span>
     ${linkChip(e.url)}</div>`).join("");}
-function rowsPubs(){return ["peerReviewed","policyPapers","guides","datasets","workingPapers"].map(g=>{
-  const items=EXTRA.publications[g]||[];if(!items.length)return"";
+function rowsPubs(){const P=EXTRA.publications;
+  const rest=Object.keys(PUBTYPE).flatMap(k=>(P[k]||[]).map(p=>({...p,kind:k})))
+    .sort((a,b)=>(+b.year||0)-(+a.year||0));
+  return [["peerReviewed",P.peerReviewed||[]],["notPeerReviewed",rest]].map(([g,items])=>{if(!items.length)return"";
   return `<div class="pgrp">${esc(PUBGRP[g][lang])} · ${items.length}</div>`+items.map(p=>`
     <div class="prow"><span class="pyear">${esc(p.year||"")}</span>
-      <span class="pmain"><div class="ptitle">${titleLink(p.title,p.url)}</div>
+      <span class="pmain">${p.kind?`<span class="ptype">${esc(PUBTYPE[p.kind][lang])}</span>`:""}
+      <div class="ptitle">${titleLink(p.title,p.url)}</div>
       <div class="pmeta">${esc(p.authors||"")}${p.venue?' · <b>'+esc(p.venue)+'</b>':''}</div></span>
       ${linkChip(p.url)}</div>`).join("");
   }).join("");}
@@ -542,11 +566,12 @@ function rowsTrain(){return EXTRA.training.map(e=>`
     <span class="pmain"><div class="ptitle">${esc(e.title)}</div>
     <div class="pmeta">${e.org?'<b>'+esc(e.org)+'</b> · ':''}${esc(deLbl(e.desc))}</div></span></div>`).join("");}
 const PANEL={writing:rowsWriting,publications:rowsPubs,talks:rowsTalks,experience:rowsExp,education:rowsEdu,engagements:rowsEng,training:rowsTrain};
-function renderTabbar(){document.getElementById("tabbar").innerHTML=TABS.map(k=>`
-  <button class="tab" role="tab" data-tab="${k}" aria-selected="${activeTab===k}">${esc(TABMETA[k][lang])}<span class="n">${pcount(k)}</span></button>`).join("");
-  document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{activeTab=b.dataset.tab;renderTabbar();renderPanel();
-    const tp=document.getElementById("tabpanel");tp.scrollTop=0;});}
-function renderPanel(){document.getElementById("tabpanel").innerHTML=(PANEL[activeTab]||rowsWriting)();}
+function renderTabbar(g){const bar=document.getElementById("tabbar_"+g);
+  bar.innerHTML=TAB_GROUPS[g].map(k=>`
+  <button class="tab" role="tab" data-tab="${k}" aria-selected="${activeTab[g]===k}">${esc(TABMETA[k][lang])}<span class="n">${pcount(k)}</span></button>`).join("");
+  bar.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{activeTab[g]=b.dataset.tab;renderTabbar(g);renderPanel(g);
+    document.getElementById("tabpanel_"+g).scrollTop=0;});}
+function renderPanel(g){document.getElementById("tabpanel_"+g).innerHTML=PANEL[activeTab[g]]();}
 
 /* ---------- render all ---------- */
 function render(){const t=UI[lang];
@@ -559,10 +584,9 @@ function render(){const t=UI[lang];
     if(PERSONAL.substack)sc.href=PERSONAL.substack;}
   document.documentElement.lang=lang;
   document.getElementById("apps_c").textContent=DATA.apps.length;
-  document.getElementById("more_h").textContent=MORE_H[lang];
   renderLegend();renderList();
   if(selected)select(selected);
-  renderTabbar();renderPanel();}
+  for(const g in TAB_GROUPS){renderTabbar(g);renderPanel(g);}}
 
 /* ---------- controls ---------- */
 document.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{lang=b.dataset.lang;

@@ -62,10 +62,10 @@ await shoot(hub, '#stage', 'hub-cloud.png')
 // ---- the hub: the publications tab, where each chip names what it resolves to ----
 await hub.evaluate(() => {
   // by name, not by position: the tab order is a design decision and has changed once
-  document.querySelector('#tabbar button[data-tab="publications"]').click()
+  document.querySelector('#tabbar_out button[data-tab="publications"]').click()
 })
 await new Promise(r => setTimeout(r, 600))
-await shoot(hub, '#tabpanel', 'hub-publications.png')
+await shoot(hub, '#tabpanel_out', 'hub-publications.png')
 
 // ---- the academic CV page, in German, to show the content is translated too ----
 const cv = await newPage(`${BASE}/cv.html`)

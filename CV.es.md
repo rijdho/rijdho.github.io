@@ -132,15 +132,18 @@ Profesional de apoyo para la acreditación de programas de postgrado, en la Vice
 - Abedrapo Rosen, I., Martínez Concha, K. Y., & Hartley Belmar, R. (2025). [Repositorios InES Chile 2021–2022 [Dataset]](https://doi.org/10.5281/zenodo.15122025). *Zenodo*.
 - Hartley, R., & Abedrapo Rosen, I. (2024). [Chilean Repositories and Universities 2023 [Dataset]](https://doi.org/10.5281/zenodo.10557244). *Zenodo*.
 - Hartley, R., & Abedrapo Rosen, I. (2024). [Template of the Research Data Management Plan of the Universidad Central de Chile](https://doi.org/10.5281/zenodo.10067319). *Zenodo*.
+- Hartley, R. (2022). [Encuesta InES Ciencia Abierta UCen](https://doi.org/10.53962/g169-xhey). *ResearchEquals*.
 
-### Documentos de trabajo
+### Preprints
+
+- Hartley, R., Priego, E., Tobar, D., Pérez Comisso, M., & Gainza, C. (2017). [¿Abrir o no abrir? Nuevos pasos del Movimiento Open en Chile](https://doi.org/10.22541/au.151379546.63292744). *Authorea*.
+- Priego, E., Posada, A., Hartley, R., Rodríguez Ortega, N., Fiormonte, D., Gil, A., Logan, C., Alperin, J. P., Mounce, R., Eglen, S. J., Miranda Trigueros, E., Lawson, S., Gatto, L., Ramos, A., & Pérez, N. (2017). [Scholarly Publishing, Freedom of Information and Academic Self-Determination: The UNAM-Elsevier Case](https://doi.org/10.22541/au.151160332.22737207). *Authorea*.
+
+### Otras publicaciones
 
 - Hartley Belmar, R., & Atenas, J. (2024). [Estructuras a considerar y coordinar para una gobernanza ética de datos de investigación](https://doi.org/10.5281/zenodo.13754250). *Zenodo*.
 - Atenas, J., Hartley, R., & Quiroz, S. (2023). [Ethics as a research method](https://doi.org/10.5281/zenodo.8006751). *Zenodo*.
 - Hartley, R., & Abedrapo Rosen, I. (2023). [Centralizing the ways in which science is classified](https://doi.org/10.5281/zenodo.8092607). *Zenodo*.
-- Hartley, R. (2022). [Encuesta InES Ciencia Abierta UCen](https://doi.org/10.53962/g169-xhey). *ResearchEquals*.
-- Hartley, R., Priego, E., Tobar, D., Pérez Comisso, M., & Gainza, C. (2017). [¿Abrir o no abrir? Nuevos pasos del Movimiento Open en Chile](https://doi.org/10.22541/au.151379546.63292744). *Authorea (preprint)*.
-- Priego, E., Posada, A., Hartley, R., Rodríguez Ortega, N., Fiormonte, D., Gil, A., Logan, C., Alperin, J. P., Mounce, R., Eglen, S. J., Miranda Trigueros, E., Lawson, S., Gatto, L., Ramos, A., & Pérez, N. (2017). [Scholarly Publishing, Freedom of Information and Academic Self-Determination: The UNAM-Elsevier Case](https://doi.org/10.22541/au.151160332.22737207). *Authorea (preprint)*.
 
 
 ## Charlas y presentaciones

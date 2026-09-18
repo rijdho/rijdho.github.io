@@ -804,9 +804,32 @@
         "title": "Template of the Research Data Management Plan of the Universidad Central de Chile",
         "venue": "Zenodo",
         "url": "https://doi.org/10.5281/zenodo.10067319"
+      },
+      {
+        "authors": "Hartley, R.",
+        "year": "2022",
+        "title": "Encuesta InES Ciencia Abierta UCen",
+        "venue": "ResearchEquals",
+        "url": "https://doi.org/10.53962/g169-xhey"
       }
     ],
-    "workingPapers": [
+    "preprints": [
+      {
+        "authors": "Hartley, R., Priego, E., Tobar, D., Pérez Comisso, M., & Gainza, C.",
+        "year": "2017",
+        "title": "¿Abrir o no abrir? Nuevos pasos del Movimiento Open en Chile",
+        "venue": "Authorea",
+        "url": "https://doi.org/10.22541/au.151379546.63292744"
+      },
+      {
+        "authors": "Priego, E., Posada, A., Hartley, R., Rodríguez Ortega, N., Fiormonte, D., Gil, A., Logan, C., Alperin, J. P., Mounce, R., Eglen, S. J., Miranda Trigueros, E., Lawson, S., Gatto, L., Ramos, A., & Pérez, N.",
+        "year": "2017",
+        "title": "Scholarly Publishing, Freedom of Information and Academic Self-Determination: The UNAM-Elsevier Case",
+        "venue": "Authorea",
+        "url": "https://doi.org/10.22541/au.151160332.22737207"
+      }
+    ],
+    "other": [
       {
         "authors": "Hartley Belmar, R., & Atenas, J.",
         "year": "2024",
@@ -827,27 +850,6 @@
         "title": "Centralizing the ways in which science is classified",
         "venue": "Zenodo",
         "url": "https://doi.org/10.5281/zenodo.8092607"
-      },
-      {
-        "authors": "Hartley, R.",
-        "year": "2022",
-        "title": "Encuesta InES Ciencia Abierta UCen",
-        "venue": "ResearchEquals",
-        "url": "https://doi.org/10.53962/g169-xhey"
-      },
-      {
-        "authors": "Hartley, R., Priego, E., Tobar, D., Pérez Comisso, M., & Gainza, C.",
-        "year": "2017",
-        "title": "¿Abrir o no abrir? Nuevos pasos del Movimiento Open en Chile",
-        "venue": "Authorea (preprint)",
-        "url": "https://doi.org/10.22541/au.151379546.63292744"
-      },
-      {
-        "authors": "Priego, E., Posada, A., Hartley, R., Rodríguez Ortega, N., Fiormonte, D., Gil, A., Logan, C., Alperin, J. P., Mounce, R., Eglen, S. J., Miranda Trigueros, E., Lawson, S., Gatto, L., Ramos, A., & Pérez, N.",
-        "year": "2017",
-        "title": "Scholarly Publishing, Freedom of Information and Academic Self-Determination: The UNAM-Elsevier Case",
-        "venue": "Authorea (preprint)",
-        "url": "https://doi.org/10.22541/au.151160332.22737207"
       }
     ]
   },

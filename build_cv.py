@@ -25,7 +25,8 @@ PUBGRP = {"peerReviewed":{"en":"Peer-reviewed","de":"Begutachtet","es":"Revisada
   "policyPapers":{"en":"Policy papers","de":"Policy Papers","es":"Documentos de política"},
   "guides":{"en":"Guides","de":"Leitfäden","es":"Guías"},
   "datasets":{"en":"Datasets","de":"Datensätze","es":"Conjuntos de datos"},
-  "workingPapers":{"en":"Working papers","de":"Working Papers","es":"Documentos de trabajo"}}
+  "preprints":{"en":"Preprints","de":"Preprints","es":"Preprints"},
+  "other":{"en":"Other outputs","de":"Weitere Veröffentlichungen","es":"Otras publicaciones"}}
 
 def build(lang):
     T = LABELS[lang]

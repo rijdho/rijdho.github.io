@@ -14,6 +14,19 @@ ships in numbered drops.
 
 ### Changed
 
+- **The hub opens on the CV, with the tools below.** "The rest of the story" is split into
+  two tabbed blocks, "Publications & talks" (publications, writing, talks) and "Background"
+  (education, experience, engagements, training), and both now come before "Tools &
+  experiments". README screenshots regenerated; the cloud image had still shown BiblioHelp
+  and maDMP Gap, both removed earlier.
+- **Publications on the hub split in two: peer-reviewed and not.** The second list runs by
+  year and names each row's category (policy paper, guide, dataset, preprint, other). The CV
+  page keeps the finer categories.
+- **"Working papers" is gone as a category.** Its six entries were checked against DataCite
+  and Crossref and filed by what they are: the two Authorea records under a new `preprints`
+  group, the InES survey under `datasets`, and the three Zenodo records (a diagram, an
+  interactive resource and a self-declared article) under a new `other` group. A test now
+  fails if a publication category is missing from any of the three consumers.
 - **Figures on the MetAudits tools match the live dashboards again** (checked 2026-09-14).
   Persistence of Retracted Knowledge: 46.9% of citations after retraction, no significant decay
   over 10 years (was 56% and 15 years). ORCID Adoption: 95 institutions and 212,651 profiles,

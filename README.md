@@ -13,19 +13,20 @@ from this origin.
 Available in **English, German and Spanish** (auto-detected, switchable): interface and
 content both, including every long description.
 
-![The tool cloud: 25 ovals grouped into four colour-coded topics, Metadata quality 8,
-Assessment & policy 6, Infrastructure & AI 9, Data storytelling 2. Related projects touch
-rather than repel, so BiblioHelp sits against BiblioHelp (open) and Repo MetAudits against
-FAIR Repo Audit. A dashed outline marks an open GitHub twin, and a note in the corner says
-so. Four ovals carry a Zenodo concept DOI under the name: FAIR Repo Audit
-10.5281/zenodo.21492530, ORCID Finder 10.5281/zenodo.22227424, ORI Benefits
-10.5281/zenodo.22231440 and CoARA Planner 10.5281/zenodo.21492548.](docs/hub-cloud.png)
+![The tool cloud: 23 ovals grouped into four colour-coded topics, Metadata quality 6,
+Assessment & policy 5, Infrastructure & AI 10, Data storytelling 2. Related projects touch
+rather than repel, so Repo MetAudits sits against FAIR Repo Audit. A dashed outline marks an
+open GitHub twin, and a note in the corner says so. Five ovals carry a Zenodo concept DOI
+under the name: FAIR Repo Audit 10.5281/zenodo.21492530, ORCID Finder
+10.5281/zenodo.22227424, CoARA Planner 10.5281/zenodo.21492548, ORI Benefits
+10.5281/zenodo.22231440 and pollen 10.5281/zenodo.22685893.](docs/hub-cloud.png)
 
 ## The three views
 
-- **The hub** (`index.html`): the 25 tools and experiments as a cloud of ovals grouped
-  by topic (drag, filter, click to open the live app), plus a tabbed section for the rest
-  of the CV: writing, publications, talks, experience, education, engagements, training.
+- **The hub** (`index.html`): the 23 tools and experiments as a cloud of ovals grouped
+  by topic (drag, filter, click to open the live app), below two tabbed blocks for the rest
+  of the CV: publications, writing and talks first, then education, experience, engagements
+  and training.
 ![The peer-reviewed list, 23 entries. The link sits on the title, never on the whole row, so
 the year and the author line stay unstyled. The chip on the right names what the link
 actually resolves to: "DOI" only for a real doi.org address, otherwise the bare host. The
@@ -78,7 +79,9 @@ and must be one of `metadata`, `assessment`, `infra`, `story`.
 ```
 
 **A new publication:** add to the right group under `publications`
-(`peerReviewed`, `policyPapers`, `guides`, `datasets`, `workingPapers`):
+(`peerReviewed`, `policyPapers`, `guides`, `datasets`, `preprints`, `other`). The CV page
+shows all six; the hub shows two, peer-reviewed and not, and names the category on each row
+of the second:
 
 ```json
 { "authors": "Hartley Belmar, R.", "year": "2026", "title": "Paper title",

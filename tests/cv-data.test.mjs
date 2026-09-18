@@ -108,3 +108,22 @@ test('a twin, when present, carries both a title and a url', () => {
     assert.ok(e.twin.title, `"${e.title}" has a twin with no title`);
   }
 });
+
+// ── publication categories ──────────────────────────────────────────────────
+
+test('every publication category is shown by all three consumers', () => {
+  // A category the consumers do not know renders nowhere: cv.html and the hub walk
+  // their own list of keys, so an entry filed under a new or misspelt key would drop
+  // out of the CV in silence while the JSON stays valid.
+  const cvhtml = read('../cv.html');
+  const builder = read('../build_cv.py');
+  const order = JSON.parse(cvhtml.match(/const groups=(\[[^\]]*\])/)[1]);
+  const hubType = html.slice(html.indexOf('const PUBTYPE={'), html.indexOf('};', html.indexOf('const PUBTYPE={')));
+  const builderGrp = builder.slice(builder.indexOf('PUBGRP = {'), builder.indexOf('}}', builder.indexOf('PUBGRP = {')));
+  for (const key of Object.keys(CV.publications)) {
+    assert.ok(order.includes(key), `cv.html does not list publications.${key}`);
+    assert.ok(builderGrp.includes(`"${key}":`), `build_cv.py has no label for publications.${key}`);
+    assert.ok(key === 'peerReviewed' || hubType.includes(`${key}:`),
+      `index.html has no row label for publications.${key}`);
+  }
+});

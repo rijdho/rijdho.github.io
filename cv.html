@@ -161,7 +161,8 @@ const UI = {
 const PUBGRP={peerReviewed:{en:"Peer-reviewed",de:"Begutachtet",es:"Revisadas por pares"},
   policyPapers:{en:"Policy papers",de:"Policy Papers",es:"Documentos de política"},
   guides:{en:"Guides",de:"Leitfäden",es:"Guías"},datasets:{en:"Datasets",de:"Datensätze",es:"Conjuntos de datos"},
-  workingPapers:{en:"Working papers",de:"Working Papers",es:"Documentos de trabajo"}};
+  preprints:{en:"Preprints",de:"Preprints",es:"Preprints"},
+  other:{en:"Other outputs",de:"Weitere Veröffentlichungen",es:"Otras publicaciones"}};
 
 let lang="en";
 const esc=s=>(s||"").replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
@@ -212,7 +213,7 @@ function render(){
     <span class="when">${esc(e.year)}</span></div>`));
 
   // Publications: each group's subheading is kept with its first entry too
-  const groups=["peerReviewed","policyPapers","guides","datasets","workingPapers"].filter(g=>(CV.publications[g]||[]).length);
+  const groups=["peerReviewed","policyPapers","guides","datasets","preprints","other"].filter(g=>(CV.publications[g]||[]).length);
   const pubN=groups.reduce((n,g)=>n+CV.publications[g].length,0);
   H.push(`<section>`+groups.map((g,i)=>keep((i?"":h2("publications",pubN))+`<div class="subh">${esc(PUBGRP[g][lang])}</div>`,
     CV.publications[g].map(it=>{const ti=it.url?`<a href="${esc(it.url)}">${esc(it.title)}</a>`:esc(it.title);
