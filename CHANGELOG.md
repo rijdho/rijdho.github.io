@@ -17,6 +17,8 @@ ships in numbered drops.
 - **The cloud names Research Assessment Reform Planner in full**, not Reform Planner: the short form
   was the ambiguity the rename removed. The label limit in `tests/hub-ui.test.mjs` goes from 20 to
   34 characters to hold it.
+- **The Barcelona oval reads Value of Open Research Information**, the project's own name, not ORI
+  Benefits; exactly 34 characters, the most an oval holds on a phone.
 
 ## [1.7.0]: 2026-09-24
 

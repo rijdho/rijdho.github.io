@@ -75,7 +75,7 @@ const SHORT=[
   [/BiblioHelp/,"BiblioHelp"],[/^Metaudits/,"Metaudits"],[/^Pollen/,"Pollen"],
   [/MCP CRIS Live: OpenAIRE/,"MCP OpenAIRE"],
   [/MCP CRIS Live/,"MCP CRIS"],[/OpenAIRE Research/,"OpenAIRE AI"],
-  [/PID Traceability/,"PID Workflows"],[/Value of Open Research Information/,"ORI Benefits"],
+  [/PID Traceability/,"PID Workflows"],[/Value of Open Research Information/,"Value of Open Research Information"],
   [/DART Documentation Generators/,"DART Docs"],[/Renku 2\.0 Deployment/,"Renku 2.0 (IT:U)"],
   [/Open Science Strategy/,"OS Strategy (IT:U)"],[/maDMP Template/,"maDMP Template"]];
 /* Fallback for a title with no curated label: keep the name, drop the subtitle. The

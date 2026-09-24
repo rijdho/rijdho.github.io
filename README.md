@@ -18,7 +18,7 @@ Assessment & policy 4, Infrastructure & AI 10, Data storytelling 1. Related proj
 rather than repel, so FAIR Metadata Check (Extended) sits against FAIR Metadata Check. A dashed outline marks an
 open GitHub twin, and a note in the corner says so. Five ovals carry a Zenodo concept DOI
 under the name: FAIR Metadata Check 10.5281/zenodo.21492530, Affiliation Finder
-10.5281/zenodo.22227424, Research Assessment Reform Planner 10.5281/zenodo.21492548, ORI Benefits
+10.5281/zenodo.22227424, Research Assessment Reform Planner 10.5281/zenodo.21492548, Value of Open Research Information
 10.5281/zenodo.22231440 and Pollen 10.5281/zenodo.22685893.](docs/hub-cloud.png)
 
 ## The three views
