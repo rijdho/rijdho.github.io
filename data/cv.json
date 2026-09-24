@@ -1270,7 +1270,7 @@
     },
     {
       "id": "coara",
-      "title": "Reform Action Planner: Self-Assessment and Plan",
+      "title": "Research Assessment Reform Planner: Self-Assessment and Plan",
       "year": "2026",
       "status": "Active",
       "url": "https://rijdho.github.io/coara-action-planner/",
@@ -1288,7 +1288,7 @@
         "de": "Bewerten Sie Ihre Einrichtung selbst anhand der zehn CoARA-Verpflichtungen und erzeugen Sie einen priorisierten, bearbeitbaren Aktionsplan – vollständig im Browser. Der offene Zwilling des Reform-Assessment-Toolkits."
       },
       "twin": {
-        "title": "Reform Assessment Toolkit",
+        "title": "Research Assessment Reform Toolkit",
         "url": "https://metaudits.rijdho.org/reform-assessment/"
       }
     },

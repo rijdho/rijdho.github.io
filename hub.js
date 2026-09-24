@@ -70,7 +70,7 @@ const SHORT=[
      panel. */
   [/^BiblioHelp Open/,"BiblioHelp (open)"],[/^FAIR Readout Server/,"FAIR Readout Server"],
   [/^FAIR Readout/,"FAIR Readout"],
-  [/^Reform Action Planner/,"Reform Planner"],[/^Affiliation Finder/,"Affiliation Finder"],
+  [/^Research Assessment Reform Planner/,"Reform Planner"],[/^Affiliation Finder/,"Affiliation Finder"],
   [/^Sound Inequality/,"Sound Inequality"],
   [/BiblioHelp/,"BiblioHelp"],[/^Metaudits/,"Metaudits"],[/^Pollen/,"Pollen"],
   [/MCP CRIS Live: OpenAIRE/,"MCP OpenAIRE"],

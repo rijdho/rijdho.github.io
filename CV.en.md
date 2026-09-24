@@ -266,12 +266,12 @@ Two generators that turn one source folder per item into a single self-contained
 
 Open, client-side twin of FAIR Readout Server: FAIR metadata scoring for DataCite and OAI-PMH repositories, running entirely in the browser. The published, open-source counterpart of the hosted evaluator.
 
-### [Reform Action Planner: Self-Assessment and Plan](https://rijdho.github.io/coara-action-planner/)
+### [Research Assessment Reform Planner: Self-Assessment and Plan](https://rijdho.github.io/coara-action-planner/)
 *Active · 2026 · CoARA, Research Assessment, Open source*
 
 Self-assess your institution against the ten CoARA commitments and generate a prioritised, editable action plan, entirely in your browser. The open twin of the Reform Assessment toolkit.
 
-↔ [Reform Assessment Toolkit](https://metaudits.rijdho.org/reform-assessment/)
+↔ [Research Assessment Reform Toolkit](https://metaudits.rijdho.org/reform-assessment/)
 
 ### [The Value of Open Research Information (Barcelona WG7-TF2)](https://rijdho.github.io/barcelona-wg7-tf2/)
 *Draft · 2026 · Barcelona Declaration, Open Research Information, Taxonomy, Research policy*

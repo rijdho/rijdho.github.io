@@ -266,12 +266,12 @@ Zwei Generatoren, die je einen Quellordner pro Eintrag in eine einzige, in sich 
 
 Offener, clientseitiger Zwilling von FAIR Readout Server – FAIR-Metadatenbewertung für DataCite- und OAI-PMH-Repositorien, vollständig im Browser. Das veröffentlichte Open-Source-Gegenstück zum gehosteten Evaluator.
 
-### [Reform Action Planner: Self-Assessment and Plan](https://rijdho.github.io/coara-action-planner/)
+### [Research Assessment Reform Planner: Self-Assessment and Plan](https://rijdho.github.io/coara-action-planner/)
 *Active · 2026 · CoARA, Research Assessment, Open source*
 
 Bewerten Sie Ihre Einrichtung selbst anhand der zehn CoARA-Verpflichtungen und erzeugen Sie einen priorisierten, bearbeitbaren Aktionsplan – vollständig im Browser. Der offene Zwilling des Reform-Assessment-Toolkits.
 
-↔ [Reform Assessment Toolkit](https://metaudits.rijdho.org/reform-assessment/)
+↔ [Research Assessment Reform Toolkit](https://metaudits.rijdho.org/reform-assessment/)
 
 ### [The Value of Open Research Information (Barcelona WG7-TF2)](https://rijdho.github.io/barcelona-wg7-tf2/)
 *Draft · 2026 · Barcelona Declaration, Open Research Information, Taxonomy, Research policy*

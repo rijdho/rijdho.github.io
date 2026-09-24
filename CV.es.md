@@ -266,12 +266,12 @@ Dos generadores que convierten una carpeta fuente por elemento en una única pá
 
 Gemelo abierto y del lado del cliente de FAIR Readout Server: evaluación FAIR de metadatos para repositorios DataCite y OAI-PMH, ejecutándose enteramente en el navegador. La contraparte publicada y de código abierto del evaluador alojado.
 
-### [Reform Action Planner: Self-Assessment and Plan](https://rijdho.github.io/coara-action-planner/)
+### [Research Assessment Reform Planner: Self-Assessment and Plan](https://rijdho.github.io/coara-action-planner/)
 *Active · 2026 · CoARA, Research Assessment, Open source*
 
 Autoevalúa tu institución frente a los diez compromisos CoARA y genera un plan de acción priorizado y editable, enteramente en el navegador. El gemelo abierto del toolkit Reform Assessment.
 
-↔ [Reform Assessment Toolkit](https://metaudits.rijdho.org/reform-assessment/)
+↔ [Research Assessment Reform Toolkit](https://metaudits.rijdho.org/reform-assessment/)
 
 ### [The Value of Open Research Information (Barcelona WG7-TF2)](https://rijdho.github.io/barcelona-wg7-tf2/)
 *Draft · 2026 · Barcelona Declaration, Open Research Information, Taxonomy, Research policy*

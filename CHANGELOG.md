@@ -12,6 +12,12 @@ ships in numbered drops.
 
 ## [Unreleased]
 
+### Renamed
+
+- **Research Assessment Reform Planner** and **Research Assessment Reform Toolkit** (were Reform
+  Action Planner and Reform Assessment Toolkit), in the CV and the cloud's tooltip; the oval keeps
+  its short label, Reform Planner.
+
 ### Changed
 
 - **Two columns, in the family's shell** (house-style, synced into `house/`): the rail lists the
