@@ -70,7 +70,7 @@ const SHORT=[
      panel. */
   [/^BiblioHelp Open/,"BiblioHelp (open)"],[/^FAIR Metadata Check \(Extended\)/,"FAIR Check Extended"],
   [/^FAIR Metadata Check/,"FAIR Check"],
-  [/^Research Assessment Reform Planner/,"Research Assessment Reform Planner"],[/^Affiliation Finder/,"Affiliation Finder"],
+  [/^Research Assessment Reform Planner/,"Research Assessment Reform Planner"],[/^ORCID Affiliation Finder/,"ORCID Affiliation Finder"],
   [/^Sound Inequality/,"Sound Inequality"],
   [/BiblioHelp/,"BiblioHelp"],[/^Metaudits/,"Metaudits"],[/^Pollen/,"Pollen"],
   [/MCP CRIS Live: OpenAIRE/,"MCP OpenAIRE"],
@@ -350,7 +350,11 @@ addEventListener("resize",()=>{if(!isList){layout();initBubbles();start();}});
   const CV=await (await fetch("./data/cv.json")).json();
   PERSONAL=CV.personal;
   const wb=e=>({...e,blurb_en:e.desc.en,blurb_es:e.desc.es,blurb_de:e.desc.de||""});
-  DATA={apps:CV.experiments.map(wb),writing:CV.portfolio.map(wb)};
+  // The cloud holds the tools themselves. The entry that stands for the Metaudits front page (the
+  // CV's single line for the dashboards) stays in the CV but not here: the rail and the line above
+  // the cloud already link to that page, and an oval for it would be the third.
+  const index=PERSONAL.toolsIndexUrl;
+  DATA={apps:CV.experiments.filter(e=>!index||e.url!==index).map(wb),writing:CV.portfolio.map(wb)};
   EXTRA={publications:CV.publications,talks:CV.presentations,experience:CV.experience,
     education:CV.education,training:CV.training};
   layout();initBubbles();render();start();
