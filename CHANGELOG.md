@@ -14,6 +14,18 @@ ships in numbered drops.
 
 ### Changed
 
+- **Two columns, in the family's shell** (house-style, synced into `house/`): the rail lists the
+  sections, grouped as before (Background, Publications & talks, Tools & experiments, and a link to
+  Metaudits); the main column keeps the hero at the top and shows the chosen section under it, with
+  its own address (`#publications`, `#tools`). On a phone the rail is a menu.
+
+### Fixed
+
+- **The cloud's labels are drawn in monospace.** They were measured in monospace and drawn in the first
+  name of the stack, ui-monospace, which canvas does not know, so Chrome drew them in a serif.
+
+### Changed
+
 - **The tools carry their new names**: FAIR Readout, FAIR Readout Server, Affiliation Finder,
   Reform Action Planner (twin: Reform Assessment Toolkit) and Pollen, in the CV and in the cloud
   labels.

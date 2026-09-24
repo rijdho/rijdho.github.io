@@ -15,6 +15,8 @@
 <meta property="og:image:alt" content="The tool cloud on the hub: ovals grouped into four colour-coded topics, one per tool.">
 <meta name="twitter:card" content="summary_large_image">
 <!-- social:end -->
+<!-- The family shell (a synced copy of rijdho/house-style: scripts/sync-house.mjs), then this page's own styles. -->
+<link rel="stylesheet" href="./house/house.css?v=1">
 <style>
 @font-face{font-family:"Inter Variable";font-style:normal;font-display:swap;font-weight:100 900;
   src:url(./fonts/inter-latin-wght-normal.woff2) format("woff2-variations");
@@ -63,14 +65,8 @@
     line-height:1.55;font-size:15.5px;-webkit-font-smoothing:antialiased;
     background-image:radial-gradient(circle at 12% -8%, color-mix(in srgb, var(--brand) 7%, transparent), transparent 42%)}
   a{color:inherit}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
   .eyebrow{font-family:var(--mono);font-size:.66rem;letter-spacing:.19em;text-transform:uppercase;color:var(--brand);font-weight:600}
 
-  header.top{position:sticky;top:0;z-index:30;backdrop-filter:saturate(1.2) blur(8px);
-    background:color-mix(in srgb, var(--paper) 82%, transparent);border-bottom:1px solid var(--hair)}
-  .top .wrap{display:flex;align-items:center;gap:12px;height:58px}
-  .word{font-family:var(--mono);font-weight:600;font-size:.9rem;display:flex;align-items:center;gap:9px}
-  .dot{width:11px;height:11px;border-radius:3px;background:var(--brand);box-shadow:0 0 0 3px var(--brand-weak)}
   .spacer{flex:1}
   .seg{display:inline-flex;border:1px solid var(--border);border-radius:9px;overflow:hidden;background:var(--surface)}
   .seg button{appearance:none;border:0;background:transparent;color:var(--muted);font-family:var(--mono);
@@ -81,7 +77,7 @@
   .icbtn:hover{color:var(--ink)}
   button:focus-visible,a:focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:6px}
 
-  .hero{padding:48px 0 20px}
+  .hero{padding:8px 0 12px}
   .hero h1{font-size:clamp(1.8rem,4.4vw,2.9rem);line-height:1.06;margin:.5rem 0;letter-spacing:-.02em;text-wrap:balance;font-weight:680}
   .hero .tag{font-size:clamp(1rem,2.2vw,1.18rem);max-width:42ch;margin:0 0 .8rem;font-weight:560}
   .hero .sum{color:var(--muted);max-width:62ch;margin:0 0 1.1rem}
@@ -174,7 +170,8 @@
   .tab:hover{color:var(--ink)}
   .tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--brand)}
   .tab .n{font-size:.66rem;color:var(--faint);font-variant-numeric:tabular-nums}
-  .tabpanel{max-height:392px;overflow-y:auto;padding-right:6px}
+  /* One section at a time now, so the list runs its full length instead of scrolling inside a box. */
+  .tabpanel{padding-right:6px}
   .tabpanel:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:8px}
   .prow{display:flex;gap:14px;padding:11px 3px;border-bottom:1px solid var(--hair);align-items:baseline}
   .prow:last-child{border-bottom:0}
@@ -189,7 +186,7 @@
   .plink{font-family:var(--mono);font-size:.7rem;color:var(--brand);text-decoration:none;white-space:nowrap;flex:none}
   .plink:hover{text-decoration:underline}
   .pgrp{font-family:var(--mono);font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--brand);
-    font-weight:700;margin:16px 0 2px;position:sticky;top:0;background:var(--paper);padding:4px 0}
+    font-weight:700;margin:16px 0 2px;padding:4px 0}
   .pgrp:first-child{margin-top:0}
 
   /* writing */
@@ -203,27 +200,40 @@
   .warr{color:var(--faint);font-family:var(--mono);align-self:center;flex:none}
   .wrow:hover .warr{color:var(--brand)}
 
-  footer{border-top:1px solid var(--hair);margin-top:30px;padding:22px 0 46px;color:var(--muted)}
-  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;font-size:.82rem}
-  footer a{color:var(--brand);text-decoration:none;font-family:var(--mono);font-size:.76rem}
-  footer .sep{color:var(--faint)}
   .note{background:var(--surface);border:1px dashed var(--border);border-radius:10px;padding:9px 13px;font-size:.78rem;color:var(--muted);margin:16px 0 0;display:none}
   .note.on{display:block}
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
-<header class="top"><div class="wrap">
-  <span class="word"><span class="dot"></span>rijdho</span>
-  <span class="spacer"></span>
-  <div class="seg" role="group" aria-label="Language">
-    <button data-lang="en" aria-pressed="true">EN</button>
-    <button data-lang="de" aria-pressed="false">DE</button>
-    <button data-lang="es" aria-pressed="false">ES</button>
-  </div>
-  <button class="icbtn" id="theme" aria-label="Toggle theme">◑</button>
-</div></header>
+<div class="app" id="app">
+  <aside class="rail">
+    <div class="brand-mark">
+      <a class="brand-glyph" href="./" style="--glyph:'RH'" tabindex="-1" aria-hidden="true"></a>
+      <div>
+        <p class="brand-name"><a href="./" data-p="name">Ricardo Hartley Belmar</a></p>
+        <a class="brand-sub" href="https://rijdho.github.io">rijdho.github.io</a>
+      </div>
+    </div>
+    <!-- Built by renderNav() from TAB_GROUPS, then the tools: one entry per section. -->
+    <nav id="railnav" aria-label="Sections"></nav>
+  </aside>
+  <button class="rail-backdrop" id="rail_backdrop" aria-label="Close menu" tabindex="-1"></button>
 
-<main><div class="wrap">
+  <div class="main-col">
+    <header class="cmdbar">
+      <button class="menu-btn" id="menu" aria-label="Menu"><svg viewBox="0 0 24 24" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      <span class="cmd-title" id="cmd_title"></span>
+      <span class="cmd-spacer"></span>
+      <div class="seg" role="group" aria-label="Language">
+        <button data-lang="en" aria-pressed="true">EN</button>
+        <button data-lang="de" aria-pressed="false">DE</button>
+        <button data-lang="es" aria-pressed="false">ES</button>
+      </div>
+      <button class="icbtn" id="theme" aria-label="Toggle theme">◑</button>
+    </header>
+
+    <main class="content"><div class="content-inner">
+      <!-- The hero stays at the top of the main column whatever the rail shows below it. -->
   <section class="hero">
     <div class="eyebrow" data-p="kicker"></div>
     <!-- the name stays literal as well as data-p: it is the one line worth having in the
@@ -240,21 +250,13 @@
     </div>
   </section>
 
-  <!-- Two tabbed blocks from the same TAB_GROUPS table: the path first, then what he has
-       put out. They come before the tools, which are the part a visitor browses. -->
-  <section>
-    <div class="shead"><h2 data-t="grp_path_h"></h2></div>
-    <div class="tabs" id="tabbar_path" role="tablist"></div>
-    <div class="tabpanel" id="tabpanel_path" role="tabpanel" tabindex="0"></div>
-  </section>
 
-  <section>
-    <div class="shead"><h2 data-t="grp_out_h"></h2></div>
-    <div class="tabs" id="tabbar_out" role="tablist"></div>
-    <div class="tabpanel" id="tabpanel_out" role="tabpanel" tabindex="0"></div>
-  </section>
+      <section id="view_list">
+        <div class="shead"><h2 id="view_h"></h2><span class="count" id="view_c"></span></div>
+        <div class="tabpanel" id="tabpanel_main" tabindex="0"></div>
+      </section>
 
-  <section>
+  <section id="view_tools" hidden>
     <div class="shead">
       <h2 data-t="apps_h"></h2><span class="count" id="apps_c"></span>
     </div>
@@ -277,14 +279,15 @@
     <div class="listwrap" id="listwrap"></div>
   </section>
 
-</div></main>
 
-<footer><div class="wrap">
-  <span data-t="by"></span> <span data-p="name"></span><span class="sep">·</span>
+    </div></main>
+
+    <footer class="site-foot"><span data-t="by"></span> <span data-p="name"></span><span class="sep">·</span>
   <span data-t="lic"></span><span class="sep">·</span>
   <a href="https://github.com/rijdho/rijdho.github.io" data-t="src"></a><span class="sep">·</span>
-  <span style="font-family:var(--mono);font-size:.76rem;color:var(--faint)" data-t="built"></span>
-</div></footer>
+  <span style="font-family:var(--mono);font-size:.76rem;color:var(--faint)" data-t="built"></span></footer>
+  </div>
+</div>
 
 <script>
 let DATA, EXTRA, PERSONAL;
@@ -319,7 +322,6 @@ const TAB_GROUPS={
   path:["education","experience","training"],
   out:["publications","writing","talks"],
 };
-const activeTab={out:"publications",path:"education"};
 const TOPICS = {
   metadata:{v:"--t-metadata", en:"Metadata quality", de:"Metadatenqualität", es:"Calidad de metadatos"},
   assessment:{v:"--t-assessment", en:"Assessment & policy", de:"Bewertung & Politik", es:"Evaluación y política"},
@@ -327,17 +329,17 @@ const TOPICS = {
   story:{v:"--t-story", en:"Data storytelling", de:"Daten-Storytelling", es:"Narrativa de datos"},
 };
 const UI = {
-  en:{cv:"Full CV →", apps_h:"Tools & experiments", apps_lead:"A cloud of live tools, grouped by topic. Drag them around; click one to open it.",
+  en:{nav_menu:"Menu",nav_close:"Close menu",nav_sections:"Sections",cv:"Full CV →", apps_h:"Tools & experiments", apps_lead:"A cloud of live tools, grouped by topic. Drag them around; click one to open it.",
     grp_out_h:"Publications & talks", grp_path_h:"Background",
     hint:"drag · click a bubble", openmark:"dashed = open source", writ_h:"Writing", writ_lead:"Columns, essays and posts on open knowledge.",
     by:"Built by", lic:"MIT-licensed, open source", src:"Source on GitHub",
     built:"A curated view of the same data behind the CV", open:"Open", nolink:"No public URL", list:"List", cloud:"Cloud"},
-  de:{cv:"Vollständiger Lebenslauf →", apps_h:"Werkzeuge & Experimente", apps_lead:"Eine Wolke aktiver Werkzeuge, nach Thema gruppiert. Ziehen; zum Öffnen klicken.",
+  de:{nav_menu:"Menü",nav_close:"Menü schließen",nav_sections:"Abschnitte",cv:"Vollständiger Lebenslauf →", apps_h:"Werkzeuge & Experimente", apps_lead:"Eine Wolke aktiver Werkzeuge, nach Thema gruppiert. Ziehen; zum Öffnen klicken.",
     grp_out_h:"Publikationen & Vorträge", grp_path_h:"Werdegang",
     hint:"ziehen · Blase anklicken", openmark:"gestrichelt = quelloffen", writ_h:"Publizistik", writ_lead:"Kolumnen, Essays und Beiträge zu offenem Wissen.",
     by:"Erstellt von", lic:"MIT-Lizenz, quelloffen", src:"Quellcode auf GitHub",
     built:"Eine kuratierte Ansicht derselben CV-Daten", open:"Öffnen", nolink:"Keine öffentliche URL", list:"Liste", cloud:"Wolke"},
-  es:{cv:"CV completo →", apps_h:"Herramientas y experimentos", apps_lead:"Una nube de herramientas vivas, agrupadas por tópico. Arrástralas; haz clic para abrir.",
+  es:{nav_menu:"Menú",nav_close:"Cerrar menú",nav_sections:"Secciones",cv:"CV completo →", apps_h:"Herramientas y experimentos", apps_lead:"Una nube de herramientas vivas, agrupadas por tópico. Arrástralas; haz clic para abrir.",
     grp_out_h:"Publicaciones y charlas", grp_path_h:"Trayectoria",
     hint:"arrastra · haz clic en una burbuja", openmark:"discontinuo = código abierto", writ_h:"Escritos", writ_lead:"Columnas, ensayos y publicaciones sobre conocimiento abierto.",
     by:"Hecho por", lic:"Licencia MIT, código abierto", src:"Código en GitHub",
@@ -447,7 +449,10 @@ function draw(){
     if(isSel||isHov){ctx.beginPath();ctx.ellipse(b.x,b.y,b.rx+4,b.ry+4,0,0,7);
       ctx.strokeStyle=cvar("--brand")+"77";ctx.lineWidth=1.5;ctx.stroke();}
     if(!dim){
-      const fam=cvar("--mono").split(",")[0].replace(/["']/g,"").trim();
+      // The whole stack, not its first name: canvas does not know ui-monospace and fell back to a
+      // serif, while the widths were measured in monospace (layout()), so labels were drawn in one
+      // face and fitted to another.
+      const fam=cvar("--mono");
       ctx.textAlign="center";ctx.textBaseline="middle";
       if(b.doi){
         ctx.fillStyle=cvar("--ink");ctx.font="600 11px "+fam;ctx.fillText(b.short,b.x,b.y-8);
@@ -565,12 +570,36 @@ function rowsTrain(){return EXTRA.training.map(e=>`
     <span class="pmain"><div class="ptitle">${esc(e.title)}</div>
     <div class="pmeta">${e.org?'<b>'+esc(e.org)+'</b> · ':''}${esc(deLbl(e.desc))}</div></span></div>`).join("");}
 const PANEL={writing:rowsWriting,publications:rowsPubs,talks:rowsTalks,experience:rowsExp,education:rowsEdu,training:rowsTrain};
-function renderTabbar(g){const bar=document.getElementById("tabbar_"+g);
-  bar.innerHTML=TAB_GROUPS[g].map(k=>`
-  <button class="tab" role="tab" data-tab="${k}" aria-selected="${activeTab[g]===k}">${esc(TABMETA[k][lang])}<span class="n">${pcount(k)}</span></button>`).join("");
-  bar.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{activeTab[g]=b.dataset.tab;renderTabbar(g);renderPanel(g);
-    document.getElementById("tabpanel_"+g).scrollTop=0;});}
-function renderPanel(g){document.getElementById("tabpanel_"+g).innerHTML=PANEL[activeTab[g]]();}
+/* The rail: one entry per section, grouped as TAB_GROUPS groups them, then the tools. The main
+   column shows the hero and, under it, the section the rail points at (#education, #tools, ...). */
+const STEP={education:"ED",experience:"EX",training:"TR",publications:"PU",writing:"WR",talks:"TA",tools:"TL"};
+const SECTIONS=[...TAB_GROUPS.path,...TAB_GROUPS.out,"tools"];
+let current=SECTIONS.includes(location.hash.slice(1))?location.hash.slice(1):SECTIONS[0];
+function renderNav(){const t=UI[lang];
+  const item=k=>`<a class="nav-item${k===current?' active':''}" href="#${k}" data-sec="${k}"${k===current?' aria-current="page"':''}>
+    <span class="nav-step" aria-hidden="true">${STEP[k]}</span>${esc(k==="tools"?t.apps_h:TABMETA[k][lang])}</a>`;
+  document.getElementById("railnav").innerHTML=
+    `<div class="nav-label">${esc(t.grp_path_h)}</div>${TAB_GROUPS.path.map(item).join("")}`+
+    `<div class="nav-label">${esc(t.grp_out_h)}</div>${TAB_GROUPS.out.map(item).join("")}`+
+    `<div class="nav-label">${esc(t.apps_h)}</div>${item("tools")}`+
+    `<a class="nav-item" href="${esc((PERSONAL&&PERSONAL.toolsIndexUrl)||"https://rijdho.github.io/metaudits-home/")}">
+      <span class="nav-step" aria-hidden="true">MA</span>Metaudits ↗</a>`;}
+function show(k,{scroll=false}={}){current=k;const tools=k==="tools";
+  document.getElementById("view_list").hidden=tools;
+  document.getElementById("view_tools").hidden=!tools;
+  document.getElementById("cmd_title").textContent=tools?UI[lang].apps_h:TABMETA[k][lang];
+  if(!tools){document.getElementById("view_h").textContent=TABMETA[k][lang];
+    document.getElementById("view_c").textContent=pcount(k);
+    document.getElementById("tabpanel_main").innerHTML=PANEL[k]();}
+  document.querySelectorAll("#railnav [data-sec]").forEach(a=>{const on=a.dataset.sec===k;
+    a.classList.toggle("active",on); if(on)a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current");});
+  document.getElementById("app").classList.remove("rail-open");
+  // The cloud measures its canvas, which has no size while hidden.
+  if(tools&&!isList){layout();initBubbles();start();}
+  if(scroll)document.getElementById(tools?"view_tools":"view_list").scrollIntoView({block:"start",behavior:"smooth"});}
+addEventListener("hashchange",()=>{const k=location.hash.slice(1);if(SECTIONS.includes(k))show(k,{scroll:true});});
+document.getElementById("menu").onclick=()=>document.getElementById("app").classList.add("rail-open");
+document.getElementById("rail_backdrop").onclick=()=>document.getElementById("app").classList.remove("rail-open");
 
 /* ---------- render all ---------- */
 function render(){const t=UI[lang];
@@ -587,7 +616,10 @@ function render(){const t=UI[lang];
   document.getElementById("apps_c").textContent=DATA.apps.length;
   renderLegend();renderList();
   if(selected)select(selected);
-  for(const g in TAB_GROUPS){renderTabbar(g);renderPanel(g);}}
+  document.getElementById("menu").setAttribute("aria-label",t.nav_menu);
+  document.getElementById("rail_backdrop").setAttribute("aria-label",t.nav_close);
+  document.getElementById("railnav").setAttribute("aria-label",t.nav_sections);
+  renderNav();show(current);}
 
 /* ---------- controls ---------- */
 document.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{lang=b.dataset.lang;

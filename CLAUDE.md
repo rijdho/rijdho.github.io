@@ -10,9 +10,13 @@ vanilla JS. Part of the violet-family design system (see `../CLAUDE.md`).
 
 - `index.html`: the hub. `fetch('./data/cv.json')` → derives `DATA` (apps = `experiments`,
   writing = `portfolio`) and `EXTRA` (the tab categories), then renders the tabs + cloud.
-  The six tabs sit in two blocks, set by `TAB_GROUPS`: education, experience, training
-  ("Background"), then publications, writing, talks ("Publications & talks"). Both come
-  before the tool cloud, by the author's decision of 2026-09-18. Engagements were removed
+  **Layout since 2026-09-24: the family shell** (a synced copy of rijdho/house-style in
+  `house/`, `scripts/sync-house.mjs`, `tests/house.test.mjs`). The rail lists the sections,
+  built by `renderNav()` from `TAB_GROUPS`: education, experience, training ("Background"),
+  then publications, writing, talks ("Publications & talks"), then the tool cloud and a link
+  to Metaudits. The main column always opens with the hero (name, headline, Full CV, ORCID,
+  Substack); under it, the one section the rail points at, addressed by the hash (`#talks`,
+  `#tools`). Education opens by default, following the order of 2026-09-18. Engagements were removed
   from the CV on 2026-09-24, at the author's request (data, page, hub and Markdown).
   Topic assignment for the cloud is the `topic` field on each experiment, and **it is data**,
   edit it there, not in code. Topic *labels/colours* are config (the `TOPICS` object in
