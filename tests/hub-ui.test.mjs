@@ -66,8 +66,11 @@ test("no bubble is labelled with a raw repository slug", () => {
     const label = shortOf(app.title);
     assert.ok(!/^[a-z0-9]+(-[a-z0-9]+)+$/.test(label),
       `${app.id}: the cloud would show the slug "${label}"; add a curated label to SHORT`);
-    assert.ok(label.length <= 20,
-      `${app.id}: "${label}" is too long for a 46px oval`);
+    // 34 is Research Assessment Reform Planner, kept whole on the author's decision of
+    // 2026-09-24 because a shorter form was the ambiguity the rename removed. Its oval is the
+    // widest in the cloud and still fits a 390px phone; anything longer would not.
+    assert.ok(label.length <= 34,
+      `${app.id}: "${label}" is too long for an oval on a phone`);
   }
 });
 

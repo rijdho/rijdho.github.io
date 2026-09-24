@@ -27,7 +27,7 @@ vanilla JS. Part of the violet-family design system (see `../CLAUDE.md`).
   `SHORT` entry**, or its oval shows whatever the title is, which for the open twins is the
   repository slug. That is the right name in a citation and the wrong one in a 46px oval,
   and the real name is still one hover away in the tooltip. `tests/hub-ui.test.mjs` fails on
-  a label that is slug-shaped, longer than 20 characters, or a case-only duplicate of
+  a label that is slug-shaped, longer than 34 characters (Research Assessment Reform Planner, kept whole), or a case-only duplicate of
   another (which "BiblioHelp" and "bibliohelp" were).
 - `cv.html`: the academic CV. Same fetch, formal layout, `Print / PDF` via `window.print()`.
 - `build_cv.py`: emits `CV.en.md` / `CV.de.md` / `CV.es.md`.
