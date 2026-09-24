@@ -68,6 +68,8 @@
   .chip.primary{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
 
   section{padding:22px 0}
+  /* A section shown alone starts at the top of the column: only the page's own padding above it. */
+  #view_list{padding-top:0}
   .shead{display:flex;align-items:baseline;gap:14px;margin:0 0 14px;flex-wrap:wrap}
   .shead h2{font-size:1.15rem;margin:0;letter-spacing:-.01em;font-weight:640}
   .shead .count{font-family:var(--mono);font-size:.72rem;color:var(--faint);font-variant-numeric:tabular-nums}
