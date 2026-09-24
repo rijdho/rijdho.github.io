@@ -278,27 +278,29 @@ function rowsTrain(){return EXTRA.training.map(e=>`
     <span class="pmain"><div class="ptitle">${esc(e.title)}</div>
     <div class="pmeta">${e.org?'<b>'+esc(e.org)+'</b> · ':''}${esc(deLbl(e.desc))}</div></span></div>`).join("");}
 const PANEL={writing:rowsWriting,publications:rowsPubs,talks:rowsTalks,experience:rowsExp,education:rowsEdu,training:rowsTrain};
-/* The rail: one entry per section, grouped as TAB_GROUPS groups them, then the tools. The main
+/* The rail: one entry per section, grouped as TAB_GROUPS groups them, then a link to Metaudits. The main
    column shows either the hero (no section in the hash: the landing) or the one section the rail
-   points at (#education, #tools, ...), never both, so a section does not repeat the name and headline. */
-const STEP={education:"ED",experience:"EX",training:"TR",publications:"PU",writing:"WR",talks:"TA",tools:"TL"};
-const SECTIONS=[...TAB_GROUPS.path,...TAB_GROUPS.out,"tools"];
+   points at (#education, #talks, ...), never both, so a section does not repeat the name and headline.
+   The landing is the hero with the tool cloud under it (2026-09-24); the cloud has no rail entry of
+   its own, and an old #tools link opens the landing scrolled to it. */
+const STEP={education:"ED",experience:"EX",training:"TR",publications:"PU",writing:"WR",talks:"TA"};
+const SECTIONS=[...TAB_GROUPS.path,...TAB_GROUPS.out];
 let current=SECTIONS.includes(location.hash.slice(1))?location.hash.slice(1):null;
 function renderNav(){const t=UI[lang];
   const item=k=>`<a class="nav-item${k===current?' active':''}" href="#${k}" data-sec="${k}"${k===current?' aria-current="page"':''}>
-    <span class="nav-step" aria-hidden="true">${STEP[k]}</span>${esc(k==="tools"?t.apps_h:TABMETA[k][lang])}</a>`;
+    <span class="nav-step" aria-hidden="true">${STEP[k]}</span>${esc(TABMETA[k][lang])}</a>`;
   document.getElementById("railnav").innerHTML=
     `<div class="nav-label">${esc(t.grp_path_h)}</div>${TAB_GROUPS.path.map(item).join("")}`+
     `<div class="nav-label">${esc(t.grp_out_h)}</div>${TAB_GROUPS.out.map(item).join("")}`+
-    `<div class="nav-label">${esc(t.apps_h)}</div>${item("tools")}`+
+    `<div class="nav-label">${esc(t.apps_h)}</div>`+
     `<a class="nav-item" href="${esc((PERSONAL&&PERSONAL.toolsIndexUrl)||"https://rijdho.github.io/metaudits-home/")}">
       <span class="nav-step" aria-hidden="true">MA</span>Metaudits ↗</a>`;}
-function show(k,{scroll=false}={}){current=k;const tools=k==="tools";
+function show(k,{scroll=false,toTools=false}={}){current=k;const tools=!k;
   document.getElementById("hero").hidden=!!k;
-  document.getElementById("view_list").hidden=!k||tools;
+  document.getElementById("view_list").hidden=tools;
   document.getElementById("view_tools").hidden=!tools;
-  document.getElementById("cmd_title").textContent=!k?"":tools?UI[lang].apps_h:TABMETA[k][lang];
-  if(k&&!tools){document.getElementById("view_h").textContent=TABMETA[k][lang];
+  document.getElementById("cmd_title").textContent=tools?"":TABMETA[k][lang];
+  if(!tools){document.getElementById("view_h").textContent=TABMETA[k][lang];
     document.getElementById("view_c").textContent=pcount(k);
     document.getElementById("tabpanel_main").innerHTML=PANEL[k]();}
   document.querySelectorAll("#railnav [data-sec]").forEach(a=>{const on=a.dataset.sec===k;
@@ -306,9 +308,10 @@ function show(k,{scroll=false}={}){current=k;const tools=k==="tools";
   document.getElementById("app").classList.remove("rail-open");
   // The cloud measures its canvas, which has no size while hidden.
   if(tools&&!isList){layout();initBubbles();start();}
-  if(scroll)scrollTo({top:0});}
+  if(toTools)document.getElementById("view_tools").scrollIntoView({block:"start"});
+  else if(scroll)scrollTo({top:0});}
 addEventListener("hashchange",()=>{const k=location.hash.slice(1);
-  if(SECTIONS.includes(k))show(k,{scroll:true}); else if(!k)show(null);});
+  if(SECTIONS.includes(k))show(k,{scroll:true}); else if(!k||k==="tools")show(null,{toTools:k==="tools"});});
 document.getElementById("menu").onclick=()=>document.getElementById("app").classList.add("rail-open");
 document.getElementById("rail_backdrop").onclick=()=>document.getElementById("app").classList.remove("rail-open");
 
@@ -354,4 +357,5 @@ addEventListener("resize",()=>{if(!isList){layout();initBubbles();start();}});
   EXTRA={publications:CV.publications,talks:CV.presentations,experience:CV.experience,
     education:CV.education,training:CV.training};
   layout();initBubbles();render();start();
+  if(location.hash==="#tools")document.getElementById("view_tools").scrollIntoView({block:"start"});
 })();

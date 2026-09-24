@@ -15,9 +15,9 @@ ships in numbered drops.
 ### Changed
 
 - **Two columns, in the family's shell** (house-style, synced into `house/`): the rail lists the
-  sections, grouped as before (Background, Publications & talks, Tools & experiments, and a link to
-  Metaudits); the main column shows the hero on the landing and, once a section is chosen, only that
-  section, with its own address (`#publications`, `#tools`). On a phone the rail is a menu.
+  sections, grouped as before (Background, Publications & talks, and a link to
+  Metaudits); the main column shows the hero and the tool cloud on the landing and, once a section is
+  chosen, only that section, with its own address (`#publications`, `#tools`). On a phone the rail is a menu.
 
 ### Security
 
@@ -29,6 +29,9 @@ ships in numbered drops.
   from another host.
 
 ### Fixed
+
+- **On a phone the topic legend sits above the cloud**, not on top of its bubbles, where the four topics
+  wrapped onto three rows and covered the first ovals.
 
 - **The cloud's labels are drawn in monospace.** They were measured in monospace and drawn in the first
   name of the stack, ui-monospace, which canvas does not know, so Chrome drew them in a serif.
