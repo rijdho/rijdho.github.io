@@ -14,10 +14,10 @@ vanilla JS. Part of the violet-family design system (see `../CLAUDE.md`).
   `house/`, `scripts/sync-house.mjs`, `tests/house.test.mjs`). The rail lists the sections,
   built by `renderNav()` from `TAB_GROUPS`: education, experience, training ("Background"),
   then publications, writing, talks ("Publications & talks"), then the tool cloud and a link
-  to Metaudits. The main column always opens with the hero (name, headline, Full CV, ORCID,
-  Substack); under it, the one section the rail points at, addressed by the hash (`#talks`,
-  `#tools`). With no hash the hero stands alone and no section opens until the rail is used
-(2026-09-24, so the landing is not crowded); until then Education opened by default. Engagements were removed
+  to Metaudits. The main column shows either the hero (name, headline, Full CV, ORCID,
+  Substack), which is the landing with no hash, or the one section the rail points at
+  (`#talks`, `#tools`), never both (the author's decisions of 2026-09-24: the landing is not
+  crowded, and a section does not repeat the name). The brand block leads back to the hero. Engagements were removed
   from the CV on 2026-09-24, at the author's request (data, page, hub and Markdown).
   Topic assignment for the cloud is the `topic` field on each experiment, and **it is data**,
   edit it there, not in code. Topic *labels/colours* are config (the `TOPICS` object in

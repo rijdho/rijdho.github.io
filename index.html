@@ -53,8 +53,9 @@ works only as a response header, and GitHub Pages sends none. -->
     </header>
 
     <main class="content"><div class="content-inner">
-      <!-- The hero stays at the top of the main column whatever the rail shows below it. -->
-  <section class="hero">
+      <!-- The hero is the landing: it shows only while no section is chosen (no hash); the
+           brand block in the rail leads back to it. -->
+  <section class="hero" id="hero">
     <div class="eyebrow" data-p="kicker"></div>
     <!-- the name stays literal as well as data-p: it is the one line worth having in the
          raw HTML for anything that does not run the fetch. render() overwrites it. -->
@@ -109,4 +110,4 @@ works only as a response header, and GitHub Pages sends none. -->
   </div>
 </div>
 
-<script src="./hub.js?v=1"></script>
+<script src="./hub.js?v=2"></script>

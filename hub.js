@@ -279,8 +279,8 @@ function rowsTrain(){return EXTRA.training.map(e=>`
     <div class="pmeta">${e.org?'<b>'+esc(e.org)+'</b> · ':''}${esc(deLbl(e.desc))}</div></span></div>`).join("");}
 const PANEL={writing:rowsWriting,publications:rowsPubs,talks:rowsTalks,experience:rowsExp,education:rowsEdu,training:rowsTrain};
 /* The rail: one entry per section, grouped as TAB_GROUPS groups them, then the tools. The main
-   column shows the hero and, under it, the section the rail points at (#education, #tools, ...).
-   With no section in the hash the hero stands alone: nothing opens until the rail is used. */
+   column shows either the hero (no section in the hash: the landing) or the one section the rail
+   points at (#education, #tools, ...), never both, so a section does not repeat the name and headline. */
 const STEP={education:"ED",experience:"EX",training:"TR",publications:"PU",writing:"WR",talks:"TA",tools:"TL"};
 const SECTIONS=[...TAB_GROUPS.path,...TAB_GROUPS.out,"tools"];
 let current=SECTIONS.includes(location.hash.slice(1))?location.hash.slice(1):null;
@@ -294,6 +294,7 @@ function renderNav(){const t=UI[lang];
     `<a class="nav-item" href="${esc((PERSONAL&&PERSONAL.toolsIndexUrl)||"https://rijdho.github.io/metaudits-home/")}">
       <span class="nav-step" aria-hidden="true">MA</span>Metaudits ↗</a>`;}
 function show(k,{scroll=false}={}){current=k;const tools=k==="tools";
+  document.getElementById("hero").hidden=!!k;
   document.getElementById("view_list").hidden=!k||tools;
   document.getElementById("view_tools").hidden=!tools;
   document.getElementById("cmd_title").textContent=!k?"":tools?UI[lang].apps_h:TABMETA[k][lang];
@@ -305,7 +306,7 @@ function show(k,{scroll=false}={}){current=k;const tools=k==="tools";
   document.getElementById("app").classList.remove("rail-open");
   // The cloud measures its canvas, which has no size while hidden.
   if(tools&&!isList){layout();initBubbles();start();}
-  if(scroll&&k)document.getElementById(tools?"view_tools":"view_list").scrollIntoView({block:"start",behavior:"smooth"});}
+  if(scroll)scrollTo({top:0});}
 addEventListener("hashchange",()=>{const k=location.hash.slice(1);
   if(SECTIONS.includes(k))show(k,{scroll:true}); else if(!k)show(null);});
 document.getElementById("menu").onclick=()=>document.getElementById("app").classList.add("rail-open");
