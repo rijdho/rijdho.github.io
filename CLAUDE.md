@@ -16,7 +16,8 @@ vanilla JS. Part of the violet-family design system (see `../CLAUDE.md`).
   then publications, writing, talks ("Publications & talks"), then the tool cloud and a link
   to Metaudits. The main column always opens with the hero (name, headline, Full CV, ORCID,
   Substack); under it, the one section the rail points at, addressed by the hash (`#talks`,
-  `#tools`). Education opens by default, following the order of 2026-09-18. Engagements were removed
+  `#tools`). With no hash the hero stands alone and no section opens until the rail is used
+(2026-09-24, so the landing is not crowded); until then Education opened by default. Engagements were removed
   from the CV on 2026-09-24, at the author's request (data, page, hub and Markdown).
   Topic assignment for the cloud is the `topic` field on each experiment, and **it is data**,
   edit it there, not in code. Topic *labels/colours* are config (the `TOPICS` object in
