@@ -147,15 +147,15 @@ let CV;
 const UI = {
   en:{back:"← Interactive hub", print:"⤓ Print / PDF",
     experience:"Experience", education:"Education", publications:"Publications",
-    presentations:"Talks & presentations", skills:"Skills", engagements:"Engagements",
+    presentations:"Talks & presentations", skills:"Skills",
     training:"Training", portfolio:"Writing", experiments:"Tools & experiments"},
   de:{back:"← Interaktiver Hub", print:"⤓ Drucken / PDF",
     experience:"Berufserfahrung", education:"Ausbildung", publications:"Publikationen",
-    presentations:"Vorträge & Präsentationen", skills:"Kompetenzen", engagements:"Engagements",
+    presentations:"Vorträge & Präsentationen", skills:"Kompetenzen",
     training:"Weiterbildung", portfolio:"Publizistik", experiments:"Werkzeuge & Experimente"},
   es:{back:"← Hub interactivo", print:"⤓ Imprimir / PDF",
     experience:"Experiencia", education:"Formación", publications:"Publicaciones",
-    presentations:"Charlas y presentaciones", skills:"Competencias", engagements:"Participaciones",
+    presentations:"Charlas y presentaciones", skills:"Competencias",
     training:"Formación continua", portfolio:"Escritos", experiments:"Herramientas y experimentos"},
 };
 const PUBGRP={peerReviewed:{en:"Peer-reviewed",de:"Begutachtet",es:"Revisadas por pares"},
@@ -242,9 +242,7 @@ function render(){
       ${e.twin&&e.twin.url?`<div class="twin">↔ <a href="${esc(e.twin.url)}">${esc(e.twin.title||e.twin.url)}</a></div>`:""}
       ${(e.tags||[]).length?`<div class="tag">${esc((e.tags||[]).slice(0,6).join(" · "))}</div>`:""}</div>`;})), "", CV.experiments.length);
 
-  // Engagements + Training
-  sec("engagements", CV.engagements.map(e=>`
-    <li><b>${esc(e.role)}</b>, ${esc(e.org)} · ${esc(t(e.focus))}</li>`), 'ul class="plain"');
+  // Training
   sec("training", CV.training.map(e=>`
     <li><b>${esc(e.title)}</b> <span class="tag">${esc(e.year)}</span>${e.org?` · ${esc(e.org)}`:""}<br>${esc(t(e.desc))}</li>`), 'ul class="plain"');
 

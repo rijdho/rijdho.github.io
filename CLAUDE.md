@@ -10,9 +10,10 @@ vanilla JS. Part of the violet-family design system (see `../CLAUDE.md`).
 
 - `index.html`: the hub. `fetch('./data/cv.json')` → derives `DATA` (apps = `experiments`,
   writing = `portfolio`) and `EXTRA` (the tab categories), then renders the tabs + cloud.
-  The seven tabs sit in two blocks, set by `TAB_GROUPS`: education, experience,
-  engagements, training ("Background"), then publications, writing, talks ("Publications &
-  talks"). Both come before the tool cloud, by the author's decision of 2026-09-18.
+  The six tabs sit in two blocks, set by `TAB_GROUPS`: education, experience, training
+  ("Background"), then publications, writing, talks ("Publications & talks"). Both come
+  before the tool cloud, by the author's decision of 2026-09-18. Engagements were removed
+  from the CV on 2026-09-24, at the author's request (data, page, hub and Markdown).
   Topic assignment for the cloud is the `topic` field on each experiment, and **it is data**,
   edit it there, not in code. Topic *labels/colours* are config (the `TOPICS` object in
   `index.html`). The text inside an oval is config too: the `SHORT` table maps a title to a
@@ -51,7 +52,7 @@ re-inline data into the HTML; that reintroduces the drift this structure exists 
 
 Trilingual text fields are `{en, de, es}` objects; consumers fall back `de → en`. **All
 three languages are complete as of 2026-08-03**: tagline, summary, skills titles *and*
-items, and every long description in `experience`, `training`, `engagements`, `portfolio`
+items, and every long description in `experience`, `training`, `portfolio`
 and `experiments`. The German fallback note that used to sit under the cloud is gone; if you
 add an entry, fill all three keys rather than reintroducing it. `skills[].items` are `{en,
 de, es}` objects, not plain strings, and that was the last place English leaked into the ES/DE

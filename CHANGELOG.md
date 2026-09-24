@@ -25,6 +25,10 @@ ships in numbered drops.
   rijdho.github.io/metaudits-home", in the page's language (`toolsIndexLabel`, `toolsIndexUrl` in
   `personal`).
 
+### Removed
+
+- **Engagements**, from the CV data, the CV page, the hub's Background tabs and the Markdown CVs.
+
 ## [1.6.0] - 2026-09-18
 
 ### Added

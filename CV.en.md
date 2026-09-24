@@ -286,12 +286,6 @@ Finds the ORCID accounts that declare an institution, searching by ROR, GRID and
 Live questions during a lecture or a workshop: multiple choice, rating scales, rankings, word clouds, and questions from the room ordered by support. Participants join with a six-character code or a QR code and answer on their phones while the results build on the projected screen. Any choice question can carry a right answer, which adds a scoreboard. No accounts, no cookies and no third-party request of any kind; a room deletes itself twelve hours after it opens. One Cloudflare Worker with a Durable Object per room, which is both the storage and the point every vote passes through, and the same code also runs on Node.
 
 
-## Engagements
-
-- **Member**, Open Science Monitoring Initiative (OSMI), WG1 & WG4 · WG1: Defining open science monitoring needs and WG4: Building shared infrastructures and tools
-- **Member**, Barcelona Declaration on Open Research Information, WG7 · Promoting interoperability, openness, and inclusivity in research information ecosystems
-- **Advisory Board Member**, Cross-Domain Interoperability Framework (CDIF) - CODATA · Supporting interdisciplinary metadata interoperability frameworks
-
 ## Training
 
 - **FORCE11 Scholarly Communication Institute – FSCI** (2017–2025): Completed multiple tracks including: Governance for AI in Scientific Publications, Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Data visualization in R and D3.js, Using APIs (ORCID, Sherpa Romeo, Unpaywall) for institutional analysis

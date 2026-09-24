@@ -25,7 +25,7 @@ under the name: FAIR Repo Audit 10.5281/zenodo.21492530, ORCID Finder
 
 - **The hub** (`index.html`): the 23 tools and experiments as a cloud of ovals grouped
   by topic (drag, filter, click to open the live app), below two tabbed blocks for the rest
-  of the CV: education, experience, engagements and training first, then publications,
+  of the CV: education, experience and training first, then publications,
   writing and talks.
 ![The peer-reviewed list, 23 entries, each row labelled "Peer-reviewed" above its title as
 the other list labels its own categories. The link sits on the title, never on the whole row,

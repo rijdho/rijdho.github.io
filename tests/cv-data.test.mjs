@@ -18,7 +18,7 @@ const html = read('../index.html');
 
 /** The sections all three consumers index into, taken from the consumers. */
 const SECTIONS = ['personal', 'skills', 'experience', 'education', 'training',
-                  'engagements', 'presentations', 'publications', 'portfolio', 'experiments'];
+                  'presentations', 'publications', 'portfolio', 'experiments'];
 
 test('every section the page and the CV builder read exists', () => {
   for (const s of SECTIONS) assert.ok(s in CV, `data/cv.json has no "${s}"`);

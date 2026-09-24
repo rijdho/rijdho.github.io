@@ -286,12 +286,6 @@ Findet die ORCID-Konten, die eine Einrichtung angeben, gesucht nach ROR-, GRID- 
 Live-Fragen während einer Lehrveranstaltung oder eines Workshops: Auswahlfragen, Bewertungsskalen, Reihenfolgen, Wortwolken und Fragen aus dem Raum, nach Unterstützung sortiert. Teilnehmende treten mit einem sechsstelligen Code oder einem QR-Code bei und antworten am Telefon, während die Ergebnisse auf der projizierten Ansicht entstehen. Jede Auswahlfrage kann eine richtige Antwort tragen, was einen Punktestand ergänzt. Keine Konten, keine Cookies und keine Anfrage an Dritte; ein Raum löscht sich zwölf Stunden nach dem Öffnen selbst. Ein einziger Cloudflare Worker mit einem Durable Object pro Raum, das zugleich der Speicher und der Punkt ist, durch den jede Stimme läuft, und derselbe Code läuft auch auf Node.
 
 
-## Engagements
-
-- **Member**, Open Science Monitoring Initiative (OSMI), WG1 & WG4 · WG1: Definition des Bedarfs für Open-Science-Monitoring und WG4: Aufbau gemeinsamer Infrastrukturen und Werkzeuge
-- **Member**, Barcelona Declaration on Open Research Information, WG7 · Förderung von Interoperabilität, Offenheit und Inklusivität in Ökosystemen für Forschungsinformationen
-- **Advisory Board Member**, Cross-Domain Interoperability Framework (CDIF) - CODATA · Unterstützung interdisziplinärer Rahmenwerke für Metadaten-Interoperabilität
-
 ## Weiterbildung
 
 - **FORCE11 Scholarly Communication Institute – FSCI** (2017–2025): Abschluss mehrerer Tracks, darunter: Governance for AI in Scientific Publications, Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Datenvisualisierung in R und D3.js, Nutzung von APIs (ORCID, Sherpa Romeo, Unpaywall) für institutionelle Analysen.

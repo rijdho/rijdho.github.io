@@ -9,15 +9,15 @@ CV = json.load(open(os.path.join(HERE, "data", "cv.json"), encoding="utf-8"))
 
 LABELS = {
   "en": {"experience":"Experience","education":"Education","publications":"Publications",
-    "presentations":"Talks & presentations","skills":"Skills","engagements":"Engagements",
+    "presentations":"Talks & presentations","skills":"Skills",
     "training":"Training","portfolio":"Writing","experiments":"Tools & experiments",
     "generated":"Generated from data/cv.json"},
   "de": {"experience":"Berufserfahrung","education":"Ausbildung","publications":"Publikationen",
-    "presentations":"Vorträge & Präsentationen","skills":"Kompetenzen","engagements":"Engagements",
+    "presentations":"Vorträge & Präsentationen","skills":"Kompetenzen",
     "training":"Weiterbildung","portfolio":"Publizistik","experiments":"Werkzeuge & Experimente",
     "generated":"Generiert aus data/cv.json"},
   "es": {"experience":"Experiencia","education":"Formación","publications":"Publicaciones",
-    "presentations":"Charlas y presentaciones","skills":"Competencias","engagements":"Participaciones",
+    "presentations":"Charlas y presentaciones","skills":"Competencias",
     "training":"Formación continua","portfolio":"Escritos","experiments":"Herramientas y experimentos",
     "generated":"Generado desde data/cv.json"},
 }
@@ -89,9 +89,6 @@ def build(lang):
         tw=e.get('twin')
         if tw and tw.get('url'): w(""); w(f"↔ [{tw.get('title') or tw['url']}]({tw['url']})")
         w("")
-    sec("engagements")
-    for e in CV["engagements"]:
-        w(f"- **{e['role']}**, {e['org']} · {tr(e.get('focus'))}")
     sec("training")
     for e in CV["training"]:
         w(f"- **{e['title']}**" + (f" ({e['year']})" if e.get('year') else "") + (f": {tr(e['desc'])}" if tr(e.get('desc')) else ""))

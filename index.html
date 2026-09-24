@@ -294,7 +294,6 @@ const TABMETA={
   talks:{en:"Talks",de:"Vorträge",es:"Charlas"},
   experience:{en:"Experience",de:"Erfahrung",es:"Experiencia"},
   education:{en:"Education",de:"Ausbildung",es:"Formación"},
-  engagements:{en:"Engagements",de:"Engagements",es:"Redes"},
   training:{en:"Training",de:"Weiterbildung",es:"Formación continua"},
 };
 /* The hub splits publications in two: peer-reviewed, and everything else in one list by
@@ -317,7 +316,7 @@ const PEERTYPE={en:"Peer-reviewed",de:"Begutachtet",es:"Revisado por pares"};
 /* Two tabbed blocks: the path, then what he has put out. The first tab of each
    is the one that opens, so it is the only one a visitor sees without clicking. */
 const TAB_GROUPS={
-  path:["education","experience","engagements","training"],
+  path:["education","experience","training"],
   out:["publications","writing","talks"],
 };
 const activeTab={out:"publications",path:"education"};
@@ -561,15 +560,11 @@ function rowsEdu(){return EXTRA.education.map(e=>`
   <div class="prow"><span class="pyear">${esc(e.year||"")}</span>
     <span class="pmain"><div class="ptitle">${esc(deLbl(e.degree))}</div>
     <div class="pmeta">${esc(e.inst)}</div></span></div>`).join("");}
-function rowsEng(){return EXTRA.engagements.map(e=>`
-  <div class="prow"><span class="pyear"></span>
-    <span class="pmain"><div class="ptitle">${esc(e.role)} · <span style="font-weight:400;color:var(--muted)">${esc(e.org)}</span></div>
-    <div class="pmeta">${esc(deLbl(e.focus))}</div></span></div>`).join("");}
 function rowsTrain(){return EXTRA.training.map(e=>`
   <div class="prow"><span class="pyear">${esc(e.year||"")}</span>
     <span class="pmain"><div class="ptitle">${esc(e.title)}</div>
     <div class="pmeta">${e.org?'<b>'+esc(e.org)+'</b> · ':''}${esc(deLbl(e.desc))}</div></span></div>`).join("");}
-const PANEL={writing:rowsWriting,publications:rowsPubs,talks:rowsTalks,experience:rowsExp,education:rowsEdu,engagements:rowsEng,training:rowsTrain};
+const PANEL={writing:rowsWriting,publications:rowsPubs,talks:rowsTalks,experience:rowsExp,education:rowsEdu,training:rowsTrain};
 function renderTabbar(g){const bar=document.getElementById("tabbar_"+g);
   bar.innerHTML=TAB_GROUPS[g].map(k=>`
   <button class="tab" role="tab" data-tab="${k}" aria-selected="${activeTab[g]===k}">${esc(TABMETA[k][lang])}<span class="n">${pcount(k)}</span></button>`).join("");
@@ -614,7 +609,7 @@ addEventListener("resize",()=>{if(!isList){layout();initBubbles();start();}});
   const wb=e=>({...e,blurb_en:e.desc.en,blurb_es:e.desc.es,blurb_de:e.desc.de||""});
   DATA={apps:CV.experiments.map(wb),writing:CV.portfolio.map(wb)};
   EXTRA={publications:CV.publications,talks:CV.presentations,experience:CV.experience,
-    education:CV.education,engagements:CV.engagements,training:CV.training};
+    education:CV.education,training:CV.training};
   layout();initBubbles();render();start();
 })();
 </script>

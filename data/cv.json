@@ -342,35 +342,6 @@
       }
     }
   ],
-  "engagements": [
-    {
-      "role": "Member",
-      "org": "Open Science Monitoring Initiative (OSMI), WG1 & WG4",
-      "focus": {
-        "en": "WG1: Defining open science monitoring needs and WG4: Building shared infrastructures and tools",
-        "es": "WG1: Definición de necesidades de monitoreo de ciencia abierta y WG4: Construcción de infraestructuras y herramientas compartidas",
-        "de": "WG1: Definition des Bedarfs für Open-Science-Monitoring und WG4: Aufbau gemeinsamer Infrastrukturen und Werkzeuge"
-      }
-    },
-    {
-      "role": "Member",
-      "org": "Barcelona Declaration on Open Research Information, WG7",
-      "focus": {
-        "en": "Promoting interoperability, openness, and inclusivity in research information ecosystems",
-        "es": "Promoción de la interoperabilidad, apertura e inclusividad en ecosistemas de información de investigación",
-        "de": "Förderung von Interoperabilität, Offenheit und Inklusivität in Ökosystemen für Forschungsinformationen"
-      }
-    },
-    {
-      "role": "Advisory Board Member",
-      "org": "Cross-Domain Interoperability Framework (CDIF) - CODATA",
-      "focus": {
-        "en": "Supporting interdisciplinary metadata interoperability frameworks",
-        "es": "Apoyo a marcos de interoperabilidad de metadatos interdisciplinarios",
-        "de": "Unterstützung interdisziplinärer Rahmenwerke für Metadaten-Interoperabilität"
-      }
-    }
-  ],
   "presentations": [
     {
       "type": "Presentation",

@@ -286,12 +286,6 @@ Encuentra las cuentas ORCID que declaran una institución, buscando por identifi
 Preguntas en vivo durante una clase o un taller: opción múltiple, escalas de valoración, ordenaciones, nubes de palabras y preguntas de la sala ordenadas por apoyos. Quien participa entra con un código de seis caracteres o un QR y responde desde el móvil mientras los resultados se forman en la pantalla proyectada. Cualquier pregunta de opción puede llevar respuesta correcta, lo que añade un marcador. Sin cuentas, sin cookies y sin ninguna petición a terceros; una sala se borra sola doce horas después de abrirse. Un único Worker de Cloudflare con un Durable Object por sala, que es a la vez el almacenamiento y el punto por donde pasan todos los votos, y el mismo código corre también sobre Node.
 
 
-## Participaciones
-
-- **Member**, Open Science Monitoring Initiative (OSMI), WG1 & WG4 · WG1: Definición de necesidades de monitoreo de ciencia abierta y WG4: Construcción de infraestructuras y herramientas compartidas
-- **Member**, Barcelona Declaration on Open Research Information, WG7 · Promoción de la interoperabilidad, apertura e inclusividad en ecosistemas de información de investigación
-- **Advisory Board Member**, Cross-Domain Interoperability Framework (CDIF) - CODATA · Apoyo a marcos de interoperabilidad de metadatos interdisciplinarios
-
 ## Formación continua
 
 - **FORCE11 Scholarly Communication Institute – FSCI** (2017–2025): Completé múltiples tracks incluyendo: Governance for AI in Scientific Publications (Gobernanza de IA en publicaciones científicas), Forensic Scientometrics (Cienciometría forense), FAIR Data in the Scholarly Communication Lifecycle (Datos FAIR en el ciclo de comunicación académica), Metadata Governance (Gobernanza de metadatos), Research Reproducibility (Reproducibilidad de la investigación), Open Science in the Global South (Ciencia abierta en el Sur Global), Visualización de datos en R y D3.js, Uso de APIs (ORCID, Sherpa Romeo, Unpaywall) para análisis institucional
