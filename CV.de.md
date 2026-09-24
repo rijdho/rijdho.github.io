@@ -196,7 +196,7 @@ Alle Werkzeuge und Dashboards, mit Quellen und Lizenzen: [rijdho.github.io/metau
 
 Eine Familie von Dashboards, die die Metadaten prüfen, die Forschung in den Registern hinterlässt, die sie durchläuft, alle über eine Startseite erreichbar: After Retraction (wie 60.921 zurückgezogene Artikel weiter zitiert werden), Debris with DOIs (Systemdateien, die in DataCite als Forschung registriert sind), Publisher Gap (was 14 Verlage bei Crossref hinterlegen und was OpenAlex ergänzt), Empty Accounts (Vollständigkeit von ORCID-Profilen an 95 Einrichtungen), SciELO Chile in Crossref, Beyond Articles (chilenische Ergebnisse, die keine Artikel sind) sowie nationale Prüfungen für Österreich und die Niederlande.
 
-### [FAIR Readout Server: FAIR Scoring for Any Repository](https://metaudits.rijdho.org/repo-metaudits/)
+### [FAIR Metadata Check (Extended): FAIR Scoring for Any Repository](https://metaudits.rijdho.org/repo-metaudits/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Custom API*
 
 Bewertet die Metadatenqualität digitaler Repositorien anhand der FAIR-Prinzipien. Das Werkzeug verbindet sich mit OAI-PMH-Endpunkten, DataCite-Datensätzen oder beliebigen REST-APIs (CSW, STAC, CKAN und weitere), erntet Metadaten und führt eine strukturierte Bewertung über 14 Unterprinzipien durch. Es klassifiziert persistente Identifikatoren, erkennt Lizenztypen, validiert kontrollierte Vokabulare (DCMI, ISO 639) und prüft die Einhaltung von Community-Standards. Enthält priorisierte Empfehlungen, exportierbare Berichte (CSV, JSON, TXT) und interaktive Visualisierungen der Repositoriumsstruktur. Die FAIR-Bewertungslogik läuft serverseitig auf Cloudflare Workers.
@@ -261,10 +261,10 @@ Installation von Renku 2.0 für reproduzierbare Rechenumgebungen, auf zwei Wegen
 
 Zwei Generatoren, die je einen Quellordner pro Eintrag in eine einzige, in sich geschlossene zweisprachige Referenzseite überführen: einer für die API-Integrationen des Teams, gebaut aus bereinigten OpenAPI-Spezifikationen mit einem interaktiven Try-it-Panel je Endpunkt, und einer für die Automatisierungs-Pipelines, bei dem jede Pipeline ihre Workflow-Dateien, ihr eigenes Changelog und ihren Katalogeintrag im selben Ordner hält, damit beide nicht auseinanderlaufen. Neue Einträge kommen als ausgefüllte Vorlage über ein Issue-Formular, das automatisch geprüft wird und einen Pull Request eröffnet.
 
-### [FAIR Readout: In-Browser FAIR Metadata Scoring](https://rijdho.github.io/fair-repo-audit/)
+### [FAIR Metadata Check: In-Browser Scoring](https://rijdho.github.io/fair-repo-audit/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Open source*
 
-Offener, clientseitiger Zwilling von FAIR Readout Server – FAIR-Metadatenbewertung für DataCite- und OAI-PMH-Repositorien, vollständig im Browser. Das veröffentlichte Open-Source-Gegenstück zum gehosteten Evaluator.
+Offener, clientseitiger Zwilling von FAIR Metadata Check (Extended) – FAIR-Metadatenbewertung für DataCite- und OAI-PMH-Repositorien, vollständig im Browser. Das veröffentlichte Open-Source-Gegenstück zum gehosteten Evaluator.
 
 ### [Research Assessment Reform Planner: Self-Assessment and Plan](https://rijdho.github.io/coara-action-planner/)
 *Active · 2026 · CoARA, Research Assessment, Open source*

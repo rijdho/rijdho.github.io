@@ -15,9 +15,9 @@ content both, including every long description.
 
 ![The tool cloud: 19 ovals grouped into four colour-coded topics, Metadata quality 4,
 Assessment & policy 4, Infrastructure & AI 10, Data storytelling 1. Related projects touch
-rather than repel, so FAIR Readout Server sits against FAIR Readout. A dashed outline marks an
+rather than repel, so FAIR Metadata Check (Extended) sits against FAIR Metadata Check. A dashed outline marks an
 open GitHub twin, and a note in the corner says so. Five ovals carry a Zenodo concept DOI
-under the name: FAIR Readout 10.5281/zenodo.21492530, Affiliation Finder
+under the name: FAIR Metadata Check 10.5281/zenodo.21492530, Affiliation Finder
 10.5281/zenodo.22227424, Reform Planner 10.5281/zenodo.21492548, ORI Benefits
 10.5281/zenodo.22231440 and Pollen 10.5281/zenodo.22685893.](docs/hub-cloud.png)
 

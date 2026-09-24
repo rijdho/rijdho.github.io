@@ -956,7 +956,7 @@
       }
     },
     {
-      "title": "FAIR Readout Server: FAIR Scoring for Any Repository",
+      "title": "FAIR Metadata Check (Extended): FAIR Scoring for Any Repository",
       "year": "2026",
       "status": "Active",
       "url": "https://metaudits.rijdho.org/repo-metaudits/",
@@ -1246,7 +1246,7 @@
     },
     {
       "id": "fair-repo-audit",
-      "title": "FAIR Readout: In-Browser FAIR Metadata Scoring",
+      "title": "FAIR Metadata Check: In-Browser Scoring",
       "year": "2026",
       "status": "Active",
       "url": "https://rijdho.github.io/fair-repo-audit/",
@@ -1262,9 +1262,9 @@
         "repo-metaudits"
       ],
       "desc": {
-        "en": "Open, client-side twin of FAIR Readout Server: FAIR metadata scoring for DataCite and OAI-PMH repositories, running entirely in the browser. The published, open-source counterpart of the hosted evaluator.",
-        "es": "Gemelo abierto y del lado del cliente de FAIR Readout Server: evaluación FAIR de metadatos para repositorios DataCite y OAI-PMH, ejecutándose enteramente en el navegador. La contraparte publicada y de código abierto del evaluador alojado.",
-        "de": "Offener, clientseitiger Zwilling von FAIR Readout Server – FAIR-Metadatenbewertung für DataCite- und OAI-PMH-Repositorien, vollständig im Browser. Das veröffentlichte Open-Source-Gegenstück zum gehosteten Evaluator."
+        "en": "Open, client-side twin of FAIR Metadata Check (Extended): FAIR metadata scoring for DataCite and OAI-PMH repositories, running entirely in the browser. The published, open-source counterpart of the hosted evaluator.",
+        "es": "Gemelo abierto y del lado del cliente de FAIR Metadata Check (Extended): evaluación FAIR de metadatos para repositorios DataCite y OAI-PMH, ejecutándose enteramente en el navegador. La contraparte publicada y de código abierto del evaluador alojado.",
+        "de": "Offener, clientseitiger Zwilling von FAIR Metadata Check (Extended) – FAIR-Metadatenbewertung für DataCite- und OAI-PMH-Repositorien, vollständig im Browser. Das veröffentlichte Open-Source-Gegenstück zum gehosteten Evaluator."
       },
       "doi": "10.5281/zenodo.21492530"
     },

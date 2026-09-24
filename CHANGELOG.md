@@ -14,6 +14,9 @@ ships in numbered drops.
 
 ### Renamed
 
+- **FAIR Metadata Check** and **FAIR Metadata Check (Extended)** (were FAIR Readout and FAIR Readout
+  Server); the ovals read FAIR Check and FAIR Check Extended.
+
 - **Research Assessment Reform Planner** and **Research Assessment Reform Toolkit** (were Reform
   Action Planner and Reform Assessment Toolkit), in the CV and the cloud's tooltip; the oval keeps
   its short label, Reform Planner.

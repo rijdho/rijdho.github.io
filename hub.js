@@ -68,8 +68,8 @@ const SHORT=[
      and its hosted sibling wearing the same label, which is two ovals a reader cannot
      tell apart. The full name stays a hover away in the tooltip and a click away in the
      panel. */
-  [/^BiblioHelp Open/,"BiblioHelp (open)"],[/^FAIR Readout Server/,"FAIR Readout Server"],
-  [/^FAIR Readout/,"FAIR Readout"],
+  [/^BiblioHelp Open/,"BiblioHelp (open)"],[/^FAIR Metadata Check \(Extended\)/,"FAIR Check Extended"],
+  [/^FAIR Metadata Check/,"FAIR Check"],
   [/^Research Assessment Reform Planner/,"Reform Planner"],[/^Affiliation Finder/,"Affiliation Finder"],
   [/^Sound Inequality/,"Sound Inequality"],
   [/BiblioHelp/,"BiblioHelp"],[/^Metaudits/,"Metaudits"],[/^Pollen/,"Pollen"],
