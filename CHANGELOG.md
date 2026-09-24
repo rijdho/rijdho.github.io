@@ -20,6 +20,11 @@ ships in numbered drops.
 - **The Barcelona oval reads Value of Open Research Information**, the project's own name, not ORI
   Benefits; exactly 34 characters, the most an oval holds on a phone.
 
+### Fixed
+
+- **The browser tab reads Ricardo Hartley Belmar**, as the link preview already did; it had carried
+  a working title, "rijdho: hub (nube)", since the first version.
+
 ## [1.7.0]: 2026-09-24
 
 ### Renamed
