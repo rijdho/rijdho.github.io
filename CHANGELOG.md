@@ -29,7 +29,19 @@ ships in numbered drops.
   `tests/csp.test.mjs` fails on an inline script or `<style>`, an event-handler attribute, or a file
   from another host.
 
+### Removed
+
+- **Dead code from before the rail**: the tab and old writing-list styles, `.note`, `.spacer`,
+  the unused `writ_h` / `writ_lead` strings, `LBLFONT` and `yr` (15 names, each checked by hand;
+  the pages render pixel-identical before and after across every view, both themes and all three
+  languages).
+
 ### Fixed
+
+- **`docs/screenshots.mjs` runs again**: it clicked a tab bar that the rail replaced. The README
+  images, and the link-preview card, show the current layout.
+- **The deploy fails if the committed CV Markdown is stale**, rather than publishing a site that
+  is right next to a repository that is not.
 
 - **On a phone the topic legend sits above the cloud**, not on top of its bubbles, where the four topics
   wrapped onto three rows and covered the first ovals.

@@ -47,7 +47,6 @@
   a{color:inherit}
   .eyebrow{font-family:var(--mono);font-size:.66rem;letter-spacing:.19em;text-transform:uppercase;color:var(--brand);font-weight:600}
 
-  .spacer{flex:1}
   .seg{display:inline-flex;border:1px solid var(--border);border-radius:9px;overflow:hidden;background:var(--surface)}
   .seg button{appearance:none;border:0;background:transparent;color:var(--muted);font-family:var(--mono);
     font-size:.72rem;padding:6px 10px;cursor:pointer;letter-spacing:.04em}
@@ -149,13 +148,6 @@
   .lrow p{margin:0;font-size:.84rem;color:var(--muted);line-height:1.45}
   .lrow .ly{font-family:var(--mono);font-size:.72rem;color:var(--faint);margin-left:auto;flex:none}
 
-  /* tabs */
-  .tabs{display:flex;gap:2px;flex-wrap:nowrap;overflow-x:auto;border-bottom:1px solid var(--hair);margin-bottom:12px;-webkit-overflow-scrolling:touch}
-  .tab{appearance:none;border:0;background:transparent;color:var(--muted);font-family:var(--mono);font-size:.76rem;
-    padding:9px 13px;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;display:inline-flex;gap:7px;align-items:center;margin-bottom:-1px}
-  .tab:hover{color:var(--ink)}
-  .tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--brand)}
-  .tab .n{font-size:.66rem;color:var(--faint);font-variant-numeric:tabular-nums}
   /* One section at a time now, so the list runs its full length instead of scrolling inside a box. */
   .tabpanel{padding-right:6px}
   .tabpanel:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:8px}
@@ -175,17 +167,5 @@
     font-weight:700;margin:16px 0 2px;padding:4px 0}
   .pgrp:first-child{margin-top:0}
 
-  /* writing */
-  .wlist{display:flex;flex-direction:column;gap:2px}
-  .wrow{display:flex;gap:14px;align-items:baseline;text-decoration:none;color:inherit;padding:12px;border-radius:10px;border:1px solid transparent;transition:.14s}
-  .wrow:hover{background:var(--surface);border-color:var(--border)}
-  .wyear{font-family:var(--mono);font-size:.76rem;color:var(--faint);width:3ch;flex:none;font-variant-numeric:tabular-nums}
-  .wtype{font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brand);font-weight:600}
-  .wtitle{font-weight:560;font-size:.95rem;margin:1px 0 2px}
-  .wblurb{color:var(--muted);font-size:.84rem;line-height:1.45}
-  .warr{color:var(--faint);font-family:var(--mono);align-self:center;flex:none}
-  .wrow:hover .warr{color:var(--brand)}
 
-  .note{background:var(--surface);border:1px dashed var(--border);border-radius:10px;padding:9px 13px;font-size:.78rem;color:var(--muted);margin:16px 0 0;display:none}
-  .note.on{display:block}
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}

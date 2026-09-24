@@ -13,26 +13,26 @@ from this origin.
 Available in **English, German and Spanish** (auto-detected, switchable): interface and
 content both, including every long description.
 
-![The tool cloud: 23 ovals grouped into four colour-coded topics, Metadata quality 6,
-Assessment & policy 5, Infrastructure & AI 10, Data storytelling 2. Related projects touch
-rather than repel, so Repo MetAudits sits against FAIR Repo Audit. A dashed outline marks an
+![The tool cloud: 19 ovals grouped into four colour-coded topics, Metadata quality 4,
+Assessment & policy 4, Infrastructure & AI 10, Data storytelling 1. Related projects touch
+rather than repel, so FAIR Readout Server sits against FAIR Readout. A dashed outline marks an
 open GitHub twin, and a note in the corner says so. Five ovals carry a Zenodo concept DOI
-under the name: FAIR Repo Audit 10.5281/zenodo.21492530, ORCID Finder
-10.5281/zenodo.22227424, CoARA Planner 10.5281/zenodo.21492548, ORI Benefits
-10.5281/zenodo.22231440 and pollen 10.5281/zenodo.22685893.](docs/hub-cloud.png)
+under the name: FAIR Readout 10.5281/zenodo.21492530, Affiliation Finder
+10.5281/zenodo.22227424, Reform Planner 10.5281/zenodo.21492548, ORI Benefits
+10.5281/zenodo.22231440 and Pollen 10.5281/zenodo.22685893.](docs/hub-cloud.png)
 
 ## The three views
 
-- **The hub** (`index.html`): the 23 tools and experiments as a cloud of ovals grouped
-  by topic (drag, filter, click to open the live app), below two tabbed blocks for the rest
-  of the CV: education, experience and training first, then publications,
-  writing and talks.
-![The peer-reviewed list, 23 entries, each row labelled "Peer-reviewed" above its title as
-the other list labels its own categories. The link sits on the title, never on the whole row,
-so the year and the author line stay unstyled. The chip on the right names what the link
-actually resolves to: "DOI" only for a real doi.org address, otherwise the bare host. The
-first row reads cnachile.cl, and the second, which has no URL yet, carries no chip at
-all.](docs/hub-publications.png)
+- **The hub** (`index.html`): two columns. The landing shows the name and headline with the
+  19 tools and experiments under them, as a cloud of ovals grouped by topic (drag, filter,
+  click to open the live app). The rail on the left opens the rest of the CV one section at a
+  time: education, experience and training, then publications, writing and talks.
+![The publications section opened from the rail: the rail on the left lists Background,
+Publications & talks and a link to Metaudits, with Publications highlighted. The main column
+shows the heading Publications 46, then the peer-reviewed group, each row labelled
+"Peer-reviewed" above its title. The chip on the right names what the link actually resolves
+to: "DOI" only for a real doi.org address, otherwise the bare host, so the first row reads
+cnachile.cl and the second, which has no URL yet, carries no chip at all.](docs/hub-publications.png)
 
 - **The academic CV** (`cv.html`): the same data laid out as a formal, print-ready CV.
   The **Print / PDF** button produces a clean PDF straight from the browser.

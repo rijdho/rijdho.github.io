@@ -22,7 +22,6 @@ const PUBGRP={peerReviewed:{en:"Peer-reviewed",de:"Begutachtet",es:"Revisadas po
 let lang="en";
 const esc=s=>(s||"").replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
 const t=o=>typeof o==="string"?o:((o&&(o[lang]||o.en))||"");
-const yr=s=>{const m=(s||"").match(/\d{4}/);return m?m[0]:(s||"");};
 
 function render(){
   const U=UI[lang]; const p=CV.personal;

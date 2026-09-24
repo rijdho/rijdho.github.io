@@ -59,16 +59,14 @@ await hub.waitForFunction(() => document.querySelectorAll('.lg').length > 0, { t
 await new Promise(r => setTimeout(r, 1200))
 await shoot(hub, '#stage', 'hub-cloud.png')
 
-// ---- the hub: the publications tab, where each chip names what it resolves to ----
-await hub.evaluate(() => {
-  // by name, not by position: the tab order is a design decision and has changed once
-  document.querySelector('#tabbar_out button[data-tab="publications"]').click()
-  // the site header is sticky, so once the panel sits below the fold the element shot
-  // scrolls to it and the header covers its first rows; unstick it for the shot
-  document.querySelector('header.top').style.position = 'static'
-})
+// ---- the hub: a section opened from the rail, the whole window as a visitor sees it ----
+// Reached by its address, not by clicking: the rail's order is a design decision and has
+// changed once already.
+const pubs = await newPage(`${BASE}/index.html#publications`)
+await pubs.waitForFunction(() => document.querySelectorAll('#tabpanel_main .prow').length > 0, { timeout: 60000 })
 await new Promise(r => setTimeout(r, 600))
-await shoot(hub, '#tabpanel_out', 'hub-publications.png')
+await pubs.screenshot({ path: `${OUT}/hub-publications.png` })
+console.log('OK   hub-publications.png')
 
 // ---- the academic CV page, in German, to show the content is translated too ----
 const cv = await newPage(`${BASE}/cv.html`)

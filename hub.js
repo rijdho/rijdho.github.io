@@ -24,8 +24,7 @@ const PUBTYPE={
 /* Peer-reviewed rows carry a label too, so both lists read alike. It names the review,
    not a genre: the group holds journal articles, a seminar series and a reviewed preprint. */
 const PEERTYPE={en:"Peer-reviewed",de:"Begutachtet",es:"Revisado por pares"};
-/* Two tabbed blocks: the path, then what he has put out. The first tab of each
-   is the one that opens, so it is the only one a visitor sees without clicking. */
+/* The two groups of the rail: the path, then what he has put out. */
 const TAB_GROUPS={
   path:["education","experience","training"],
   out:["publications","writing","talks"],
@@ -39,17 +38,17 @@ const TOPICS = {
 const UI = {
   en:{nav_menu:"Menu",nav_close:"Close menu",nav_sections:"Sections",cv:"Full CV →", apps_h:"Tools & experiments", apps_lead:"A cloud of live tools, grouped by topic. Drag them around; click one to open it.",
     grp_out_h:"Publications & talks", grp_path_h:"Background",
-    hint:"drag · click a bubble", openmark:"dashed = open source", writ_h:"Writing", writ_lead:"Columns, essays and posts on open knowledge.",
+    hint:"drag · click a bubble", openmark:"dashed = open source", 
     by:"Built by", lic:"MIT-licensed, open source", src:"Source on GitHub",
     built:"A curated view of the same data behind the CV", open:"Open", nolink:"No public URL", list:"List", cloud:"Cloud"},
   de:{nav_menu:"Menü",nav_close:"Menü schließen",nav_sections:"Abschnitte",cv:"Vollständiger Lebenslauf →", apps_h:"Werkzeuge & Experimente", apps_lead:"Eine Wolke aktiver Werkzeuge, nach Thema gruppiert. Ziehen; zum Öffnen klicken.",
     grp_out_h:"Publikationen & Vorträge", grp_path_h:"Werdegang",
-    hint:"ziehen · Blase anklicken", openmark:"gestrichelt = quelloffen", writ_h:"Publizistik", writ_lead:"Kolumnen, Essays und Beiträge zu offenem Wissen.",
+    hint:"ziehen · Blase anklicken", openmark:"gestrichelt = quelloffen", 
     by:"Erstellt von", lic:"MIT-Lizenz, quelloffen", src:"Quellcode auf GitHub",
     built:"Eine kuratierte Ansicht derselben CV-Daten", open:"Öffnen", nolink:"Keine öffentliche URL", list:"Liste", cloud:"Wolke"},
   es:{nav_menu:"Menú",nav_close:"Cerrar menú",nav_sections:"Secciones",cv:"CV completo →", apps_h:"Herramientas y experimentos", apps_lead:"Una nube de herramientas vivas, agrupadas por tópico. Arrástralas; haz clic para abrir.",
     grp_out_h:"Publicaciones y charlas", grp_path_h:"Trayectoria",
-    hint:"arrastra · haz clic en una burbuja", openmark:"discontinuo = código abierto", writ_h:"Escritos", writ_lead:"Columnas, ensayos y publicaciones sobre conocimiento abierto.",
+    hint:"arrastra · haz clic en una burbuja", openmark:"discontinuo = código abierto", 
     by:"Hecho por", lic:"Licencia MIT, código abierto", src:"Código en GitHub",
     built:"Una vista curada de los mismos datos del CV", open:"Abrir", nolink:"Sin URL pública", list:"Lista", cloud:"Nube"},
 };
@@ -95,7 +94,6 @@ function layout(){
   anchors={ metadata:[W*0.30,H*0.36], infra:[W*0.70,H*0.34], assessment:[W*0.33,H*0.70], story:[W*0.70,H*0.70] };
   if(W<560){ anchors={ metadata:[W*0.30,H*0.24], infra:[W*0.70,H*0.42], assessment:[W*0.32,H*0.60], story:[W*0.70,H*0.78] }; }
 }
-const LBLFONT=b=>"600 11px "+cvar("--mono").split(",")[0].replace(/["']/g,"").trim();
 function initBubbles(){
   bubbles=DATA.apps.map((a)=>{const an=anchors[a.topic]||[W/2,H/2];
     const short=shortOf(a.title); const doi=a.doi||"";
@@ -228,7 +226,7 @@ function renderList(){const lw=document.getElementById("listwrap");
       <span style="flex:1;min-width:0"><h3>${esc(e.title)}</h3><p>${esc(blurb(e))}</p></span>
       <span class="ly">${esc(e.year||"")}</span></a>`;}).join("");}
 
-/* ---------- tabbed second section ---------- */
+/* ---------- the sections the rail opens ---------- */
 /* accepts either a {en,de,es} object or a bare string, so a field that has not been
    translated yet renders its text instead of silently disappearing */
 const deLbl=o=>typeof o==="string"?o:((o&&(o[lang]||o.en))||"");

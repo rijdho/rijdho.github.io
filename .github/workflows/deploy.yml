@@ -34,6 +34,11 @@ jobs:
       - run: node --test tests/*.test.mjs
       - name: Regenerate CV.md from data/cv.json
         run: python3 build_cv.py
+      # The committed CV.<lang>.md and the social tags must already be what build_cv.py
+      # makes from data/cv.json: otherwise the site is right and the repository shows a
+      # stale CV. Run build_cv.py locally and commit its output.
+      - name: Committed CV matches data/cv.json
+        run: git diff --exit-code -- CV.en.md CV.de.md CV.es.md index.html cv.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
