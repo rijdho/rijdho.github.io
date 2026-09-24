@@ -148,6 +148,9 @@ Profesional de apoyo para la acreditación de programas de postgrado, en la Vice
 
 ## Charlas y presentaciones
 
+- **The State of Research Repositories in Chile: FAIRness and Reuse, with Preliminary Results for Latin America** · RDA Regional Assembly, Research Data Alliance (online) (September 24, 2026)
+- **Research and Data Management: Principles, Processes and Practices** · Indian Research Scholars Association (IRSA), with Shaily Gandhi (online) (September 23, 2026)
+- **What the Public Record Says About Your Cruises, and What It Leaves Out That You Already Know** · FAIR Working Group, Rolling Deck to Repository (R2R) program, U.S. Academic Research Fleet (online) (September 17, 2026)
 - **Entities and/or Content: Metadata Quality in Open Science Infrastructure** · First Digital Humanities Seminar - Chile 2026: Technologies, Memories and Possible Futures, Panel E: Open Science and Reproducibility, Pontificia Universidad Católica de Chile, Campus Lo Contador (April 9, 2026)
 - **Tracing Research Outputs: FAIRness, Responsibility, and Reuse Across Infrastructure Layers** · Open Science Festival, University of Vienna (September 8, 2025)
 - **Research Traceability for Responsible Assessment** · FoReA-Treffen Q3 2025 (September 17, 2025)
@@ -294,4 +297,4 @@ Preguntas en vivo durante una clase o un taller: opción múltiple, escalas de v
 - **DataCite Certified Core Training** (2024): Certificación enfocada en el uso de identificadores persistentes (PIDs), buenas prácticas de metadatos e integración de repositorios con la infraestructura de DataCite.
 
 ---
-*Generado desde data/cv.json · 2026-08-24*
+*Generado desde data/cv.json · 2026-09-24*
