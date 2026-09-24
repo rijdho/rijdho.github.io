@@ -76,6 +76,10 @@ def build(lang):
         t=f"[{e['title']}]({e['url']})" if e.get('url') else e['title']
         w(f"- {t}" + (f" ({e['year']})" if e.get('year') else "") + (f", *{e['type']}*" if e.get('type') else ""))
     sec("experiments")
+    P = CV["personal"]
+    if P.get("toolsIndexUrl"):
+        u = P["toolsIndexUrl"]; short = u.split("://", 1)[-1].rstrip("/")
+        w(f"{tr(P.get('toolsIndexLabel'))} [{short}]({u})"); w("")
     for e in CV["experiments"]:
         t=f"[{e['title']}]({e['url']})" if e.get('url') else e['title']
         w(f"### {t}")

@@ -33,7 +33,13 @@
     "email": "ricdho@duck.com",
     "orcid": "0000-0001-5058-9309",
     "substack": "https://rijdho.substack.com",
-    "emailIsAlias": true
+    "emailIsAlias": true,
+    "toolsIndexLabel": {
+      "en": "All tools and dashboards, with their sources and licences:",
+      "es": "Todas las herramientas y dashboards, con sus fuentes y licencias:",
+      "de": "Alle Werkzeuge und Dashboards, mit Quellen und Lizenzen:"
+    },
+    "toolsIndexUrl": "https://rijdho.github.io/metaudits-home/"
   },
   "skills": [
     {

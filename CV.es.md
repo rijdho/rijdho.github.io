@@ -186,6 +186,8 @@ Profesional de apoyo para la acreditación de programas de postgrado, en la Vice
 
 ## Herramientas y experimentos
 
+Todas las herramientas y dashboards, con sus fuentes y licencias: [rijdho.github.io/metaudits-home](https://rijdho.github.io/metaudits-home/)
+
 ### [Metaudits: Audits of Research Metadata](https://rijdho.github.io/metaudits-home/)
 *Active · 2026 · DataCite, Crossref, ORCID, OpenAlex*
 

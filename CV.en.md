@@ -186,6 +186,8 @@ Support professional for the accreditation of postgraduate programmes, working w
 
 ## Tools & experiments
 
+All tools and dashboards, with their sources and licences: [rijdho.github.io/metaudits-home](https://rijdho.github.io/metaudits-home/)
+
 ### [Metaudits: Audits of Research Metadata](https://rijdho.github.io/metaudits-home/)
 *Active · 2026 · DataCite, Crossref, ORCID, OpenAlex*
 

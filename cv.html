@@ -233,12 +233,14 @@ function render(){
     return `<li><b>${ti}</b> <span class="tag">${esc(e.year)}${e.type?" · "+esc(e.type):""}</span><br>${esc(t(e.desc))}</li>`;}), 'ul class="plain"', CV.portfolio.length);
 
   // Tools (experiments)
-  sec("experiments", CV.experiments.map(e=>{const ti=e.url?`<a href="${esc(e.url)}">${esc(e.title)}</a>`:esc(e.title);
+  // First line of the section: where every tool and dashboard is listed with its sources and licences.
+  const toolsIndex=p.toolsIndexUrl?[`<p class="entry">${esc(t(p.toolsIndexLabel))} <a href="${esc(p.toolsIndexUrl)}">${esc(p.toolsIndexUrl.replace(/^https?:\/\//,"").replace(/\/$/,""))}</a></p>`]:[];
+  sec("experiments", toolsIndex.concat(CV.experiments.map(e=>{const ti=e.url?`<a href="${esc(e.url)}">${esc(e.title)}</a>`:esc(e.title);
     return `<div class="entry"><div class="top"><span class="ti">${ti}</span>
       <span class="when">${esc(e.status)} · ${esc(e.year)}</span></div>
       ${t(e.desc)?`<p>${esc(t(e.desc))}</p>`:""}
       ${e.twin&&e.twin.url?`<div class="twin">↔ <a href="${esc(e.twin.url)}">${esc(e.twin.title||e.twin.url)}</a></div>`:""}
-      ${(e.tags||[]).length?`<div class="tag">${esc((e.tags||[]).slice(0,6).join(" · "))}</div>`:""}</div>`;}), "", CV.experiments.length);
+      ${(e.tags||[]).length?`<div class="tag">${esc((e.tags||[]).slice(0,6).join(" · "))}</div>`:""}</div>`;})), "", CV.experiments.length);
 
   // Engagements + Training
   sec("engagements", CV.engagements.map(e=>`

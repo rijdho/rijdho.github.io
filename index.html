@@ -260,6 +260,7 @@
     </div>
     <div class="subrow">
       <p class="lead" data-t="apps_lead"></p>
+      <p class="lead tools-index"><span data-p="toolsIndexLabel"></span> <a id="tools_index" href="https://rijdho.github.io/metaudits-home/">rijdho.github.io/metaudits-home</a></p>
       <div class="seg viewseg" role="group" aria-label="View">
         <button data-view="cloud" data-t="cloud" aria-pressed="true"></button>
         <button data-view="list" data-t="list" aria-pressed="false"></button>
@@ -584,7 +585,9 @@ function render(){const t=UI[lang];
     if(v!=null)el.textContent=deLbl(v);});
   if(PERSONAL){const oc=document.getElementById("orcid_chip"), sc=document.getElementById("substack_chip");
     if(PERSONAL.orcid){oc.href="https://orcid.org/"+PERSONAL.orcid; oc.textContent="ORCID "+PERSONAL.orcid;}
-    if(PERSONAL.substack)sc.href=PERSONAL.substack;}
+    if(PERSONAL.substack)sc.href=PERSONAL.substack;
+    const ti=document.getElementById("tools_index");
+    if(PERSONAL.toolsIndexUrl&&ti){ti.href=PERSONAL.toolsIndexUrl; ti.textContent=PERSONAL.toolsIndexUrl.replace(/^https?:\/\//,"").replace(/\/$/,"");}}
   document.documentElement.lang=lang;
   document.getElementById("apps_c").textContent=DATA.apps.length;
   renderLegend();renderList();

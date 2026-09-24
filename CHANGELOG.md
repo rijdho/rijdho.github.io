@@ -20,6 +20,10 @@ ships in numbered drops.
 - **The dashboards are one entry, Metaudits**, which names them in a line and links to their front
   page (rijdho.github.io/metaudits-home), instead of five entries that went stale whenever one was
   added or renamed. Each tool with a DOI keeps its own entry.
+- **A visible way to all of them**: the tools section opens, on the hub, the CV page and the
+  Markdown CVs, with "All tools and dashboards, with their sources and licences:
+  rijdho.github.io/metaudits-home", in the page's language (`toolsIndexLabel`, `toolsIndexUrl` in
+  `personal`).
 
 ## [1.6.0] - 2026-09-18
 

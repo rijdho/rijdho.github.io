@@ -186,6 +186,8 @@ Fachkraft zur Unterstützung der Akkreditierung von Postgraduiertenprogrammen im
 
 ## Werkzeuge & Experimente
 
+Alle Werkzeuge und Dashboards, mit Quellen und Lizenzen: [rijdho.github.io/metaudits-home](https://rijdho.github.io/metaudits-home/)
+
 ### [Metaudits: Audits of Research Metadata](https://rijdho.github.io/metaudits-home/)
 *Active · 2026 · DataCite, Crossref, ORCID, OpenAlex*
 
