@@ -20,6 +20,7 @@ ships in numbered drops.
 - **The Barcelona oval reads Value of Open Research Information**, the project's own name, not ORI
   Benefits; exactly 34 characters, the most an oval holds on a phone.
 - **ORCID Affiliation Finder** (was Affiliation Finder), in the CV and the cloud.
+- **The Sound of Inequality**, the project's own title (was Sound Inequality), in the CV and the cloud.
 - **The cloud leaves out the Metaudits entry.** It stands for the front page that the rail and the
   line above the cloud already link to; the CV keeps it as the one line for the dashboards.
 

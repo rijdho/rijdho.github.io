@@ -216,7 +216,7 @@ MCP server exposing the OpenAIRE Graph API (100M+ open access research products)
 
 Chat interface where Cloudflare Workers AI (Llama 3.1 8B) uses the OpenAIRE MCP tools in an agentic loop to answer research questions in natural language. The LLM decides which tools to call, executes the OpenAIRE searches, and synthesizes the results into a readable response. Deployed entirely on free Cloudflare infrastructure (Pages + Workers AI).
 
-### [Sound Inequality: Data Disparities as Audio](https://sound-inequality.rijdho.org/)
+### [The Sound of Inequality: Data Disparities as Audio](https://sound-inequality.rijdho.org/)
 *Active · 2026 · Sonification, Data Viz, R, Accessibility*
 
 Sonification project exploring data inequality patterns through audio. Transforms statistical disparities into sound compositions to make data accessible through auditory perception.

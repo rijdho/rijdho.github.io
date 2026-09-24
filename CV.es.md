@@ -216,7 +216,7 @@ Servidor MCP que expone la API del OpenAIRE Graph (100M+ productos de investigac
 
 Interfaz de chat donde Cloudflare Workers AI (Llama 3.1 8B) usa las herramientas MCP de OpenAIRE en un bucle agéntico para responder preguntas de investigación en lenguaje natural. El LLM decide qué herramientas llamar, ejecuta las búsquedas en OpenAIRE y sintetiza los resultados en una respuesta legible. Desplegado completamente en infraestructura gratuita de Cloudflare (Pages + Workers AI).
 
-### [Sound Inequality: Data Disparities as Audio](https://sound-inequality.rijdho.org/)
+### [The Sound of Inequality: Data Disparities as Audio](https://sound-inequality.rijdho.org/)
 *Active · 2026 · Sonification, Data Viz, R, Accessibility*
 
 Proyecto de sonificación que explora patrones de desigualdad de datos a través de audio. Transforma disparidades estadísticas en composiciones sonoras para hacer los datos accesibles mediante percepción auditiva.
