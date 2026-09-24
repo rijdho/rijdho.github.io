@@ -145,3 +145,9 @@ About block filled (`gh repo edit --description … --homepage https://rijdho.gi
 --add-topic …`). The page carries its own About (footer: author · license · source). The
 CV page links back to the hub; the hub's "Full CV →" links to `cv.html`, **not** to
 life.rijdho.org. This repo is deliberately independent of life.
+
+## Content-Security-Policy (2026-09-24)
+
+`index.html` and `cv.html` each carry a CSP meta tag. Keep scripts in `hub.js` / `cv.js` and
+styles in `hub.css` / `cv.css`, never inline: `tests/csp.test.mjs` fails otherwise. When one of
+those files changes, bump its `?v=` in the page so cached browsers get it.

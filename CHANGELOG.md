@@ -19,6 +19,15 @@ ships in numbered drops.
   Metaudits); the main column keeps the hero at the top and shows the chosen section under it, with
   its own address (`#publications`, `#tools`). On a phone the rail is a menu.
 
+### Security
+
+- **Both pages carry a Content-Security-Policy** (`default-src 'none'`, scripts, styles, fonts and
+  data from the site itself only). Their scripts and styles moved out of the HTML into `hub.js`,
+  `hub.css`, `cv.js` and `cv.css` so the policy needs no `'unsafe-inline'` for them; inline style
+  attributes stay allowed (`style-src-attr`), because the pages write topic colours as they render.
+  `tests/csp.test.mjs` fails on an inline script or `<style>`, an event-handler attribute, or a file
+  from another host.
+
 ### Fixed
 
 - **The cloud's labels are drawn in monospace.** They were measured in monospace and drawn in the first

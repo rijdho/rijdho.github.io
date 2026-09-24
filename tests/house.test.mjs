@@ -20,6 +20,6 @@ test('the lock matches the house-style checkout, when there is one', (t) => {
 });
 test('index.html loads the house style before its own styles', () => {
   const html = readFileSync(at('../index.html'), 'utf8');
-  const h = html.indexOf('./house/house.css'), p = html.indexOf('<style>');
-  assert.ok(h > 0 && p > h, 'expected ./house/house.css linked before the inline <style>');
+  const h = html.indexOf('./house/house.css'), p = html.indexOf('./hub.css');
+  assert.ok(h > 0 && p > h, 'expected ./house/house.css linked before ./hub.css');
 });

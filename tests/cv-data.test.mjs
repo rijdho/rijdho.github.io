@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 
 const read = (rel) => readFileSync(fileURLToPath(new URL(rel, import.meta.url)), 'utf8');
 const CV = JSON.parse(read('../data/cv.json'));
-const html = read('../index.html');
+const html = read('../index.html') + read('../hub.js');
 
 /** The sections all three consumers index into, taken from the consumers. */
 const SECTIONS = ['personal', 'skills', 'experience', 'education', 'training',
@@ -115,7 +115,7 @@ test('every publication category is shown by all three consumers', () => {
   // A category the consumers do not know renders nowhere: cv.html and the hub walk
   // their own list of keys, so an entry filed under a new or misspelt key would drop
   // out of the CV in silence while the JSON stays valid.
-  const cvhtml = read('../cv.html');
+  const cvhtml = read('../cv.html') + read('../cv.js');
   const builder = read('../build_cv.py');
   const order = JSON.parse(cvhtml.match(/const groups=(\[[^\]]*\])/)[1]);
   const hubType = html.slice(html.indexOf('const PUBTYPE={'), html.indexOf('};', html.indexOf('const PUBTYPE={')));

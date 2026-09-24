@@ -14,7 +14,8 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const html = readFileSync(join(root, "index.html"), "utf8");
+// The page and its script, read as one source: the script moved out of the page for the CSP.
+const html = readFileSync(join(root, "index.html"), "utf8") + readFileSync(join(root, "hub.js"), "utf8");
 const cv = JSON.parse(readFileSync(join(root, "data", "cv.json"), "utf8"));
 
 // Slice a balanced {...} or [...] literal starting at `open`, so the test reads the
