@@ -299,7 +299,6 @@ function show(k,{scroll=false,toTools=false}={}){current=k;const tools=!k;
   document.getElementById("hero").hidden=!!k;
   document.getElementById("view_list").hidden=tools;
   document.getElementById("view_tools").hidden=!tools;
-  document.getElementById("cmd_title").textContent=tools?"":TABMETA[k][lang];
   if(!tools){document.getElementById("view_h").textContent=TABMETA[k][lang];
     document.getElementById("view_c").textContent=pcount(k);
     document.getElementById("tabpanel_main").innerHTML=PANEL[k]();}

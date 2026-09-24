@@ -17,7 +17,8 @@ ships in numbered drops.
 - **Two columns, in the family's shell** (house-style, synced into `house/`): the rail lists the
   sections, grouped as before (Background, Publications & talks, and a link to
   Metaudits); the main column shows the hero and the tool cloud on the landing and, once a section is
-  chosen, only that section, with its own address (`#publications`, `#tools`). On a phone the rail is a menu.
+  chosen, only that section, with its own address (`#publications`, `#tools`). The top bar carries no title,
+  so the section's name appears once, as its heading. On a phone the rail is a menu.
 
 ### Security
 
