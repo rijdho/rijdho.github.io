@@ -186,35 +186,15 @@ Profesional de apoyo para la acreditación de programas de postgrado, en la Vice
 
 ## Herramientas y experimentos
 
-### [MetAudits: Scielo Chile Crossref Metadata Completeness](https://metaudits.rijdho.org/scielochile/)
-*Active · 2026 · Crossref, Metadata Quality, FAIR, React*
+### [Metaudits: Audits of Research Metadata](https://rijdho.github.io/metaudits-home/)
+*Active · 2026 · DataCite, Crossref, ORCID, OpenAlex*
 
-Dashboard que audita cuán completos son los depósitos de metadatos Crossref para revistas de SciELO Chile. Evalúa 37 campos por artículo en 4 categorías inspiradas en FAIR, con visualizaciones interactivas incluyendo rain cloud plots, gráficos de radar, mapas de calor y filtrado por año. Construido como hub para agregar más auditorías de editores/registros.
+Una familia de dashboards que auditan los metadatos que la investigación deja en los registros por los que pasa, todos desde una misma portada: After Retraction (cómo se siguen citando 60.921 artículos retractados), Debris with DOIs (archivos de sistema registrados como investigación en DataCite), Publisher Gap (lo que 14 editoriales depositan en Crossref frente a lo que agrega OpenAlex), Empty Accounts (completitud de perfiles ORCID en 95 instituciones), SciELO Chile in Crossref, Beyond Articles (resultados chilenos que no son artículos) y auditorías nacionales de Austria y los Países Bajos.
 
-### [Repo MetAudits: FAIR Metadata Quality Evaluator](https://metaudits.rijdho.org/repo-metaudits/)
+### [FAIR Readout Server: FAIR Scoring for Any Repository](https://metaudits.rijdho.org/repo-metaudits/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Custom API*
 
 Evalúa la calidad de metadatos de repositorios digitales frente a los Principios FAIR. Se conecta a endpoints OAI-PMH, registros DataCite o cualquier API REST personalizada (CSW, STAC, CKAN y más), cosecha metadatos y ejecuta una evaluación estructurada a través de 14 sub-principios. Clasifica identificadores persistentes, detecta tipos de licencia, valida vocabularios controlados (DCMI, ISO 639) y verifica cumplimiento de estándares comunitarios. Incluye recomendaciones priorizadas, reportes exportables (CSV, JSON, TXT) y visualizaciones interactivas de estructura de repositorio. El motor de evaluación FAIR se ejecuta del lado del servidor en Cloudflare Workers.
-
-### [Dirty Repos: Problematic Files with DOIs in DataCite Repositories](https://metaudits.rijdho.org/dirty-repos/)
-*Active · 2026 · DataCite, Metadata Quality, React, Mapbox*
-
-Escanea DataCite en busca de DOIs apuntando a archivos problemáticos: artefactos del SO (.DS_Store, Thumbs.db), riesgos de seguridad (.env, credentials) y residuos de desarrollo (node_modules, __pycache__) en repositorios de investigación. Enriquecido con datos geográficos de ROR y cruzado contra metadatos de repositorios re3data. Dashboard interactivo con mapa mundial Mapbox, desgloses por categoría y drill-downs por repositorio.
-
-### [Publisher Gap: Crossref vs OpenAlex Metadata Completeness](https://metaudits.rijdho.org/publisher-gap/)
-*Active · 2026 · Crossref, OpenAlex, Metadata Quality, FAIR*
-
-¿Les importa a los editores los metadatos? Evidencia temporal comparando depósitos de Crossref vs enriquecimiento de OpenAlex a través de 14 editores principales (2015–2025). Evalúa 48 campos de metadatos en 5 categorías (FAIR + Evaluación/CoARA), con gráficos de radar de análisis de brechas, matrices de enriquecimiento y drill-downs por editor mostrando tendencias de cumplimiento de mandatos.
-
-### [Persistence of Retracted Knowledge in Scientific Literature](https://metaudits.rijdho.org/retractions/)
-*Active · 2025 · React, Recharts, Retraction Watch, OpenAlex*
-
-Dashboard interactivo que analiza la persistencia de citas de 60.921 artículos retractados. Revela que el 46,9% de las citas ocurren post-retractación sin decaimiento significativo en 10 años, disparidades geográficas en velocidad de detección y ratios planos de apoyo/contradicción en el tiempo. Construido con datos de Retraction Watch, OpenAlex y Scite.ai. También en https://observablehq.com/d/cecaefb7d49c7727
-
-### [ORCID Adoption: Consortium vs Non-Consortium](https://metaudits.rijdho.org/orcid-adoption/)
-*Active · 2026 · ORCID, PID Adoption, Metadata Quality, React*
-
-¿Los consorcios ORCID impulsan una adopción significativa, o solo cuentas vacías? Compara la completitud de perfiles en 95 instituciones y 212.651 perfiles de 6 continentes. Hallazgo clave: las instituciones en consorcio promedian 41,3% de completitud con 48,3% de perfiles vacíos, versus 40,3% y 51,7% en no consorcio, una diferencia de apenas +1,0pp. Los perfiles creados antes de 2018 superan en promedio el 60% (motivación intrínseca); los creados desde 2025 caen bajo 30% (creación masiva por mandato).
 
 ### [MCP CRIS Live](https://hub.docker.com/r/rijdho/mcp-cris-live)
 *Active · 2026 · MCP, Docker, Node.js, ORCID*
@@ -276,29 +256,29 @@ Despliegue de Renku 2.0 para entornos computacionales reproducibles, por dos rut
 
 Dos generadores que convierten una carpeta fuente por elemento en una única página de referencia bilingüe y autocontenida: uno para las integraciones de API del equipo, construido desde especificaciones OpenAPI saneadas y con un panel interactivo de prueba por endpoint, y otro para los pipelines de automatización, donde cada pipeline guarda sus archivos de flujo, su propio changelog y su entrada de catálogo en la misma carpeta para que ambos no se separen. Las entradas nuevas llegan como plantilla completada por un formulario de issue, que se revisa automáticamente y abre un pull request.
 
-### [FAIR Repo Audit: In-Browser Metadata Scoring](https://rijdho.github.io/fair-repo-audit/)
+### [FAIR Readout: In-Browser FAIR Metadata Scoring](https://rijdho.github.io/fair-repo-audit/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Open source*
 
-Gemelo abierto y del lado del cliente de Repo MetAudits: evaluación FAIR de metadatos para repositorios DataCite y OAI-PMH, ejecutándose enteramente en el navegador. La contraparte publicada y de código abierto del evaluador alojado.
+Gemelo abierto y del lado del cliente de FAIR Readout Server: evaluación FAIR de metadatos para repositorios DataCite y OAI-PMH, ejecutándose enteramente en el navegador. La contraparte publicada y de código abierto del evaluador alojado.
 
-### [CoARA Action Planner: Self-Assessment and Plan](https://rijdho.github.io/coara-action-planner/)
+### [Reform Action Planner: Self-Assessment and Plan](https://rijdho.github.io/coara-action-planner/)
 *Active · 2026 · CoARA, Research Assessment, Open source*
 
 Autoevalúa tu institución frente a los diez compromisos CoARA y genera un plan de acción priorizado y editable, enteramente en el navegador. El gemelo abierto del toolkit Reform Assessment.
 
-↔ [Reform Assessment](https://metaudits.rijdho.org/reform-assessment/)
+↔ [Reform Assessment Toolkit](https://metaudits.rijdho.org/reform-assessment/)
 
 ### [The Value of Open Research Information (Barcelona WG7-TF2)](https://rijdho.github.io/barcelona-wg7-tf2/)
 *Draft · 2026 · Barcelona Declaration, Open Research Information, Taxonomy, Research policy*
 
 Contribución al Task Force 2 del Grupo de Trabajo 7 de la Declaración de Barcelona sobre Información Abierta de Investigación: nueve beneficios de abrir la información sobre la investigación, ordenados en tres ejes (calidad y confianza, colaboración e innovación, impacto y relevancia) y publicados como explorador interactivo en vez de PDF. Una taxonomía legible por máquina es la fuente única del explorador, el documento escrito y el mapa de flujo, de modo que los tres no pueden separarse. Quien lee propone cambios y ejemplos mediante un formulario de issue precargado que aterriza en un registro versionado. El noveno beneficio, dirección estratégica y autonomía institucional, salió de contrastar casos reales con el marco y no de releer las definiciones. Documento de trabajo en v0.2, archivado en Zenodo como propuesta al task force, no como marco acordado por él.
 
-### [ORCID Finder: Institutional Researcher Discovery](https://rijdho.github.io/orcid-finder/)
+### [Affiliation Finder: Institutional Researcher Discovery](https://rijdho.github.io/orcid-finder/)
 *Active · 2026 · ORCID, ROR, Researcher Discovery, Persistent Identifiers*
 
 Encuentra las cuentas ORCID que declaran una institución, buscando por identificador ROR, GRID y Ringgold o por nombre, y las acota por palabra clave, afiliación vigente o pasada, cargo, departamento, país, fechas y si el empleo lo declaró una organización en lugar de la propia persona. Informa de qué filtro descartó a cada candidato y exporta a CSV o JSON junto con la consulta que lo produjo. Enteramente en el navegador, contra las API públicas de ORCID y ROR.
 
-### [pollen: Live Audience Questions](https://pollen.rijdho.org)
+### [Pollen: Live Audience Questions](https://pollen.rijdho.org)
 *Active · 2026 · Live polling, Audience response, Teaching, Cloudflare Workers*
 
 Preguntas en vivo durante una clase o un taller: opción múltiple, escalas de valoración, ordenaciones, nubes de palabras y preguntas de la sala ordenadas por apoyos. Quien participa entra con un código de seis caracteres o un QR y responde desde el móvil mientras los resultados se forman en la pantalla proyectada. Cualquier pregunta de opción puede llevar respuesta correcta, lo que añade un marcador. Sin cuentas, sin cookies y sin ninguna petición a terceros; una sala se borra sola doce horas después de abrirse. Un único Worker de Cloudflare con un Durable Object por sala, que es a la vez el almacenamiento y el punto por donde pasan todos los votos, y el mismo código corre también sobre Node.

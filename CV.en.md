@@ -186,35 +186,15 @@ Support professional for the accreditation of postgraduate programmes, working w
 
 ## Tools & experiments
 
-### [MetAudits: Scielo Chile Crossref Metadata Completeness](https://metaudits.rijdho.org/scielochile/)
-*Active · 2026 · Crossref, Metadata Quality, FAIR, React*
+### [Metaudits: Audits of Research Metadata](https://rijdho.github.io/metaudits-home/)
+*Active · 2026 · DataCite, Crossref, ORCID, OpenAlex*
 
-Dashboard that audits how complete Crossref metadata deposits are for SciELO Chile journals. Evaluates 37 fields per article across 4 FAIR-inspired categories, with interactive visualizations including rain cloud plots, radar charts, heatmaps, and year-based filtering. Built as a hub to add more publisher/registry audits.
+A family of dashboards auditing the metadata research leaves in the registries it passes through, all reached from one front page: After Retraction (how 60,921 retracted articles keep being cited), Debris with DOIs (system files registered as research in DataCite), Publisher Gap (what 14 publishers deposit in Crossref against what OpenAlex adds), Empty Accounts (ORCID profile completeness at 95 institutions), SciELO Chile in Crossref, Beyond Articles (Chilean outputs that are not articles), and national audits of Austria and the Netherlands.
 
-### [Repo MetAudits: FAIR Metadata Quality Evaluator](https://metaudits.rijdho.org/repo-metaudits/)
+### [FAIR Readout Server: FAIR Scoring for Any Repository](https://metaudits.rijdho.org/repo-metaudits/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Custom API*
 
 Evaluates metadata quality of digital repositories against the FAIR Principles. Connects to OAI-PMH endpoints, DataCite records, or any custom REST API (CSW, STAC, CKAN, and more), harvests metadata, and runs a structured assessment across 14 sub-principles. Classifies persistent identifiers, detects license types, validates controlled vocabularies (DCMI, ISO 639), and checks community standards compliance. Includes prioritized recommendations, exportable reports (CSV, JSON, TXT), and interactive repository structure visualizations. The FAIR assessment engine runs server-side on Cloudflare Workers.
-
-### [Dirty Repos: Problematic Files with DOIs in DataCite Repositories](https://metaudits.rijdho.org/dirty-repos/)
-*Active · 2026 · DataCite, Metadata Quality, React, Mapbox*
-
-Scans DataCite for DOIs pointing to problematic files: OS artifacts (.DS_Store, Thumbs.db), security risks (.env, credentials), and dev debris (node_modules, __pycache__) in research repositories. Enriched with geographic data from ROR and cross-referenced against re3data repository metadata. Interactive dashboard with Mapbox world map, category breakdowns, and repository drill-downs.
-
-### [Publisher Gap: Crossref vs OpenAlex Metadata Completeness](https://metaudits.rijdho.org/publisher-gap/)
-*Active · 2026 · Crossref, OpenAlex, Metadata Quality, FAIR*
-
-Do publishers care about metadata? Timeline evidence comparing Crossref deposits vs OpenAlex enrichment across 14 major publishers (2015–2025). Evaluates 48 metadata fields in 5 categories (FAIR + Evaluation/CoARA), with gap analysis radar charts, enrichment matrices, and per-publisher drill-downs showing mandate compliance trends.
-
-### [Persistence of Retracted Knowledge in Scientific Literature](https://metaudits.rijdho.org/retractions/)
-*Active · 2025 · React, Recharts, Retraction Watch, OpenAlex*
-
-Interactive dashboard analyzing citation persistence of 60,921 retracted articles. Reveals that 46.9% of citations occur post-retraction with no significant decay over 10 years, geographic disparities in detection speed, and flat supporting/contradicting ratios over time. Built with data from Retraction Watch, OpenAlex, and Scite.ai. Also in https://observablehq.com/d/cecaefb7d49c7727
-
-### [ORCID Adoption: Consortium vs Non-Consortium](https://metaudits.rijdho.org/orcid-adoption/)
-*Active · 2026 · ORCID, PID Adoption, Metadata Quality, React*
-
-Do ORCID consortia drive meaningful adoption, or just empty accounts? Compares profile completeness across 95 institutions and 212,651 profiles from 6 continents. Key finding: consortium institutions average 41.3% completeness with 48.3% empty profiles, versus 40.3% and 51.7% for non-consortium, a gap of just +1.0pp. Profiles created before 2018 average above 60% (intrinsic motivation); those created since 2025 fall below 30% (mandate-driven bulk creation).
 
 ### [MCP CRIS Live](https://hub.docker.com/r/rijdho/mcp-cris-live)
 *Active · 2026 · MCP, Docker, Node.js, ORCID*
@@ -276,29 +256,29 @@ Deployment of Renku 2.0 for reproducible computational environments, in two rout
 
 Two generators that turn one source folder per item into a single self-contained bilingual reference page: one for the team's API integrations, built from sanitised OpenAPI specs with an interactive try-it panel per endpoint, and one for its automation pipelines, where each pipeline keeps its workflow files, its own changelog and its catalogue entry in the same folder so the two cannot drift apart. New entries arrive as a filled-in template through an issue form, which is screened automatically and opens a pull request.
 
-### [FAIR Repo Audit: In-Browser Metadata Scoring](https://rijdho.github.io/fair-repo-audit/)
+### [FAIR Readout: In-Browser FAIR Metadata Scoring](https://rijdho.github.io/fair-repo-audit/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Open source*
 
-Open, client-side twin of Repo MetAudits: FAIR metadata scoring for DataCite and OAI-PMH repositories, running entirely in the browser. The published, open-source counterpart of the hosted evaluator.
+Open, client-side twin of FAIR Readout Server: FAIR metadata scoring for DataCite and OAI-PMH repositories, running entirely in the browser. The published, open-source counterpart of the hosted evaluator.
 
-### [CoARA Action Planner: Self-Assessment and Plan](https://rijdho.github.io/coara-action-planner/)
+### [Reform Action Planner: Self-Assessment and Plan](https://rijdho.github.io/coara-action-planner/)
 *Active · 2026 · CoARA, Research Assessment, Open source*
 
 Self-assess your institution against the ten CoARA commitments and generate a prioritised, editable action plan, entirely in your browser. The open twin of the Reform Assessment toolkit.
 
-↔ [Reform Assessment](https://metaudits.rijdho.org/reform-assessment/)
+↔ [Reform Assessment Toolkit](https://metaudits.rijdho.org/reform-assessment/)
 
 ### [The Value of Open Research Information (Barcelona WG7-TF2)](https://rijdho.github.io/barcelona-wg7-tf2/)
 *Draft · 2026 · Barcelona Declaration, Open Research Information, Taxonomy, Research policy*
 
 Contribution to Task Force 2 of Working Group 7 of the Barcelona Declaration on Open Research Information: nine benefits of opening information about research, arranged in three axes (quality and trust, collaboration and innovation, impact and relevance) and published as an interactive explorer rather than a PDF. One machine-readable taxonomy is the single source for the explorer, the written brief and the flow map, so the three cannot drift apart. Readers propose changes and examples through a pre-filled issue form that lands in a versioned register. The ninth benefit, strategic steering and institutional autonomy, came out of placing real case studies against the framework rather than out of rereading definitions. Working document at v0.2, archived on Zenodo as a proposal put to the task force, not as a framework it has agreed.
 
-### [ORCID Finder: Institutional Researcher Discovery](https://rijdho.github.io/orcid-finder/)
+### [Affiliation Finder: Institutional Researcher Discovery](https://rijdho.github.io/orcid-finder/)
 *Active · 2026 · ORCID, ROR, Researcher Discovery, Persistent Identifiers*
 
 Finds the ORCID accounts that declare an institution, searching by ROR, GRID and Ringgold identifier or by name, and narrows them by keyword, current or past affiliation, role, department, country, dates, and whether an organisation asserted the employment rather than the researcher. Reports which filter dropped each candidate and exports to CSV or JSON with the query that produced it. Entirely in the browser, against the public ORCID and ROR APIs.
 
-### [pollen: Live Audience Questions](https://pollen.rijdho.org)
+### [Pollen: Live Audience Questions](https://pollen.rijdho.org)
 *Active · 2026 · Live polling, Audience response, Teaching, Cloudflare Workers*
 
 Live questions during a lecture or a workshop: multiple choice, rating scales, rankings, word clouds, and questions from the room ordered by support. Participants join with a six-character code or a QR code and answer on their phones while the results build on the projected screen. Any choice question can carry a right answer, which adds a scoreboard. No accounts, no cookies and no third-party request of any kind; a room deletes itself twelve hours after it opens. One Cloudflare Worker with a Durable Object per room, which is both the storage and the point every vote passes through, and the same code also runs on Node.

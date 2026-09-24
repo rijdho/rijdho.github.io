@@ -933,30 +933,35 @@
     }
   ],
   "experiments": [
-    
     {
-      "title": "MetAudits: Scielo Chile Crossref Metadata Completeness",
+      "id": "metaudits",
+      "title": "Metaudits: Audits of Research Metadata",
       "year": "2026",
       "status": "Active",
-      "url": "https://metaudits.rijdho.org/scielochile/",
+      "url": "https://rijdho.github.io/metaudits-home/",
       "tags": [
+        "DataCite",
         "Crossref",
+        "ORCID",
+        "OpenAlex",
         "Metadata Quality",
         "FAIR",
-        "React",
-        "Data Pipeline",
-        "SciELO"
+        "Research Integrity",
+        "Data Pipeline"
       ],
       "topic": "metadata",
+      "related": [
+        "repo-metaudits",
+        "fair-repo-audit"
+      ],
       "desc": {
-        "en": "Dashboard that audits how complete Crossref metadata deposits are for SciELO Chile journals. Evaluates 37 fields per article across 4 FAIR-inspired categories, with interactive visualizations including rain cloud plots, radar charts, heatmaps, and year-based filtering. Built as a hub to add more publisher/registry audits.",
-        "es": "Dashboard que audita cuán completos son los depósitos de metadatos Crossref para revistas de SciELO Chile. Evalúa 37 campos por artículo en 4 categorías inspiradas en FAIR, con visualizaciones interactivas incluyendo rain cloud plots, gráficos de radar, mapas de calor y filtrado por año. Construido como hub para agregar más auditorías de editores/registros.",
-        "de": "Dashboard, das die Vollständigkeit der Crossref-Metadaten von SciELO-Chile-Zeitschriften prüft. Es bewertet 37 Felder pro Artikel in vier FAIR-inspirierten Kategorien, mit interaktiven Visualisierungen wie Raincloud-Plots, Netzdiagrammen, Heatmaps und Filterung nach Jahr. Als Hub angelegt, um weitere Verlags- und Registry-Audits aufzunehmen."
-      },
-      "id": "scielochile"
+        "en": "A family of dashboards auditing the metadata research leaves in the registries it passes through, all reached from one front page: After Retraction (how 60,921 retracted articles keep being cited), Debris with DOIs (system files registered as research in DataCite), Publisher Gap (what 14 publishers deposit in Crossref against what OpenAlex adds), Empty Accounts (ORCID profile completeness at 95 institutions), SciELO Chile in Crossref, Beyond Articles (Chilean outputs that are not articles), and national audits of Austria and the Netherlands.",
+        "es": "Una familia de dashboards que auditan los metadatos que la investigación deja en los registros por los que pasa, todos desde una misma portada: After Retraction (cómo se siguen citando 60.921 artículos retractados), Debris with DOIs (archivos de sistema registrados como investigación en DataCite), Publisher Gap (lo que 14 editoriales depositan en Crossref frente a lo que agrega OpenAlex), Empty Accounts (completitud de perfiles ORCID en 95 instituciones), SciELO Chile in Crossref, Beyond Articles (resultados chilenos que no son artículos) y auditorías nacionales de Austria y los Países Bajos.",
+        "de": "Eine Familie von Dashboards, die die Metadaten prüfen, die Forschung in den Registern hinterlässt, die sie durchläuft, alle über eine Startseite erreichbar: After Retraction (wie 60.921 zurückgezogene Artikel weiter zitiert werden), Debris with DOIs (Systemdateien, die in DataCite als Forschung registriert sind), Publisher Gap (was 14 Verlage bei Crossref hinterlegen und was OpenAlex ergänzt), Empty Accounts (Vollständigkeit von ORCID-Profilen an 95 Einrichtungen), SciELO Chile in Crossref, Beyond Articles (chilenische Ergebnisse, die keine Artikel sind) sowie nationale Prüfungen für Österreich und die Niederlande."
+      }
     },
     {
-      "title": "Repo MetAudits: FAIR Metadata Quality Evaluator",
+      "title": "FAIR Readout Server: FAIR Scoring for Any Repository",
       "year": "2026",
       "status": "Active",
       "url": "https://metaudits.rijdho.org/repo-metaudits/",
@@ -980,95 +985,6 @@
       "related": [
         "fair-repo-audit"
       ]
-    },
-    {
-      "title": "Dirty Repos: Problematic Files with DOIs in DataCite Repositories",
-      "year": "2026",
-      "status": "Active",
-      "url": "https://metaudits.rijdho.org/dirty-repos/",
-      "tags": [
-        "DataCite",
-        "Metadata Quality",
-        "React",
-        "Mapbox",
-        "re3data",
-        "Data Pipeline",
-        "Research Data Management"
-      ],
-      "topic": "metadata",
-      "desc": {
-        "en": "Scans DataCite for DOIs pointing to problematic files: OS artifacts (.DS_Store, Thumbs.db), security risks (.env, credentials), and dev debris (node_modules, __pycache__) in research repositories. Enriched with geographic data from ROR and cross-referenced against re3data repository metadata. Interactive dashboard with Mapbox world map, category breakdowns, and repository drill-downs.",
-        "es": "Escanea DataCite en busca de DOIs apuntando a archivos problemáticos: artefactos del SO (.DS_Store, Thumbs.db), riesgos de seguridad (.env, credentials) y residuos de desarrollo (node_modules, __pycache__) en repositorios de investigación. Enriquecido con datos geográficos de ROR y cruzado contra metadatos de repositorios re3data. Dashboard interactivo con mapa mundial Mapbox, desgloses por categoría y drill-downs por repositorio.",
-        "de": "Durchsucht DataCite nach DOIs, die auf problematische Dateien verweisen – Betriebssystem-Artefakte (.DS_Store, Thumbs.db), Sicherheitsrisiken (.env, Zugangsdaten) und Entwicklungsreste (node_modules, __pycache__) in Forschungsrepositorien. Angereichert mit geografischen Daten aus ROR und abgeglichen mit re3data-Repositoriumsmetadaten. Interaktives Dashboard mit Mapbox-Weltkarte, Aufschlüsselung nach Kategorien und Detailansichten je Repositorium."
-      },
-      "id": "dirty-repos"
-    },
-    {
-      "title": "Publisher Gap: Crossref vs OpenAlex Metadata Completeness",
-      "year": "2026",
-      "status": "Active",
-      "url": "https://metaudits.rijdho.org/publisher-gap/",
-      "tags": [
-        "Crossref",
-        "OpenAlex",
-        "Metadata Quality",
-        "FAIR",
-        "CoARA",
-        "React",
-        "Data Pipeline",
-        "Scholarly Communication"
-      ],
-      "topic": "metadata",
-      "desc": {
-        "en": "Do publishers care about metadata? Timeline evidence comparing Crossref deposits vs OpenAlex enrichment across 14 major publishers (2015–2025). Evaluates 48 metadata fields in 5 categories (FAIR + Evaluation/CoARA), with gap analysis radar charts, enrichment matrices, and per-publisher drill-downs showing mandate compliance trends.",
-        "es": "¿Les importa a los editores los metadatos? Evidencia temporal comparando depósitos de Crossref vs enriquecimiento de OpenAlex a través de 14 editores principales (2015–2025). Evalúa 48 campos de metadatos en 5 categorías (FAIR + Evaluación/CoARA), con gráficos de radar de análisis de brechas, matrices de enriquecimiento y drill-downs por editor mostrando tendencias de cumplimiento de mandatos.",
-        "de": "Kümmern sich Verlage um Metadaten? Zeitreihen-Evidenz im Vergleich von Crossref-Ablieferungen und OpenAlex-Anreicherung bei 14 großen Verlagen (2015–2025). Bewertet 48 Metadatenfelder in fünf Kategorien (FAIR + Bewertung/CoARA), mit Netzdiagrammen zur Lückenanalyse, Anreicherungsmatrizen und Detailansichten je Verlag, die Trends bei der Erfüllung von Vorgaben zeigen."
-      },
-      "id": "publisher-gap"
-    },
-    {
-      "title": "Persistence of Retracted Knowledge in Scientific Literature",
-      "year": "2025",
-      "status": "Active",
-      "url": "https://metaudits.rijdho.org/retractions/",
-      "tags": [
-        "React",
-        "Recharts",
-        "Retraction Watch",
-        "OpenAlex",
-        "Scite.ai",
-        "Citation Analysis",
-        "Research Integrity",
-        "Data Visualization"
-      ],
-      "topic": "story",
-      "desc": {
-        "en": "Interactive dashboard analyzing citation persistence of 60,921 retracted articles. Reveals that 46.9% of citations occur post-retraction with no significant decay over 10 years, geographic disparities in detection speed, and flat supporting/contradicting ratios over time. Built with data from Retraction Watch, OpenAlex, and Scite.ai. Also in https://observablehq.com/d/cecaefb7d49c7727",
-        "es": "Dashboard interactivo que analiza la persistencia de citas de 60.921 artículos retractados. Revela que el 46,9% de las citas ocurren post-retractación sin decaimiento significativo en 10 años, disparidades geográficas en velocidad de detección y ratios planos de apoyo/contradicción en el tiempo. Construido con datos de Retraction Watch, OpenAlex y Scite.ai. También en https://observablehq.com/d/cecaefb7d49c7727",
-        "de": "Interaktives Dashboard zur Zitationspersistenz von 60.921 zurückgezogenen Artikeln. Es zeigt, dass 46,9 % der Zitationen nach der Rücknahme erfolgen, ohne signifikanten Rückgang über 10 Jahre, dazu geografische Unterschiede in der Erkennungsgeschwindigkeit und über die Zeit konstante Verhältnisse zwischen stützenden und widersprechenden Zitationen. Daten von Retraction Watch, OpenAlex und Scite.ai. Auch unter https://observablehq.com/d/cecaefb7d49c7727"
-      },
-      "id": "retractions"
-    },
-    {
-      "title": "ORCID Adoption: Consortium vs Non-Consortium",
-      "year": "2026",
-      "status": "Active",
-      "url": "https://metaudits.rijdho.org/orcid-adoption/",
-      "tags": [
-        "ORCID",
-        "PID Adoption",
-        "Metadata Quality",
-        "React",
-        "Institutional Analysis",
-        "Research Assessment"
-      ],
-      "topic": "assessment",
-      "desc": {
-        "en": "Do ORCID consortia drive meaningful adoption, or just empty accounts? Compares profile completeness across 95 institutions and 212,651 profiles from 6 continents. Key finding: consortium institutions average 41.3% completeness with 48.3% empty profiles, versus 40.3% and 51.7% for non-consortium, a gap of just +1.0pp. Profiles created before 2018 average above 60% (intrinsic motivation); those created since 2025 fall below 30% (mandate-driven bulk creation).",
-        "es": "¿Los consorcios ORCID impulsan una adopción significativa, o solo cuentas vacías? Compara la completitud de perfiles en 95 instituciones y 212.651 perfiles de 6 continentes. Hallazgo clave: las instituciones en consorcio promedian 41,3% de completitud con 48,3% de perfiles vacíos, versus 40,3% y 51,7% en no consorcio, una diferencia de apenas +1,0pp. Los perfiles creados antes de 2018 superan en promedio el 60% (motivación intrínseca); los creados desde 2025 caen bajo 30% (creación masiva por mandato).",
-        "de": "Führen ORCID-Konsortien zu substanzieller Nutzung oder nur zu leeren Konten? Vergleich der Profilvollständigkeit über 95 Einrichtungen und 212.651 Profile aus sechs Kontinenten. Zentrales Ergebnis: Einrichtungen in Konsortien erreichen im Mittel 41,3 % Vollständigkeit bei 48,3 % leeren Profilen, gegenüber 40,3 % und 51,7 % außerhalb von Konsortien – ein Unterschied von nur +1,0 Prozentpunkten. Vor 2018 angelegte Profile liegen im Mittel über 60 % (intrinsische Motivation); seit 2025 angelegte fallen unter 30 % (durch Vorgaben erzeugte Masseneinrichtung)."
-      },
-      "id": "orcid-adoption"
     },
     {
       "title": "MCP CRIS Live",
@@ -1335,7 +1251,7 @@
     },
     {
       "id": "fair-repo-audit",
-      "title": "FAIR Repo Audit: In-Browser Metadata Scoring",
+      "title": "FAIR Readout: In-Browser FAIR Metadata Scoring",
       "year": "2026",
       "status": "Active",
       "url": "https://rijdho.github.io/fair-repo-audit/",
@@ -1351,16 +1267,15 @@
         "repo-metaudits"
       ],
       "desc": {
-        "en": "Open, client-side twin of Repo MetAudits: FAIR metadata scoring for DataCite and OAI-PMH repositories, running entirely in the browser. The published, open-source counterpart of the hosted evaluator.",
-        "es": "Gemelo abierto y del lado del cliente de Repo MetAudits: evaluación FAIR de metadatos para repositorios DataCite y OAI-PMH, ejecutándose enteramente en el navegador. La contraparte publicada y de código abierto del evaluador alojado.",
-        "de": "Offener, clientseitiger Zwilling von Repo MetAudits – FAIR-Metadatenbewertung für DataCite- und OAI-PMH-Repositorien, vollständig im Browser. Das veröffentlichte Open-Source-Gegenstück zum gehosteten Evaluator."
+        "en": "Open, client-side twin of FAIR Readout Server: FAIR metadata scoring for DataCite and OAI-PMH repositories, running entirely in the browser. The published, open-source counterpart of the hosted evaluator.",
+        "es": "Gemelo abierto y del lado del cliente de FAIR Readout Server: evaluación FAIR de metadatos para repositorios DataCite y OAI-PMH, ejecutándose enteramente en el navegador. La contraparte publicada y de código abierto del evaluador alojado.",
+        "de": "Offener, clientseitiger Zwilling von FAIR Readout Server – FAIR-Metadatenbewertung für DataCite- und OAI-PMH-Repositorien, vollständig im Browser. Das veröffentlichte Open-Source-Gegenstück zum gehosteten Evaluator."
       },
       "doi": "10.5281/zenodo.21492530"
     },
-    
     {
       "id": "coara",
-      "title": "CoARA Action Planner: Self-Assessment and Plan",
+      "title": "Reform Action Planner: Self-Assessment and Plan",
       "year": "2026",
       "status": "Active",
       "url": "https://rijdho.github.io/coara-action-planner/",
@@ -1378,7 +1293,7 @@
         "de": "Bewerten Sie Ihre Einrichtung selbst anhand der zehn CoARA-Verpflichtungen und erzeugen Sie einen priorisierten, bearbeitbaren Aktionsplan – vollständig im Browser. Der offene Zwilling des Reform-Assessment-Toolkits."
       },
       "twin": {
-        "title": "Reform Assessment",
+        "title": "Reform Assessment Toolkit",
         "url": "https://metaudits.rijdho.org/reform-assessment/"
       }
     },
@@ -1407,7 +1322,7 @@
     },
     {
       "id": "orcid-finder",
-      "title": "ORCID Finder: Institutional Researcher Discovery",
+      "title": "Affiliation Finder: Institutional Researcher Discovery",
       "year": "2026",
       "status": "Active",
       "url": "https://rijdho.github.io/orcid-finder/",
@@ -1430,7 +1345,7 @@
     },
     {
       "id": "pollen",
-      "title": "pollen: Live Audience Questions",
+      "title": "Pollen: Live Audience Questions",
       "year": "2026",
       "status": "Active",
       "url": "https://pollen.rijdho.org",

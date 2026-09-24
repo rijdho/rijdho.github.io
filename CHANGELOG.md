@@ -12,6 +12,15 @@ ships in numbered drops.
 
 ## [Unreleased]
 
+### Changed
+
+- **The tools carry their new names**: FAIR Readout, FAIR Readout Server, Affiliation Finder,
+  Reform Action Planner (twin: Reform Assessment Toolkit) and Pollen, in the CV and in the cloud
+  labels.
+- **The dashboards are one entry, Metaudits**, which names them in a line and links to their front
+  page (rijdho.github.io/metaudits-home), instead of five entries that went stale whenever one was
+  added or renamed. Each tool with a DOI keeps its own entry.
+
 ## [1.6.0] - 2026-09-18
 
 ### Added
