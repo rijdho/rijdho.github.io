@@ -12,6 +12,8 @@ ships in numbered drops.
 
 ## [Unreleased]
 
+## [1.7.0]: 2026-09-24
+
 ### Renamed
 
 - **FAIR Metadata Check** and **FAIR Metadata Check (Extended)** (were FAIR Readout and FAIR Readout
@@ -29,6 +31,17 @@ ships in numbered drops.
   chosen, only that section, with its own address (`#publications`, `#tools`). The top bar carries no title,
   so the section's name appears once, as its heading. On a phone the rail is a menu.
 
+- **The tools carry their new names**: FAIR Readout, FAIR Readout Server, Affiliation Finder,
+  Reform Action Planner (twin: Reform Assessment Toolkit) and Pollen, in the CV and in the cloud
+  labels.
+- **The dashboards are one entry, Metaudits**, which names them in a line and links to their front
+  page (rijdho.github.io/metaudits-home), instead of five entries that went stale whenever one was
+  added or renamed. Each tool with a DOI keeps its own entry.
+- **A visible way to all of them**: the tools section opens, on the hub, the CV page and the
+  Markdown CVs, with "All tools and dashboards, with their sources and licences:
+  rijdho.github.io/metaudits-home", in the page's language (`toolsIndexLabel`, `toolsIndexUrl` in
+  `personal`).
+
 ### Security
 
 - **Both pages carry a Content-Security-Policy** (`default-src 'none'`, scripts, styles, fonts and
@@ -45,6 +58,8 @@ ships in numbered drops.
   the pages render pixel-identical before and after across every view, both themes and all three
   languages).
 
+- **Engagements**, from the CV data, the CV page, the hub's Background tabs and the Markdown CVs.
+
 ### Fixed
 
 - **`docs/screenshots.mjs` runs again**: it clicked a tab bar that the rail replaced. The README
@@ -57,23 +72,6 @@ ships in numbered drops.
 
 - **The cloud's labels are drawn in monospace.** They were measured in monospace and drawn in the first
   name of the stack, ui-monospace, which canvas does not know, so Chrome drew them in a serif.
-
-### Changed
-
-- **The tools carry their new names**: FAIR Readout, FAIR Readout Server, Affiliation Finder,
-  Reform Action Planner (twin: Reform Assessment Toolkit) and Pollen, in the CV and in the cloud
-  labels.
-- **The dashboards are one entry, Metaudits**, which names them in a line and links to their front
-  page (rijdho.github.io/metaudits-home), instead of five entries that went stale whenever one was
-  added or renamed. Each tool with a DOI keeps its own entry.
-- **A visible way to all of them**: the tools section opens, on the hub, the CV page and the
-  Markdown CVs, with "All tools and dashboards, with their sources and licences:
-  rijdho.github.io/metaudits-home", in the page's language (`toolsIndexLabel`, `toolsIndexUrl` in
-  `personal`).
-
-### Removed
-
-- **Engagements**, from the CV data, the CV page, the hub's Background tabs and the Markdown CVs.
 
 ## [1.6.0] - 2026-09-18
 
@@ -512,7 +510,8 @@ Initial public site.
   folder uploads verbatim and the Markdown CVs are regenerated on every push.
 - Inter self-hosted as woff2, no font CDN.
 
-[Unreleased]: https://github.com/rijdho/rijdho.github.io/compare/v1.6.0...HEAD
+[Unreleased]: https://github.com/rijdho/rijdho.github.io/compare/v1.7.0...HEAD
+[1.7.0]: https://github.com/rijdho/rijdho.github.io/releases/tag/v1.7.0
 [1.6.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.5.1...v1.6.0
 [1.5.1]: https://github.com/rijdho/rijdho.github.io/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/rijdho/rijdho.github.io/compare/v1.4.0...v1.5.0
