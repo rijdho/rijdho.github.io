@@ -83,8 +83,8 @@ Profesional de apoyo para la acreditación de programas de postgrado, en la Vice
 
 ### Revisadas por pares
 
+- Abedrapo Rosen, I., Hartley Belmar, R., & Ruz Fuenzalida, C. (2026). [Análisis descriptivo de la orientación de la investigación en universidades chilenas en el contexto de políticas de evaluación basadas en métricas de impacto (2009–2023)](https://doi.org/10.31619/caledu.n65.1618). *Revista Calidad en la Educación, (65)*.
 - Abedrapo Rosen, I., Ruz Fuenzalida, C., & Hartley Belmar, R. (2025). [Evaluación del impacto de publicaciones científicas y el fomento de prácticas de Ciencia Abierta en universidades para la acreditación en investigación: Un análisis más allá de la indexación](https://www.cnachile.cl/). *Comisión Nacional de Acreditación, Serie Estudios sobre Acreditación, Seminario Internacional Expresiones sobre la Cultura de la calidad en las instituciones de educación superior*.
-- Abedrapo Rosen, I., Ruz Fuenzalida, C., & Hartley Belmar, R. (2025). Análisis descriptivo de la orientación de la investigación en universidades chilenas frente a políticas de evaluación basadas en métricas de impacto (2009–2023). *Revista Calidad en la Educación*.
 - Hartley Belmar, R., Abedrapo Rosen, I., & Torres Díaz, L. (2025). [Abrir, transformar y gobernar: hacia una Ciencia Abierta situada y equitativa en Chile](https://doi.org/10.15443/rintca.2025.es001). *Revista Internacional de Ciencia Abierta*.
 - Abedrapo Rosen, I., & Hartley Belmar, R. (2025). [Open Science governance: the role of persistent identifiers and metadata standards](https://doi.org/10.31219/osf.io/9h564_v3). *MetaResearch Open Review – MetaROR*.
 - Belmar, Ricardo Hartley, & Atenas, Javiera (2024). [Desafíos en la especialización para gestión de datos de investigación en un contexto ético](https://doi.org/10.4067/S1726-569X2024000200319). *Acta Bioethica, 30(2), 319–322*.

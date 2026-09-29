@@ -14,6 +14,9 @@ ships in numbered drops.
 
 ### Changed
 
+- **The Revista Calidad en la Educación paper is out**, in issue 65 (2026), and now links its DOI
+  `10.31619/caledu.n65.1618`. Title, author order and year follow the article page; it moves to
+  the top of the peer-reviewed list.
 - **The cloud names Research Assessment Reform Planner in full**, not Reform Planner: the short form
   was the ambiguity the rename removed. The label limit in `tests/hub-ui.test.mjs` goes from 20 to
   34 characters to hold it.
