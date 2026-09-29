@@ -52,9 +52,9 @@ test("every locale of the hub UI carries the same keys", () => {
   }
 });
 
-// The dashed outline is the only thing separating a hosted tool from its open twin,
-// and the two BiblioHelp ovals differ by one capital letter, so the page has to say
-// what the dash means in every language it speaks.
+// The dashed outline is the only thing separating a hosted tool from its open twin
+// (FAIR Check Extended beside FAIR Check), so the page has to say what the dash means
+// in every language it speaks.
 test("every locale explains what the dashed outline means", () => {
   for (const loc of Object.keys(UI)) {
     assert.ok(UI[loc].openmark, `${loc} explains the dashed outline`);
@@ -75,7 +75,7 @@ test("no bubble is labelled with a raw repository slug", () => {
 });
 
 // Two ovals whose labels differ only in case are two ovals a reader cannot tell
-// apart, which is exactly what "BiblioHelp" and "bibliohelp" were.
+// apart, which is what a hosted tool and its open twin under the same name once were.
 test("no two bubbles carry labels that differ only in case", () => {
   const seen = new Map();
   for (const app of cv.experiments) {

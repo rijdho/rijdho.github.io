@@ -8,8 +8,8 @@ vanilla JS. Part of the violet-family design system (see `../CLAUDE.md`).
 
 `data/cv.json` is the only place CV content lives. Three consumers read it:
 
-- `index.html`: the hub. `fetch('./data/cv.json')` → derives `DATA` (apps = `experiments`,
-  writing = `portfolio`) and `EXTRA` (the tab categories), then renders the tabs + cloud.
+- `index.html` + `hub.js`: the hub. `hub.js` runs `fetch('./data/cv.json')` → derives
+  `DATA` (apps = `experiments`, writing = `portfolio`) and `EXTRA` (the tab categories), then renders the tabs + cloud.
   **Layout since 2026-09-24: the family shell** (a synced copy of rijdho/house-style in
   `house/`, `scripts/sync-house.mjs`, `tests/house.test.mjs`). The rail lists the sections,
   built by `renderNav()` from `TAB_GROUPS`: education, experience, training ("Background"),
@@ -22,7 +22,7 @@ vanilla JS. Part of the violet-family design system (see `../CLAUDE.md`).
   from the CV on 2026-09-24, at the author's request (data, page, hub and Markdown).
   Topic assignment for the cloud is the `topic` field on each experiment, and **it is data**,
   edit it there, not in code. Topic *labels/colours* are config (the `TOPICS` object in
-  `index.html`). The text inside an oval is config too: the `SHORT` table maps a title to a
+  `hub.js`). The text inside an oval is config too: the `SHORT` table maps a title to a
   short label, and anything unmatched falls back to the title itself. **A new tool needs a
   `SHORT` entry**, or its oval shows whatever the title is, which for the open twins is the
   repository slug. That is the right name in a citation and the wrong one in a 46px oval,
@@ -48,7 +48,8 @@ existed as a slash-separated list in `cv.json` and a full-stop-separated one in 
 
 Two literals are kept on purpose, and both are overwritten by `render()` on load: the name
 in the `<h1>` and the ORCID chip. They are the page's identity, neither ever changes, and
-the site has no `og:` tags, so raw HTML is all a link unfurler gets. Prose is never
+a link unfurler reads only raw HTML (the `og:` block that `build_cv.py` writes covers the
+preview, not the page body). Prose is never
 duplicated this way, because prose is what actually changes.
 
 **To update anything on the site, edit `data/cv.json` and nothing else.** The pages fetch
@@ -75,7 +76,7 @@ link, never the whole row.** Wrapping the row in an `<a>` underlines the year, t
 and the blurb along with it. That was the Writing tab until 2026-08-03, and it was the only
 one of the seven tabs doing it.
 
-The right-hand chip (`linkChip()` in `index.html`) labels itself from the URL: `DOI` only
+The right-hand chip (`linkChip()` in `hub.js`) labels itself from the URL: `DOI` only
 when it actually matches `doi.org`, otherwise the host via the existing `srcLabel()`. Do not
 hard-code the label: it used to read `DOI →` for every entry that had any URL at all, so a
 publisher homepage was presented as a persistent identifier. An entry with no `url` gets no

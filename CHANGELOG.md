@@ -12,6 +12,22 @@ ships in numbered drops.
 
 ## [Unreleased]
 
+### Removed
+
+- **Leftovers with nothing left to act on:** the BiblioHelp and Metaudits entries in the oval
+  label table (no tool in the cloud matches them), four colour tokens in `hub.css` that nothing
+  reads, and the hub's own `@font-face` rules, which duplicated the family shell's and made the
+  hub load `fonts/` while the shell's identical `house/fonts/` went unused. The hub now takes
+  Inter from `house/`; the CV page keeps `fonts/`.
+
+### Fixed
+
+- **Docs that had drifted:** the README screenshots are regenerated (the cloud still showed the
+  labels from before 1.8.0, and the publications image the paper without its DOI), the repo's
+  `CLAUDE.md` points at `hub.js` where the tables and `linkChip()` now live and no longer says
+  the site has no `og:` tags, and two test comments cite a pair that still exists.
+- **`meta.updated` in `cv.json`** reads 2026-09-29, the date the CV Markdown files print.
+
 ## [1.8.0]: 2026-09-29
 
 ### Changed

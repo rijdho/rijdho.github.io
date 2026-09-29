@@ -297,4 +297,4 @@ Live-Fragen während einer Lehrveranstaltung oder eines Workshops: Auswahlfragen
 - **DataCite Certified Core Training** (2024): Zertifizierung mit Schwerpunkt auf der Nutzung persistenter Identifikatoren (PIDs), Best Practices für Metadaten und der Anbindung von Repositorien an die DataCite-Infrastruktur.
 
 ---
-*Generiert aus data/cv.json · 2026-09-24*
+*Generiert aus data/cv.json · 2026-09-29*

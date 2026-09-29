@@ -63,16 +63,14 @@ function srcLabel(u){if(!u)return"";try{const h=new URL(u).hostname.replace(/^ww
 /* curated short labels shown inside the ovals (order matters: OpenAIRE variant before the plain MCP) */
 const SHORT=[
   /* Curated because a full title does not fit a 46px oval and the fallback, the part
-     before the colon, is not always distinct enough. "BiblioHelp Open" is anchored and
-     comes first because the plain /BiblioHelp/ below would swallow it and leave the twin
-     and its hosted sibling wearing the same label, which is two ovals a reader cannot
-     tell apart. The full name stays a hover away in the tooltip and a click away in the
-     panel. */
-  [/^BiblioHelp Open/,"BiblioHelp (open)"],[/^FAIR Metadata Check \(Extended\)/,"FAIR Check Extended"],
+     before the colon, is not always distinct enough. "FAIR Metadata Check (Extended)" is
+     anchored and comes first because the plain /^FAIR Metadata Check/ below would swallow
+     it and leave the hosted tool and its open twin wearing the same label. The full name
+     stays a hover away in the tooltip and a click away in the panel. */
+  [/^FAIR Metadata Check \(Extended\)/,"FAIR Check Extended"],
   [/^FAIR Metadata Check/,"FAIR Check"],
   [/^Research Assessment Reform Planner/,"Research Assessment Reform Planner"],[/^ORCID Affiliation Finder/,"ORCID Affiliation Finder"],
-  [/^The Sound of Inequality/,"The Sound of Inequality"],
-  [/BiblioHelp/,"BiblioHelp"],[/^Metaudits/,"Metaudits"],[/^Pollen/,"Pollen"],
+  [/^The Sound of Inequality/,"The Sound of Inequality"],[/^Pollen/,"Pollen"],
   [/MCP CRIS Live: OpenAIRE/,"MCP OpenAIRE"],
   [/MCP CRIS Live/,"MCP CRIS"],[/OpenAIRE Research/,"OpenAIRE AI"],
   [/PID Traceability/,"PID Workflows"],[/Value of Open Research Information/,"Value of Open Research Information"],

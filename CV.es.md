@@ -297,4 +297,4 @@ Preguntas en vivo durante una clase o un taller: opción múltiple, escalas de v
 - **DataCite Certified Core Training** (2024): Certificación enfocada en el uso de identificadores persistentes (PIDs), buenas prácticas de metadatos e integración de repositorios con la infraestructura de DataCite.
 
 ---
-*Generado desde data/cv.json · 2026-09-24*
+*Generado desde data/cv.json · 2026-09-29*

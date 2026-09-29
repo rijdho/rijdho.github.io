@@ -31,8 +31,9 @@ under the name: FAIR Metadata Check 10.5281/zenodo.21492530, ORCID Affiliation F
 Publications & talks and a link to Metaudits, with Publications highlighted. The main column
 shows the heading Publications 46, then the peer-reviewed group, each row labelled
 "Peer-reviewed" above its title. The chip on the right names what the link actually resolves
-to: "DOI" only for a real doi.org address, otherwise the bare host, so the first row reads
-cnachile.cl and the second, which has no URL yet, carries no chip at all.](docs/hub-publications.png)
+to: "DOI" only for a real doi.org address, otherwise the bare host, so the first row, the 2026
+paper in Revista Calidad en la Educación, reads DOI and the second, the CNA seminar paper,
+reads cnachile.cl.](docs/hub-publications.png)
 
 - **The academic CV** (`cv.html`): the same data laid out as a formal, print-ready CV.
   The **Print / PDF** button produces a clean PDF straight from the browser.
