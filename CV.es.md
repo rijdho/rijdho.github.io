@@ -77,7 +77,7 @@ Profesional de apoyo para la acreditación de programas de postgrado, en la Vice
 - **Infraestructura de Investigación y Sistemas de Metadatos:** ORCID, ROR, Crossref, DataCite, OpenAlex, Estándares de metadatos (Dublin Core, DataCite Metadata Schema, Schema.org)
 - **Análisis de Datos y Visualización:** R, Python, JavaScript, D3.js, Observable, Integración de APIs y pipelines de datos
 - **Gestión de Datos y Principios FAIR:** Planes de Gestión de Datos (DMP), Implementación de principios FAIR, Gestión de repositorios, Gobernanza de datos de investigación
-- **Idiomas:** Español: nativo, Inglés: técnico
+- **Idiomas:** Español: nativo, Inglés: fluido
 
 ## Publicaciones
 

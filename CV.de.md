@@ -77,7 +77,7 @@ Fachkraft zur Unterstützung der Akkreditierung von Postgraduiertenprogrammen im
 - **Forschungsinfrastruktur & Metadatensysteme:** ORCID, ROR, Crossref, DataCite, OpenAlex, Metadatenstandards (Dublin Core, DataCite Metadata Schema, Schema.org)
 - **Datenanalyse & Visualisierung:** R, Python, JavaScript, D3.js, Observable, API-Integration und Datenpipelines
 - **Datenmanagement & FAIR-Prinzipien:** Datenmanagementpläne (DMPs), Umsetzung der FAIR-Prinzipien, Repositorien-Management, Governance von Forschungsdaten
-- **Sprachen:** Spanisch: Muttersprache, Englisch: Fachenglisch
+- **Sprachen:** Spanisch: Muttersprache, Englisch: fließend
 
 ## Publikationen
 

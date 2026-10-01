@@ -77,7 +77,7 @@ Support professional for the accreditation of postgraduate programmes, working w
 - **Research Infrastructure & Metadata Systems:** ORCID, ROR, Crossref, DataCite, OpenAlex, Metadata standards (Dublin Core, DataCite Metadata Schema, Schema.org)
 - **Data Analysis & Visualization:** R, Python, JavaScript, D3.js, Observable, API integration and data pipelines
 - **Data Management & FAIR Principles:** Data Management Plans (DMPs), FAIR data principles implementation, Repository management, Research data governance
-- **Languages:** Spanish: Native, English: Technical
+- **Languages:** Spanish: Native, English: Fluent
 
 ## Publications
 
