@@ -18,6 +18,15 @@ ships in numbered drops.
   profile out, written by fixed rules from public records rather than by an AI model, with its
   sources named per paragraph and a schema.org JSON-LD export.
 
+### Changed
+
+- **Oval labels say what the tool does** where the old one was jargon or an internal name:
+  Pollen: Live Questions, Research Data for AI and OpenAIRE for AI (were MCP CRIS and MCP
+  OpenAIRE), OpenAIRE Chat Demo, API & Pipeline Docs (IT:U) (was DART Docs), Funding Calls
+  (IT:U) (was OpenCalls) and Open Research Info (Barcelona) (was Value of Open Research
+  Information, which read like a paper). Only the oval
+  changes; titles, the tooltip and the panel keep each tool's own name.
+
 ## [1.8.1]: 2026-09-29
 
 ### Removed

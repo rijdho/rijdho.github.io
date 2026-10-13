@@ -70,11 +70,11 @@ const SHORT=[
   [/^FAIR Metadata Check \(Extended\)/,"FAIR Check Extended"],
   [/^FAIR Metadata Check/,"FAIR Check"],
   [/^Research Assessment Reform Planner/,"Research Assessment Reform Planner"],[/^ORCID Affiliation Finder/,"ORCID Affiliation Finder"],[/^Researcher Narrative Profile/,"Researcher Narrative Profile"],
-  [/^The Sound of Inequality/,"The Sound of Inequality"],[/^Pollen/,"Pollen"],
-  [/MCP CRIS Live: OpenAIRE/,"MCP OpenAIRE"],
-  [/MCP CRIS Live/,"MCP CRIS"],[/OpenAIRE Research/,"OpenAIRE AI"],
-  [/PID Traceability/,"PID Workflows"],[/Value of Open Research Information/,"Value of Open Research Information"],
-  [/DART Documentation Generators/,"DART Docs"],[/Renku 2\.0 Deployment/,"Renku 2.0 (IT:U)"],
+  [/^The Sound of Inequality/,"The Sound of Inequality"],[/^Pollen/,"Pollen: Live Questions"],
+  [/MCP CRIS Live: OpenAIRE/,"OpenAIRE for AI"],
+  [/MCP CRIS Live/,"Research Data for AI"],[/OpenAIRE Research/,"OpenAIRE Chat Demo"],
+  [/PID Traceability/,"PID Workflows"],[/Value of Open Research Information/,"Open Research Info (Barcelona)"],
+  [/DART Documentation Generators/,"API & Pipeline Docs (IT:U)"],[/^OpenCalls/,"Funding Calls (IT:U)"],[/Renku 2\.0 Deployment/,"Renku 2.0 (IT:U)"],
   [/Open Science Strategy/,"OS Strategy (IT:U)"],[/maDMP Template/,"maDMP Template"]];
 /* Fallback for a title with no curated label: keep the name, drop the subtitle. The
    separator is ": " with the space, so "CRIS for IT:U" is never cut at "IT". */
