@@ -1293,6 +1293,32 @@
       }
     },
     {
+      "id": "researcher-narrative",
+      "title": "Researcher Narrative Profile: Written from Public Records, Without AI",
+      "year": "2026",
+      "status": "Active",
+      "url": "https://metaudits.rijdho.org/reform-assessment/actionable/researcher.html",
+      "tags": [
+        "ORCID",
+        "OpenAlex",
+        "DataCite",
+        "Crossref",
+        "JSON-LD",
+        "CoARA",
+        "DORA",
+        "Research Assessment"
+      ],
+      "topic": "assessment",
+      "related": [
+        "coara"
+      ],
+      "desc": {
+        "en": "Enter an ORCID iD and get a narrative profile of the researcher for assessment in the spirit of DORA and CoARA: position and trajectory, the full range of outputs, open research, contributions to others, and what the public record cannot say. No AI model writes it: each sentence is a fixed template filled from counted records in ORCID, OpenAlex, DataCite, Crossref and GitHub, so the same records always give the same text, and every paragraph names its sources. Gaps become questions to ask the researcher, not scores against them. The profile exports as schema.org JSON-LD.",
+        "es": "Ingresa un ORCID iD y obtén un perfil narrativo del investigador para una evaluación en el espíritu de DORA y CoARA: posición y trayectoria, toda la variedad de resultados, investigación abierta, contribuciones a otros y lo que el registro público no puede decir. No lo escribe un modelo de IA: cada frase es una plantilla fija que se completa con registros contados de ORCID, OpenAlex, DataCite, Crossref y GitHub, así que los mismos registros dan siempre el mismo texto, y cada párrafo nombra sus fuentes. Los vacíos se convierten en preguntas para el investigador, no en puntajes en su contra. El perfil se exporta como JSON-LD de schema.org.",
+        "de": "Geben Sie eine ORCID iD ein und erhalten Sie ein narratives Profil der Forscherin oder des Forschers für eine Bewertung im Sinne von DORA und CoARA: Position und Werdegang, die ganze Bandbreite der Ergebnisse, offene Forschung, Beiträge für andere und das, was der öffentliche Datensatz nicht sagen kann. Kein KI-Modell schreibt es: Jeder Satz ist eine feste Vorlage, gefüllt mit gezählten Datensätzen aus ORCID, OpenAlex, DataCite, Crossref und GitHub, sodass dieselben Datensätze immer denselben Text ergeben, und jeder Absatz nennt seine Quellen. Lücken werden zu Fragen an die Person, nicht zu Punktabzügen. Das Profil lässt sich als schema.org-JSON-LD exportieren."
+      }
+    },
+    {
       "id": "barcelona-wg7-tf2",
       "title": "The Value of Open Research Information (Barcelona WG7-TF2)",
       "year": "2026",

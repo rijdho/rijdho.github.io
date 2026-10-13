@@ -12,6 +12,12 @@ ships in numbered drops.
 
 ## [Unreleased]
 
+### Added
+
+- **Researcher Narrative Profile** in the tool cloud (assessment): an ORCID iD in, a narrative
+  profile out, written by fixed rules from public records rather than by an AI model, with its
+  sources named per paragraph and a schema.org JSON-LD export.
+
 ## [1.8.1]: 2026-09-29
 
 ### Removed

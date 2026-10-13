@@ -273,6 +273,11 @@ Bewerten Sie Ihre Einrichtung selbst anhand der zehn CoARA-Verpflichtungen und e
 
 ↔ [Research Assessment Reform Toolkit](https://metaudits.rijdho.org/reform-assessment/)
 
+### [Researcher Narrative Profile: Written from Public Records, Without AI](https://metaudits.rijdho.org/reform-assessment/actionable/researcher.html)
+*Active · 2026 · ORCID, OpenAlex, DataCite, Crossref*
+
+Geben Sie eine ORCID iD ein und erhalten Sie ein narratives Profil der Forscherin oder des Forschers für eine Bewertung im Sinne von DORA und CoARA: Position und Werdegang, die ganze Bandbreite der Ergebnisse, offene Forschung, Beiträge für andere und das, was der öffentliche Datensatz nicht sagen kann. Kein KI-Modell schreibt es: Jeder Satz ist eine feste Vorlage, gefüllt mit gezählten Datensätzen aus ORCID, OpenAlex, DataCite, Crossref und GitHub, sodass dieselben Datensätze immer denselben Text ergeben, und jeder Absatz nennt seine Quellen. Lücken werden zu Fragen an die Person, nicht zu Punktabzügen. Das Profil lässt sich als schema.org-JSON-LD exportieren.
+
 ### [The Value of Open Research Information (Barcelona WG7-TF2)](https://rijdho.github.io/barcelona-wg7-tf2/)
 *Draft · 2026 · Barcelona Declaration, Open Research Information, Taxonomy, Research policy*
 

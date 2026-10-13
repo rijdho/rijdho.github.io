@@ -273,6 +273,11 @@ Self-assess your institution against the ten CoARA commitments and generate a pr
 
 ↔ [Research Assessment Reform Toolkit](https://metaudits.rijdho.org/reform-assessment/)
 
+### [Researcher Narrative Profile: Written from Public Records, Without AI](https://metaudits.rijdho.org/reform-assessment/actionable/researcher.html)
+*Active · 2026 · ORCID, OpenAlex, DataCite, Crossref*
+
+Enter an ORCID iD and get a narrative profile of the researcher for assessment in the spirit of DORA and CoARA: position and trajectory, the full range of outputs, open research, contributions to others, and what the public record cannot say. No AI model writes it: each sentence is a fixed template filled from counted records in ORCID, OpenAlex, DataCite, Crossref and GitHub, so the same records always give the same text, and every paragraph names its sources. Gaps become questions to ask the researcher, not scores against them. The profile exports as schema.org JSON-LD.
+
 ### [The Value of Open Research Information (Barcelona WG7-TF2)](https://rijdho.github.io/barcelona-wg7-tf2/)
 *Draft · 2026 · Barcelona Declaration, Open Research Information, Taxonomy, Research policy*
 
