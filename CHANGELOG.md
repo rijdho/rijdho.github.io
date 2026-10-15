@@ -23,8 +23,8 @@ ships in numbered drops.
 - **Oval labels say what the tool does** where the old one was jargon or an internal name:
   Pollen: Live Questions, Research Data for AI and OpenAIRE for AI (were MCP CRIS and MCP
   OpenAIRE), OpenAIRE Chat Demo, API & Pipeline Docs (IT:U) (was DART Docs), Funding Calls
-  (IT:U) (was OpenCalls) and Open Research Info (Barcelona) (was Value of Open Research
-  Information, which read like a paper). Only the oval
+  (IT:U) (was OpenCalls) and Open Research Info (Barcelona Declaration) (was Value of Open
+  Research Information, which read like a paper; the label cap rises from 34 to 42 for it). Only the oval
   changes; titles, the tooltip and the panel keep each tool's own name.
 
 ## [1.8.1]: 2026-09-29
