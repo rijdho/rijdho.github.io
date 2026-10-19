@@ -261,6 +261,11 @@ Installation von Renku 2.0 für reproduzierbare Rechenumgebungen, auf zwei Wegen
 
 Zwei Generatoren, die je einen Quellordner pro Eintrag in eine einzige, in sich geschlossene zweisprachige Referenzseite überführen: einer für die API-Integrationen des Teams, gebaut aus bereinigten OpenAPI-Spezifikationen mit einem interaktiven Try-it-Panel je Endpunkt, und einer für die Automatisierungs-Pipelines, bei dem jede Pipeline ihre Workflow-Dateien, ihr eigenes Changelog und ihren Katalogeintrag im selben Ordner hält, damit beide nicht auseinanderlaufen. Neue Einträge kommen als ausgefüllte Vorlage über ein Issue-Formular, das automatisch geprüft wird und einen Pull Request eröffnet.
 
+### [National Research Metadata Audits: Austria and the Netherlands](https://rijdho.github.io/national-research-metadata-audits/)
+*Active · 2026 · DataCite, ORCID, ROR, FAIR*
+
+Land für Land die Metadatenvollständigkeit und die FAIR-Werte der Repositorien, die die DataCite-Mitglieder des Landes registrieren, und die Vollständigkeit der ORCID-Profile, die öffentlich mit seinen Bildungs- und Forschungseinrichtungen in ROR verbunden sind, für alle zugehörigen Profile und für das aktuelle Personal. Umfasst Österreich und die Niederlande. Die aggregierten Ergebnisse stehen als CSV und JSON zum Download bereit; Daten auf Profilebene sind für Forschungszwecke auf Anfrage erhältlich.
+
 ### [FAIR Metadata Check: In-Browser Scoring](https://rijdho.github.io/fair-repo-audit/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Open source*
 

@@ -261,6 +261,11 @@ Deployment of Renku 2.0 for reproducible computational environments, in two rout
 
 Two generators that turn one source folder per item into a single self-contained bilingual reference page: one for the team's API integrations, built from sanitised OpenAPI specs with an interactive try-it panel per endpoint, and one for its automation pipelines, where each pipeline keeps its workflow files, its own changelog and its catalogue entry in the same folder so the two cannot drift apart. New entries arrive as a filled-in template through an issue form, which is screened automatically and opens a pull request.
 
+### [National Research Metadata Audits: Austria and the Netherlands](https://rijdho.github.io/national-research-metadata-audits/)
+*Active · 2026 · DataCite, ORCID, ROR, FAIR*
+
+Country by country, the metadata completeness and FAIR scores of the repositories registered by the country's DataCite members, and the completeness of the ORCID profiles publicly affiliated with its education and research organisations in ROR, shown for all affiliated profiles and for current staff. Covers Austria and the Netherlands. The aggregated results can be downloaded as CSV and JSON; profile-level data are available for research on request.
+
 ### [FAIR Metadata Check: In-Browser Scoring](https://rijdho.github.io/fair-repo-audit/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Open source*
 

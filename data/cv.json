@@ -1245,6 +1245,32 @@
       "id": "dart-docs"
     },
     {
+      "id": "national-audits",
+      "title": "National Research Metadata Audits: Austria and the Netherlands",
+      "year": "2026",
+      "status": "Active",
+      "url": "https://rijdho.github.io/national-research-metadata-audits/",
+      "tags": [
+        "DataCite",
+        "ORCID",
+        "ROR",
+        "FAIR",
+        "Metadata Quality",
+        "Open data"
+      ],
+      "topic": "metadata",
+      "platform": "github",
+      "related": [
+        "metaudits",
+        "fair-repo-audit"
+      ],
+      "desc": {
+        "en": "Country by country, the metadata completeness and FAIR scores of the repositories registered by the country's DataCite members, and the completeness of the ORCID profiles publicly affiliated with its education and research organisations in ROR, shown for all affiliated profiles and for current staff. Covers Austria and the Netherlands. The aggregated results can be downloaded as CSV and JSON; profile-level data are available for research on request.",
+        "es": "País por país, la completitud de los metadatos y los puntajes FAIR de los repositorios que registran los miembros de DataCite del país, y la completitud de los perfiles ORCID afiliados públicamente a sus organizaciones de educación e investigación en ROR, para todos los perfiles afiliados y para la plantilla actual. Cubre Austria y los Países Bajos. Los resultados agregados se pueden descargar en CSV y JSON; los datos por perfil están disponibles para investigación a pedido.",
+        "de": "Land für Land die Metadatenvollständigkeit und die FAIR-Werte der Repositorien, die die DataCite-Mitglieder des Landes registrieren, und die Vollständigkeit der ORCID-Profile, die öffentlich mit seinen Bildungs- und Forschungseinrichtungen in ROR verbunden sind, für alle zugehörigen Profile und für das aktuelle Personal. Umfasst Österreich und die Niederlande. Die aggregierten Ergebnisse stehen als CSV und JSON zum Download bereit; Daten auf Profilebene sind für Forschungszwecke auf Anfrage erhältlich."
+      }
+    },
+    {
       "id": "fair-repo-audit",
       "title": "FAIR Metadata Check: In-Browser Scoring",
       "year": "2026",

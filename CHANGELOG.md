@@ -17,6 +17,9 @@ ships in numbered drops.
 - **Researcher Narrative Profile** in the tool cloud (assessment): an ORCID iD in, a narrative
   profile out, written by fixed rules from public records rather than by an AI model, with its
   sources named per paragraph and a schema.org JSON-LD export.
+- **National Metadata Audits** in the tool cloud (metadata): repository metadata and ORCID profiles
+  of Austria and the Netherlands, on its own public site since 2026-10-18 (it was reached only
+  through the Metaudits front page).
 
 ### Changed
 

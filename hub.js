@@ -69,7 +69,7 @@ const SHORT=[
      stays a hover away in the tooltip and a click away in the panel. */
   [/^FAIR Metadata Check \(Extended\)/,"FAIR Check Extended"],
   [/^FAIR Metadata Check/,"FAIR Check"],
-  [/^Research Assessment Reform Planner/,"Research Assessment Reform Planner"],[/^ORCID Affiliation Finder/,"ORCID Affiliation Finder"],[/^Researcher Narrative Profile/,"Researcher Narrative Profile"],
+  [/^Research Assessment Reform Planner/,"Research Assessment Reform Planner"],[/^ORCID Affiliation Finder/,"ORCID Affiliation Finder"],[/^Researcher Narrative Profile/,"Researcher Narrative Profile"],[/^National Research Metadata Audits/,"National Metadata Audits"],
   [/^The Sound of Inequality/,"The Sound of Inequality"],[/^Pollen/,"Pollen: Live Questions"],
   [/MCP CRIS Live: OpenAIRE/,"OpenAIRE for AI"],
   [/MCP CRIS Live/,"Research Data for AI"],[/OpenAIRE Research/,"OpenAIRE Chat Demo"],
