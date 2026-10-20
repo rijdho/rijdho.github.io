@@ -293,6 +293,21 @@ Contribución al Task Force 2 del Grupo de Trabajo 7 de la Declaración de Barce
 
 Encuentra las cuentas ORCID que declaran una institución, buscando por identificador ROR, GRID y Ringgold o por nombre, y las acota por palabra clave, afiliación vigente o pasada, cargo, departamento, país, fechas y si el empleo lo declaró una organización en lugar de la propia persona. Informa de qué filtro descartó a cada candidato y exporta a CSV o JSON junto con la consulta que lo produjo. Enteramente en el navegador, contra las API públicas de ORCID y ROR.
 
+### [ORCID Profiles at Member and Non-member Institutions](https://rijdho.github.io/orcid-adoption/)
+*Active · 2026 · ORCID, ROR, Metadata Quality, Open data*
+
+Completitud de los perfiles ORCID públicos encontrados mediante los ROR id de 120 instituciones de investigación, 20 por continente, comparando miembros de ORCID con las demás instituciones: en total, año a año de creación de la cuenta y según quién escribió cada entrada. Los datos agregados se descargan bajo CC BY 4.0; los datos por perfil se entregan para investigación a pedido.
+
+### [Beyond Articles: Chilean Research Outputs in DataCite and ANID](https://rijdho.github.io/chilean-altoutputs/)
+*Active · 2026 · DataCite, ANID, Metadata Quality, Open data*
+
+Completitud de los metadatos de los resultados de investigación chilenos que no son artículos (datasets, imágenes, colecciones, software, planes de gestión de datos y modelos) en DataCite y el repositorio de ANID: dónde se depositan, con qué licencia y qué tan completamente se describen.
+
+### [Actionable DMP: Write and Check a Machine-Actionable Plan](https://rijdho.github.io/dmp-template/)
+*Active · 2026 · maDMP, RDA DMP Common Standard, DataCite, Science Europe*
+
+Escribe un plan de gestión de datos como archivo accionable por máquina, válido según el RDA DMP Common Standard v1.2, respondiendo las quince preguntas de los requisitos básicos de Science Europe, y contrasta lo que el plan dice de cada dataset con su registro DOI en DataCite. El plan se descarga como dmp.json y como DMP.md, en las secciones de Science Europe o en las de la plantilla de Horizon Europe; la misma revisión corre desde la línea de comandos y como GitHub Action.
+
 ### [Pollen: Live Audience Questions](https://pollen.rijdho.org)
 *Active · 2026 · Live polling, Audience response, Teaching, Cloudflare Workers*
 

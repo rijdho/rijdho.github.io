@@ -293,6 +293,21 @@ Contribution to Task Force 2 of Working Group 7 of the Barcelona Declaration on 
 
 Finds the ORCID accounts that declare an institution, searching by ROR, GRID and Ringgold identifier or by name, and narrows them by keyword, current or past affiliation, role, department, country, dates, and whether an organisation asserted the employment rather than the researcher. Reports which filter dropped each candidate and exports to CSV or JSON with the query that produced it. Entirely in the browser, against the public ORCID and ROR APIs.
 
+### [ORCID Profiles at Member and Non-member Institutions](https://rijdho.github.io/orcid-adoption/)
+*Active · 2026 · ORCID, ROR, Metadata Quality, Open data*
+
+Completeness of the public ORCID profiles found through the ROR ids of 120 research institutions, 20 per continent, comparing ORCID members with other institutions: overall, year by year of account creation, and by who wrote each entry. Aggregated data can be downloaded under CC BY 4.0; profile-level data are available for research on request.
+
+### [Beyond Articles: Chilean Research Outputs in DataCite and ANID](https://rijdho.github.io/chilean-altoutputs/)
+*Active · 2026 · DataCite, ANID, Metadata Quality, Open data*
+
+Metadata completeness of Chilean research outputs other than articles (datasets, images, collections, software, data management plans and models) in DataCite and ANID's repository: where they are deposited, under which licence, and how completely they are described.
+
+### [Actionable DMP: Write and Check a Machine-Actionable Plan](https://rijdho.github.io/dmp-template/)
+*Active · 2026 · maDMP, RDA DMP Common Standard, DataCite, Science Europe*
+
+Write a data management plan as a machine-actionable file that validates against the RDA DMP Common Standard v1.2, answering the fifteen questions of Science Europe's core requirements, and check what the plan says about each dataset against its DOI record in DataCite. The plan downloads as dmp.json and as DMP.md, in Science Europe's sections or in those of the Horizon Europe template; the same check runs from the command line and as a GitHub Action.
+
 ### [Pollen: Live Audience Questions](https://pollen.rijdho.org)
 *Active · 2026 · Live polling, Audience response, Teaching, Cloudflare Workers*
 

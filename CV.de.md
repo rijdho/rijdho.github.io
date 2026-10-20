@@ -293,6 +293,21 @@ Beitrag zur Task Force 2 der Arbeitsgruppe 7 der Barcelona-Erklärung zu offener
 
 Findet die ORCID-Konten, die eine Einrichtung angeben, gesucht nach ROR-, GRID- und Ringgold-Kennung oder nach Namen, und grenzt sie ein nach Schlagwort, laufender oder früherer Zugehörigkeit, Funktion, Abteilung, Land, Daten und danach, ob eine Organisation die Anstellung eingetragen hat statt der Person selbst. Meldet, welcher Filter wen aussortiert hat, und exportiert als CSV oder JSON samt der Abfrage, die das Ergebnis erzeugt hat. Vollständig im Browser, gegen die öffentlichen APIs von ORCID und ROR.
 
+### [ORCID Profiles at Member and Non-member Institutions](https://rijdho.github.io/orcid-adoption/)
+*Active · 2026 · ORCID, ROR, Metadata Quality, Open data*
+
+Vollständigkeit der öffentlichen ORCID-Profile, die über die ROR-IDs von 120 Forschungseinrichtungen (20 je Kontinent) gefunden werden, im Vergleich zwischen ORCID-Mitgliedern und anderen Einrichtungen: insgesamt, Jahr für Jahr der Kontoerstellung und danach, wer jeden Eintrag geschrieben hat. Die aggregierten Daten stehen unter CC BY 4.0 zum Download; Daten auf Profilebene gibt es für die Forschung auf Anfrage.
+
+### [Beyond Articles: Chilean Research Outputs in DataCite and ANID](https://rijdho.github.io/chilean-altoutputs/)
+*Active · 2026 · DataCite, ANID, Metadata Quality, Open data*
+
+Vollständigkeit der Metadaten chilenischer Forschungsergebnisse jenseits von Artikeln (Datensätze, Bilder, Sammlungen, Software, Datenmanagementpläne und Modelle) in DataCite und im Repositorium der ANID: wo sie abgelegt sind, unter welcher Lizenz und wie vollständig sie beschrieben sind.
+
+### [Actionable DMP: Write and Check a Machine-Actionable Plan](https://rijdho.github.io/dmp-template/)
+*Active · 2026 · maDMP, RDA DMP Common Standard, DataCite, Science Europe*
+
+Schreibt einen Datenmanagementplan als maschinenverarbeitbare Datei, die dem RDA DMP Common Standard v1.2 entspricht, entlang der fünfzehn Fragen der Kernanforderungen von Science Europe, und prüft, was der Plan über jeden Datensatz sagt, an dessen DOI-Eintrag in DataCite. Der Plan lässt sich als dmp.json und als DMP.md herunterladen, in den Abschnitten von Science Europe oder denen der Horizon-Europe-Vorlage; dieselbe Prüfung läuft auf der Kommandozeile und als GitHub Action.
+
 ### [Pollen: Live Audience Questions](https://pollen.rijdho.org)
 *Active · 2026 · Live polling, Audience response, Teaching, Cloudflare Workers*
 

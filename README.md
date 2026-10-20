@@ -13,8 +13,8 @@ from this origin.
 Available in **English, German and Spanish** (auto-detected, switchable): interface and
 content both, including every long description.
 
-![The tool cloud: 20 ovals grouped into four colour-coded topics, Metadata quality 4,
-Assessment & policy 5, Infrastructure & AI 10, Data storytelling 1. Related projects touch
+![The tool cloud: 23 ovals grouped into four colour-coded topics, Metadata quality 6,
+Assessment & policy 6, Infrastructure & AI 10, Data storytelling 1. Related projects touch
 rather than repel, so FAIR Metadata Check (Extended) sits against FAIR Metadata Check. A dashed outline marks a
 tool whose source is public on GitHub, and a note in the corner says so. Five ovals carry a Zenodo concept DOI
 under the name: FAIR Metadata Check 10.5281/zenodo.21492530, ORCID Affiliation Finder
@@ -24,7 +24,7 @@ under the name: FAIR Metadata Check 10.5281/zenodo.21492530, ORCID Affiliation F
 ## The three views
 
 - **The hub** (`index.html`): two columns. The landing shows the name and headline with the
-  20 tools and experiments under them, as a cloud of ovals grouped by topic (drag, filter,
+  23 tools and experiments under them, as a cloud of ovals grouped by topic (drag, filter,
   click for a description and, where there is one, the link). The rail on the left opens the rest of the CV one section at a
   time: education, experience and training, then publications, writing and talks.
 ![The publications section opened from the rail: the rail on the left lists Background,

@@ -1390,6 +1390,76 @@
       }
     },
     {
+      "id": "orcid-adoption",
+      "title": "ORCID Profiles at Member and Non-member Institutions",
+      "year": "2026",
+      "status": "Active",
+      "url": "https://rijdho.github.io/orcid-adoption/",
+      "tags": [
+        "ORCID",
+        "ROR",
+        "Metadata Quality",
+        "Open data"
+      ],
+      "topic": "metadata",
+      "platform": "github",
+      "related": [
+        "metaudits",
+        "national-audits"
+      ],
+      "desc": {
+        "en": "Completeness of the public ORCID profiles found through the ROR ids of 120 research institutions, 20 per continent, comparing ORCID members with other institutions: overall, year by year of account creation, and by who wrote each entry. Aggregated data can be downloaded under CC BY 4.0; profile-level data are available for research on request.",
+        "es": "Completitud de los perfiles ORCID públicos encontrados mediante los ROR id de 120 instituciones de investigación, 20 por continente, comparando miembros de ORCID con las demás instituciones: en total, año a año de creación de la cuenta y según quién escribió cada entrada. Los datos agregados se descargan bajo CC BY 4.0; los datos por perfil se entregan para investigación a pedido.",
+        "de": "Vollständigkeit der öffentlichen ORCID-Profile, die über die ROR-IDs von 120 Forschungseinrichtungen (20 je Kontinent) gefunden werden, im Vergleich zwischen ORCID-Mitgliedern und anderen Einrichtungen: insgesamt, Jahr für Jahr der Kontoerstellung und danach, wer jeden Eintrag geschrieben hat. Die aggregierten Daten stehen unter CC BY 4.0 zum Download; Daten auf Profilebene gibt es für die Forschung auf Anfrage."
+      }
+    },
+    {
+      "id": "chilean-altoutputs",
+      "title": "Beyond Articles: Chilean Research Outputs in DataCite and ANID",
+      "year": "2026",
+      "status": "Active",
+      "url": "https://rijdho.github.io/chilean-altoutputs/",
+      "tags": [
+        "DataCite",
+        "ANID",
+        "Metadata Quality",
+        "Open data"
+      ],
+      "topic": "metadata",
+      "platform": "github",
+      "related": [
+        "metaudits"
+      ],
+      "desc": {
+        "en": "Metadata completeness of Chilean research outputs other than articles (datasets, images, collections, software, data management plans and models) in DataCite and ANID's repository: where they are deposited, under which licence, and how completely they are described.",
+        "es": "Completitud de los metadatos de los resultados de investigación chilenos que no son artículos (datasets, imágenes, colecciones, software, planes de gestión de datos y modelos) en DataCite y el repositorio de ANID: dónde se depositan, con qué licencia y qué tan completamente se describen.",
+        "de": "Vollständigkeit der Metadaten chilenischer Forschungsergebnisse jenseits von Artikeln (Datensätze, Bilder, Sammlungen, Software, Datenmanagementpläne und Modelle) in DataCite und im Repositorium der ANID: wo sie abgelegt sind, unter welcher Lizenz und wie vollständig sie beschrieben sind."
+      }
+    },
+    {
+      "id": "actionable-dmp",
+      "title": "Actionable DMP: Write and Check a Machine-Actionable Plan",
+      "year": "2026",
+      "status": "Active",
+      "url": "https://rijdho.github.io/dmp-template/",
+      "tags": [
+        "maDMP",
+        "RDA DMP Common Standard",
+        "DataCite",
+        "Science Europe"
+      ],
+      "topic": "assessment",
+      "platform": "github",
+      "related": [
+        "madmp-itu"
+      ],
+      "desc": {
+        "en": "Write a data management plan as a machine-actionable file that validates against the RDA DMP Common Standard v1.2, answering the fifteen questions of Science Europe's core requirements, and check what the plan says about each dataset against its DOI record in DataCite. The plan downloads as dmp.json and as DMP.md, in Science Europe's sections or in those of the Horizon Europe template; the same check runs from the command line and as a GitHub Action.",
+        "es": "Escribe un plan de gestión de datos como archivo accionable por máquina, válido según el RDA DMP Common Standard v1.2, respondiendo las quince preguntas de los requisitos básicos de Science Europe, y contrasta lo que el plan dice de cada dataset con su registro DOI en DataCite. El plan se descarga como dmp.json y como DMP.md, en las secciones de Science Europe o en las de la plantilla de Horizon Europe; la misma revisión corre desde la línea de comandos y como GitHub Action.",
+        "de": "Schreibt einen Datenmanagementplan als maschinenverarbeitbare Datei, die dem RDA DMP Common Standard v1.2 entspricht, entlang der fünfzehn Fragen der Kernanforderungen von Science Europe, und prüft, was der Plan über jeden Datensatz sagt, an dessen DOI-Eintrag in DataCite. Der Plan lässt sich als dmp.json und als DMP.md herunterladen, in den Abschnitten von Science Europe oder denen der Horizon-Europe-Vorlage; dieselbe Prüfung läuft auf der Kommandozeile und als GitHub Action."
+      }
+    },
+    {
       "id": "pollen",
       "title": "Pollen: Live Audience Questions",
       "year": "2026",
