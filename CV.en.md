@@ -148,34 +148,34 @@ Support professional for the accreditation of postgraduate programmes, working w
 
 ## Talks & presentations
 
-- **The State of Research Repositories in Chile: FAIRness and Reuse, with Preliminary Results for Latin America** · RDA Regional Assembly, Research Data Alliance (online) (September 24, 2026)
-- **Research and Data Management: Principles, Processes and Practices** · Indian Research Scholars Association (IRSA), with Shaily Gandhi (online) (September 23, 2026)
-- **What the Public Record Says About Your Cruises, and What It Leaves Out That You Already Know** · FAIR Working Group, Rolling Deck to Repository (R2R) program, U.S. Academic Research Fleet (online) (September 17, 2026)
-- **Entities and/or Content: Metadata Quality in Open Science Infrastructure** · First Digital Humanities Seminar - Chile 2026: Technologies, Memories and Possible Futures, Panel E: Open Science and Reproducibility, Pontificia Universidad Católica de Chile, Campus Lo Contador (April 9, 2026)
-- **Tracing Research Outputs: FAIRness, Responsibility, and Reuse Across Infrastructure Layers** · Open Science Festival, University of Vienna (September 8, 2025)
-- **Research Traceability for Responsible Assessment** · FoReA-Treffen Q3 2025 (September 17, 2025)
-- **Open Science on Closed Infrastructures? Traceability, Reuse, and Research Assessment** · IT:U Interdisciplinary Transformation University, Linz (October 15, 2025)
-- **Making Research Count: Challenges in the Evaluation and Valuation of Scientific Work** · Open Innovation in Science Center (OIS) (October 16, 2025)
-- **Las métricas de datos: Avanzando la gestión responsable de los datos abiertos** · Make Data Count & OpenLab Ecuador (March 13, 2025)
-- **Más allá de la indexación: ciencia abierta, fuentes abiertas y el valor de los metadatos en la visibilidad académica** · Semana Internacional de Acceso Abierto, Pontificia Universidad Católica Argentina (October 24, 2024)
-- **Ciencia abierta y el impacto de las publicaciones: Análisis comparativo del sentido y uso de citas en universidades chilenas acreditadas en investigación** · VII Seminario Internacional FLACSO Argentina (October 23-24, 2024)
-- **Evaluación del impacto de publicaciones científicas y el fomento de prácticas de Ciencia Abierta en universidades para la acreditación en investigación: un análisis más allá de la indexación** · Seminario Internacional CNA Chile (October 23-24, 2024)
-- **Empowering Global Knowledge through Open Access** · IUCN Open Access Week (October 22, 2024)
-- **How would having more access to scientific data and research affect scientific credibility and societal impact?** · International Conference on Societal Impact of Social Sciences, AESIS Network, Cape Town (October 16-18, 2024)
-- **Significando la Ciencia Abierta desde el reuso: ejemplos de desafíos en la calidad de metadatos en productos de investigación** · Foro Latinoamericano de Ciencia Abierta, Quito (September 13, 2024)
-- **El desafío de la trazabilidad de los productos de investigación: Una aproximación desde la experiencia del proyecto InES Ciencia Abierta de la Universidad Central de Chile** · Foro Latinoamericano de Ciencia Abierta, Quito (September 12, 2024)
-- **Laboratorio de Datos: Meta ciencia con datos abiertos** · Foro Latinoamericano de Ciencia Abierta, Quito (September 11-12, 2024)
-- **A Decade of Data Citations: From Principles to Action** · FORCE11 Annual Conference, UCLA, Los Angeles (August 1-3, 2024)
-- **Governance for AI in Scientific Publications** · FSCI Campus Course, UCLA, Los Angeles (July 29-31, 2024)
-- **Characterizing Research Outputs and Their Use with OpenAlex and Scite** · OpenAlex Virtual User Conference (May 30, 2024)
-- **Equity Challenges for National PID Strategies** · RDA 22nd Plenary Meeting (May 22, 2024)
-- **Characterizing the Use of Research Products from Chilean Universities** · 10th Congress of University and Specialized Libraries (April 10, 2024)
-- **FAIR Principles and their Implementation in Chile** · Data Observatory and UC Chile (January 23, 2024)
-- **Importance of Persistent Identifiers** · InES Open Science Workshop Series, Universidad Autónoma de Chile (January 12, 2024)
-- **Presentation of the Survey Results on Perception and Practices of Open Science in Ecuador** · Days Discovering Open Science, OpenLab Ecuador (September 29, 2023)
-- **The Value of Digital Repositories Beyond Theses** · Days Discovering Open Science, OpenLab Ecuador (August 31, 2023)
-- **It is not just counting and graphing: Enriching the Analysis Methodologies of Types of Article Licenses from Universities belonging to the CUP** · 1st Open Government Congress, Academic Network Open Government Chile (April 26-28, 2023)
-- **Proposal for an Institutional Structure for Open Science at Universidad Central de Chile** · 1st Open Government Congress, Academic Network Open Government Chile (April 26-28, 2023)
+- **The State of Research Repositories in Chile: FAIRness and Reuse, with Preliminary Results for Latin America** · RDA Regional Assembly, Research Data Alliance (online) (September 24, 2026), *Presentation*
+- **Research and Data Management: Principles, Processes and Practices** · Indian Research Scholars Association (IRSA), with Shaily Gandhi (online) (September 23, 2026), *Webinar*
+- **What the Public Record Says About Your Cruises, and What It Leaves Out That You Already Know** · FAIR Working Group, Rolling Deck to Repository (R2R) program, U.S. Academic Research Fleet (online) (September 17, 2026), *Presentation*
+- **Entities and/or Content: Metadata Quality in Open Science Infrastructure** · First Digital Humanities Seminar - Chile 2026: Technologies, Memories and Possible Futures, Panel E: Open Science and Reproducibility, Pontificia Universidad Católica de Chile, Campus Lo Contador (April 9, 2026), *Presentation*
+- **Tracing Research Outputs: FAIRness, Responsibility, and Reuse Across Infrastructure Layers** · Open Science Festival, University of Vienna (September 8, 2025), *Lightning Talk*
+- **Research Traceability for Responsible Assessment** · FoReA-Treffen Q3 2025 (September 17, 2025), *Presentation*
+- **Open Science on Closed Infrastructures? Traceability, Reuse, and Research Assessment** · IT:U Interdisciplinary Transformation University, Linz (October 15, 2025), *Guest Lecture*
+- **Making Research Count: Challenges in the Evaluation and Valuation of Scientific Work** · Open Innovation in Science Center (OIS) (October 16, 2025), *Webinar*
+- **Las métricas de datos: Avanzando la gestión responsable de los datos abiertos** · Make Data Count & OpenLab Ecuador (March 13, 2025), *Panel*
+- **Más allá de la indexación: ciencia abierta, fuentes abiertas y el valor de los metadatos en la visibilidad académica** · Semana Internacional de Acceso Abierto, Pontificia Universidad Católica Argentina (October 24, 2024), *Presentation*
+- **Ciencia abierta y el impacto de las publicaciones: Análisis comparativo del sentido y uso de citas en universidades chilenas acreditadas en investigación** · VII Seminario Internacional FLACSO Argentina (October 23-24, 2024), *Presentation*
+- **Evaluación del impacto de publicaciones científicas y el fomento de prácticas de Ciencia Abierta en universidades para la acreditación en investigación: un análisis más allá de la indexación** · Seminario Internacional CNA Chile (October 23-24, 2024), *Presentation*
+- **Empowering Global Knowledge through Open Access** · IUCN Open Access Week (October 22, 2024), *Panel*
+- **How would having more access to scientific data and research affect scientific credibility and societal impact?** · International Conference on Societal Impact of Social Sciences, AESIS Network, Cape Town (October 16-18, 2024), *Panel*
+- **Significando la Ciencia Abierta desde el reuso: ejemplos de desafíos en la calidad de metadatos en productos de investigación** · Foro Latinoamericano de Ciencia Abierta, Quito (September 13, 2024), *Presentation*
+- **El desafío de la trazabilidad de los productos de investigación: Una aproximación desde la experiencia del proyecto InES Ciencia Abierta de la Universidad Central de Chile** · Foro Latinoamericano de Ciencia Abierta, Quito (September 12, 2024), *Presentation*
+- **Laboratorio de Datos: Meta ciencia con datos abiertos** · Foro Latinoamericano de Ciencia Abierta, Quito (September 11-12, 2024), *Facilitator*
+- **A Decade of Data Citations: From Principles to Action** · FORCE11 Annual Conference, UCLA, Los Angeles (August 1-3, 2024), *Panel*
+- **Governance for AI in Scientific Publications** · FSCI Campus Course, UCLA, Los Angeles (July 29-31, 2024), *Co-instructor*
+- **Characterizing Research Outputs and Their Use with OpenAlex and Scite** · OpenAlex Virtual User Conference (May 30, 2024), *Presentation*
+- **Equity Challenges for National PID Strategies** · RDA 22nd Plenary Meeting (May 22, 2024), *Panel*
+- **Characterizing the Use of Research Products from Chilean Universities** · 10th Congress of University and Specialized Libraries (April 10, 2024), *Presentation*
+- **FAIR Principles and their Implementation in Chile** · Data Observatory and UC Chile (January 23, 2024), *Presentation*
+- **Importance of Persistent Identifiers** · InES Open Science Workshop Series, Universidad Autónoma de Chile (January 12, 2024), *Presentation*
+- **Presentation of the Survey Results on Perception and Practices of Open Science in Ecuador** · Days Discovering Open Science, OpenLab Ecuador (September 29, 2023), *Panel*
+- **The Value of Digital Repositories Beyond Theses** · Days Discovering Open Science, OpenLab Ecuador (August 31, 2023), *Presentation*
+- **It is not just counting and graphing: Enriching the Analysis Methodologies of Types of Article Licenses from Universities belonging to the CUP** · 1st Open Government Congress, Academic Network Open Government Chile (April 26-28, 2023), *Presentation*
+- **Proposal for an Institutional Structure for Open Science at Universidad Central de Chile** · 1st Open Government Congress, Academic Network Open Government Chile (April 26-28, 2023), *Presentation*
 
 ## Writing
 

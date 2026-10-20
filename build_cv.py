@@ -70,7 +70,7 @@ def build(lang):
         w("")
     sec("presentations")
     for t in CV["presentations"]:
-        w(f"- **{t['title']}** · {t.get('event','')}" + (f" ({t['date']})" if t.get('date') else ""))
+        w(f"- **{t['title']}** · {t.get('event','')}" + (f" ({t['date']})" if t.get('date') else "") + (f", *{t['type']}*" if t.get('type') else ""))
     sec("portfolio")
     for e in CV["portfolio"]:
         t=f"[{e['title']}]({e['url']})" if e.get('url') else e['title']
