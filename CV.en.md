@@ -3,11 +3,11 @@
 
 **Open science & research information governance / PID traceability / Responsible research assessment**
 
-Open Science Expert at the Interdisciplinary Transformation University Austria (IT:U) in Linz, where I design a university-wide Open Science strategy and build the systems that carry it. The strategy rests on three pillars, concept and operation, engagement, and training and support, with a transversal axis on the use of AI in research, run over three horizons on the SCOPE framework (INORMS Research Evaluation Group, 2021) and with indicators that follow the responsible-use principles of DORA, the Leiden Manifesto and CoARA. Underneath it I build the working parts: a research information system whose provenance ordering is enforced at every write path rather than merely documented, a research management system covering the grant lifecycle, machine-actionable data management planning, reproducible computational environments, and the container platform they all run on.
+Open Science Expert at the Interdisciplinary Transformation University Austria (IT:U) in Linz, where I design a university-wide Open Science strategy and build the systems that carry it. The strategy rests on three pillars, concept and operation, engagement, and training and support, with a transversal axis on the use of AI in research, run over three horizons on the SCOPE framework (INORMS Research Evaluation Group, 2021) and with indicators that follow the responsible-use principles of DORA, the Leiden Manifesto and CoARA. Underneath it I build the working parts: a research information system, a research management system covering the grant lifecycle, machine-actionable data management planning, reproducible computational environments, and the container platform they all run on.
 
 Previously I completed a Short-Term Scientific Mission at the Open Innovation in Science Center, Ludwig Boltzmann Gesellschaft (Vienna), building a baseline of institutional identifiers and reproducible PID-based traceability workflows aligned with Austria's ERA-NAP 2026–2028 priorities.
 
-My work centers on research information governance, metadata quality, and responsible assessment, bridging technological, practical, and regulatory interfaces so institutions can operationalize ambitious open science commitments.
+My work centres on research information governance, metadata quality and responsible assessment, and on the systems and policies institutions need to meet their open science commitments.
 
 ✉ ricdho@duck.com (alias) · [ORCID 0000-0001-5058-9309](https://orcid.org/0000-0001-5058-9309) · [Substack](https://rijdho.substack.com)
 
@@ -17,19 +17,19 @@ My work centers on research information governance, metadata quality, and respon
 ### Open Science Expert · Interdisciplinary Transformation University Austria (IT:U)
 *May 2026 – Present · Linz, Austria*
 
-Design, implement and maintain a university-wide Open Science strategy: three pillars (concept and operation, engagement, training and support) plus a transversal axis on AI in research, run over three horizons on the SCOPE framework (INORMS Research Evaluation Group, 2021), with more than fifteen indicators carrying operational definitions, baselines, targets, deadlines and named owners in a single source table, governed by the responsible-use principles of DORA, the Leiden Manifesto and CoARA. Build and operate the systems underneath it: a current research information system whose provenance ordering is enforced at every write path rather than merely documented, a research management system covering the grant lifecycle from call to post-award budget, a daily aggregator of open and forthcoming funding calls, a Renku 2.0 deployment for reproducible environments, machine-actionable data management planning validated against the RDA DMP Common Standard, and bilingual documentation generators for the team's APIs and automation pipelines. Support researchers through workshops, data management plan clinics and a champions network. Represent IT:U in national and international Open Science initiatives, and contribute to grant writing, ideation and mentorship across academic projects.
+Design, implement and maintain a university-wide Open Science strategy: three pillars (concept and operation, engagement, training and support) plus a transversal axis on AI in research, run over three horizons on the SCOPE framework (INORMS Research Evaluation Group, 2021), with nineteen indicators carrying operational definitions, targets, deadlines and named owners, and baselines where they exist, in a single source table, governed by the responsible-use principles of DORA, the Leiden Manifesto and CoARA. Build and operate the systems underneath it: a current research information system, a research management system covering the grant lifecycle from call to post-award budget, a daily aggregator of open and forthcoming funding calls, a Renku 2.0 deployment for reproducible environments, machine-actionable data management planning validated against the RDA DMP Common Standard, and bilingual documentation generators for the team's APIs and automation pipelines. Designed researcher support (a course, workshops, data management plan clinics, a champions network), now being set up. Represent IT:U in national and international Open Science initiatives, and contribute to grant writing, ideation and mentorship across academic projects.
 
 ### Short-Term Scientific Mission (STSM) Researcher · Open Innovation in Science Center, Ludwig Boltzmann Gesellschaft
 *August 4 – October 28, 2025 · Vienna, Austria*
 
-Developed a comprehensive baseline of institutional identifiers, audited coverage of scholarly records across systems (ORCID, ROR, Crossref, DataCite, OpenAlex), and designed reproducible workflows for PID-based traceability of research outputs. Prepared integration guidelines to expand ORCID adoption among LBG researchers and compared information consistency between open infrastructures and institutional systems. The mission supported LBG's open science strategy and alignment with Austria's National Action Plan for the European Research Area (ERA-NAP) 2026–2028.
+Developed a baseline of institutional identifiers, audited coverage of scholarly records across systems (ORCID, ROR, Crossref, DataCite, OpenAlex), and designed reproducible workflows for PID-based traceability of research outputs. Prepared integration guidelines to expand ORCID adoption among LBG researchers and compared information consistency between open infrastructures and institutional systems. The mission supported LBG's open science strategy and alignment with Austria's National Action Plan for the European Research Area (ERA-NAP) 2026–2028.
 
-Strengthened my fluency with Microsoft-based ecosystems - including SharePoint, Power BI, and Azure Active Directory - to interface PID data with internal reporting suites, and piloted automation orchestrations using n8n and complementary integration platforms to streamline identifier governance tasks across teams.
+Worked with SharePoint, Power BI and Azure Active Directory to connect PID data with internal reporting, and piloted n8n automations for identifier governance tasks.
 
 ### Independent Researcher · Remolino Consulting
 *May – October 2025*
 
-Conducting research and consultancy on research infrastructures, metadata systems, and responsible research assessment.
+Research and consultancy on research infrastructures, metadata systems and responsible research assessment.
 
 ### Researcher · Universidad Central de Chile
 *2016–2025*
@@ -244,7 +244,7 @@ Open and forthcoming research funding calls from five portals, collected once a 
 ### Open Science Strategy (IT:U)
 *Active · 2026 · Open Science policy, SCOPE, INORMS, DORA*
 
-University-wide Open Science strategy: three pillars, concept and operation, engagement, and training and support, plus a transversal axis on AI in research, run over three horizons on the SCOPE framework (INORMS Research Evaluation Group, 2021). More than fifteen indicators carry an operational definition, a baseline, a target, a deadline, a data source and a named owner in one source table that every other document links back to instead of restating. Indicators are transparent, contextualised, read alongside their context and reviewed yearly.
+University-wide Open Science strategy: three pillars, concept and operation, engagement, and training and support, plus a transversal axis on AI in research, run over three horizons on the SCOPE framework (INORMS Research Evaluation Group, 2021). Nineteen indicators carry an operational definition, a target, a deadline, a data source and a named owner, and a baseline where one exists (seven are still to be established), in one source table that every other document links back to instead of restating. Indicators are transparent, read in their context and reviewed yearly.
 
 ### maDMP Template (IT:U)
 *Active · 2026 · RDA DMP Common Standard, maDMP, Horizon Europe, FAIR*
