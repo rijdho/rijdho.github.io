@@ -16,10 +16,12 @@ content both, including every long description.
 ![The tool cloud: 23 ovals grouped into four colour-coded topics, Metadata quality 7,
 Open science policy & assessment 6, Infrastructure & AI 8, Science communication 2. Related projects touch
 rather than repel, so FAIR Metadata Check (Extended) sits against FAIR Metadata Check. A dashed outline marks a
-tool whose source is public on GitHub, and a note in the corner says so. Five ovals carry a Zenodo concept DOI
+tool whose source is public on GitHub, and a note in the corner says so. Nine ovals carry a Zenodo concept DOI
 under the name: FAIR Metadata Check 10.5281/zenodo.21492530, ORCID Affiliation Finder
 10.5281/zenodo.22227424, Research Assessment Reform Planner 10.5281/zenodo.21492548, Value of Open Research Information
-10.5281/zenodo.22231440 and Pollen 10.5281/zenodo.22685893.](docs/hub-cloud.png)
+10.5281/zenodo.22231440, Pollen 10.5281/zenodo.22685893, National Metadata Audits 10.5281/zenodo.23498571,
+ORCID Membership 10.5281/zenodo.23498577, Beyond Articles 10.5281/zenodo.23498567 and Actionable DMP
+10.5281/zenodo.23498569.](docs/hub-cloud.png)
 
 ## The three views
 
