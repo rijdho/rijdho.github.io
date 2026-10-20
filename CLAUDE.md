@@ -10,7 +10,7 @@ vanilla JS. Part of the violet-family design system (see `../CLAUDE.md`).
 
 - `index.html` + `hub.js`: the hub. `hub.js` runs `fetch('./data/cv.json')` → derives
   `DATA` (apps = `experiments`, writing = `portfolio`) and `EXTRA` (the tab categories), then renders the tabs + cloud.
-  **Layout since 2026-09-24: the family shell** (a synced copy of rijdho/house-style in
+  **Layout since 2026-09-24: the family shell** (a synced copy of the house style in
   `house/`, `scripts/sync-house.mjs`, `tests/house.test.mjs`). The rail lists the sections,
   built by `renderNav()` from `TAB_GROUPS`: education, experience, training ("Background"),
   then publications, writing, talks ("Publications & talks"), then a link to Metaudits. The main column shows either the hero (name, headline, Full CV, ORCID,
@@ -118,14 +118,9 @@ no `404.html` SPA shell.
 
 ## Versioning and screenshots
 
-`CHANGELOG.md` is Keep a Changelog + SemVer. Numbering restarted at `v0.1.0` on 2026-10-20
-(Ricardo's decision for repos without a DOI: 1.0.0 to 1.8.1, 2026-07-31 to 2026-09-29, and their
-releases and tags were withdrawn), and a version is cut whenever the content or the shape of `cv.json` changes enough
-to name. This site deploys continuously, so a version is a readable marker in the history,
-not something anyone installs, and that reasoning is written into the changelog's preamble so
-the next person does not have to reconstruct it. Tag the commit (`git tag -a vX.Y.Z`) so the
-compare links at the bottom of the file resolve; there is no Zenodo integration here, so no
-GitHub Release is required and no `CITATION.cff` belongs in this repo.
+There is no `CHANGELOG.md` since 2026-10-20 (Ricardo: repositories without a DOI start fresh).
+Versions are git tags with a GitHub release, starting at `v0.1.0`; what changed is in the commit
+messages. There is no Zenodo integration here, so no `CITATION.cff` belongs in this repo.
 
 README images come from `docs/screenshots.mjs`, which drives the real pages, never a
 hand-cropped grab, which cannot be regenerated and ages into a lie. It seeds `Math.random`
