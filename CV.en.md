@@ -212,9 +212,9 @@ MCP Server for real-time research data. Provides live access to authoritative ac
 MCP server exposing the OpenAIRE Graph API (over 100 million research products) to AI assistants. Provides 14 tools for searching publications, datasets, software, organizations, projects, and persons. Dockerized Node.js server with in-memory cache, rate limiting, and retry logic. Built as a companion to MCP CRIS Live focused on open science infrastructure.
 
 ### OpenAIRE Research Assistant: Demo
-*Active · 2026 · Cloudflare Workers AI, LLM, Agentic AI, OpenAIRE*
+*Offline · 2026 · Cloudflare Workers AI, LLM, Agentic AI, OpenAIRE*
 
-Chat interface where Cloudflare Workers AI (Llama 3.1 8B) uses the OpenAIRE MCP tools in an agentic loop to answer research questions in natural language. The LLM decides which tools to call, executes the OpenAIRE searches, and synthesizes the results into a readable response. Deployed entirely on free Cloudflare infrastructure (Pages + Workers AI).
+Chat interface where Cloudflare Workers AI (Llama 3.1 8B) uses the OpenAIRE MCP tools in an agentic loop to answer research questions in natural language. The LLM decides which tools to call, executes the OpenAIRE searches, and synthesizes the results into a readable response. It ran on Cloudflare (Pages + Workers AI) and is now offline because of its running cost.
 
 ### [The Sound of Inequality: Data Disparities as Audio](https://sound-inequality.rijdho.org/)
 *Active · 2026 · Sonification, Data Viz, Accessibility*
@@ -301,7 +301,7 @@ Live questions during a lecture or a workshop: multiple choice, rating scales, r
 
 ## Training
 
-- **FORCE11 Scholarly Communication Institute – FSCI** (2017–2025): Completed multiple tracks including: Governance for AI in Scientific Publications, Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Data visualization in R and D3.js, Using APIs (ORCID, Sherpa Romeo, Unpaywall) for institutional analysis
+- **FORCE11 Scholarly Communication Institute – FSCI** (2017–2025): Completed multiple tracks including: Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Data visualization in R and D3.js, Using APIs (ORCID, Sherpa Romeo, Unpaywall) for institutional analysis
 - **Essentials 4 Data Support** (2023): Completed official RDNL training for research data support professionals. Focused on FAIR principles, metadata quality, data sharing, and the implementation of robust Data Management Plans (DMPs). Only active Latin American participant in the cohort.
 - **CWTS Scientometrics Summer School** (2020): Intensive 75-hour course on scientometrics, bibliometric indicators, knowledge flows, and research evaluation methodologies. Covered theory and practical application for policy and infrastructure development.
 - **DataCite Certified Core Training** (2024): Certification focused on the use of persistent identifiers (PIDs), metadata best practices, and repository integration with DataCite infrastructure.

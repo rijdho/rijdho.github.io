@@ -212,9 +212,9 @@ Servidor MCP para datos de investigación en tiempo real. Proporciona acceso en 
 Servidor MCP que expone la API del OpenAIRE Graph (más de 100 millones de productos de investigación) a asistentes de IA. Proporciona 14 herramientas para buscar publicaciones, datasets, software, organizaciones, proyectos y personas. Servidor Node.js dockerizado con caché en memoria, rate limiting y lógica de reintentos. Construido como complemento de MCP CRIS Live enfocado en infraestructura de ciencia abierta.
 
 ### OpenAIRE Research Assistant: Demo
-*Active · 2026 · Cloudflare Workers AI, LLM, Agentic AI, OpenAIRE*
+*Offline · 2026 · Cloudflare Workers AI, LLM, Agentic AI, OpenAIRE*
 
-Interfaz de chat donde Cloudflare Workers AI (Llama 3.1 8B) usa las herramientas MCP de OpenAIRE en un bucle agéntico para responder preguntas de investigación en lenguaje natural. El LLM decide qué herramientas llamar, ejecuta las búsquedas en OpenAIRE y sintetiza los resultados en una respuesta legible. Desplegado completamente en infraestructura gratuita de Cloudflare (Pages + Workers AI).
+Interfaz de chat donde Cloudflare Workers AI (Llama 3.1 8B) usa las herramientas MCP de OpenAIRE en un bucle agéntico para responder preguntas de investigación en lenguaje natural. El LLM decide qué herramientas llamar, ejecuta las búsquedas en OpenAIRE y sintetiza los resultados en una respuesta legible. Funcionaba en Cloudflare (Pages + Workers AI) y hoy está fuera de línea por su costo de operación.
 
 ### [The Sound of Inequality: Data Disparities as Audio](https://sound-inequality.rijdho.org/)
 *Active · 2026 · Sonification, Data Viz, Accessibility*
@@ -301,7 +301,7 @@ Preguntas en vivo durante una clase o un taller: opción múltiple, escalas de v
 
 ## Formación continua
 
-- **FORCE11 Scholarly Communication Institute – FSCI** (2017–2025): Completé múltiples tracks incluyendo: Governance for AI in Scientific Publications (Gobernanza de IA en publicaciones científicas), Forensic Scientometrics (Cienciometría forense), FAIR Data in the Scholarly Communication Lifecycle (Datos FAIR en el ciclo de comunicación académica), Metadata Governance (Gobernanza de metadatos), Research Reproducibility (Reproducibilidad de la investigación), Open Science in the Global South (Ciencia abierta en el Sur Global), Visualización de datos en R y D3.js, Uso de APIs (ORCID, Sherpa Romeo, Unpaywall) para análisis institucional
+- **FORCE11 Scholarly Communication Institute – FSCI** (2017–2025): Completé múltiples tracks incluyendo: Forensic Scientometrics (Cienciometría forense), FAIR Data in the Scholarly Communication Lifecycle (Datos FAIR en el ciclo de comunicación académica), Metadata Governance (Gobernanza de metadatos), Research Reproducibility (Reproducibilidad de la investigación), Open Science in the Global South (Ciencia abierta en el Sur Global), Visualización de datos en R y D3.js, Uso de APIs (ORCID, Sherpa Romeo, Unpaywall) para análisis institucional
 - **Essentials 4 Data Support** (2023): Completé la formación oficial de RDNL para profesionales de soporte de datos de investigación. Enfocado en principios FAIR, calidad de metadatos, intercambio de datos e implementación de Planes de Gestión de Datos (DMP) robustos. Único participante activo latinoamericano en la cohorte.
 - **CWTS Scientometrics Summer School** (2020): Curso intensivo de 75 horas sobre cienciometría, indicadores bibliométricos, flujos de conocimiento y metodologías de evaluación de la investigación. Cubrió teoría y aplicación práctica para desarrollo de políticas e infraestructura.
 - **DataCite Certified Core Training** (2024): Certificación enfocada en el uso de identificadores persistentes (PIDs), buenas prácticas de metadatos e integración de repositorios con la infraestructura de DataCite.

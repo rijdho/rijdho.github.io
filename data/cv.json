@@ -306,9 +306,9 @@
       "year": "2017–2025",
       "org": "",
       "desc": {
-        "en": "Completed multiple tracks including: Governance for AI in Scientific Publications, Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Data visualization in R and D3.js, Using APIs (ORCID, Sherpa Romeo, Unpaywall) for institutional analysis",
-        "es": "Completé múltiples tracks incluyendo: Governance for AI in Scientific Publications (Gobernanza de IA en publicaciones científicas), Forensic Scientometrics (Cienciometría forense), FAIR Data in the Scholarly Communication Lifecycle (Datos FAIR en el ciclo de comunicación académica), Metadata Governance (Gobernanza de metadatos), Research Reproducibility (Reproducibilidad de la investigación), Open Science in the Global South (Ciencia abierta en el Sur Global), Visualización de datos en R y D3.js, Uso de APIs (ORCID, Sherpa Romeo, Unpaywall) para análisis institucional",
-        "de": "Abschluss mehrerer Tracks, darunter: Governance for AI in Scientific Publications, Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Datenvisualisierung in R und D3.js, Nutzung von APIs (ORCID, Sherpa Romeo, Unpaywall) für institutionelle Analysen."
+        "en": "Completed multiple tracks including: Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Data visualization in R and D3.js, Using APIs (ORCID, Sherpa Romeo, Unpaywall) for institutional analysis",
+        "es": "Completé múltiples tracks incluyendo: Forensic Scientometrics (Cienciometría forense), FAIR Data in the Scholarly Communication Lifecycle (Datos FAIR en el ciclo de comunicación académica), Metadata Governance (Gobernanza de metadatos), Research Reproducibility (Reproducibilidad de la investigación), Open Science in the Global South (Ciencia abierta en el Sur Global), Visualización de datos en R y D3.js, Uso de APIs (ORCID, Sherpa Romeo, Unpaywall) para análisis institucional",
+        "de": "Abschluss mehrerer Tracks, darunter: Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Datenvisualisierung in R und D3.js, Nutzung von APIs (ORCID, Sherpa Romeo, Unpaywall) für institutionelle Analysen."
       }
     },
     {
@@ -1035,7 +1035,7 @@
     {
       "title": "OpenAIRE Research Assistant: Demo",
       "year": "2026",
-      "status": "Active",
+      "status": "Offline",
       "url": "",
       "tags": [
         "Cloudflare Workers AI",
@@ -1048,9 +1048,9 @@
       ],
       "topic": "infra",
       "desc": {
-        "en": "Chat interface where Cloudflare Workers AI (Llama 3.1 8B) uses the OpenAIRE MCP tools in an agentic loop to answer research questions in natural language. The LLM decides which tools to call, executes the OpenAIRE searches, and synthesizes the results into a readable response. Deployed entirely on free Cloudflare infrastructure (Pages + Workers AI).",
-        "es": "Interfaz de chat donde Cloudflare Workers AI (Llama 3.1 8B) usa las herramientas MCP de OpenAIRE en un bucle agéntico para responder preguntas de investigación en lenguaje natural. El LLM decide qué herramientas llamar, ejecuta las búsquedas en OpenAIRE y sintetiza los resultados en una respuesta legible. Desplegado completamente en infraestructura gratuita de Cloudflare (Pages + Workers AI).",
-        "de": "Chat-Oberfläche, in der Cloudflare Workers AI (Llama 3.1 8B) die OpenAIRE-MCP-Werkzeuge in einer agentischen Schleife nutzt, um Forschungsfragen in natürlicher Sprache zu beantworten. Das Sprachmodell entscheidet, welche Werkzeuge aufgerufen werden, führt die OpenAIRE-Suchen aus und fasst die Ergebnisse lesbar zusammen. Vollständig auf kostenloser Cloudflare-Infrastruktur betrieben (Pages + Workers AI)."
+        "en": "Chat interface where Cloudflare Workers AI (Llama 3.1 8B) uses the OpenAIRE MCP tools in an agentic loop to answer research questions in natural language. The LLM decides which tools to call, executes the OpenAIRE searches, and synthesizes the results into a readable response. It ran on Cloudflare (Pages + Workers AI) and is now offline because of its running cost.",
+        "es": "Interfaz de chat donde Cloudflare Workers AI (Llama 3.1 8B) usa las herramientas MCP de OpenAIRE en un bucle agéntico para responder preguntas de investigación en lenguaje natural. El LLM decide qué herramientas llamar, ejecuta las búsquedas en OpenAIRE y sintetiza los resultados en una respuesta legible. Funcionaba en Cloudflare (Pages + Workers AI) y hoy está fuera de línea por su costo de operación.",
+        "de": "Chat-Oberfläche, in der Cloudflare Workers AI (Llama 3.1 8B) die OpenAIRE-MCP-Werkzeuge in einer agentischen Schleife nutzt, um Forschungsfragen in natürlicher Sprache zu beantworten. Das Sprachmodell entscheidet, welche Werkzeuge aufgerufen werden, führt die OpenAIRE-Suchen aus und fasst die Ergebnisse lesbar zusammen. Lief auf Cloudflare (Pages + Workers AI) und ist wegen der Betriebskosten inzwischen offline."
       },
       "id": "openaire-demo",
       "related": [
