@@ -194,12 +194,12 @@ All tools and dashboards, with their sources and licences: [rijdho.github.io/met
 ### [Metaudits: Audits of Research Metadata](https://rijdho.github.io/metaudits-home/)
 *Active · 2026 · DataCite, Crossref, ORCID, OpenAlex*
 
-A family of dashboards auditing the metadata research leaves in the registries it passes through, all reached from one front page: After Retraction (how 60,921 retracted articles keep being cited), Debris with DOIs (system files registered as research in DataCite), Publisher Gap (what 14 publishers deposit in Crossref against what OpenAlex adds), Empty Accounts (ORCID profile completeness at 95 institutions), SciELO Chile in Crossref, Beyond Articles (Chilean outputs that are not articles), and national audits of Austria and the Netherlands.
+A family of dashboards auditing the metadata research leaves in the registries it passes through, all reached from one front page: After Retraction (citations to 60,921 works flagged by Retraction Watch, 46.9% of them made after the flag), Debris with DOIs (system files registered as research in DataCite), Publisher Gap (what 14 publishers deposit in Crossref against what OpenAlex adds), ORCID profiles at member and non-member institutions (profile completeness at 120 institutions), SciELO Chile in Crossref, Beyond Articles (Chilean outputs that are not articles), and national audits of Austria and the Netherlands.
 
 ### [FAIR Metadata Check (Extended): FAIR Scoring for Any Repository](https://metaudits.rijdho.org/repo-metaudits/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Custom API*
 
-Evaluates metadata quality of digital repositories against the FAIR Principles. Connects to OAI-PMH endpoints, DataCite records, or any custom REST API (CSW, STAC, CKAN, and more), harvests metadata, and runs a structured assessment across 14 sub-principles. Classifies persistent identifiers, detects license types, validates controlled vocabularies (DCMI, ISO 639), and checks community standards compliance. Includes prioritized recommendations, exportable reports (CSV, JSON, TXT), and interactive repository structure visualizations. The FAIR assessment engine runs server-side on Cloudflare Workers.
+Evaluates metadata quality of digital repositories against the FAIR Principles. Connects to OAI-PMH endpoints, DataCite records, or a REST API it has an adapter for (STAC, CKAN, Dataverse, Copernicus CSW and others), harvests metadata, and runs a structured assessment across 14 sub-principles. Classifies persistent identifiers, detects license types, validates controlled vocabularies (DCMI, ISO 639), and checks community standards compliance. Includes prioritized recommendations, exportable reports (CSV, JSON, TXT), and interactive repository structure visualizations. The FAIR assessment engine runs server-side on Cloudflare Workers.
 
 ### [MCP CRIS Live](https://hub.docker.com/r/rijdho/mcp-cris-live)
 *Active · 2026 · MCP, Docker, Node.js, ORCID*
@@ -209,7 +209,7 @@ MCP Server for real-time research data. Provides live access to authoritative ac
 ### [MCP CRIS Live: OpenAIRE](https://hub.docker.com/r/rijdho/mcp-cris-live-openaire)
 *Active · 2026 · MCP, Docker, Node.js, OpenAIRE*
 
-MCP server exposing the OpenAIRE Graph API (100M+ open access research products) to AI assistants. Provides 14 tools for searching publications, datasets, software, organizations, projects, and persons. Dockerized Node.js server with in-memory cache, rate limiting, and retry logic. Built as a companion to MCP CRIS Live focused on open science infrastructure.
+MCP server exposing the OpenAIRE Graph API (over 100 million research products) to AI assistants. Provides 14 tools for searching publications, datasets, software, organizations, projects, and persons. Dockerized Node.js server with in-memory cache, rate limiting, and retry logic. Built as a companion to MCP CRIS Live focused on open science infrastructure.
 
 ### OpenAIRE Research Assistant: Demo
 *Active · 2026 · Cloudflare Workers AI, LLM, Agentic AI, OpenAIRE*
@@ -217,9 +217,9 @@ MCP server exposing the OpenAIRE Graph API (100M+ open access research products)
 Chat interface where Cloudflare Workers AI (Llama 3.1 8B) uses the OpenAIRE MCP tools in an agentic loop to answer research questions in natural language. The LLM decides which tools to call, executes the OpenAIRE searches, and synthesizes the results into a readable response. Deployed entirely on free Cloudflare infrastructure (Pages + Workers AI).
 
 ### [The Sound of Inequality: Data Disparities as Audio](https://sound-inequality.rijdho.org/)
-*Active · 2026 · Sonification, Data Viz, R, Accessibility*
+*Active · 2026 · Sonification, Data Viz, Accessibility*
 
-Sonification project exploring data inequality patterns through audio. Transforms statistical disparities into sound compositions to make data accessible through auditory perception.
+Interactive globe of noise-pollution inequality in 117 cities: noise levels by time of day, a reference sound synthesised at each location's measured level, live audio streams where available, and locations added by visitors.
 
 ### PID Traceability Workflows
 *Active · 2025 · PIDs, Research Infrastructure, Python, API Integration*
@@ -254,12 +254,12 @@ Machine-actionable data management plan template with tiered fields and a Horizo
 ### Renku 2.0 Deployment (IT:U)
 *Active · 2026 · Renku, Kubernetes, k3s, Podman*
 
-Deployment of Renku 2.0 for reproducible computational environments, in two routes rather than one: k3s with its bundled containerd where the institutional VM permits it, and a kind cluster whose nodes are Podman containers where it does not. Renku ships as a Helm chart and not as an image, so the choice of what provides the single-node cluster is the decision that has to be taken before the machine is provisioned, and it is documented as such alongside the bootstrap scripts.
+Deployment of Renku 2.0 for reproducible computational environments on the institutional VM with k3s and its bundled containerd, with a scripted alternative (a kind cluster whose nodes are Podman containers) where k3s is not permitted. Renku ships as a Helm chart and not as an image, so the choice of what provides the single-node cluster is the decision that has to be taken before the machine is provisioned, and it is documented as such alongside the bootstrap scripts.
 
 ### DART Documentation Generators
 *Active · 2026 · Static site generator, Python, OpenAPI, n8n*
 
-Two generators that turn one source folder per item into a single self-contained bilingual reference page: one for the team's API integrations, built from sanitised OpenAPI specs with an interactive try-it panel per endpoint, and one for its automation pipelines, where each pipeline keeps its workflow files, its own changelog and its catalogue entry in the same folder so the two cannot drift apart. New entries arrive as a filled-in template through an issue form, which is screened automatically and opens a pull request.
+Two generators that turn one source folder per item into a single self-contained bilingual reference page: one for the team's API integrations, built from sanitised OpenAPI specs with an interactive try-it panel per endpoint, and one for its automation pipelines, where each pipeline keeps its workflow files, its own changelog and its catalogue entry in the same folder so the two cannot drift apart. New entries arrive as a filled-in template through an issue form, which is screened automatically and turned into a branch from which a maintainer opens a pull request.
 
 ### [National Research Metadata Audits: Austria and the Netherlands](https://rijdho.github.io/national-research-metadata-audits/)
 *Active · 2026 · DataCite, ORCID, ROR, FAIR*
@@ -269,12 +269,12 @@ Country by country, the metadata completeness and FAIR scores of the repositorie
 ### [FAIR Metadata Check: In-Browser Scoring](https://rijdho.github.io/fair-repo-audit/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Open source*
 
-Open, client-side twin of FAIR Metadata Check (Extended): FAIR metadata scoring for DataCite and OAI-PMH repositories, running entirely in the browser. The published, open-source counterpart of the hosted evaluator.
+A browser version of FAIR Metadata Check (Extended), with its code published: FAIR metadata scoring for DataCite and OAI-PMH repositories, running entirely in the browser.
 
 ### [Research Assessment Reform Planner: Self-Assessment and Plan](https://rijdho.github.io/coara-action-planner/)
 *Active · 2026 · CoARA, Research Assessment, Open source*
 
-Self-assess your institution against the ten CoARA commitments and generate a prioritised, editable action plan, entirely in your browser. The open twin of the Reform Assessment toolkit.
+Self-assess your institution against the ten CoARA commitments and generate a prioritised, editable action plan, entirely in your browser. It began as the open twin of the hosted Reform Assessment toolkit and is now the maintained version.
 
 ↔ [Research Assessment Reform Toolkit](https://metaudits.rijdho.org/reform-assessment/)
 
@@ -286,7 +286,7 @@ Enter an ORCID iD and get a narrative profile of the researcher for assessment i
 ### [The Value of Open Research Information (Barcelona WG7-TF2)](https://rijdho.github.io/barcelona-wg7-tf2/)
 *Draft · 2026 · Barcelona Declaration, Open Research Information, Taxonomy, Research policy*
 
-Contribution to Task Force 2 of Working Group 7 of the Barcelona Declaration on Open Research Information: nine benefits of opening information about research, arranged in three axes (quality and trust, collaboration and innovation, impact and relevance) and published as an interactive explorer rather than a PDF. One machine-readable taxonomy is the single source for the explorer, the written brief and the flow map, so the three cannot drift apart. Readers propose changes and examples through a pre-filled issue form that lands in a versioned register. The ninth benefit, strategic steering and institutional autonomy, came out of placing real case studies against the framework rather than out of rereading definitions. Working document at v0.2, archived on Zenodo as a proposal put to the task force, not as a framework it has agreed.
+Contribution to Task Force 2 of Working Group 7 of the Barcelona Declaration on Open Research Information: nine benefits of opening information about research, arranged in three axes (quality and trust, collaboration and innovation, impact and relevance) and published as an interactive explorer rather than a PDF. One machine-readable taxonomy is the single source for the explorer, the written brief and the flow map, so the three cannot drift apart. Readers propose changes and examples through a pre-filled issue form that lands in a versioned register. The ninth benefit, strategic steering and institutional autonomy, was added after a TF1 case study was placed against the framework. Working document at v0.2, archived on Zenodo as a proposal put to the task force, not as a framework it has agreed.
 
 ### [ORCID Affiliation Finder: Institutional Researcher Discovery](https://rijdho.github.io/orcid-finder/)
 *Active · 2026 · ORCID, ROR, Researcher Discovery, Persistent Identifiers*
@@ -307,4 +307,4 @@ Live questions during a lecture or a workshop: multiple choice, rating scales, r
 - **DataCite Certified Core Training** (2024): Certification focused on the use of persistent identifiers (PIDs), metadata best practices, and repository integration with DataCite infrastructure.
 
 ---
-*Generated from data/cv.json · 2026-09-29*
+*Generated from data/cv.json · 2026-10-20*

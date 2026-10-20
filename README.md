@@ -13,10 +13,10 @@ from this origin.
 Available in **English, German and Spanish** (auto-detected, switchable): interface and
 content both, including every long description.
 
-![The tool cloud: 18 ovals grouped into four colour-coded topics, Metadata quality 3,
-Assessment & policy 4, Infrastructure & AI 10, Data storytelling 1. Related projects touch
-rather than repel, so FAIR Metadata Check (Extended) sits against FAIR Metadata Check. A dashed outline marks an
-open GitHub twin, and a note in the corner says so. Five ovals carry a Zenodo concept DOI
+![The tool cloud: 20 ovals grouped into four colour-coded topics, Metadata quality 4,
+Assessment & policy 5, Infrastructure & AI 10, Data storytelling 1. Related projects touch
+rather than repel, so FAIR Metadata Check (Extended) sits against FAIR Metadata Check. A dashed outline marks a
+tool whose source is public on GitHub, and a note in the corner says so. Five ovals carry a Zenodo concept DOI
 under the name: FAIR Metadata Check 10.5281/zenodo.21492530, ORCID Affiliation Finder
 10.5281/zenodo.22227424, Research Assessment Reform Planner 10.5281/zenodo.21492548, Value of Open Research Information
 10.5281/zenodo.22231440 and Pollen 10.5281/zenodo.22685893.](docs/hub-cloud.png)
@@ -24,8 +24,8 @@ under the name: FAIR Metadata Check 10.5281/zenodo.21492530, ORCID Affiliation F
 ## The three views
 
 - **The hub** (`index.html`): two columns. The landing shows the name and headline with the
-  18 tools and experiments under them, as a cloud of ovals grouped by topic (drag, filter,
-  click to open the live app). The rail on the left opens the rest of the CV one section at a
+  20 tools and experiments under them, as a cloud of ovals grouped by topic (drag, filter,
+  click for a description and, where there is one, the link). The rail on the left opens the rest of the CV one section at a
   time: education, experience and training, then publications, writing and talks.
 ![The publications section opened from the rail: the rail on the left lists Background,
 Publications & talks and a link to Metaudits, with Publications highlighted. The main column
@@ -111,9 +111,7 @@ page and in the Markdown, so the address is not mistaken for a primary instituti
 
 **Linking two related projects in the cloud:** give each an `"id"` and list the other in
 `"related": ["<id>"]`, and the two bubbles then attract and touch. Add `"platform": "github"`
-to draw a dashed bubble (an open build published on GitHub Pages, vs. a solid bubble for a
-tool hosted on your own domain). This is how each hosted tool is paired with its open
-GitHub twin.
+to draw a dashed bubble, for a tool whose source is public on GitHub.
 
 **A DOI:** add `"doi": "10.5281/zenodo.…"` to any entry and its detail panel shows a DOI
 link under the title.

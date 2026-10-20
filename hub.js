@@ -31,22 +31,22 @@ const TAB_GROUPS={
 };
 const TOPICS = {
   metadata:{v:"--t-metadata", en:"Metadata quality", de:"Metadatenqualität", es:"Calidad de metadatos"},
-  assessment:{v:"--t-assessment", en:"Assessment & policy", de:"Bewertung & Politik", es:"Evaluación y política"},
+  assessment:{v:"--t-assessment", en:"Assessment & policy", de:"Bewertung & Forschungspolitik", es:"Evaluación y política"},
   infra:{v:"--t-infra", en:"Infrastructure & AI", de:"Infrastruktur & KI", es:"Infraestructura e IA"},
   story:{v:"--t-story", en:"Data storytelling", de:"Daten-Storytelling", es:"Narrativa de datos"},
 };
 const UI = {
-  en:{nav_menu:"Menu",nav_close:"Close menu",nav_sections:"Sections",cv:"Full CV →", apps_h:"Tools & experiments", apps_lead:"A cloud of live tools, grouped by topic. Drag them around; click one to open it.",
+  en:{nav_menu:"Menu",nav_close:"Close menu",nav_sections:"Sections",cv:"Full CV →", apps_h:"Tools & experiments", apps_lead:"Tools and projects, grouped by topic. Drag them around; click one for its description and, where there is one, its link.",
     grp_out_h:"Publications & talks", grp_path_h:"Background",
     hint:"drag · click a bubble", openmark:"dashed = open source", 
     by:"Built by", lic:"MIT-licensed, open source", src:"Source on GitHub",
     built:"A curated view of the same data behind the CV", open:"Open", nolink:"No public URL", list:"List", cloud:"Cloud"},
-  de:{nav_menu:"Menü",nav_close:"Menü schließen",nav_sections:"Abschnitte",cv:"Vollständiger Lebenslauf →", apps_h:"Werkzeuge & Experimente", apps_lead:"Eine Wolke aktiver Werkzeuge, nach Thema gruppiert. Ziehen; zum Öffnen klicken.",
+  de:{nav_menu:"Menü",nav_close:"Menü schließen",nav_sections:"Abschnitte",cv:"Vollständiger Lebenslauf →", apps_h:"Werkzeuge & Experimente", apps_lead:"Werkzeuge und Projekte, nach Thema gruppiert. Ziehen; anklicken für Beschreibung und, falls vorhanden, Link.",
     grp_out_h:"Publikationen & Vorträge", grp_path_h:"Werdegang",
     hint:"ziehen · Blase anklicken", openmark:"gestrichelt = quelloffen", 
     by:"Erstellt von", lic:"MIT-Lizenz, quelloffen", src:"Quellcode auf GitHub",
     built:"Eine kuratierte Ansicht derselben CV-Daten", open:"Öffnen", nolink:"Keine öffentliche URL", list:"Liste", cloud:"Wolke"},
-  es:{nav_menu:"Menú",nav_close:"Cerrar menú",nav_sections:"Secciones",cv:"CV completo →", apps_h:"Herramientas y experimentos", apps_lead:"Una nube de herramientas vivas, agrupadas por tópico. Arrástralas; haz clic para abrir.",
+  es:{nav_menu:"Menú",nav_close:"Cerrar menú",nav_sections:"Secciones",cv:"CV completo →", apps_h:"Herramientas y experimentos", apps_lead:"Herramientas y proyectos, agrupados por tema. Arrástralos; haz clic en uno para ver su descripción y, si lo tiene, su enlace.",
     grp_out_h:"Publicaciones y charlas", grp_path_h:"Trayectoria",
     hint:"arrastra · haz clic en una burbuja", openmark:"discontinuo = código abierto", 
     by:"Hecho por", lic:"Licencia MIT, código abierto", src:"Código en GitHub",

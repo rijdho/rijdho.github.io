@@ -194,12 +194,12 @@ Todas las herramientas y dashboards, con sus fuentes y licencias: [rijdho.github
 ### [Metaudits: Audits of Research Metadata](https://rijdho.github.io/metaudits-home/)
 *Active · 2026 · DataCite, Crossref, ORCID, OpenAlex*
 
-Una familia de dashboards que auditan los metadatos que la investigación deja en los registros por los que pasa, todos desde una misma portada: After Retraction (cómo se siguen citando 60.921 artículos retractados), Debris with DOIs (archivos de sistema registrados como investigación en DataCite), Publisher Gap (lo que 14 editoriales depositan en Crossref frente a lo que agrega OpenAlex), Empty Accounts (completitud de perfiles ORCID en 95 instituciones), SciELO Chile in Crossref, Beyond Articles (resultados chilenos que no son artículos) y auditorías nacionales de Austria y los Países Bajos.
+Una familia de dashboards que auditan los metadatos que la investigación deja en los registros por los que pasa, todos desde una misma portada: After Retraction (citas a 60.921 trabajos marcados por Retraction Watch, el 46,9 % posteriores a la marca), Debris with DOIs (archivos de sistema registrados como investigación en DataCite), Publisher Gap (lo que 14 editoriales depositan en Crossref frente a lo que agrega OpenAlex), Perfiles ORCID en instituciones miembro y no miembro (completitud de perfiles en 120 instituciones), SciELO Chile in Crossref, Beyond Articles (resultados chilenos que no son artículos) y auditorías nacionales de Austria y los Países Bajos.
 
 ### [FAIR Metadata Check (Extended): FAIR Scoring for Any Repository](https://metaudits.rijdho.org/repo-metaudits/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Custom API*
 
-Evalúa la calidad de metadatos de repositorios digitales frente a los Principios FAIR. Se conecta a endpoints OAI-PMH, registros DataCite o cualquier API REST personalizada (CSW, STAC, CKAN y más), cosecha metadatos y ejecuta una evaluación estructurada a través de 14 sub-principios. Clasifica identificadores persistentes, detecta tipos de licencia, valida vocabularios controlados (DCMI, ISO 639) y verifica cumplimiento de estándares comunitarios. Incluye recomendaciones priorizadas, reportes exportables (CSV, JSON, TXT) y visualizaciones interactivas de estructura de repositorio. El motor de evaluación FAIR se ejecuta del lado del servidor en Cloudflare Workers.
+Evalúa la calidad de metadatos de repositorios digitales frente a los Principios FAIR. Se conecta a endpoints OAI-PMH, registros DataCite o una API REST para la que tiene un adaptador (STAC, CKAN, Dataverse, Copernicus CSW y otras), cosecha metadatos y ejecuta una evaluación estructurada a través de 14 sub-principios. Clasifica identificadores persistentes, detecta tipos de licencia, valida vocabularios controlados (DCMI, ISO 639) y verifica cumplimiento de estándares comunitarios. Incluye recomendaciones priorizadas, reportes exportables (CSV, JSON, TXT) y visualizaciones interactivas de estructura de repositorio. El motor de evaluación FAIR se ejecuta del lado del servidor en Cloudflare Workers.
 
 ### [MCP CRIS Live](https://hub.docker.com/r/rijdho/mcp-cris-live)
 *Active · 2026 · MCP, Docker, Node.js, ORCID*
@@ -209,7 +209,7 @@ Servidor MCP para datos de investigación en tiempo real. Proporciona acceso en 
 ### [MCP CRIS Live: OpenAIRE](https://hub.docker.com/r/rijdho/mcp-cris-live-openaire)
 *Active · 2026 · MCP, Docker, Node.js, OpenAIRE*
 
-Servidor MCP que expone la API del OpenAIRE Graph (100M+ productos de investigación de acceso abierto) a asistentes de IA. Proporciona 14 herramientas para buscar publicaciones, datasets, software, organizaciones, proyectos y personas. Servidor Node.js dockerizado con caché en memoria, rate limiting y lógica de reintentos. Construido como complemento de MCP CRIS Live enfocado en infraestructura de ciencia abierta.
+Servidor MCP que expone la API del OpenAIRE Graph (más de 100 millones de productos de investigación) a asistentes de IA. Proporciona 14 herramientas para buscar publicaciones, datasets, software, organizaciones, proyectos y personas. Servidor Node.js dockerizado con caché en memoria, rate limiting y lógica de reintentos. Construido como complemento de MCP CRIS Live enfocado en infraestructura de ciencia abierta.
 
 ### OpenAIRE Research Assistant: Demo
 *Active · 2026 · Cloudflare Workers AI, LLM, Agentic AI, OpenAIRE*
@@ -217,9 +217,9 @@ Servidor MCP que expone la API del OpenAIRE Graph (100M+ productos de investigac
 Interfaz de chat donde Cloudflare Workers AI (Llama 3.1 8B) usa las herramientas MCP de OpenAIRE en un bucle agéntico para responder preguntas de investigación en lenguaje natural. El LLM decide qué herramientas llamar, ejecuta las búsquedas en OpenAIRE y sintetiza los resultados en una respuesta legible. Desplegado completamente en infraestructura gratuita de Cloudflare (Pages + Workers AI).
 
 ### [The Sound of Inequality: Data Disparities as Audio](https://sound-inequality.rijdho.org/)
-*Active · 2026 · Sonification, Data Viz, R, Accessibility*
+*Active · 2026 · Sonification, Data Viz, Accessibility*
 
-Proyecto de sonificación que explora patrones de desigualdad de datos a través de audio. Transforma disparidades estadísticas en composiciones sonoras para hacer los datos accesibles mediante percepción auditiva.
+Globo interactivo de la desigualdad en la exposición al ruido en 117 ciudades: niveles de ruido según la hora del día, un sonido de referencia sintetizado al nivel medido en cada lugar, transmisiones de audio en vivo donde las hay y lugares agregados por los visitantes.
 
 ### PID Traceability Workflows
 *Active · 2025 · PIDs, Research Infrastructure, Python, API Integration*
@@ -254,12 +254,12 @@ Plantilla de plan de gestión de datos accionable por máquina, con campos escal
 ### Renku 2.0 Deployment (IT:U)
 *Active · 2026 · Renku, Kubernetes, k3s, Podman*
 
-Despliegue de Renku 2.0 para entornos computacionales reproducibles, por dos rutas y no una: k3s con su containerd incluido donde la VM institucional lo permite, y un clúster kind cuyos nodos son contenedores Podman donde no. Renku se distribuye como chart de Helm y no como imagen, así que la elección de qué provee el clúster de un solo nodo es la decisión que hay que tomar antes de aprovisionar la máquina, y está documentada como tal junto a los scripts de arranque.
+Despliegue de Renku 2.0 para entornos computacionales reproducibles en la VM institucional con k3s y su containerd incluido, con una alternativa en scripts (un clúster kind cuyos nodos son contenedores Podman) donde k3s no está permitido. Renku se distribuye como chart de Helm y no como imagen, así que la elección de qué provee el clúster de un solo nodo es la decisión que hay que tomar antes de aprovisionar la máquina, y está documentada como tal junto a los scripts de arranque.
 
 ### DART Documentation Generators
 *Active · 2026 · Static site generator, Python, OpenAPI, n8n*
 
-Dos generadores que convierten una carpeta fuente por elemento en una única página de referencia bilingüe y autocontenida: uno para las integraciones de API del equipo, construido desde especificaciones OpenAPI saneadas y con un panel interactivo de prueba por endpoint, y otro para los pipelines de automatización, donde cada pipeline guarda sus archivos de flujo, su propio changelog y su entrada de catálogo en la misma carpeta para que ambos no se separen. Las entradas nuevas llegan como plantilla completada por un formulario de issue, que se revisa automáticamente y abre un pull request.
+Dos generadores que convierten una carpeta fuente por elemento en una única página de referencia bilingüe y autocontenida: uno para las integraciones de API del equipo, construido desde especificaciones OpenAPI saneadas y con un panel interactivo de prueba por endpoint, y otro para los pipelines de automatización, donde cada pipeline guarda sus archivos de flujo, su propio changelog y su entrada de catálogo en la misma carpeta para que ambos no se separen. Las entradas nuevas llegan como plantilla completada por un formulario de issue, que se revisa automáticamente y se convierte en una rama desde la que una persona mantenedora abre un pull request.
 
 ### [National Research Metadata Audits: Austria and the Netherlands](https://rijdho.github.io/national-research-metadata-audits/)
 *Active · 2026 · DataCite, ORCID, ROR, FAIR*
@@ -269,12 +269,12 @@ País por país, la completitud de los metadatos y los puntajes FAIR de los repo
 ### [FAIR Metadata Check: In-Browser Scoring](https://rijdho.github.io/fair-repo-audit/)
 *Active · 2026 · FAIR, OAI-PMH, DataCite, Open source*
 
-Gemelo abierto y del lado del cliente de FAIR Metadata Check (Extended): evaluación FAIR de metadatos para repositorios DataCite y OAI-PMH, ejecutándose enteramente en el navegador. La contraparte publicada y de código abierto del evaluador alojado.
+Una versión de FAIR Metadata Check (Extended) con el código publicado: evaluación FAIR de metadatos para repositorios DataCite y OAI-PMH, ejecutándose enteramente en el navegador.
 
 ### [Research Assessment Reform Planner: Self-Assessment and Plan](https://rijdho.github.io/coara-action-planner/)
 *Active · 2026 · CoARA, Research Assessment, Open source*
 
-Autoevalúa tu institución frente a los diez compromisos CoARA y genera un plan de acción priorizado y editable, enteramente en el navegador. El gemelo abierto del toolkit Reform Assessment.
+Autoevalúa tu institución frente a los diez compromisos CoARA y genera un plan de acción priorizado y editable, enteramente en el navegador. Comenzó como la versión abierta del toolkit Reform Assessment alojado y hoy es la versión que se mantiene.
 
 ↔ [Research Assessment Reform Toolkit](https://metaudits.rijdho.org/reform-assessment/)
 
@@ -286,7 +286,7 @@ Ingresa un ORCID iD y obtén un perfil narrativo del investigador para una evalu
 ### [The Value of Open Research Information (Barcelona WG7-TF2)](https://rijdho.github.io/barcelona-wg7-tf2/)
 *Draft · 2026 · Barcelona Declaration, Open Research Information, Taxonomy, Research policy*
 
-Contribución al Task Force 2 del Grupo de Trabajo 7 de la Declaración de Barcelona sobre Información Abierta de Investigación: nueve beneficios de abrir la información sobre la investigación, ordenados en tres ejes (calidad y confianza, colaboración e innovación, impacto y relevancia) y publicados como explorador interactivo en vez de PDF. Una taxonomía legible por máquina es la fuente única del explorador, el documento escrito y el mapa de flujo, de modo que los tres no pueden separarse. Quien lee propone cambios y ejemplos mediante un formulario de issue precargado que aterriza en un registro versionado. El noveno beneficio, dirección estratégica y autonomía institucional, salió de contrastar casos reales con el marco y no de releer las definiciones. Documento de trabajo en v0.2, archivado en Zenodo como propuesta al task force, no como marco acordado por él.
+Contribución al Task Force 2 del Grupo de Trabajo 7 de la Declaración de Barcelona sobre Información Abierta de Investigación: nueve beneficios de abrir la información sobre la investigación, ordenados en tres ejes (calidad y confianza, colaboración e innovación, impacto y relevancia) y publicados como explorador interactivo en vez de PDF. Una taxonomía legible por máquina es la fuente única del explorador, el documento escrito y el mapa de flujo, de modo que los tres no pueden separarse. Quien lee propone cambios y ejemplos mediante un formulario de issue precargado que aterriza en un registro versionado. El noveno beneficio, dirección estratégica y autonomía institucional, se agregó después de contrastar con el marco un caso de estudio del TF1. Documento de trabajo en v0.2, archivado en Zenodo como propuesta al task force, no como marco acordado por él.
 
 ### [ORCID Affiliation Finder: Institutional Researcher Discovery](https://rijdho.github.io/orcid-finder/)
 *Active · 2026 · ORCID, ROR, Researcher Discovery, Persistent Identifiers*
@@ -307,4 +307,4 @@ Preguntas en vivo durante una clase o un taller: opción múltiple, escalas de v
 - **DataCite Certified Core Training** (2024): Certificación enfocada en el uso de identificadores persistentes (PIDs), buenas prácticas de metadatos e integración de repositorios con la infraestructura de DataCite.
 
 ---
-*Generado desde data/cv.json · 2026-09-29*
+*Generado desde data/cv.json · 2026-10-20*
