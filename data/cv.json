@@ -1086,7 +1086,7 @@
         "Python",
         "API Integration"
       ],
-      "topic": "infra",
+      "topic": "metadata",
       "desc": {
         "en": "Development of reproducible workflows for tracking research outputs across persistent identifier systems (ORCID, ROR, Crossref, DataCite, OpenAlex). Built for institutional research information governance.",
         "es": "Desarrollo de flujos de trabajo reproducibles para rastrear productos de investigación a través de sistemas de identificadores persistentes (ORCID, ROR, Crossref, DataCite, OpenAlex). Construido para la gobernanza institucional de información de investigación.",
@@ -1475,7 +1475,7 @@
         "Vanilla JS",
         "Open source"
       ],
-      "topic": "infra",
+      "topic": "story",
       "platform": "github",
       "desc": {
         "en": "Live questions during a lecture or a workshop: multiple choice, rating scales, rankings, word clouds, and questions from the room ordered by support. Participants join with a six-character code or a QR code and answer on their phones while the results build on the projected screen. Any choice question can carry a right answer, which adds a scoreboard. No accounts, no cookies and no third-party request of any kind; a room deletes itself twelve hours after it opens. One Cloudflare Worker with a Durable Object per room, which is both the storage and the point every vote passes through, and the same code also runs on Node.",

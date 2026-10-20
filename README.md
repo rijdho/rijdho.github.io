@@ -13,8 +13,8 @@ from this origin.
 Available in **English, German and Spanish** (auto-detected, switchable): interface and
 content both, including every long description.
 
-![The tool cloud: 23 ovals grouped into four colour-coded topics, Metadata quality 6,
-Assessment & policy 6, Infrastructure & AI 10, Data storytelling 1. Related projects touch
+![The tool cloud: 23 ovals grouped into four colour-coded topics, Metadata quality 7,
+Open science policy & assessment 6, Infrastructure & AI 8, Science communication 2. Related projects touch
 rather than repel, so FAIR Metadata Check (Extended) sits against FAIR Metadata Check. A dashed outline marks a
 tool whose source is public on GitHub, and a note in the corner says so. Five ovals carry a Zenodo concept DOI
 under the name: FAIR Metadata Check 10.5281/zenodo.21492530, ORCID Affiliation Finder
