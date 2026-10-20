@@ -301,12 +301,12 @@ Completeness of the public ORCID profiles found through the ROR ids of 120 resea
 ### [Beyond Articles: Chilean Research Outputs in DataCite and ANID](https://rijdho.github.io/chilean-altoutputs/)
 *Active · 2026 · DataCite, ANID, Metadata Quality, Open data*
 
-Metadata completeness of Chilean research outputs other than articles (datasets, images, collections, software, data management plans and models) in DataCite and ANID's repository: where they are deposited, under which licence, and how completely they are described.
+Metadata completeness of Chilean research outputs other than articles (datasets, images, software, data management plans and others): those in DataCite with a creator affiliated in Chile, and those in ANID's repository. Where they are deposited, under which licence, and how completely they are described.
 
 ### [Actionable DMP: Write and Check a Machine-Actionable Plan](https://rijdho.github.io/dmp-template/)
 *Active · 2026 · maDMP, RDA DMP Common Standard, DataCite, Science Europe*
 
-Write a data management plan as a machine-actionable file that validates against the RDA DMP Common Standard v1.2, answering the fifteen questions of Science Europe's core requirements, and check what the plan says about each dataset against its DOI record in DataCite. The plan downloads as dmp.json and as DMP.md, in Science Europe's sections or in those of the Horizon Europe template; the same check runs from the command line and as a GitHub Action.
+Write a data management plan as a machine-actionable file that validates against the RDA DMP Common Standard v1.2, answering the fifteen questions of Science Europe's core requirements, and check what the plan says about each dataset against the dataset's DataCite record, where DataCite holds it. The plan downloads as dmp.json and as DMP.md, in Science Europe's sections or in those of the Horizon Europe template; the same check runs from the command line and as a GitHub Action.
 
 ### [Pollen: Live Audience Questions](https://pollen.rijdho.org)
 *Active · 2026 · Live polling, Audience response, Teaching, Cloudflare Workers*

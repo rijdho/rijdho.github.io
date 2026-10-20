@@ -301,12 +301,12 @@ Completitud de los perfiles ORCID públicos encontrados mediante los ROR id de 1
 ### [Beyond Articles: Chilean Research Outputs in DataCite and ANID](https://rijdho.github.io/chilean-altoutputs/)
 *Active · 2026 · DataCite, ANID, Metadata Quality, Open data*
 
-Completitud de los metadatos de los resultados de investigación chilenos que no son artículos (datasets, imágenes, colecciones, software, planes de gestión de datos y modelos) en DataCite y el repositorio de ANID: dónde se depositan, con qué licencia y qué tan completamente se describen.
+Completitud de los metadatos de los resultados de investigación chilenos que no son artículos (datasets, imágenes, software, planes de gestión de datos y otros): los de DataCite con una afiliación de autoría en Chile y los del repositorio de ANID. Dónde se depositan, con qué licencia y qué tan completamente se describen.
 
 ### [Actionable DMP: Write and Check a Machine-Actionable Plan](https://rijdho.github.io/dmp-template/)
 *Active · 2026 · maDMP, RDA DMP Common Standard, DataCite, Science Europe*
 
-Escribe un plan de gestión de datos como archivo accionable por máquina, válido según el RDA DMP Common Standard v1.2, respondiendo las quince preguntas de los requisitos básicos de Science Europe, y contrasta lo que el plan dice de cada dataset con su registro DOI en DataCite. El plan se descarga como dmp.json y como DMP.md, en las secciones de Science Europe o en las de la plantilla de Horizon Europe; la misma revisión corre desde la línea de comandos y como GitHub Action.
+Escribe un plan de gestión de datos como archivo accionable por máquina, válido según el RDA DMP Common Standard v1.2, respondiendo las quince preguntas de los requisitos básicos de Science Europe, y contrasta lo que el plan dice de cada dataset con el registro del dataset en DataCite, cuando DataCite lo tiene. El plan se descarga como dmp.json y como DMP.md, en las secciones de Science Europe o en las de la plantilla de Horizon Europe; la misma revisión corre desde la línea de comandos y como GitHub Action.
 
 ### [Pollen: Live Audience Questions](https://pollen.rijdho.org)
 *Active · 2026 · Live polling, Audience response, Teaching, Cloudflare Workers*

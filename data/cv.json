@@ -1433,9 +1433,9 @@
         "metaudits"
       ],
       "desc": {
-        "en": "Metadata completeness of Chilean research outputs other than articles (datasets, images, collections, software, data management plans and models) in DataCite and ANID's repository: where they are deposited, under which licence, and how completely they are described.",
-        "es": "Completitud de los metadatos de los resultados de investigación chilenos que no son artículos (datasets, imágenes, colecciones, software, planes de gestión de datos y modelos) en DataCite y el repositorio de ANID: dónde se depositan, con qué licencia y qué tan completamente se describen.",
-        "de": "Vollständigkeit der Metadaten chilenischer Forschungsergebnisse jenseits von Artikeln (Datensätze, Bilder, Sammlungen, Software, Datenmanagementpläne und Modelle) in DataCite und im Repositorium der ANID: wo sie abgelegt sind, unter welcher Lizenz und wie vollständig sie beschrieben sind."
+        "en": "Metadata completeness of Chilean research outputs other than articles (datasets, images, software, data management plans and others): those in DataCite with a creator affiliated in Chile, and those in ANID's repository. Where they are deposited, under which licence, and how completely they are described.",
+        "es": "Completitud de los metadatos de los resultados de investigación chilenos que no son artículos (datasets, imágenes, software, planes de gestión de datos y otros): los de DataCite con una afiliación de autoría en Chile y los del repositorio de ANID. Dónde se depositan, con qué licencia y qué tan completamente se describen.",
+        "de": "Vollständigkeit der Metadaten chilenischer Forschungsergebnisse jenseits von Artikeln (Datensätze, Bilder, Software, Datenmanagementpläne und weitere): jene in DataCite mit einer Urheber-Affiliation in Chile und jene im Repositorium der ANID. Wo sie abgelegt sind, unter welcher Lizenz und wie vollständig sie beschrieben sind."
       },
       "doi": "10.5281/zenodo.23498567"
     },
@@ -1457,9 +1457,9 @@
         "madmp-itu"
       ],
       "desc": {
-        "en": "Write a data management plan as a machine-actionable file that validates against the RDA DMP Common Standard v1.2, answering the fifteen questions of Science Europe's core requirements, and check what the plan says about each dataset against its DOI record in DataCite. The plan downloads as dmp.json and as DMP.md, in Science Europe's sections or in those of the Horizon Europe template; the same check runs from the command line and as a GitHub Action.",
-        "es": "Escribe un plan de gestión de datos como archivo accionable por máquina, válido según el RDA DMP Common Standard v1.2, respondiendo las quince preguntas de los requisitos básicos de Science Europe, y contrasta lo que el plan dice de cada dataset con su registro DOI en DataCite. El plan se descarga como dmp.json y como DMP.md, en las secciones de Science Europe o en las de la plantilla de Horizon Europe; la misma revisión corre desde la línea de comandos y como GitHub Action.",
-        "de": "Schreibt einen Datenmanagementplan als maschinenverarbeitbare Datei, die dem RDA DMP Common Standard v1.2 entspricht, entlang der fünfzehn Fragen der Kernanforderungen von Science Europe, und prüft, was der Plan über jeden Datensatz sagt, an dessen DOI-Eintrag in DataCite. Der Plan lässt sich als dmp.json und als DMP.md herunterladen, in den Abschnitten von Science Europe oder denen der Horizon-Europe-Vorlage; dieselbe Prüfung läuft auf der Kommandozeile und als GitHub Action."
+        "en": "Write a data management plan as a machine-actionable file that validates against the RDA DMP Common Standard v1.2, answering the fifteen questions of Science Europe's core requirements, and check what the plan says about each dataset against the dataset's DataCite record, where DataCite holds it. The plan downloads as dmp.json and as DMP.md, in Science Europe's sections or in those of the Horizon Europe template; the same check runs from the command line and as a GitHub Action.",
+        "es": "Escribe un plan de gestión de datos como archivo accionable por máquina, válido según el RDA DMP Common Standard v1.2, respondiendo las quince preguntas de los requisitos básicos de Science Europe, y contrasta lo que el plan dice de cada dataset con el registro del dataset en DataCite, cuando DataCite lo tiene. El plan se descarga como dmp.json y como DMP.md, en las secciones de Science Europe o en las de la plantilla de Horizon Europe; la misma revisión corre desde la línea de comandos y como GitHub Action.",
+        "de": "Schreibt einen Datenmanagementplan als maschinenverarbeitbare Datei, die dem RDA DMP Common Standard v1.2 entspricht, entlang der fünfzehn Fragen der Kernanforderungen von Science Europe, und prüft, was der Plan über jeden Datensatz sagt, an dessen Eintrag in DataCite, sofern DataCite ihn führt. Der Plan lässt sich als dmp.json und als DMP.md herunterladen, in den Abschnitten von Science Europe oder denen der Horizon-Europe-Vorlage; dieselbe Prüfung läuft auf der Kommandozeile und als GitHub Action."
       },
       "doi": "10.5281/zenodo.23498569"
     },
