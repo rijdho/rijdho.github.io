@@ -118,8 +118,9 @@ no `404.html` SPA shell.
 
 ## Versioning and screenshots
 
-`CHANGELOG.md` is Keep a Changelog + SemVer, with `v1.0.0` at the initial public site
-(2026-07-31) and a version cut whenever the content or the shape of `cv.json` changes enough
+`CHANGELOG.md` is Keep a Changelog + SemVer. Numbering restarted at `v0.1.0` on 2026-10-20
+(Ricardo's decision for repos without a DOI: 1.0.0 to 1.8.1, 2026-07-31 to 2026-09-29, and their
+releases and tags were withdrawn), and a version is cut whenever the content or the shape of `cv.json` changes enough
 to name. This site deploys continuously, so a version is a readable marker in the history,
 not something anyone installs, and that reasoning is written into the changelog's preamble so
 the next person does not have to reconstruct it. Tag the commit (`git tag -a vX.Y.Z`) so the
