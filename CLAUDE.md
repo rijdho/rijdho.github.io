@@ -30,6 +30,12 @@ vanilla JS. Part of the violet-family design system (see `../CLAUDE.md`).
   a label that is slug-shaped, longer than 34 characters (Research Assessment Reform Planner, kept whole), or a case-only duplicate of
   another (which "BiblioHelp" and "bibliohelp" were).
 - `cv.html`: the academic CV. Same fetch, formal layout, `Print / PDF` via `window.print()`.
+  **Section order (2026-10-22): the hub's order**, in `cv.js` and `build_cv.py` alike:
+  experience, education, training, skills, then publications, writing, talks, and the tools
+  last. A printed CV is read from the front, and before that day training sat on the last
+  page behind five pages of tools. Every row that must not split across a page carries
+  `break-inside:avoid` (`.entry`, `.skill`, list items); check page tops and bottoms with
+  `pdftotext -layout` after a change.
 - `build_cv.py`: emits `CV.en.md` / `CV.de.md` / `CV.es.md`.
 
 ### What lives where: content in `cv.json`, interface in `UI`
