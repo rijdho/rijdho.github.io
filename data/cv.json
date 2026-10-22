@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-20",
+    "updated": "2026-10-22",
     "source": "single canonical CV data: hub, CV page and CV.md all read this"
   },
   "personal": {
@@ -145,6 +145,12 @@
         "de": "Entwurf, Umsetzung und Pflege einer universitätsweiten Open-Science-Strategie: drei Säulen (Konzept und Betrieb, Engagement, Ausbildung und Unterstützung) sowie eine Querschnittsachse zu KI in der Forschung, geführt über drei Horizonte nach dem SCOPE-Rahmen (INORMS Research Evaluation Group, 2021), mit neunzehn Indikatoren, die operative Definitionen, Zielwerte, Fristen und benannte Verantwortliche sowie, wo vorhanden, Ausgangswerte in einer einzigen Quelltabelle tragen und den Grundsätzen verantwortungsvoller Metriknutzung aus DORA, dem Leidener Manifest und CoARA folgen. Aufbau und Betrieb der darunter liegenden Systeme: ein Forschungsinformationssystem, ein Forschungsmanagementsystem für den gesamten Förderzyklus von der Ausschreibung bis zur Budgetverfolgung nach der Bewilligung, ein täglicher Aggregator offener und kommender Ausschreibungen, eine Renku-2.0-Installation für reproduzierbare Umgebungen, maschinenlesbare Datenmanagementplanung, validiert gegen den RDA DMP Common Standard, sowie zweisprachige Dokumentationsgeneratoren für die APIs und Automatisierungs-Pipelines des Teams. Entwurf der Unterstützung für Forschende (ein Kurs, Workshops, DMP-Sprechstunden, ein Champions-Netzwerk), derzeit im Aufbau. Vertretung der IT:U in nationalen und internationalen Open-Science-Initiativen sowie Mitwirkung an Antragstellung, Ideenentwicklung und Mentoring in akademischen Projekten.",
         "es": "Diseño, implementación y mantenimiento de una estrategia de Ciencia Abierta para toda la universidad: tres pilares (concepto y operación, participación, formación y apoyo) más un eje transversal sobre IA en investigación, gestionados en tres horizontes con el marco SCOPE (INORMS Research Evaluation Group, 2021), con diecinueve indicadores que llevan definición operativa, meta, plazo y responsable, y línea base donde ya existe, en una única tabla fuente, gobernados por los principios de uso responsable de DORA, el Manifiesto de Leiden y CoARA. Construcción y operación de los sistemas que la sostienen: un sistema de información de investigación, un sistema de gestión de la investigación que cubre el ciclo de vida del financiamiento desde la convocatoria hasta el seguimiento presupuestario posterior a la adjudicación, un agregador diario de convocatorias abiertas y próximas, un despliegue de Renku 2.0 para entornos reproducibles, planificación de gestión de datos accionable por máquina validada contra el RDA DMP Common Standard, y generadores bilingües de documentación para las APIs y pipelines de automatización del equipo. Diseño del apoyo a investigadores (un curso, talleres, clínicas de planes de gestión de datos, una red de champions), hoy en preparación. Representación de IT:U en iniciativas nacionales e internacionales de Ciencia Abierta, y contribución a la redacción de propuestas, ideación y mentoría en proyectos académicos."
       }
+    },
+    {
+      "title": "Member, Research Ethics Committee",
+      "org": "Interdisciplinary Transformation University Austria (IT:U)",
+      "loc": "Linz, Austria",
+      "period": "September 2026 – Present"
     },
     {
       "title": "Short-Term Scientific Mission (STSM) Researcher",
@@ -312,13 +318,23 @@
       }
     },
     {
+      "title": "DataCite Certified Core Training",
+      "year": "2024",
+      "org": "",
+      "desc": {
+        "en": "Certification focused on the use of persistent identifiers (PIDs), metadata best practices, and repository integration with DataCite infrastructure.",
+        "es": "Certificación enfocada en el uso de identificadores persistentes (PIDs), buenas prácticas de metadatos e integración de repositorios con la infraestructura de DataCite.",
+        "de": "Zertifizierung mit Schwerpunkt auf der Nutzung persistenter Identifikatoren (PIDs), Best Practices für Metadaten und der Anbindung von Repositorien an die DataCite-Infrastruktur."
+      }
+    },
+    {
       "title": "Essentials 4 Data Support",
       "year": "2023",
       "org": "Research Data Netherlands",
       "desc": {
-        "en": "Completed official RDNL training for research data support professionals. Focused on FAIR principles, metadata quality, data sharing, and the implementation of robust Data Management Plans (DMPs). Only active Latin American participant in the cohort.",
-        "es": "Completé la formación oficial de RDNL para profesionales de soporte de datos de investigación. Enfocado en principios FAIR, calidad de metadatos, intercambio de datos e implementación de Planes de Gestión de Datos (DMP) robustos. Único participante activo latinoamericano en la cohorte.",
-        "de": "Abschluss der offiziellen RDNL-Schulung für Fachkräfte im Bereich Forschungsdatenunterstützung. Schwerpunkte: FAIR-Prinzipien, Metadatenqualität, Datenaustausch und die Umsetzung belastbarer Datenmanagementpläne (DMPs). Einziger aktiver lateinamerikanischer Teilnehmer der Kohorte."
+        "en": "Completed official RDNL training for research data support professionals. Focused on FAIR principles, metadata quality, data sharing, and the implementation of robust Data Management Plans (DMPs).",
+        "es": "Completé la formación oficial de RDNL para profesionales de soporte de datos de investigación. Enfocado en principios FAIR, calidad de metadatos, intercambio de datos e implementación de Planes de Gestión de Datos (DMP) robustos.",
+        "de": "Abschluss der offiziellen RDNL-Schulung für Fachkräfte im Bereich Forschungsdatenunterstützung. Schwerpunkte: FAIR-Prinzipien, Metadatenqualität, Datenaustausch und die Umsetzung belastbarer Datenmanagementpläne (DMPs)."
       }
     },
     {
@@ -330,19 +346,21 @@
         "es": "Curso intensivo de 75 horas sobre cienciometría, indicadores bibliométricos, flujos de conocimiento y metodologías de evaluación de la investigación. Cubrió teoría y aplicación práctica para desarrollo de políticas e infraestructura.",
         "de": "Intensivkurs mit 75 Stunden zu Szientometrie, bibliometrischen Indikatoren, Wissensflüssen und Methoden der Forschungsbewertung. Behandelte Theorie und praktische Anwendung für Politik- und Infrastrukturentwicklung."
       }
-    },
-    {
-      "title": "DataCite Certified Core Training",
-      "year": "2024",
-      "org": "",
-      "desc": {
-        "en": "Certification focused on the use of persistent identifiers (PIDs), metadata best practices, and repository integration with DataCite infrastructure.",
-        "es": "Certificación enfocada en el uso de identificadores persistentes (PIDs), buenas prácticas de metadatos e integración de repositorios con la infraestructura de DataCite.",
-        "de": "Zertifizierung mit Schwerpunkt auf der Nutzung persistenter Identifikatoren (PIDs), Best Practices für Metadaten und der Anbindung von Repositorien an die DataCite-Infrastruktur."
-      }
     }
   ],
   "presentations": [
+    {
+      "type": "Presentation",
+      "title": "Metadata Audits in Context",
+      "event": "Tooling showcase, IOSP 2026, Institute of Open Science Practices, Leiden",
+      "date": "October 13, 2026"
+    },
+    {
+      "type": "Workshop demo",
+      "title": "CRIS on AT Protocol: Who Signs, Who Reads, What Is Checked",
+      "event": "AT Protocol workshop “Own your research network with AT Protocol”, IOSP 2026, Institute of Open Science Practices, Leiden",
+      "date": "October 12, 2026"
+    },
     {
       "type": "Presentation",
       "title": "The State of Research Repositories in Chile: FAIRness and Reuse, with Preliminary Results for Latin America",
@@ -368,16 +386,10 @@
       "date": "April 9, 2026"
     },
     {
-      "type": "Lightning Talk",
-      "title": "Tracing Research Outputs: FAIRness, Responsibility, and Reuse Across Infrastructure Layers",
-      "event": "Open Science Festival, University of Vienna",
-      "date": "September 8, 2025"
-    },
-    {
-      "type": "Presentation",
-      "title": "Research Traceability for Responsible Assessment",
-      "event": "FoReA-Treffen Q3 2025",
-      "date": "September 17, 2025"
+      "type": "Webinar",
+      "title": "Making Research Count: Challenges in the Evaluation and Valuation of Scientific Work",
+      "event": "Open Innovation in Science Center (OIS)",
+      "date": "October 16, 2025"
     },
     {
       "type": "Guest Lecture",
@@ -386,10 +398,16 @@
       "date": "October 15, 2025"
     },
     {
-      "type": "Webinar",
-      "title": "Making Research Count: Challenges in the Evaluation and Valuation of Scientific Work",
-      "event": "Open Innovation in Science Center (OIS)",
-      "date": "October 16, 2025"
+      "type": "Presentation",
+      "title": "Research Traceability for Responsible Assessment",
+      "event": "FoReA-Treffen Q3 2025",
+      "date": "September 17, 2025"
+    },
+    {
+      "type": "Lightning Talk",
+      "title": "Tracing Research Outputs: FAIRness, Responsibility, and Reuse Across Infrastructure Layers",
+      "event": "Open Science Festival, University of Vienna",
+      "date": "September 8, 2025"
     },
     {
       "type": "Panel",

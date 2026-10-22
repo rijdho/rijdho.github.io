@@ -19,6 +19,9 @@ Meine Arbeit konzentriert sich auf die Governance von Forschungsinformationen, M
 
 Entwurf, Umsetzung und Pflege einer universitätsweiten Open-Science-Strategie: drei Säulen (Konzept und Betrieb, Engagement, Ausbildung und Unterstützung) sowie eine Querschnittsachse zu KI in der Forschung, geführt über drei Horizonte nach dem SCOPE-Rahmen (INORMS Research Evaluation Group, 2021), mit neunzehn Indikatoren, die operative Definitionen, Zielwerte, Fristen und benannte Verantwortliche sowie, wo vorhanden, Ausgangswerte in einer einzigen Quelltabelle tragen und den Grundsätzen verantwortungsvoller Metriknutzung aus DORA, dem Leidener Manifest und CoARA folgen. Aufbau und Betrieb der darunter liegenden Systeme: ein Forschungsinformationssystem, ein Forschungsmanagementsystem für den gesamten Förderzyklus von der Ausschreibung bis zur Budgetverfolgung nach der Bewilligung, ein täglicher Aggregator offener und kommender Ausschreibungen, eine Renku-2.0-Installation für reproduzierbare Umgebungen, maschinenlesbare Datenmanagementplanung, validiert gegen den RDA DMP Common Standard, sowie zweisprachige Dokumentationsgeneratoren für die APIs und Automatisierungs-Pipelines des Teams. Entwurf der Unterstützung für Forschende (ein Kurs, Workshops, DMP-Sprechstunden, ein Champions-Netzwerk), derzeit im Aufbau. Vertretung der IT:U in nationalen und internationalen Open-Science-Initiativen sowie Mitwirkung an Antragstellung, Ideenentwicklung und Mentoring in akademischen Projekten.
 
+### Member, Research Ethics Committee · Interdisciplinary Transformation University Austria (IT:U)
+*September 2026 – Present · Linz, Austria*
+
 ### Short-Term Scientific Mission (STSM) Researcher · Open Innovation in Science Center, Ludwig Boltzmann Gesellschaft
 *August 4 – October 28, 2025 · Vienna, Austria*
 
@@ -88,7 +91,7 @@ Fachkraft zur Unterstützung der Akkreditierung von Postgraduiertenprogrammen im
 - Hartley Belmar, R., Abedrapo Rosen, I., & Torres Díaz, L. (2025). [Abrir, transformar y gobernar: hacia una Ciencia Abierta situada y equitativa en Chile](https://doi.org/10.15443/rintca.2025.es001). *Revista Internacional de Ciencia Abierta*.
 - Abedrapo Rosen, I., & Hartley Belmar, R. (2025). [Open Science governance: the role of persistent identifiers and metadata standards](https://doi.org/10.31219/osf.io/9h564_v3). *MetaResearch Open Review – MetaROR*.
 - Belmar, Ricardo Hartley, & Atenas, Javiera (2024). [Desafíos en la especialización para gestión de datos de investigación en un contexto ético](https://doi.org/10.4067/S1726-569X2024000200319). *Acta Bioethica, 30(2), 319–322*.
-- Briones, C., Nuñez, J. J., Pérez, M., Garrido, O., Campos, B., Godoy, K., Hartley, R., Oyarzún, P. A., & Guiñez, R. (2024). [Linking Acrosome Size and Genetic Divergence in an Inter-Oceanic Mussel from the Pacific and Atlantic Coasts: A Case of Incipient Speciation?](https://doi.org/10.3390/ani14050674). *Animals, 14(5), 674*.
+- Briones, C., Nuñez, J. J., Pérez, M., Garrido, O., Campos, B., Godoy, K., Hartley, R., Oyarzún, P. A., & Guiñez, R. (2024). [Linking Acrosome Size and Genetic Divergence in an Inter-Oceanic Mussel from the Pacific and Atlantic Coasts: A Case of Incipient Speciation?](https://doi.org/10.3390/ani14050674) *Animals, 14(5), 674*.
 - Carrasco, N., Garrido, M., Montenegro, I., Madrid, A., Hartley, R., González, I., Rubilar, M., Villena, J., & Valenzuela-Valderrama, M. (2023). [Antitumoral Activity of Leptocarpha rivularis Flower Extracts against Gastric Cancer Cells](https://doi.org/10.3390/ijms24021439). *International Journal of Molecular Sciences, 24(2), 1439*.
 - Torres-Díaz, L., & Hartley, R. (2019). [Repositories for academic products/outputs: Latin American and Chilean visions](https://doi.org/10.12688/f1000research.19976.1). *F1000Research, 8, 1517*.
 - Hartley, R., Conei, D., Torres, L., & Rojas, M. (2019). [Effects of Ketoprofen in Spermatogenesis of Mice Exposed to Continuous Hypobaric Hypoxia](https://doi.org/10.4067/S0717-95022019000401572). *International Journal of Morphology, 37(4), 1572–1577*.
@@ -148,14 +151,16 @@ Fachkraft zur Unterstützung der Akkreditierung von Postgraduiertenprogrammen im
 
 ## Vorträge & Präsentationen
 
+- **Metadata Audits in Context** · Tooling showcase, IOSP 2026, Institute of Open Science Practices, Leiden (October 13, 2026), *Presentation*
+- **CRIS on AT Protocol: Who Signs, Who Reads, What Is Checked** · AT Protocol workshop “Own your research network with AT Protocol”, IOSP 2026, Institute of Open Science Practices, Leiden (October 12, 2026), *Workshop demo*
 - **The State of Research Repositories in Chile: FAIRness and Reuse, with Preliminary Results for Latin America** · RDA Regional Assembly, Research Data Alliance (online) (September 24, 2026), *Presentation*
 - **Research and Data Management: Principles, Processes and Practices** · Indian Research Scholars Association (IRSA), with Shaily Gandhi (online) (September 23, 2026), *Webinar*
 - **What the Public Record Says About Your Cruises, and What It Leaves Out That You Already Know** · FAIR Working Group, Rolling Deck to Repository (R2R) program, U.S. Academic Research Fleet (online) (September 17, 2026), *Presentation*
 - **Entities and/or Content: Metadata Quality in Open Science Infrastructure** · First Digital Humanities Seminar - Chile 2026: Technologies, Memories and Possible Futures, Panel E: Open Science and Reproducibility, Pontificia Universidad Católica de Chile, Campus Lo Contador (April 9, 2026), *Presentation*
-- **Tracing Research Outputs: FAIRness, Responsibility, and Reuse Across Infrastructure Layers** · Open Science Festival, University of Vienna (September 8, 2025), *Lightning Talk*
-- **Research Traceability for Responsible Assessment** · FoReA-Treffen Q3 2025 (September 17, 2025), *Presentation*
-- **Open Science on Closed Infrastructures? Traceability, Reuse, and Research Assessment** · IT:U Interdisciplinary Transformation University, Linz (October 15, 2025), *Guest Lecture*
 - **Making Research Count: Challenges in the Evaluation and Valuation of Scientific Work** · Open Innovation in Science Center (OIS) (October 16, 2025), *Webinar*
+- **Open Science on Closed Infrastructures? Traceability, Reuse, and Research Assessment** · IT:U Interdisciplinary Transformation University, Linz (October 15, 2025), *Guest Lecture*
+- **Research Traceability for Responsible Assessment** · FoReA-Treffen Q3 2025 (September 17, 2025), *Presentation*
+- **Tracing Research Outputs: FAIRness, Responsibility, and Reuse Across Infrastructure Layers** · Open Science Festival, University of Vienna (September 8, 2025), *Lightning Talk*
 - **Las métricas de datos: Avanzando la gestión responsable de los datos abiertos** · Make Data Count & OpenLab Ecuador (March 13, 2025), *Panel*
 - **Más allá de la indexación: ciencia abierta, fuentes abiertas y el valor de los metadatos en la visibilidad académica** · Semana Internacional de Acceso Abierto, Pontificia Universidad Católica Argentina (October 24, 2024), *Presentation*
 - **Ciencia abierta y el impacto de las publicaciones: Análisis comparativo del sentido y uso de citas en universidades chilenas acreditadas en investigación** · VII Seminario Internacional FLACSO Argentina (October 23-24, 2024), *Presentation*
@@ -317,9 +322,9 @@ Live-Fragen während einer Lehrveranstaltung oder eines Workshops: Auswahlfragen
 ## Weiterbildung
 
 - **FORCE11 Scholarly Communication Institute – FSCI** (2017–2025): Abschluss mehrerer Tracks, darunter: Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Datenvisualisierung in R und D3.js, Nutzung von APIs (ORCID, Sherpa Romeo, Unpaywall) für institutionelle Analysen.
-- **Essentials 4 Data Support** (2023): Abschluss der offiziellen RDNL-Schulung für Fachkräfte im Bereich Forschungsdatenunterstützung. Schwerpunkte: FAIR-Prinzipien, Metadatenqualität, Datenaustausch und die Umsetzung belastbarer Datenmanagementpläne (DMPs). Einziger aktiver lateinamerikanischer Teilnehmer der Kohorte.
-- **CWTS Scientometrics Summer School** (2020): Intensivkurs mit 75 Stunden zu Szientometrie, bibliometrischen Indikatoren, Wissensflüssen und Methoden der Forschungsbewertung. Behandelte Theorie und praktische Anwendung für Politik- und Infrastrukturentwicklung.
 - **DataCite Certified Core Training** (2024): Zertifizierung mit Schwerpunkt auf der Nutzung persistenter Identifikatoren (PIDs), Best Practices für Metadaten und der Anbindung von Repositorien an die DataCite-Infrastruktur.
+- **Essentials 4 Data Support** (2023): Abschluss der offiziellen RDNL-Schulung für Fachkräfte im Bereich Forschungsdatenunterstützung. Schwerpunkte: FAIR-Prinzipien, Metadatenqualität, Datenaustausch und die Umsetzung belastbarer Datenmanagementpläne (DMPs).
+- **CWTS Scientometrics Summer School** (2020): Intensivkurs mit 75 Stunden zu Szientometrie, bibliometrischen Indikatoren, Wissensflüssen und Methoden der Forschungsbewertung. Behandelte Theorie und praktische Anwendung für Politik- und Infrastrukturentwicklung.
 
 ---
-*Generiert aus data/cv.json · 2026-10-20*
+*Generiert aus data/cv.json · 2026-10-22*

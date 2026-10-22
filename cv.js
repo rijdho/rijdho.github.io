@@ -71,7 +71,7 @@ function render(){
   const pubN=groups.reduce((n,g)=>n+CV.publications[g].length,0);
   H.push(`<section>`+groups.map((g,i)=>keep((i?"":h2("publications",pubN))+`<div class="subh">${esc(PUBGRP[g][lang])}</div>`,
     CV.publications[g].map(it=>{const ti=it.url?`<a href="${esc(it.url)}">${esc(it.title)}</a>`:esc(it.title);
-      return `<li>${esc(it.authors)} (${esc(it.year)}). ${ti}.${it.venue?` <b>${esc(it.venue)}</b>.`:""}</li>`;}),
+      return `<li>${esc(it.authors)} (${esc(it.year)}). ${ti}${/[.?!]$/.test(it.title)?"":"."}${it.venue?` <b>${esc(it.venue)}</b>.`:""}</li>`;}),
     'ol class="pubs"')).join("")+`</section>`);
 
   // Presentations

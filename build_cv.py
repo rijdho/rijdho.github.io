@@ -64,7 +64,7 @@ def build(lang):
         w(f"### {tr(lab)}\n")
         for it in items:
             t=f"[{it['title']}]({it['url']})" if it.get('url') else it['title']
-            line=f"- {it.get('authors','')} ({it.get('year','')}). {t}."
+            line=f"- {it.get('authors','')} ({it.get('year','')}). {t}{'' if it['title'].rstrip()[-1:] in '.?!' else '.'}"
             if it.get('venue'): line+=f" *{it['venue']}*."
             w(line)
         w("")

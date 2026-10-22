@@ -264,7 +264,7 @@ function rowsTalks(){return EXTRA.talks.map(t=>`
 function rowsExp(){return EXTRA.experience.map(e=>`
   <div class="prow"><span class="pyear">${esc((e.period||"").match(/\d{4}/)?(e.period.match(/\d{4}/)[0]):"")}</span>
     <span class="pmain"><div class="ptitle">${esc(e.title)} · <span style="font-weight:400;color:var(--muted)">${esc(e.org)}</span></div>
-    <div class="pmeta"><b>${esc(e.period||"")}</b>${e.loc?' · '+esc(e.loc):''}<br>${esc(deLbl(e.desc))}</div></span></div>`).join("");}
+    <div class="pmeta"><b>${esc(e.period||"")}</b>${e.loc?' · '+esc(e.loc):''}${deLbl(e.desc)?'<br>'+esc(deLbl(e.desc)):''}</div></span></div>`).join("");}
 function rowsEdu(){return EXTRA.education.map(e=>`
   <div class="prow"><span class="pyear">${esc(e.year||"")}</span>
     <span class="pmain"><div class="ptitle">${esc(deLbl(e.degree))}</div>
