@@ -61,7 +61,7 @@
   .edu{display:flex;justify-content:space-between;gap:14px;padding:6px 0;border-bottom:1px solid var(--hair)}
   .edu:last-child{border-bottom:0}
   .edu .d{font-weight:600}.edu .i{color:var(--soft)}
-  .skill{display:flex;gap:10px;padding:5px 0}
+  .skill{display:flex;gap:10px;padding:5px 0;break-inside:avoid}
   .skill .k{font-family:var(--mono);font-size:.74rem;color:var(--brand);min-width:210px;flex:none;text-transform:uppercase;letter-spacing:.04em}
   .skill .v{color:var(--soft);font-size:.9rem}
   .subh{font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);font-weight:700;margin:14px 0 6px}
