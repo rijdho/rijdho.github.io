@@ -54,6 +54,9 @@ def build(lang):
     sec("education")
     for e in CV["education"]:
         w(f"- **{tr(e['degree'])}**, {e['inst']}" + (f" ({e['year']})" if e.get('year') else ""))
+    sec("training")
+    for e in CV["training"]:
+        w(f"- **{e['title']}**" + (f" ({e['year']})" if e.get('year') else "") + (f": {tr(e['desc'])}" if tr(e.get('desc')) else ""))
     sec("skills")
     for s in CV["skills"]:
         w(f"- **{tr(s['title'])}:** {', '.join(tr(i) for i in s['items'])}")
@@ -68,13 +71,13 @@ def build(lang):
             if it.get('venue'): line+=f" *{it['venue']}*."
             w(line)
         w("")
-    sec("presentations")
-    for t in CV["presentations"]:
-        w(f"- **{t['title']}** · {t.get('event','')}" + (f" ({t['date']})" if t.get('date') else "") + (f", *{t['type']}*" if t.get('type') else ""))
     sec("portfolio")
     for e in CV["portfolio"]:
         t=f"[{e['title']}]({e['url']})" if e.get('url') else e['title']
         w(f"- {t}" + (f" ({e['year']})" if e.get('year') else "") + (f", *{e['type']}*" if e.get('type') else ""))
+    sec("presentations")
+    for t in CV["presentations"]:
+        w(f"- **{t['title']}** · {t.get('event','')}" + (f" ({t['date']})" if t.get('date') else "") + (f", *{t['type']}*" if t.get('type') else ""))
     sec("experiments")
     P = CV["personal"]
     if P.get("toolsIndexUrl"):
@@ -89,9 +92,6 @@ def build(lang):
         tw=e.get('twin')
         if tw and tw.get('url'): w(""); w(f"↔ [{tw.get('title') or tw['url']}]({tw['url']})")
         w("")
-    sec("training")
-    for e in CV["training"]:
-        w(f"- **{e['title']}**" + (f" ({e['year']})" if e.get('year') else "") + (f": {tr(e['desc'])}" if tr(e.get('desc')) else ""))
     w(""); w(f"---"); w(f"*{T['generated']} · {CV.get('meta',{}).get('updated','')}*")
     out="\n".join(L).rstrip()+"\n"
     open(os.path.join(HERE,f"CV.{lang}.md"),"w",encoding="utf-8").write(out)

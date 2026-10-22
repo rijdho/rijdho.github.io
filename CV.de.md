@@ -75,6 +75,13 @@ Fachkraft zur Unterstützung der Akkreditierung von Postgraduiertenprogrammen im
 - **Lizenziat in Medizinischer Technologie**, Universidad de Chile (2006)
 - **Berufstitel Medizinischer Technologe**, Universidad de Chile (2007)
 
+## Weiterbildung
+
+- **FORCE11 Scholarly Communication Institute – FSCI** (2017–2025): Abschluss mehrerer Tracks, darunter: Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Datenvisualisierung in R und D3.js, Nutzung von APIs (ORCID, Sherpa Romeo, Unpaywall) für institutionelle Analysen.
+- **DataCite Certified Core Training** (2024): Zertifizierung mit Schwerpunkt auf der Nutzung persistenter Identifikatoren (PIDs), Best Practices für Metadaten und der Anbindung von Repositorien an die DataCite-Infrastruktur.
+- **Essentials 4 Data Support** (2023): Abschluss der offiziellen RDNL-Schulung für Fachkräfte im Bereich Forschungsdatenunterstützung. Schwerpunkte: FAIR-Prinzipien, Metadatenqualität, Datenaustausch und die Umsetzung belastbarer Datenmanagementpläne (DMPs).
+- **CWTS Scientometrics Summer School** (2020): Intensivkurs mit 75 Stunden zu Szientometrie, bibliometrischen Indikatoren, Wissensflüssen und Methoden der Forschungsbewertung. Behandelte Theorie und praktische Anwendung für Politik- und Infrastrukturentwicklung.
+
 ## Kompetenzen
 
 - **Forschungsinfrastruktur & Metadatensysteme:** ORCID, ROR, Crossref, DataCite, OpenAlex, Metadatenstandards (Dublin Core, DataCite Metadata Schema, Schema.org)
@@ -149,6 +156,16 @@ Fachkraft zur Unterstützung der Akkreditierung von Postgraduiertenprogrammen im
 - Hartley, R., & Abedrapo Rosen, I. (2023). [Centralizing the ways in which science is classified](https://doi.org/10.5281/zenodo.8092607). *Zenodo*.
 
 
+## Publizistik
+
+- [The Persistence of Retracted Knowledge in Scientific Literature](https://observablehq.com/d/cecaefb7d49c7727/) (2025), *Data Essay*
+- [The Domino Effect of Faulty Metadata: Why Open Source Analysis Demands Metadata Vigilance](https://fosci.substack.com/p/the-domino-effect-of-faulty-metadata) (2025), *Blog Post*
+- [No es suficiente solo con datos abiertos](https://www.americaeconomia.com/analisis-y-opinion/ciencia-no-es-suficiente-solo-con-datos-abiertos) (2024), *Opinion Column*
+- [Experimentos sobre el costo de la 'calidad'](https://www.linkedin.com/pulse/experimentos-sobre-el-costo-de-la-calidad-ricardo-hartley-8tuff/?trackingId=6uCbjEhOR%2BKsHlxFAA%2F4ng%3D%3D) (2024), *Blog Post*
+- [¿Qué significa 'conocimiento abierto' en Chile hoy?](https://www.elmostrador.cl/noticias/opinion/2022/11/05/que-significa-conocimiento-abierto-en-chile-hoy/) (2022), *Opinion Column*
+- [Feeling Part of Something](https://sparcopen.org/) (2018), *Blog Post*
+- [OpenCon Santiago 2017: No more streaks in the water](https://education.okfn.org/opencon-santiago-2017-no-more-streaks-in-the-water/index.html) (2017), *Blog Post*
+
 ## Vorträge & Präsentationen
 
 - **Metadata Audits in Context** · Tooling showcase, IOSP 2026, Institute of Open Science Practices, Leiden (October 13, 2026), *Presentation*
@@ -181,16 +198,6 @@ Fachkraft zur Unterstützung der Akkreditierung von Postgraduiertenprogrammen im
 - **The Value of Digital Repositories Beyond Theses** · Days Discovering Open Science, OpenLab Ecuador (August 31, 2023), *Presentation*
 - **It is not just counting and graphing: Enriching the Analysis Methodologies of Types of Article Licenses from Universities belonging to the CUP** · 1st Open Government Congress, Academic Network Open Government Chile (April 26-28, 2023), *Presentation*
 - **Proposal for an Institutional Structure for Open Science at Universidad Central de Chile** · 1st Open Government Congress, Academic Network Open Government Chile (April 26-28, 2023), *Presentation*
-
-## Publizistik
-
-- [The Persistence of Retracted Knowledge in Scientific Literature](https://observablehq.com/d/cecaefb7d49c7727/) (2025), *Data Essay*
-- [The Domino Effect of Faulty Metadata: Why Open Source Analysis Demands Metadata Vigilance](https://fosci.substack.com/p/the-domino-effect-of-faulty-metadata) (2025), *Blog Post*
-- [No es suficiente solo con datos abiertos](https://www.americaeconomia.com/analisis-y-opinion/ciencia-no-es-suficiente-solo-con-datos-abiertos) (2024), *Opinion Column*
-- [Experimentos sobre el costo de la 'calidad'](https://www.linkedin.com/pulse/experimentos-sobre-el-costo-de-la-calidad-ricardo-hartley-8tuff/?trackingId=6uCbjEhOR%2BKsHlxFAA%2F4ng%3D%3D) (2024), *Blog Post*
-- [¿Qué significa 'conocimiento abierto' en Chile hoy?](https://www.elmostrador.cl/noticias/opinion/2022/11/05/que-significa-conocimiento-abierto-en-chile-hoy/) (2022), *Opinion Column*
-- [Feeling Part of Something](https://sparcopen.org/) (2018), *Blog Post*
-- [OpenCon Santiago 2017: No more streaks in the water](https://education.okfn.org/opencon-santiago-2017-no-more-streaks-in-the-water/index.html) (2017), *Blog Post*
 
 ## Werkzeuge & Experimente
 
@@ -318,13 +325,6 @@ Schreibt einen Datenmanagementplan als maschinenverarbeitbare Datei, die dem RDA
 
 Live-Fragen während einer Lehrveranstaltung oder eines Workshops: Auswahlfragen, Bewertungsskalen, Reihenfolgen, Wortwolken und Fragen aus dem Raum, nach Unterstützung sortiert. Teilnehmende treten mit einem sechsstelligen Code oder einem QR-Code bei und antworten am Telefon, während die Ergebnisse auf der projizierten Ansicht entstehen. Jede Auswahlfrage kann eine richtige Antwort tragen, was einen Punktestand ergänzt. Keine Konten, keine Cookies und keine Anfrage an Dritte; ein Raum löscht sich zwölf Stunden nach dem Öffnen selbst. Ein einziger Cloudflare Worker mit einem Durable Object pro Raum, das zugleich der Speicher und der Punkt ist, durch den jede Stimme läuft, und derselbe Code läuft auch auf Node.
 
-
-## Weiterbildung
-
-- **FORCE11 Scholarly Communication Institute – FSCI** (2017–2025): Abschluss mehrerer Tracks, darunter: Forensic Scientometrics, FAIR Data in the Scholarly Communication Lifecycle, Metadata Governance, Research Reproducibility, Open Science in the Global South, Datenvisualisierung in R und D3.js, Nutzung von APIs (ORCID, Sherpa Romeo, Unpaywall) für institutionelle Analysen.
-- **DataCite Certified Core Training** (2024): Zertifizierung mit Schwerpunkt auf der Nutzung persistenter Identifikatoren (PIDs), Best Practices für Metadaten und der Anbindung von Repositorien an die DataCite-Infrastruktur.
-- **Essentials 4 Data Support** (2023): Abschluss der offiziellen RDNL-Schulung für Fachkräfte im Bereich Forschungsdatenunterstützung. Schwerpunkte: FAIR-Prinzipien, Metadatenqualität, Datenaustausch und die Umsetzung belastbarer Datenmanagementpläne (DMPs).
-- **CWTS Scientometrics Summer School** (2020): Intensivkurs mit 75 Stunden zu Szientometrie, bibliometrischen Indikatoren, Wissensflüssen und Methoden der Forschungsbewertung. Behandelte Theorie und praktische Anwendung für Politik- und Infrastrukturentwicklung.
 
 ---
 *Generiert aus data/cv.json · 2026-10-22*

@@ -66,6 +66,14 @@ function render(){
     <span><span class="d">${esc(t(e.degree))}</span> · <span class="i">${esc(e.inst)}</span></span>
     <span class="when">${esc(e.year)}</span></div>`));
 
+  // Training
+  sec("training", CV.training.map(e=>`
+    <li><b>${esc(e.title)}</b> <span class="tag">${esc(e.year)}</span>${e.org?` · ${esc(e.org)}`:""}<br>${esc(t(e.desc))}</li>`), 'ul class="plain"');
+
+  // Skills
+  sec("skills", CV.skills.map(s=>`<div class="skill"><span class="k">${esc(t(s.title))}</span>
+    <span class="v">${esc((s.items||[]).map(t).join(", "))}</span></div>`));
+
   // Publications: each group's subheading is kept with its first entry too
   const groups=["peerReviewed","policyPapers","guides","datasets","preprints","other"].filter(g=>(CV.publications[g]||[]).length);
   const pubN=groups.reduce((n,g)=>n+CV.publications[g].length,0);
@@ -74,17 +82,13 @@ function render(){
       return `<li>${esc(it.authors)} (${esc(it.year)}). ${ti}${/[.?!]$/.test(it.title)?"":"."}${it.venue?` <b>${esc(it.venue)}</b>.`:""}</li>`;}),
     'ol class="pubs"')).join("")+`</section>`);
 
-  // Presentations
-  sec("presentations", CV.presentations.map(t2=>`
-    <li><b>${esc(t2.title)}</b> · ${esc(t2.event)}${t2.date?` <span class="tag">(${esc(t2.date)})</span>`:""}</li>`), 'ul class="plain"', CV.presentations.length);
-
-  // Skills
-  sec("skills", CV.skills.map(s=>`<div class="skill"><span class="k">${esc(t(s.title))}</span>
-    <span class="v">${esc((s.items||[]).map(t).join(", "))}</span></div>`));
-
   // Writing (portfolio)
   sec("portfolio", CV.portfolio.map(e=>{const ti=e.url?`<a href="${esc(e.url)}">${esc(e.title)}</a>`:esc(e.title);
     return `<li><b>${ti}</b> <span class="tag">${esc(e.year)}${e.type?" · "+esc(e.type):""}</span><br>${esc(t(e.desc))}</li>`;}), 'ul class="plain"', CV.portfolio.length);
+
+  // Presentations
+  sec("presentations", CV.presentations.map(t2=>`
+    <li><b>${esc(t2.title)}</b> · ${esc(t2.event)}${t2.date?` <span class="tag">(${esc(t2.date)})</span>`:""}</li>`), 'ul class="plain"', CV.presentations.length);
 
   // Tools (experiments)
   // First line of the section: where every tool and dashboard is listed with its sources and licences.
@@ -95,10 +99,6 @@ function render(){
       ${t(e.desc)?`<p>${esc(t(e.desc))}</p>`:""}
       ${e.twin&&e.twin.url?`<div class="twin">↔ <a href="${esc(e.twin.url)}">${esc(e.twin.title||e.twin.url)}</a></div>`:""}
       ${(e.tags||[]).length?`<div class="tag">${esc((e.tags||[]).slice(0,6).join(" · "))}</div>`:""}</div>`;})), "", CV.experiments.length);
-
-  // Training
-  sec("training", CV.training.map(e=>`
-    <li><b>${esc(e.title)}</b> <span class="tag">${esc(e.year)}</span>${e.org?` · ${esc(e.org)}`:""}<br>${esc(t(e.desc))}</li>`), 'ul class="plain"');
 
   document.getElementById("body").innerHTML=H.join("");
 }
