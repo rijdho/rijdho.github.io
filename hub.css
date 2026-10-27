@@ -90,8 +90,8 @@
     .legend{position:static;transform:none;order:-1;width:auto;max-width:none;margin:0 0 10px}}
   #cloud.grabbing{cursor:grabbing}
   .hint{position:absolute;left:14px;bottom:12px;font-family:var(--mono);font-size:.68rem;color:var(--faint);pointer-events:none}
-  /* What the dashed outline on a bubble means. Without it the two BiblioHelp ovals,
-     the hosted tool and its open twin, differ only by a capital letter. */
+  /* What the dashed outline on a bubble means: it tells a hosted tool from its open
+     twin, which can otherwise carry nearly the same name. */
   .omark{position:absolute;right:14px;bottom:12px;font-family:var(--mono);font-size:.68rem;
     color:var(--faint);pointer-events:none;display:flex;align-items:center;gap:6px}
   .omark::before{content:"";width:18px;height:11px;border:1.5px dashed var(--faint);border-radius:50%;flex:none}
