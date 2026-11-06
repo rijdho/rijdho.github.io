@@ -146,6 +146,7 @@ Fachkraft zur Unterstützung der Akkreditierung von Postgraduiertenprogrammen im
 
 ### Preprints
 
+- Hartley Belmar, R., & Schöpf, V. (2026). [What CoARA Action Plans Commit To](https://repository.fteval.at/id/eprint/853/). *fteval Preprints, working paper (submitted)*.
 - Hartley, R., Priego, E., Tobar, D., Pérez Comisso, M., & Gainza, C. (2017). [¿Abrir o no abrir? Nuevos pasos del Movimiento Open en Chile](https://doi.org/10.22541/au.151379546.63292744). *Authorea*.
 - Priego, E., Posada, A., Hartley, R., Rodríguez Ortega, N., Fiormonte, D., Gil, A., Logan, C., Alperin, J. P., Mounce, R., Eglen, S. J., Miranda Trigueros, E., Lawson, S., Gatto, L., Ramos, A., & Pérez, N. (2017). [Scholarly Publishing, Freedom of Information and Academic Self-Determination: The UNAM-Elsevier Case](https://doi.org/10.22541/au.151160332.22737207). *Authorea*.
 
@@ -320,6 +321,11 @@ Vollständigkeit der Metadaten chilenischer Forschungsergebnisse jenseits von Ar
 
 Schreibt einen Datenmanagementplan als maschinenverarbeitbare Datei, die dem RDA DMP Common Standard v1.2 entspricht, entlang der fünfzehn Fragen der Kernanforderungen von Science Europe, und prüft, was der Plan über jeden Datensatz sagt, an dessen Eintrag in DataCite, sofern DataCite ihn führt. Der Plan lässt sich als dmp.json und als DMP.md herunterladen, in den Abschnitten von Science Europe oder denen der Horizon-Europe-Vorlage; dieselbe Prüfung läuft auf der Kommandozeile und als GitHub Action.
 
+### [Actionable SMP: Write and Check a Software Management Plan](https://rijdho.github.io/smp-template/)
+*Active · 2026 · Software Management Plans, Research software, GitHub Action*
+
+Schreibt einen Softwaremanagementplan mit den Fragen, Anforderungen und Managementstufen des Practical guide to Software Management Plans (Martinez-Ortiz et al., 2023), gespeichert als smp.json für das Repository und als SMP.md für Menschen, und prüft ihn an der Software: Jede Zusage, die der Plan als umgesetzt markiert, etwa eine Lizenz oder eine Zitationsdatei, muss im öffentlichen GitHub-Repository sichtbar sein. Dieselbe Prüfung läuft auf der Kommandozeile und als GitHub Action, die den Build scheitern lässt, wenn eine Zusage fehlt.
+
 ### [Pollen: Live Audience Questions](https://pollen.rijdho.org)
 *Active · 2026 · Live polling, Audience response, Teaching, Cloudflare Workers*
 
@@ -327,4 +333,4 @@ Live-Fragen während einer Lehrveranstaltung oder eines Workshops: Auswahlfragen
 
 
 ---
-*Generiert aus data/cv.json · 2026-10-22*
+*Generiert aus data/cv.json · 2026-11-06*

@@ -146,6 +146,7 @@ Profesional de apoyo para la acreditación de programas de postgrado, en la Vice
 
 ### Preprints
 
+- Hartley Belmar, R., & Schöpf, V. (2026). [What CoARA Action Plans Commit To](https://repository.fteval.at/id/eprint/853/). *fteval Preprints, working paper (submitted)*.
 - Hartley, R., Priego, E., Tobar, D., Pérez Comisso, M., & Gainza, C. (2017). [¿Abrir o no abrir? Nuevos pasos del Movimiento Open en Chile](https://doi.org/10.22541/au.151379546.63292744). *Authorea*.
 - Priego, E., Posada, A., Hartley, R., Rodríguez Ortega, N., Fiormonte, D., Gil, A., Logan, C., Alperin, J. P., Mounce, R., Eglen, S. J., Miranda Trigueros, E., Lawson, S., Gatto, L., Ramos, A., & Pérez, N. (2017). [Scholarly Publishing, Freedom of Information and Academic Self-Determination: The UNAM-Elsevier Case](https://doi.org/10.22541/au.151160332.22737207). *Authorea*.
 
@@ -320,6 +321,11 @@ Completitud de los metadatos de los resultados de investigación chilenos que no
 
 Escribe un plan de gestión de datos como archivo accionable por máquina, válido según el RDA DMP Common Standard v1.2, respondiendo las quince preguntas de los requisitos básicos de Science Europe, y contrasta lo que el plan dice de cada dataset con el registro del dataset en DataCite, cuando DataCite lo tiene. El plan se descarga como dmp.json y como DMP.md, en las secciones de Science Europe o en las de la plantilla de Horizon Europe; la misma revisión corre desde la línea de comandos y como GitHub Action.
 
+### [Actionable SMP: Write and Check a Software Management Plan](https://rijdho.github.io/smp-template/)
+*Active · 2026 · Software Management Plans, Research software, GitHub Action*
+
+Escribe un plan de gestión de software con las preguntas, los requisitos y los niveles de gestión de la Practical guide to Software Management Plans (Martinez-Ortiz et al., 2023), guardado como smp.json para el repositorio y como SMP.md para las personas, y lo contrasta con el software: cada compromiso que el plan marca como implementado, como una licencia o un archivo de citación, tiene que verse en el repositorio público de GitHub. La misma revisión corre desde la línea de comandos y como GitHub Action que hace fallar el build cuando falta un compromiso.
+
 ### [Pollen: Live Audience Questions](https://pollen.rijdho.org)
 *Active · 2026 · Live polling, Audience response, Teaching, Cloudflare Workers*
 
@@ -327,4 +333,4 @@ Preguntas en vivo durante una clase o un taller: opción múltiple, escalas de v
 
 
 ---
-*Generado desde data/cv.json · 2026-10-22*
+*Generado desde data/cv.json · 2026-11-06*

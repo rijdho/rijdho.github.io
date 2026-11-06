@@ -13,25 +13,25 @@ from this origin.
 Available in **English, German and Spanish** (auto-detected, switchable): interface and
 content both, including every long description.
 
-![The tool cloud: 23 ovals grouped into four colour-coded topics, Metadata quality 7,
-Open science policy & assessment 6, Infrastructure & AI 8, Science communication 2. Related projects touch
+![The tool cloud: 24 ovals grouped into four colour-coded topics, Metadata quality 7,
+Open science policy & assessment 7, Infrastructure & AI 8, Science communication 2. Related projects touch
 rather than repel, so FAIR Metadata Check (Extended) sits against FAIR Metadata Check. A dashed outline marks a
-tool whose source is public on GitHub, and a note in the corner says so. Nine ovals carry a Zenodo concept DOI
+tool whose source is public on GitHub, and a note in the corner says so. Ten ovals carry a Zenodo concept DOI
 under the name: FAIR Metadata Check 10.5281/zenodo.21492530, ORCID Affiliation Finder
 10.5281/zenodo.22227424, Research Assessment Reform Planner 10.5281/zenodo.21492548, Value of Open Research Information
 10.5281/zenodo.22231440, Pollen 10.5281/zenodo.22685893, National Metadata Audits 10.5281/zenodo.23498571,
-ORCID Membership 10.5281/zenodo.23498577, Beyond Articles 10.5281/zenodo.23498567 and Actionable DMP
-10.5281/zenodo.23498569.](docs/hub-cloud.png)
+ORCID Membership 10.5281/zenodo.23498577, Beyond Articles 10.5281/zenodo.23498567, Actionable DMP
+10.5281/zenodo.23498569 and Actionable SMP 10.5281/zenodo.23797138.](docs/hub-cloud.png)
 
 ## The three views
 
 - **The hub** (`index.html`): two columns. The landing shows the name and headline with the
-  23 tools and experiments under them, as a cloud of ovals grouped by topic (drag, filter,
+  24 tools and experiments under them, as a cloud of ovals grouped by topic (drag, filter,
   click for a description and, where there is one, the link). The rail on the left opens the rest of the CV one section at a
   time: education, experience and training, then publications, writing and talks.
 ![The publications section opened from the rail: the rail on the left lists Background,
 Publications & talks and a link to Metaudits, with Publications highlighted. The main column
-shows the heading Publications 46, then the peer-reviewed group, each row labelled
+shows the heading Publications 47, then the peer-reviewed group, each row labelled
 "Peer-reviewed" above its title. The chip on the right names what the link actually resolves
 to: "DOI" only for a real doi.org address, otherwise the bare host, so the first row, the 2026
 paper in Revista Calidad en la Educación, reads DOI and the second, the CNA seminar paper,

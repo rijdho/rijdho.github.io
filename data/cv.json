@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-10-22",
+    "updated": "2026-11-06",
     "source": "single canonical CV data: hub, CV page and CV.md all read this"
   },
   "personal": {
@@ -828,6 +828,13 @@
     ],
     "preprints": [
       {
+        "authors": "Hartley Belmar, R., & Schöpf, V.",
+        "year": "2026",
+        "title": "What CoARA Action Plans Commit To",
+        "venue": "fteval Preprints, working paper (submitted)",
+        "url": "https://repository.fteval.at/id/eprint/853/"
+      },
+      {
         "authors": "Hartley, R., Priego, E., Tobar, D., Pérez Comisso, M., & Gainza, C.",
         "year": "2017",
         "title": "¿Abrir o no abrir? Nuevos pasos del Movimiento Open en Chile",
@@ -1480,6 +1487,29 @@
         "de": "Schreibt einen Datenmanagementplan als maschinenverarbeitbare Datei, die dem RDA DMP Common Standard v1.2 entspricht, entlang der fünfzehn Fragen der Kernanforderungen von Science Europe, und prüft, was der Plan über jeden Datensatz sagt, an dessen Eintrag in DataCite, sofern DataCite ihn führt. Der Plan lässt sich als dmp.json und als DMP.md herunterladen, in den Abschnitten von Science Europe oder denen der Horizon-Europe-Vorlage; dieselbe Prüfung läuft auf der Kommandozeile und als GitHub Action."
       },
       "doi": "10.5281/zenodo.23498569"
+    },
+    {
+      "id": "actionable-smp",
+      "title": "Actionable SMP: Write and Check a Software Management Plan",
+      "year": "2026",
+      "status": "Active",
+      "url": "https://rijdho.github.io/smp-template/",
+      "tags": [
+        "Software Management Plans",
+        "Research software",
+        "GitHub Action"
+      ],
+      "topic": "assessment",
+      "platform": "github",
+      "related": [
+        "actionable-dmp"
+      ],
+      "desc": {
+        "en": "Write a software management plan with the questions, requirements and management levels of the Practical guide to Software Management Plans (Martinez-Ortiz et al., 2023), saved as smp.json for the repository and as SMP.md for people, and check it against the software: every commitment the plan marks as in place, such as a licence or a citation file, has to be visible in the public GitHub repository. The same check runs from the command line and as a GitHub Action that fails the build when a commitment is missing.",
+        "es": "Escribe un plan de gestión de software con las preguntas, los requisitos y los niveles de gestión de la Practical guide to Software Management Plans (Martinez-Ortiz et al., 2023), guardado como smp.json para el repositorio y como SMP.md para las personas, y lo contrasta con el software: cada compromiso que el plan marca como implementado, como una licencia o un archivo de citación, tiene que verse en el repositorio público de GitHub. La misma revisión corre desde la línea de comandos y como GitHub Action que hace fallar el build cuando falta un compromiso.",
+        "de": "Schreibt einen Softwaremanagementplan mit den Fragen, Anforderungen und Managementstufen des Practical guide to Software Management Plans (Martinez-Ortiz et al., 2023), gespeichert als smp.json für das Repository und als SMP.md für Menschen, und prüft ihn an der Software: Jede Zusage, die der Plan als umgesetzt markiert, etwa eine Lizenz oder eine Zitationsdatei, muss im öffentlichen GitHub-Repository sichtbar sein. Dieselbe Prüfung läuft auf der Kommandozeile und als GitHub Action, die den Build scheitern lässt, wenn eine Zusage fehlt."
+      },
+      "doi": "10.5281/zenodo.23797138"
     },
     {
       "id": "pollen",

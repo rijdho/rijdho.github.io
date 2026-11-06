@@ -146,6 +146,7 @@ Support professional for the accreditation of postgraduate programmes, working w
 
 ### Preprints
 
+- Hartley Belmar, R., & Schöpf, V. (2026). [What CoARA Action Plans Commit To](https://repository.fteval.at/id/eprint/853/). *fteval Preprints, working paper (submitted)*.
 - Hartley, R., Priego, E., Tobar, D., Pérez Comisso, M., & Gainza, C. (2017). [¿Abrir o no abrir? Nuevos pasos del Movimiento Open en Chile](https://doi.org/10.22541/au.151379546.63292744). *Authorea*.
 - Priego, E., Posada, A., Hartley, R., Rodríguez Ortega, N., Fiormonte, D., Gil, A., Logan, C., Alperin, J. P., Mounce, R., Eglen, S. J., Miranda Trigueros, E., Lawson, S., Gatto, L., Ramos, A., & Pérez, N. (2017). [Scholarly Publishing, Freedom of Information and Academic Self-Determination: The UNAM-Elsevier Case](https://doi.org/10.22541/au.151160332.22737207). *Authorea*.
 
@@ -320,6 +321,11 @@ Metadata completeness of Chilean research outputs other than articles (datasets,
 
 Write a data management plan as a machine-actionable file that validates against the RDA DMP Common Standard v1.2, answering the fifteen questions of Science Europe's core requirements, and check what the plan says about each dataset against the dataset's DataCite record, where DataCite holds it. The plan downloads as dmp.json and as DMP.md, in Science Europe's sections or in those of the Horizon Europe template; the same check runs from the command line and as a GitHub Action.
 
+### [Actionable SMP: Write and Check a Software Management Plan](https://rijdho.github.io/smp-template/)
+*Active · 2026 · Software Management Plans, Research software, GitHub Action*
+
+Write a software management plan with the questions, requirements and management levels of the Practical guide to Software Management Plans (Martinez-Ortiz et al., 2023), saved as smp.json for the repository and as SMP.md for people, and check it against the software: every commitment the plan marks as in place, such as a licence or a citation file, has to be visible in the public GitHub repository. The same check runs from the command line and as a GitHub Action that fails the build when a commitment is missing.
+
 ### [Pollen: Live Audience Questions](https://pollen.rijdho.org)
 *Active · 2026 · Live polling, Audience response, Teaching, Cloudflare Workers*
 
@@ -327,4 +333,4 @@ Live questions during a lecture or a workshop: multiple choice, rating scales, r
 
 
 ---
-*Generated from data/cv.json · 2026-10-22*
+*Generated from data/cv.json · 2026-11-06*
