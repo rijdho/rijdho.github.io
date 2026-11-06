@@ -29,6 +29,11 @@ vanilla JS. Part of the violet-family design system (see `../CLAUDE.md`).
   and the real name is still one hover away in the tooltip. `tests/hub-ui.test.mjs` fails on
   a label that is slug-shaped, longer than 34 characters (Research Assessment Reform Planner, kept whole), or a case-only duplicate of
   another (which "BiblioHelp" and "bibliohelp" were).
+  **Cloud layout (2026-11-06, at 24 ovals):** ovals are kept apart on the Minkowski sum of the
+  two (an oval with the summed radii), with the overlap pass run six times per step (`RELAX` in `hub.js`); the canvas is
+  500px tall, 920px under 560px wide, where the legend sits above the canvas and the top band is
+  free. Measured with a seeded `Math.random` and reduced motion over five seeds: overlapping
+  unrelated pairs on a phone fell from about 30 to about 10.
 - `cv.html`: the academic CV. Same fetch, formal layout, `Print / PDF` via `window.print()`.
   **Section order (2026-10-22): the hub's order**, in `cv.js` and `build_cv.py` alike:
   experience, education, training, skills, then publications, writing, talks, and the tools

@@ -90,7 +90,8 @@ function layout(){
   const rect=cv.getBoundingClientRect(); W=rect.width; H=rect.height; dpr=Math.min(2,devicePixelRatio||1);
   cv.width=W*dpr; cv.height=H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
   anchors={ metadata:[W*0.30,H*0.36], infra:[W*0.70,H*0.34], assessment:[W*0.33,H*0.70], story:[W*0.70,H*0.70] };
-  if(W<560){ anchors={ metadata:[W*0.30,H*0.24], infra:[W*0.70,H*0.42], assessment:[W*0.32,H*0.60], story:[W*0.70,H*0.78] }; }
+  /* On a phone the legend sits above the canvas, not on it, so the top band is free too. */
+  if(W<560){ anchors={ metadata:[W*0.40,H*0.14], infra:[W*0.60,H*0.38], assessment:[W*0.40,H*0.64], story:[W*0.62,H*0.88] }; }
 }
 function initBubbles(){
   bubbles=DATA.apps.map((a)=>{const an=anchors[a.topic]||[W/2,H/2];
@@ -107,23 +108,27 @@ function edir(b,dx,dy){const d=Math.hypot(dx,dy)||1,c=dx/d,s=dy/d;
 function related(a,b){return !!(a.a.related&&a.a.related.includes(b.a.id))||!!(b.a.related&&b.a.related.includes(a.a.id));}
 function partnersOf(bb){return (bb.a.related||[]).map(id=>bubbles.find(x=>x.a.id===id)).filter(Boolean)
   .concat(bubbles.filter(x=>x.a.related&&x.a.related.includes(bb.a.id)));}
+const RELAX=6;
 function step(){
   for(const b of bubbles){
     if(b===dragging)continue;
     const an=anchors[b.a.topic]||[W/2,H/2];
-    b.vx+=(an[0]-b.x)*0.012; b.vy+=(an[1]-b.y)*0.012;
+    b.vx+=(an[0]-b.x)*0.012; b.vy+=(an[1]-b.y)*(W<560?0.005:0.012);
     if(!reduce){b.vx+=(Math.random()-.5)*0.06; b.vy+=(Math.random()-.5)*0.06;}
   }
-  for(let i=0;i<bubbles.length;i++)for(let j=i+1;j<bubbles.length;j++){
+  for(let it=0;it<RELAX;it++)for(let i=0;i<bubbles.length;i++)for(let j=i+1;j<bubbles.length;j++){
     const a=bubbles[i],b=bubbles[j],dx=b.x-a.x,dy=b.y-a.y;let d=Math.hypot(dx,dy)||.01;
-    const ra=edir(a,dx,dy),rb=edir(b,dx,dy);
+    // Separation is measured on the Minkowski sum of the two ovals, an oval with the summed
+    // radii, not on the two radii along the line between centres: for wide, flat ovals that
+    // sit diagonally the latter lets one label run deep into its neighbour (seen 2026-11-06).
+    const R=edir({rx:a.rx+b.rx,ry:a.ry+b.ry},dx,dy);
     if(related(a,b)){
       // stiff spring toward just-touching (small overlap) so a related pair reads as one unit
       // without one bubble hiding behind the other; must beat the shared-topic anchor pull
-      const target=ra+rb-8, f=(d-target)/d*0.30, ox=dx*f, oy=dy*f;
+      const target=R-2, f=(d-target)/d*0.30, ox=dx*f, oy=dy*f;
       if(a!==dragging){a.x+=ox;a.y+=oy;} if(b!==dragging){b.x-=ox;b.y-=oy;}
     } else {
-      const min=ra+rb+8;
+      const min=R+8;
       if(d<min){const p=(min-d)/d*0.5,ox=dx*p,oy=dy*p;
         if(a!==dragging){a.x-=ox;a.y-=oy;} if(b!==dragging){b.x+=ox;b.y+=oy;}}
     }
@@ -131,7 +136,7 @@ function step(){
   for(const b of bubbles){
     if(b===dragging)continue;
     b.vx*=0.86; b.vy*=0.86; b.x+=b.vx; b.y+=b.vy;
-    b.x=Math.max(b.rx+4,Math.min(W-b.rx-4,b.x)); b.y=Math.max(b.ry+80,Math.min(H-b.ry-4,b.y));
+    b.x=Math.max(b.rx+4,Math.min(W-b.rx-4,b.x)); b.y=Math.max(b.ry+(W<560?6:80),Math.min(H-b.ry-4,b.y));
   }
 }
 function draw(){
