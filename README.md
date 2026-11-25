@@ -13,7 +13,7 @@ from this origin.
 Available in **English, German and Spanish** (auto-detected, switchable): interface and
 content both, including every long description.
 
-![The tool cloud: 24 ovals grouped into four colour-coded topics, Metadata quality 7,
+![The tool cloud: 25 ovals grouped into four colour-coded topics, Metadata quality 8,
 Open science policy & assessment 7, Infrastructure & AI 8, Science communication 2. Related projects touch
 rather than repel, so FAIR Metadata Check (Extended) sits against FAIR Metadata Check. A dashed outline marks a
 tool whose source is public on GitHub, and a note in the corner says so. Ten ovals carry a Zenodo concept DOI
@@ -26,7 +26,7 @@ ORCID Membership 10.5281/zenodo.23498577, Beyond Articles 10.5281/zenodo.2349856
 ## The three views
 
 - **The hub** (`index.html`): two columns. The landing shows the name and headline with the
-  24 tools and experiments under them, as a cloud of ovals grouped by topic (drag, filter,
+  25 tools and experiments under them, as a cloud of ovals grouped by topic (drag, filter,
   click for a description and, where there is one, the link). The rail on the left opens the rest of the CV one section at a
   time: education, experience and training, then publications, writing and talks.
 ![The publications section opened from the rail: the rail on the left lists Background,

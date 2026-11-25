@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updated": "2026-11-06",
+    "updated": "2026-11-25",
     "source": "single canonical CV data: hub, CV page and CV.md all read this"
   },
   "personal": {
@@ -1463,6 +1463,29 @@
         "de": "Vollständigkeit der Metadaten chilenischer Forschungsergebnisse jenseits von Artikeln (Datensätze, Bilder, Software, Datenmanagementpläne und weitere): jene in DataCite mit einer Urheber-Affiliation in Chile und jene im Repositorium der ANID. Wo sie abgelegt sind, unter welcher Lizenz und wie vollständig sie beschrieben sind."
       },
       "doi": "10.5281/zenodo.23498567"
+    },
+    {
+      "id": "publisher-gap",
+      "title": "Publisher Gap: Journal Article Metadata in Crossref and OpenAlex",
+      "year": "2026",
+      "status": "Active",
+      "url": "https://rijdho.github.io/publisher-gap/",
+      "tags": [
+        "Crossref",
+        "OpenAlex",
+        "Metadata Quality",
+        "Scholarly publishing"
+      ],
+      "topic": "metadata",
+      "platform": "github",
+      "related": [
+        "metaudits"
+      ],
+      "desc": {
+        "en": "What the Crossref records of journal articles from 14 publishers hold, compared with the OpenAlex records of the same articles: 835,664 articles of 2015 to 2025 and 26 metadata fields, by publisher, by year and by field.",
+        "es": "Qué contienen los registros de Crossref de los artículos de revista de 14 editoriales, frente a los registros de OpenAlex de los mismos artículos: 835.664 artículos de 2015 a 2025 y 26 campos de metadatos, por editorial, por año y por campo.",
+        "de": "Was die Crossref-Einträge der Zeitschriftenartikel von 14 Verlagen enthalten, verglichen mit den OpenAlex-Einträgen derselben Artikel: 835.664 Artikel aus den Jahren 2015 bis 2025 und 26 Metadatenfelder, nach Verlag, Jahr und Feld."
+      }
     },
     {
       "id": "actionable-dmp",

@@ -316,6 +316,11 @@ Completitud de los perfiles ORCID públicos encontrados mediante los ROR id de 1
 
 Completitud de los metadatos de los resultados de investigación chilenos que no son artículos (datasets, imágenes, software, planes de gestión de datos y otros): los de DataCite con una afiliación de autoría en Chile y los del repositorio de ANID. Dónde se depositan, con qué licencia y qué tan completamente se describen.
 
+### [Publisher Gap: Journal Article Metadata in Crossref and OpenAlex](https://rijdho.github.io/publisher-gap/)
+*Active · 2026 · Crossref, OpenAlex, Metadata Quality, Scholarly publishing*
+
+Qué contienen los registros de Crossref de los artículos de revista de 14 editoriales, frente a los registros de OpenAlex de los mismos artículos: 835.664 artículos de 2015 a 2025 y 26 campos de metadatos, por editorial, por año y por campo.
+
 ### [Actionable DMP: Write and Check a Machine-Actionable Plan](https://rijdho.github.io/dmp-template/)
 *Active · 2026 · maDMP, RDA DMP Common Standard, DataCite, Science Europe*
 
@@ -333,4 +338,4 @@ Preguntas en vivo durante una clase o un taller: opción múltiple, escalas de v
 
 
 ---
-*Generado desde data/cv.json · 2026-11-06*
+*Generado desde data/cv.json · 2026-11-25*
